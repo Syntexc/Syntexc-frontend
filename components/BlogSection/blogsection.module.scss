@@ -1,0 +1,129 @@
+.blogsection {
+    background: #fff;
+    padding-top: 96px;
+    padding-bottom: 96px;
+
+    .container {
+        .row {
+            position: relative;
+
+            h3 {
+                font-family: 'Segoe UI Regular';
+                font-weight: 700;
+                font-size: 48px;
+                line-height: 56px;
+                letter-spacing: 0%;
+                text-align: center;
+                color: #253E90;
+                margin-bottom: 24px;
+                span {
+                    color: #181818;
+                }
+            }
+
+            p {
+                font-family: 'Segoe UI Regular';
+font-weight: 400;
+font-size: 24px;
+line-height: 32px;
+letter-spacing: 0%;
+text-align: center;
+vertical-align: bottom;
+max-width: 778px;
+margin-left: auto;
+margin-right: auto;
+            }
+        }
+
+        .row1 {
+            max-width: 957px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 40px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 24px;
+        }
+
+
+        .row2 {
+            a {
+                margin-top: 40px;
+                background: #253E90;
+                font-family: 'Segoe UI Regular'; 
+font-weight: 400;
+font-size: 16px;
+line-height: 24px; 
+
+padding-top: 12px;
+padding-right: 24px;
+padding-bottom: 12px;
+padding-left: 24px;
+border-radius: 12px;
+margin-left: auto;
+margin-right: auto;
+display: block;
+width: fit-content;
+color: #fff;
+text-decoration: none;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+.box {
+    position: relative;
+    width: 303px;
+border-top-left-radius: 20px;
+border-top-right-radius: 20px;
+border-bottom-right-radius: 67px;
+border-bottom-left-radius: 20px;
+background: #253E90;
+box-shadow: 0px 4px 10px 0px #0000001A;
+
+overflow: hidden;
+
+    .image {
+        position: relative;
+         
+border-top-left-radius: 20px;
+border-top-right-radius: 20px;
+overflow: hidden;
+
+        img {
+            position: relative;
+        }
+    }
+    .contant {
+        position: relative;
+        padding:30px 10px 30px 10px ;
+        h4 {
+            position: relative;
+            font-family: 'Segoe UI Regular';
+font-weight: 700;
+font-size: 20px;
+line-height: 100%;
+letter-spacing: 0%;
+text-align: center;
+text-transform: uppercase;
+color: #fff;
+margin-bottom: 2px;
+
+        }
+        p {
+            font-family: 'Segoe UI Regular';
+font-weight: 400;
+font-size: 16px;
+line-height: 100%;
+letter-spacing: 0%;
+text-align: center;
+color: #9CA3AF;
+
+        }
+    }
+}

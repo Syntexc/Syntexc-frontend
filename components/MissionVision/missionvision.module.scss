@@ -1,0 +1,94 @@
+.section {
+    background: radial-gradient(170.26% 412.29% at 25.9% -26.59%, #ffffff80 74.17%, #2baae2 100%), radial-gradient(111.18% 217.52% at 58.12% -25.98%, #ffffff4d 74.08%, #2baae2bf 100%), linear-gradient(#fff0 9.67%, #2baae2d6 100%);
+    
+padding-top: 60px;
+padding-bottom: 60px;
+    .conatiner {
+        max-width: 1072px;
+        margin-left: auto;
+        margin-right: auto;
+        .row {
+            display: flex;
+            h2 {
+                font-family: Segoe UI Regular;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 56px;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #253e90;
+    margin-bottom: 24px;
+    span {
+        color: #181818;
+    }
+            }
+        }
+
+        .row1 {
+           display: flex;
+           margin-top: 60px;
+           justify-content: space-between;
+            .boxstyle {
+                position: relative;
+                max-width: 277px;
+                .image {
+                    position: relative;
+                    margin-bottom: 16px;
+                    img {
+                        position: relative;
+width: 104px;
+height: 104px;
+                    }
+                }
+                .conatent {
+                    h4 {
+                       font-family: 'Segoe UI Regular';
+                        font-weight: 700;
+                        font-size: 18px;
+                        line-height: 26px;
+                        letter-spacing: 0%;
+                        vertical-align: bottom;
+                        text-transform: uppercase;
+                        color: #181818;
+                        
+                    }
+                    p {
+                       font-family: 'Segoe UI Regular';
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 24px;
+                        letter-spacing: 0%;
+                        vertical-align: bottom;
+                        color: #181818;
+                        
+                    }
+                }
+            }
+            .boxstyle {
+
+                &::after{
+                    content: "";
+                    display: block;
+                    border: 1px #181818;
+                    width: 0px;
+                    height: 182px;
+                    border-style: dashed;
+                    position: absolute;
+                    bottom: 0px;
+                    right: -53px;
+                    
+                }
+
+                
+               
+             }
+        }
+    }
+}
+
+
+.boxstyle:last-child {
+   &::after {
+    display: none !important;
+   }
+                        }

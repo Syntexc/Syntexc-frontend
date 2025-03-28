@@ -1,0 +1,145 @@
+.footer {
+    background: #181818;
+    position: relative;
+    padding-top: 64px;
+    padding-bottom: 57px;
+    .container {
+        position: relative;
+        max-width: 1248px;
+        margin-left: auto;
+        margin-right: auto;
+        .row {
+            position: relative;
+            padding-top: 33px;
+            display: flex;
+            justify-content: space-between;
+            .col1 {
+                position: relative;
+                .widgets {
+                    position: relative;
+                    .footerlogo {
+                        position: relative;
+                        margin-bottom: 24px;
+                        .logo {
+                            width: 314px;
+height: 78px;
+
+position: relative;
+                        }
+                    }
+                    .contactdet {
+                        position: relative;
+                        padding: 0;
+                        margin: 0;
+                        list-style: none;
+                        display: flex ;
+                        flex-direction: column;
+                        gap: 4px;
+                        li {
+                            position: relative;
+                            display: flex ;
+                            gap: 8px;
+                            .icon {
+                                width: 20px;
+                                height: 20px;
+position: relative;
+                            }
+                            p {
+                                font-family: Arial;
+font-weight: 400;
+font-size: 14px;
+line-height: 20px;
+letter-spacing: 4%;
+vertical-align: middle;
+margin: 0px;
+position: relative;
+color: #fff;
+                            }
+                        }
+                    }
+                    .sociallink {
+                        position: relative;
+                        margin-top: 24px;
+                        ul{
+                            display: flex;
+                            gap: 12px;
+                            position: relative;
+                            list-style: none;
+                            li {
+                                position: relative;
+                                a {
+                                    position: relative;
+                                    width: 40px;
+                                    height: 40px;
+                                    border-radius: 100px;
+                                    background: #fff;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    img {
+                                        position: relative;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+
+
+            .col2 {
+                position: relative;
+                .innerbox {
+                    position: relative;
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 1fr;
+                    .col3 {
+                        position: relative;
+                        max-width: 221px;
+
+                        ul {
+                            position: relative;
+                            padding: 0px;
+                            margin: 0px;
+                            list-style: none;
+                            li {
+                                position: relative;
+                              
+ 
+ padding: 8px 16px; 
+
+                                a {
+                                    position: relative;
+                                    font-family: 'Segoe UI Regular';
+font-weight: 400;
+font-size: 18px;
+line-height: 24px; 
+color: #fff;
+text-decoration: none;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .row2 {
+            // background: url('/footerlayer.svg');
+            position: relative;
+            margin-top: 75px;
+            height: 64px;
+            p {
+                font-family: Arial;
+font-weight: 400;
+font-size: 16px;
+line-height: 20px;
+letter-spacing: 0%;
+vertical-align: middle;
+color: #fff;
+text-align: center;
+            }
+
+        }
+    }
+}

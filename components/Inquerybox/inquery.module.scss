@@ -1,0 +1,107 @@
+.box {
+    border-left: 4px solid #2BAAE2;
+    box-shadow: 5px 5px 20px 0px #00000033;
+    background: #fff;
+    max-width: 646px;
+    width:  646px;
+    padding: 32px;
+
+    .innerbox {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        ul {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            list-style: none;
+            padding: 0px;
+            margin: 0px;
+            gap: 20px;
+        }
+        .inboxgroup {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+
+            label {
+                font-family: 'Segoe UI Regular';
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 28px;
+                letter-spacing: 0%;
+                vertical-align: middle;
+                color: #363538;
+             
+               
+                
+            }
+            input {
+                position: relative;
+                background: #EFFAFF;
+                border: 1px solid #E5E5E5;
+                border-radius: 4px;
+                height: 41px;
+                padding: 8px 16px;
+                font-family: "DM Sans", sans-serif;
+font-weight: 400;
+font-size: 16px;
+line-height: 25px;
+letter-spacing: 0%;
+
+            }
+            textarea {
+                position: relative;
+                background: #EFFAFF;
+                border: 1px solid #E5E5E5;
+                border-radius: 4px;
+                height: 80px;
+                padding: 8px 16px;
+                font-family: "DM Sans", sans-serif;
+            }
+           
+        }
+
+
+        .checkbox {
+          display: flex;
+          gap: 8px;
+          align-items: center;
+            label {
+                font-family: 'Segoe UI Regular';
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 28px;
+                letter-spacing: 0%;
+                vertical-align: middle;
+                color: #363538;
+            }
+            input {
+                width: 24px;
+                height: 24px;
+            }
+           
+
+        }
+
+        .button {
+            button { 
+ padding: 12px 24px; 
+ background: #253E90;
+ border-radius: 12px;
+ font-family: 'Segoe UI Regular';
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+letter-spacing: 0%; 
+color: #fff;
+border: 1px solid #253E90;
+display: block;
+margin-left: auto;
+margin-right: auto;
+margin-top: 40px;
+
+
+            }
+        }
+    }
+}

@@ -1,0 +1,62 @@
+.section {
+    position: relative;
+    background: #EAF9FF;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    .container {
+        position: relative;
+        max-width: 1150px;
+        margin: auto;
+        .row {
+            position: relative;
+            display: flex;
+            gap: 57px;
+            align-items: center;
+            .contentbox {
+                gap: 24px;
+                display: flex;
+                flex-direction: column;
+                width: 486px;
+                position: relative;
+                h2 {
+                    position: relative;
+                    font-family: 'Segoe UI Bold';
+font-weight: 700;
+font-size: 43px;
+line-height: 56px;
+letter-spacing: 0%; 
+color: #253E90;
+
+
+                    span {
+                        position: relative;
+                        color: #181818;
+                    }
+                }
+                .desp {
+                    h4 {
+                        font-family: 'Segoe UI Bold';
+                        font-weight: 700;
+                        font-size: 24px;
+                        line-height: 32px;
+                        letter-spacing: 0%;
+                        vertical-align: bottom;
+                        color: #181818;
+                        margin-bottom: 20px;
+                        
+                    }
+                    p {
+                        font-family: 'Segoe UI Regular';
+                        font-weight: 400;
+                        font-size: 24px;
+                        line-height: 32px;
+                        letter-spacing: 0%;
+                        vertical-align: bottom;
+                        color: #181818;
+                        
+                    }
+                }
+            }
+        }
+    }
+}
