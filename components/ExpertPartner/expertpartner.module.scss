@@ -1,0 +1,124 @@
+.section {
+    background: radial-gradient(40.39% 46.67% at 53.67%, #2baae280 0%, #ffffff80 58.81%), radial-gradient(39.56% 35.83% at 52.56% 67.02%, #2baae24d 58.06%, #ffffff4d 100%), radial-gradient(52.9% 195.83% at 102.9% 53.93%, #fff0 0%, #2baae24d 100%);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: grid;
+    grid-template-columns: 1fr 5.4fr 1fr;
+    gap: 20px;
+.first {
+   position: relative;
+   display: flex;
+   flex-direction: column; 
+   gap: 20px;
+}
+
+
+.style2 {
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    .first2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        gap: 20px;
+    }
+}
+
+.threerow {
+    display: grid;
+    grid-template-columns: 1fr 3.2fr 1fr;
+    gap: 20px;
+    .onerow {
+        gap: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+
+.midbox {
+    border: 1px solid var(--Light-blue, #2BAAE2);
+    border-radius: 24px;
+    box-shadow: 0px 0px 15px 0px #45BAED3D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .box1 {
+        padding-top: 58px;
+        padding-bottom: 58px;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+
+        h2 {
+            font-family: "Segoe UI";
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 56px;
+            letter-spacing: 0%;
+            text-align: center;
+            vertical-align: bottom;
+            color: #253E90;
+            max-width: 426px;
+            
+        }
+        p {
+            color: #181818;
+            font-family: "Segoe UI";
+font-weight: 400;
+font-size: 24px;
+line-height: 32px;
+letter-spacing: 0%;
+text-align: center;
+vertical-align: bottom;
+max-width: 478px;
+
+
+        }
+    }
+}
+
+}
+
+.box {
+    box-shadow: 0 0 15px #45baed3d;
+    height: 160px;
+    border-radius: 24px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 17px 18px;
+    gap: 12px;
+.image {
+    box-shadow: 0px 0px 15px 0px #45BAED3D;
+    background: #A5E4FF;
+    width: 72px;
+    height: 72px;
+    border-radius: 72px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+width: 40px;
+height: 40px;
+    }
+   
+}
+h3 {
+    font-family: "Segoe UI";
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: bottom;
+    text-transform: uppercase;
+    color: #181818;
+    max-width: 154px;
+    
+}
+}
