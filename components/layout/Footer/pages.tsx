@@ -41,12 +41,12 @@ const Footer = ()=>{
                         <div className={footer.sociallink}>
 <ul>
     <li>
-        <a href="#">
+        <a href="https://www.instagram.com/synexc_global/?next=%2F&hl=en">
             <Image src={"/instagram.svg"} width={20} height={20} alt="instagram" />
         </a>
     </li>
     <li>
-        <a href="#">
+        <a href="https://www.facebook.com/profile.php?id=61573616079229">
             <Image src={"/facebook.svg"} width={14} height={22} alt="facebook" />
         </a>
     </li>
