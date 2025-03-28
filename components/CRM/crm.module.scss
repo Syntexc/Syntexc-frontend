@@ -65,6 +65,80 @@
 
             }
         }
+
+
+
+        .row2 {
+            max-width: 1074px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 96px;
+            h2 {
+                font-family: "Segoe UI";
+                font-weight: 700;
+                font-size: 40px;
+                line-height: 50px;
+                letter-spacing: 0%;
+                vertical-align: bottom;
+                color: #fff;
+                
+            }
+            .inner2 {
+                position: relative;
+                margin-top: 44px;
+    display: flex;
+    justify-content: space-between;
+    gap: 124px;
+                .content {
+                    position: relative;
+                    h3 {
+                        font-family: "Segoe UI";
+font-weight: 700;
+font-size: 30px;
+line-height: 100%;
+letter-spacing: 0%;
+color: #fff;
+margin-bottom: 20px;
+
+                    }
+                    p {
+                        font-family: "Segoe UI";
+font-weight: 400;
+font-size: 24px;
+line-height: 100%;
+letter-spacing: 0%;
+color: #fff;
+
+
+                    }
+                }
+                .image {
+                    position: relative;
+                    img {
+                        position: relative;
+                    }
+                }
+            }
+            .btn {
+                margin-top: 40px;
+                background: #fff;
+                font-family:" Segoe UI Regular";
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 24px;
+                padding-top: 12px;
+                padding-right: 24px;
+                padding-bottom: 12px;
+                padding-left: 24px;
+                border-radius: 12px;
+                margin-left: auto;
+                margin-right: auto;
+                display: block;
+                width: fit-content;
+                color: #181818;
+                text-decoration: none;
+            }
+        }
     }
 }
 
@@ -129,13 +203,17 @@
 .one {
     position: relative;
     background: #253E9040;
-
     gap: 12px;
     border-top-left-radius: 30px;
     border-top-right-radius: 24px;
     border-bottom-right-radius: 24px;
     border-bottom-left-radius: 68px;
     width: 334px;
+    .image {
+        position: absolute;
+        top: 5px;
+        left: 5px;
+    }
 
 }
 
@@ -147,7 +225,13 @@
     border-bottom-right-radius: 37px;
     border-bottom-left-radius: 24px;
     background: #FFFFFF12;
-
+    .image {
+        position: absolute;
+        bottom: 5px;
+        right: 5px;
+        width: 62px;
+        height: 62px;
+    }
 }
 
 .three {
@@ -155,7 +239,11 @@
     width: 241px;
     border-radius: 24px;
     background: #FFFFFF12;
-
+    .image {
+        position: absolute;
+        bottom: 5px;
+        left: 5px;
+    }
 }
 
 .four {
@@ -163,17 +251,25 @@
     width: 241px;
     border-radius: 24px;
     background: #00000030;
-
+    .image {
+        position: absolute;
+        bottom: 5px;
+        left: 5px;
+    }
 }
 
 .five {
     position: relative;
     background: #253E9066;
-    width: 356px;
+    width: 285px;
     border-top-left-radius: 24px;
     border-top-right-radius: 68px;
     border-bottom-right-radius: 24px;
     border-bottom-left-radius: 24px;
     padding: 12px;
-    ;
+    .image {
+        position: absolute;
+        bottom: 5px;
+        left: 5px;
+    }
 }

@@ -38,3 +38,13 @@
   font-weight: normal;
   src: local('Segoe UI Bold Italic'), url('/fonts/SegoeUIBoldItalic.woff') format('woff');
   }
+
+
+
+  .bannerimage {
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+    }
+  }
