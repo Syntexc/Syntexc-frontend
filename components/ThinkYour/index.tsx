@@ -94,7 +94,7 @@ const tabsarry = [
 interface TabboxProp  {
 title?:any;
 content?:string;
-imageurl?:string
+imageurl?:any;
 }
 
 const Tabbox =({
