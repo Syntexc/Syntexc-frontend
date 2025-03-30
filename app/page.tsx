@@ -1,4 +1,5 @@
 "use client"
+import Banner from "@/components/Banner";
 import BlogSection from "@/components/BlogSection";
 import ContactUs from "@/components/ContactUs";
 import CRM from "@/components/CRM";
@@ -14,9 +15,10 @@ import Image from "next/image";
 export default function Home() {
   return (
      <>
-     <div className="bannerimage">
+     {/* <div className="bannerimage">
       <Image src={"/dfdsfdf.png"} width={1920}  height={788}    alt="dsdfsdf"  /> 
-     </div>
+     </div> */}
+     <Banner />
      <Synexc />
      <CRM />
      <SalesforcePartner />
