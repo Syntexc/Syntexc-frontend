@@ -180,7 +180,7 @@ const CRM = ()=>{
         <Image src={"/Frame 39534.png"} width={199} height={159} alt="" />
         </div>
       </div>
-      <a href="#" className={Style.btn}>
+      <a href="#contact" className={Style.btn}>
         Get Started. <strong>It’s for free!</strong>
       </a>
     </div>

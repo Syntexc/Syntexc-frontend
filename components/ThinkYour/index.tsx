@@ -50,7 +50,7 @@ const ThinkYour = ()=>{
 <div className="">
     <Tabbox
     title="Healthcare" 
-    imageurl="/65674511_9609529 1.png" 
+    imageurl="/healthcar-image.png" 
     content="Streamline patient interactions, improve operational efficiency, and optimize medical workflows with secure and scalable CRM solutions tailored for healthcare providers." 
      />
 </div>

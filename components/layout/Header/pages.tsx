@@ -37,8 +37,8 @@ const Header = ()=>{
                     </ul>
                 </div>
                 <div className={header.getinquery}>
-                    <a href="#" className={header.sales}>Contact sales</a>
-                    <a href="#" className={header.getinquery}>get quote</a>
+                    <a href="#contact" className={header.sales}>Contact sales</a>
+                    <a href="#contact" className={header.getinquery}>get quote</a>
                 </div>
                 </div>
             </div>
