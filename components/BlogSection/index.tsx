@@ -49,7 +49,7 @@ const BlogSection = ()=> {
 
 
                 <div className={Style.row2}>
-                    <a href="#">Explore More <strong>Insights</strong></a>
+                    <a href="#">Explore More <strong>INSIGHTS</strong></a>
                 </div>
 
 
@@ -62,20 +62,20 @@ export default BlogSection;
 
 const blogarry = [
     {
-        image:"/Notifications_Outline 1.png",
-        title:"Lorem ipsum dolor ",
-        date:"April 24, 2022 - 5 min read",
+        image:"/blog/blog-1.jpeg",
+        title:"Navigating the Ups and Downs ...",
+        date:"March 24, 2025 - 5 min read",
     },
     {
-        image:"/Notifications_Outline 1.png",
-        title:"Lorem ipsum dolor ",
-        date:"April 24, 2022 - 5 min read",
+        image:"/blog/blog-2.jpeg",
+        title:"How Staff Augmentation and AI ...",
+        date:"March 27, 2025 - 5 min read",
     },
-    {
-        image:"/Notifications_Outline 1.png",
-        title:"Lorem ipsum dolor ",
-        date:"April 24, 2022 - 5 min read",
-    },
+    // {
+    //     image:"/Notifications_Outline 1.png",
+    //     title:"Lorem ipsum dolor ",
+    //     date:"April 24, 2022 - 5 min read",
+    // },
     // {
     //     image:"/Notifications_Outline 1.png",
     //     title:"Lorem ipsum dolor ",

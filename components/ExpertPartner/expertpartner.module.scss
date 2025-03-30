@@ -92,6 +92,9 @@ max-width: 478px;
     align-items: center;
     padding: 17px 18px;
     gap: 12px;
+    &:hover {
+        border: 2px solid #253e90;
+    }
 .image {
     box-shadow: 0px 0px 15px 0px #45BAED3D;
     background: #A5E4FF;
