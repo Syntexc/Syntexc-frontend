@@ -4,7 +4,7 @@ import InqueryBox from "../Inquerybox";
 const ContactUs = ()=>{
     return(
         <>
-<section className={styles.section}>
+<section className={styles.section} id="contact">
     <div className={styles.container}>
         <div className={styles.row}>
             <div className={styles.contentbox}>

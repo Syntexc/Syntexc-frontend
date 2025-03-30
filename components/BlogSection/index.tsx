@@ -14,7 +14,7 @@ const BlogSection = ()=> {
     
     return(
         <>
-        <section className={Style.blogsection}>
+        <section className={Style.blogsection} id="blogs">
             <div className={Style.container}>
                 <div className={Style.row}>
                 <h3>Explore our <span>latest highlights</span></h3>

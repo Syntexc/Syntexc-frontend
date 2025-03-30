@@ -67,7 +67,7 @@ const Footer = ()=>{
                                     <ul>{footerlink1arry?.map((item, index) => {
                                         return (
                                             <>
-                                                <li key={index}><a href="#">{item.link}</a></li>
+                                                <li key={index}><a href={item?.href}>{item.link}</a></li>
                                             </>
                                         )
                                     })}</ul>
@@ -112,10 +112,10 @@ export default Footer;
 
 
 const footerlink1arry = [
-    {link:"FAQ"},
-    {link:"Contact Us"},
-    {link:"About Us"},
-    {link:"Blogs"}, 
+    {link:"FAQ" , href:"#"},
+    {link:"Contact Us", href:"#contact"},
+    {link:"About Us" , href:"#about"},
+    {link:"Blogs" , href:"#blogs"}, 
 ]
 const footerlink2arry = [
     {link:"Industry"},

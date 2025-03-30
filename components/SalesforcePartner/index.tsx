@@ -3,7 +3,7 @@ import Style from "./alesforcepartner.module.scss"
 const SalesforcePartner = () =>{
     return (
         <>
-        <section className={Style.section}>
+        <section className={Style.section} id="product">
             <Image src={"/experience-overview-trees 1.png"} alt={""} width={217} height={169} className={Style.layer1} />
             <Image src={"/image 415.png"} alt={""} width={156} height={73} className={Style.layer2} />
             <div className={Style.container}>

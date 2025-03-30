@@ -3,7 +3,7 @@ import Style from "./expertpartner.module.scss"
 const ExpertPartner = () =>{
     return (
         <>
-        <div className={Style.section}>
+        <div className={Style.section} id="services">
  
     <div className={Style.first}>
         <div className={Style.box}></div>

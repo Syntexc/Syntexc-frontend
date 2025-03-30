@@ -33,13 +33,13 @@ const Trustedby = () =>{
     image={"/user1.png"}
     username="Alex R."
     role="Director of Sales  Tech Solutions Inc."
-    desc="Sales Cloud completely changed our sales process, thanks to Synexc. We struggled with manual lead tracking and disorganiz"
+    desc="With Service Cloud and automation from Synexc, our customer support team is thriving. Before, tickets were scattered across different channels.."
     />
     <RatingCard 
     image={"/user1.png"}
     username="Alex R."
     role="Director of Sales  Tech Solutions Inc."
-    desc="Sales Cloud completely changed our sales process, thanks to Synexc. We struggled with manual lead tracking and disorganiz"
+    desc="We wanted to launch our app on the Salesforce AppExchange, but the security review process felt like a mountain to climb. Synexc handled .."
     />
 </div>
 
