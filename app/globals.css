@@ -48,3 +48,10 @@
       object-fit: contain;
     }
   }
+
+
+
+  .swiper-pagination-fraction, .swiper-pagination-custom, .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal{
+    position: relative !important;
+    top: 0px !important;
+  }
