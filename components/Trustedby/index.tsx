@@ -20,7 +20,7 @@ const Trustedby = () =>{
       return () => window.removeEventListener('resize', updateSlides);
     }, []);
 
-    const swiperRef = useRef<Swiper | null>(null);
+    const swiperRef = useRef<any | null>(null);
     return(
         <>
         <section className={Styles.trustedbybox}>
