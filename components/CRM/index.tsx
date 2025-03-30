@@ -1,9 +1,93 @@
+"use client"
+
 import Image from "next/image";
 import Style from "./crm.module.scss"
+import React, { useEffect, useRef, useState } from "react";
+
+
+const Counter = ({ end }: { end: number }) => {
+    const [count, setCount] = useState(0);
+    const [hasAnimated, setHasAnimated] = useState(false);
+    const ref = useRef<HTMLDivElement>(null);
+  
+    useEffect(() => {
+      const observer = new IntersectionObserver(
+        (entries) => {
+          if (entries[0].isIntersecting && !hasAnimated) {
+            let start = 0;
+            const duration = 2000;  
+            const increment = Math.ceil(end / (duration / 30));
+  
+            const timer = setInterval(() => {
+              start += increment;
+              if (start > end) {
+                start = end;
+                clearInterval(timer);
+              }
+              setCount(start);
+            }, 30);
+  
+            setHasAnimated(true);
+            return () => clearInterval(timer);
+          }
+        },
+        { threshold: 0.5 }
+      );
+  
+      if (ref.current) observer.observe(ref.current);
+  
+      return () => observer.disconnect();
+    }, [end, hasAnimated]);
+  
+    return <span ref={ref}>{count}</span>;
+  };
 const CRM = ()=>{
+
+    const Counter = ({ end }: { end: number }) => {
+        const [count, setCount] = React.useState(0);
+      
+        React.useEffect(() => {
+          let start = 0;
+          const duration = 2000;  
+          const increment = Math.ceil(end / (duration / 30));
+      
+          const timer = setInterval(() => {
+            start += increment;
+            if (start > end) {
+              start = end;
+              clearInterval(timer);
+            }
+            setCount(start);
+          }, 30);
+      
+          return () => clearInterval(timer);
+        }, [end]);
+      
+        return <>{count}</>;
+      };
+
+      const [activeIndex, setActiveIndex] = useState(0);
+      const [isVisible, setIsVisible] = useState(false);
+      const sectionRef = useRef<HTMLDivElement | null>(null);
+
+      useEffect(() => {
+        const handleScroll = () => {
+          if (sectionRef.current) {
+            const top = sectionRef.current.getBoundingClientRect().top;
+            const windowHeight = window.innerHeight;
+            if (top < windowHeight - 100) {
+              setIsVisible(true);
+            }
+          }
+        };
+        
+        window.addEventListener("scroll", handleScroll);
+        handleScroll(); // Run once to check initial visibility
+        return () => window.removeEventListener("scroll", handleScroll);
+      }, []);
     return(
         <>
-        <section className={Style.section}>
+         <section className={Style.section}>
             <div className={Style.container}>
                 <div className={Style.row}>
                     <h2>From CRM to Business Breakthroughs - The Synexc Effect </h2>
@@ -19,7 +103,7 @@ const CRM = ()=>{
                                     <Image src={"/Connection.png"} width={24} height={24} alt="Connection" />
                                 </div>
                                 <div className={Style.container}>
-                                    <h3>50<span>+</span> </h3>
+                                <h3><Counter end={50} /><span>+</span></h3>
                                     <p>Salesforce <br/> Implementation</p>
                                 </div>
                                 </div>
@@ -32,7 +116,7 @@ const CRM = ()=>{
                                     <Image src={"/start-up 1.png"} width={30} height={30} alt="Connection" />
                                 </div>
                                 <div className={Style.container}>
-                                    <h3>100<span>+</span> </h3>
+                                <h3><Counter end={100} /><span>+</span></h3>
                                     <p>Projects  <br/> Completed</p>
                                 </div>
                                 </div>
@@ -49,7 +133,7 @@ const CRM = ()=>{
                                     <Image src={"/success 1.png"} width={24} height={24} alt="Connection" />
                                 </div>
                                 <div className={Style.container}>
-                                    <h3>50<span>+</span> </h3>
+                                <h3><Counter end={50} /><span>+</span></h3>
                                     <p>Success  <br/> Stories</p>
                                 </div>
                                 </div>
@@ -62,7 +146,7 @@ const CRM = ()=>{
                                     <Image src={"/badge 1.png"} width={24} height={24} alt="Connection" />
                                 </div>
                                 <div className={Style.container}>
-                                    <h3>30<span>+</span> </h3>
+                                <h3><Counter end={30} /><span>+</span></h3>
                                     <p>Salesforce  <br/> specialist</p>
                                 </div>
                                 </div>
@@ -75,7 +159,7 @@ const CRM = ()=>{
                                     <Image src={"/exchange-rate 1.png"} width={24} height={24} alt="Connection" />
                                 </div>
                                 <div className={Style.container}>
-                                    <h3>10<span>+</span> </h3>
+                                <h3><Counter end={10} /><span>+</span></h3>
                                     <p>AppExchange Security  <br/> Reviews Cleared</p>
                                 </div>
                                 </div>
@@ -86,26 +170,59 @@ const CRM = ()=>{
 
 
 
-                <div className={Style.row2}>
-                  <h2>Big Goals Need Big Solutions: That’s Where Synexc Comes In.</h2>
-<div className={Style.inner2}>
-    <div className={Style.content}>
-        <h3>We Solve Business Problems, Not Just Tech Issues.</h3>
-        <p>Salesforce is a tool, but success comes from strategy. We design solutions that fix bottlenecks, improve sales efficiency, and enhance customer engagement.</p>
+                <div className={`${Style.row2} ${isVisible ? Style.fadeIn : ""}`} ref={sectionRef}>
+      <h2>Big Goals Need Big Solutions: That’s Where Synexc Comes In.</h2>
+      <div className={Style.inner2}>
+        <div className={Style.leftBar} style={{ top: `${activeIndex * 80}px` }}></div>
+        <div className={Style.content} onClick={() => setActiveIndex((prev) => (prev + 1) % contentData.length)}>
+          <h3>{contentData[activeIndex].title}</h3>
+          <p>{contentData[activeIndex].description}</p>
+        </div>
+        <div className={Style.image}>
+        <Image src={"/Frame 39534.png"} width={199} height={159} alt="" />
+        </div>
+      </div>
+      <a href="#" className={Style.btn}>
+        Get Started. <strong>It’s for free!</strong>
+      </a>
     </div>
-    <div className={Style.image}>
-<Image src={"/Frame 39534.png"} width={199} height={159} alt="" />
-    </div>
-</div>
 
-<a href="#" className={Style.btn}>Get Started. <strong> its for free!</strong></a>
-                </div>
+
             </div>
         </section>
         </>
     )
 }
 export default CRM;
+
+
+const contentData = [
+    {
+      title: "We Solve Business Problems, Not Just Tech Issues.",
+      description: "Salesforce is a tool, but success comes from strategy. We design solutions that fix bottlenecks, improve sales efficiency, and enhance customer engagement.",
+      image: "/Frame39534.png",
+    },
+    {
+      title: "Turn Data into Decisions.",
+      description: "We help businesses make informed decisions by integrating Salesforce analytics and AI-driven insights.",
+      image: "/analytics.png",
+    },
+    {
+      title: "Automate for Efficiency.",
+      description: "Reduce manual effort with intelligent automation in Salesforce, ensuring smooth business operations.",
+      image: "/automation.png",
+    },
+    {
+      title: "Personalized Customer Experiences.",
+      description: "Improve customer engagement with tailored marketing and support solutions powered by Salesforce.",
+      image: "/customer-experience.png",
+    },
+    {
+      title: "Seamless Integrations & Scalability.",
+      description: "Connect Salesforce with your existing tools and scale as your business grows effortlessly.",
+      image: "/integration.png",
+    },
+  ];
 
 
 

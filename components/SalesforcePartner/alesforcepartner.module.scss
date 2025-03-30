@@ -60,6 +60,9 @@ margin-top: 56px;
     border-bottom-right-radius: 24px;
     border-bottom-left-radius: 68px;
     position: relative;
+    cursor: pointer;
+    z-index: 1;
+     
     
 
     .image {
@@ -101,7 +104,12 @@ right: -17px;
         color: #fff;
         
     }
-    &:nth-of-type(02) {
-        background: #041038 !important;
-    }
+    // &:nth-of-type(02) {
+    //     background: #041038 !important;
+    // }
+
+}
+
+.cardbox:hover{
+    background: #041038 !important;
 }

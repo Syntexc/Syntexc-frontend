@@ -42,7 +42,7 @@ const Synexc =()=>{
 
 
 
-                <div className={Style.logostyle}>
+                {/* <div className={Style.logostyle}>
                     <h2>Brands Weve Helped <span>Scale with Salesforce</span></h2>
                     <ul>
                        
@@ -70,7 +70,7 @@ const Synexc =()=>{
                                 
                         
                     </ul>
-                </div>
+                </div> */}
             </div>
         </section>
         

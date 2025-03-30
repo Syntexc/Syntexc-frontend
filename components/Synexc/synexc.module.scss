@@ -1,6 +1,8 @@
 .section {
     background: #EAF9FF;
     padding-bottom: 96px;
+    z-index: 9999;
+
     .container {
         .row {
             position: relative;
@@ -101,7 +103,11 @@ font-weight: bold;
                         vertical-align: bottom;
                         text-transform: uppercase;
                         color: #3C3C3C;
-                        
+                        z-index: 9999;
+                        cursor: pointer;
+                        &:hover {
+                            color: #2baae2;
+                        }
                     }
                 }
             }
@@ -123,8 +129,10 @@ font-weight: bold;
     width: fit-content;
     color: #fff;
     text-decoration: none;
-    margin-bottom: 128px;
-    z-index: 9;
+    margin-bottom: 128px; 
+    &:hover {
+        background: linear-gradient(to right, #253e90, #2baae2);
+    }
             }
         }
         }
