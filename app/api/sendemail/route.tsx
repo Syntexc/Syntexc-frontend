@@ -12,8 +12,8 @@ export async function POST(request: NextRequest) {
       port: 587,
       secure: false,
       auth: {
-        user: process.env.EMAIL_USER, // Set this in .env file
-        pass: process.env.EMAIL_PASS, // Set this in .env file
+        user: "careers@rolconsultancy.com",
+        pass: "ukch asot uygi ujfd",
       },
     });
 
