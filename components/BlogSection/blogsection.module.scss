@@ -66,6 +66,9 @@ display: block;
 width: fit-content;
 color: #fff;
 text-decoration: none;
+&:hover {
+    background: linear-gradient(to right, #253e90, #2baae2);
+}
             }
         }
     }
@@ -107,12 +110,12 @@ overflow: hidden;
             font-family: 'Segoe UI Regular';
 font-weight: 700;
 font-size: 20px;
-line-height: 100%;
+line-height: 30px;
 letter-spacing: 0%;
 text-align: center;
 text-transform: uppercase;
 color: #fff;
-margin-bottom: 2px;
+margin-bottom: 8px;
 
         }
         p {

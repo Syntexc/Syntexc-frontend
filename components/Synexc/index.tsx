@@ -25,7 +25,7 @@ const Synexc =()=>{
                   </div>
                 </div>
 
-
+<div id="about">
 <h2 className={Style.mide}>Synexc: Where Strategy Meets CRM, <span> and Success Follows</span></h2>
 
                 <div className={Style.row1}>
@@ -39,7 +39,7 @@ const Synexc =()=>{
                         <Image src={"/Asset 4 1.png"} width={556} height={470} alt="Asset" />
                     </div>
                 </div>
-
+                </div>
 
 
                 {/* <div className={Style.logostyle}>

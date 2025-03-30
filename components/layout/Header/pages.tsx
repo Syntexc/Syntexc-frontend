@@ -16,15 +16,15 @@ const Header = ()=>{
                 </div>
                 <div className={header.nav}>
                     <ul>
-                    {menuItems.map((item, index) => (
+                    {newMenuItems.map((item, index) => (
           <li
             key={index}
             onMouseEnter={() => setHoveredIndex(index)}
             onMouseLeave={() => setHoveredIndex(null)}
             className={header.menuItem}
           >
-            <a href="#">
-              {item}
+            <a href={item?.herf}>
+              {item?.name}
               <span className={header.arrow}>
 
                 {hoveredIndex === index ?      <Image src="/svg-icons/arrow-down-s-line.svg" width={25}  height={25} alt="Logo" />                
@@ -48,4 +48,30 @@ const Header = ()=>{
 }
 export default Header;
 
-const menuItems = ["About us", "Products", "Services", "Blogs"];
+const menuItems = [
+  "About us",
+   "Products", 
+   "Services", 
+   "Blogs"
+  ];
+
+
+
+  const newMenuItems = [
+    {
+      name: "About us",
+      herf: "#about",
+    },
+    {
+      name: "Products",
+      herf: "#product",
+    },
+    {
+      name: "Services",
+      herf: "#services",
+    },
+    {
+      name: "Blogs",
+      herf: "#blogs",
+    },
+  ]

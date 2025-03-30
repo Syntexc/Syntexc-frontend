@@ -9,7 +9,7 @@ const Footer = ()=>{
                 <div className={footer.col1}>
                     <div className={footer.widgets}>
                        <div className={footer.footerlogo}>
-                         <Image src={"/footerlogo.png"} width={314} height={78} alt="footerlogo" className={footer.logo} />
+                         {/* <Image src={"/footerlogo.png"} width={314} height={78} alt="footerlogo" className={footer.logo} /> */}
                          </div>
                         <ul className={footer.contactdet}>
                             <li>
@@ -17,7 +17,8 @@ const Footer = ()=>{
                                 <Image src={"/map-marker-outline.svg"} width={20} height={20} alt=" Offices: Atlanta, GA | Noida, India" />
                                 </span>
                                 <p>
-                                Offices: Atlanta, GA | Noida, India
+                                Location- Bhutani Cyber Park, Tower B, block- C, <br/> 6th Floor, Sector 62 Noida- uttar pradesh
+ 201309
                                 </p>
                             </li>
                             <li>
@@ -25,7 +26,7 @@ const Footer = ()=>{
                                 <Image src={"/phone-outline.svg"} width={20} height={20} alt="email" />
                                 </span>
                                 <p>
-                                contact@synexc.com
+                                careers@rolconsultancy.com
                                 </p>
                             </li>
                             <li>
@@ -33,7 +34,7 @@ const Footer = ()=>{
                                 <Image src={"/email-fast-outline.svg"} width={20} height={20} alt="contact number" />
                                 </span>
                                 <p>
-                                +1 123 456 7890
+                                +91 98105 12585
                                 </p>
                             </li>
                         </ul>
@@ -51,8 +52,8 @@ const Footer = ()=>{
         </a>
     </li>
     <li>
-        <a href="#">
-            <Image src={"/youtube.svg"} width={20} height={16} alt="youtube" />
+        <a href="https://www.linkedin.com/company/synexc/about/?viewAsMember=true">
+            <Image src={"/linkedin.png"} width={25} height={25} alt="youtube" />
         </a>
     </li>
 </ul>
@@ -66,7 +67,7 @@ const Footer = ()=>{
                                     <ul>{footerlink1arry?.map((item, index) => {
                                         return (
                                             <>
-                                                <li key={index}><a href="#">{item.link}</a></li>
+                                                <li key={index}><a href={item?.href}>{item.link}</a></li>
                                             </>
                                         )
                                     })}</ul>
@@ -111,10 +112,10 @@ export default Footer;
 
 
 const footerlink1arry = [
-    {link:"FAQ"},
-    {link:"Contact Us"},
-    {link:"About Us"},
-    {link:"Blogs"}, 
+    {link:"FAQ" , href:"#"},
+    {link:"Contact Us", href:"#contact"},
+    {link:"About Us" , href:"#about"},
+    {link:"Blogs" , href:"#blogs"}, 
 ]
 const footerlink2arry = [
     {link:"Industry"},

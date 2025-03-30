@@ -108,15 +108,21 @@ color: #fff;
                               
  
  padding: 8px 16px; 
+z-index: 9999;
+
 
                                 a {
                                     position: relative;
                                     font-family: 'Segoe UI Regular';
 font-weight: 400;
-font-size: 18px;
+font-size: 14px;
 line-height: 24px; 
 color: #fff;
 text-decoration: none;
+&:hover{
+    padding-left: 60px !important;
+    color: #2baae2 !important;
+ }
                                 }
                             }
                         }
