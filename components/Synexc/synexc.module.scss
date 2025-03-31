@@ -109,6 +109,18 @@ font-weight: bold;
                         &:hover {
                             color: #2baae2;
                         }
+                        &::after {
+                            content: " |";
+    color: #3C3C3C;
+    font-weight: bold;
+    position: relative;
+    right: -5px;
+                        }
+                        &:last-child {
+                            &::after {
+                                content: "";
+                            }
+                        }
                     }
                 }
             }

@@ -8,7 +8,7 @@ const SalesforcePartner = () =>{
             <Image src={"/image 415.png"} alt={""} width={156} height={73} className={Style.layer2} />
             <div className={Style.container}>
                 <div className={Style.row}>
-                    <h2>Proud to Be the Salesforce Partner<span>That Delivers. Every Time.</span></h2>
+                    <h2>Proud to Be the Salesforce Partner<span> That Delivers. Every Time.</span></h2>
                 </div>
 <div className={Style.row1}>
 {dataarry?.map((items,index)=>{

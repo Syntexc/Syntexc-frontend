@@ -17,8 +17,7 @@ const Footer = ()=>{
                                 <Image src={"/map-marker-outline.svg"} width={20} height={20} alt=" Offices: Atlanta, GA | Noida, India" />
                                 </span>
                                 <p>
-                                Location- Bhutani Cyber Park, Tower B, block- C, <br/> 6th Floor, Sector 62 Noida- uttar pradesh
- 201309
+                                Offices: Bhutani Cyber Park, Tower B,<br/> block- C, 6th Floor, Sector 62 Noida
                                 </p>
                             </li>
                             <li>
@@ -26,7 +25,7 @@ const Footer = ()=>{
                                 <Image src={"/phone-outline.svg"} width={20} height={20} alt="email" />
                                 </span>
                                 <p>
-                                careers@rolconsultancy.com
+                                contact@synexc.com
                                 </p>
                             </li>
                             <li>
@@ -34,7 +33,7 @@ const Footer = ()=>{
                                 <Image src={"/email-fast-outline.svg"} width={20} height={20} alt="contact number" />
                                 </span>
                                 <p>
-                                +91 98105 12585
+                                +91 9810512585
                                 </p>
                             </li>
                         </ul>
@@ -43,17 +42,22 @@ const Footer = ()=>{
 <ul>
     <li>
         <a href="https://www.instagram.com/synexc_global/?next=%2F&hl=en">
-            <Image src={"/instagram.svg"} width={20} height={20} alt="instagram" />
+            <Image src={"/instagram-new.png"} width={20} height={20} alt="instagram" />
         </a>
     </li>
     <li>
         <a href="https://www.facebook.com/profile.php?id=61573616079229">
-            <Image src={"/facebook.svg"} width={14} height={22} alt="facebook" />
+            <Image src={"/facebook-new.png"} width={14} height={22} alt="facebook" />
         </a>
     </li>
     <li>
         <a href="https://www.linkedin.com/company/synexc/about/?viewAsMember=true">
-            <Image src={"/linkedin.png"} width={25} height={25} alt="youtube" />
+            <Image src={"/linkedin-new.png"} width={25} height={25} alt="youtube" />
+        </a>
+    </li>
+    <li>
+        <a href="https://www.linkedin.com/company/synexc/about/?viewAsMember=true">
+            <Image src={"/twitter-new.png"} width={25} height={25} alt="youtube" />
         </a>
     </li>
 </ul>

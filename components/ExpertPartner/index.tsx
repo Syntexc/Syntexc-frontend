@@ -51,7 +51,7 @@ const ExpertPartner = () =>{
         <div className={Style.box}></div>
         <BoxCard imageurl={"/Component 15.png"} title="Marketing Cloud" />
         <BoxCard imageurl={"/Component 16.png"} title="Data Cloud" />
-        <BoxCard imageurl={"/Component 17.png"} title="Velocity" />
+        <BoxCard imageurl={"/Component 17.png"} title="Vlocity" />
 
         <div className={Style.box}></div>
     </div>

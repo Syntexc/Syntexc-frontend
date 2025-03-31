@@ -12,7 +12,7 @@ const Synexc =()=>{
                     <h4>More Than Just <span className={Style.dsd}>A Platform Make</span> It Your <span className={Style.sdsd}>Growth Engine</span></h4>
                     <div className={Style.inner}>
                     <ul>
-                        <li>Consulting</li>   
+                        <li>Consulting</li>
                         <li>Resource Augmentation</li>  
                         <li>AppExchange Development</li>
                     </ul>
