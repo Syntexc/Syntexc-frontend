@@ -16,7 +16,7 @@ const Header = ()=>{
         <div className={header.containerbox}>
         <div className={header.row}>
                 <div className={header.logo}>
-                    <Image src="/Logo.png" width={280}  height={64} alt="Logo" />
+                    <Image src="/Logo.png" width={220}  height={62} alt="Logo" priority />
                 </div>
                 <div className={header.nav}>
 
@@ -79,7 +79,7 @@ const Header = ()=>{
                     </ul>
                 </div>
                 <div className={header.getinquery}>
-                    <a href="#contact" className={header.sales}>Contact sales</a>
+                    <a href="#contact" className={header.sales}>Contact Us</a>
                     <a href="#contact" className={header.getinquery}>get quote</a>
                 </div>
                 </div>
@@ -101,16 +101,16 @@ const menuItems = [
 
   const newMenuItems = [
     {
-      name: "About us",
+      name: "Company",
       herf: "#about",
-    },
-    {
-      name: "Products",
-      herf: "#product",
     },
     {
       name: "Services",
       herf: "#services",
+    },
+    {
+      name: "Insights",
+      herf: "#product",
     },
     {
       name: "Blogs",
