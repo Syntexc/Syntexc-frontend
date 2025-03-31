@@ -147,3 +147,43 @@ border-radius: 12px;
     position: relative;
     top: 3px;
   }
+
+
+
+.mobile {
+    display: none !important;
+}
+
+.desktop {
+    display: flex !important;
+}
+
+.mobilebar {
+    display: none;
+}
+  @media (max-width:1100px) {
+
+    .row {
+        padding-right: 20px;
+    }
+
+.mobilebar {
+    display: block;
+}
+
+    .getinquery {
+        display: none !important;
+    }
+    .mobile {
+        display: block !important;
+        position: absolute !important;
+        max-width: 300px;
+        width: 300px;
+        right: 0px;
+
+
+    }
+    .desktop {
+        display: none !important;
+    }
+  }

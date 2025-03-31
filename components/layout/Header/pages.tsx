@@ -1,21 +1,63 @@
 "use client"
 import Image from "next/image";
 import header from "../Header/header.module.scss"
-import React from "react";
+import React, { useState } from "react";
 
 const Header = ()=>{
     const [hoveredIndex, setHoveredIndex] = React.useState<number | null>(null);
+    const [isToggled, setIsToggled] = useState(false);
 
+    const handleToggle = () => {
+      setIsToggled(!isToggled);
+    };
     return (
         <>
         <header className={header.header}>
         <div className={header.containerbox}>
         <div className={header.row}>
                 <div className={header.logo}>
-                    {/* <Image src="/Logo.png" width={280}  height={64} alt="Logo" /> */}
+                    <Image src="/Logo.png" width={280}  height={64} alt="Logo" />
                 </div>
                 <div className={header.nav}>
-                    <ul>
+
+<div className={header.mobilebar}>
+  <Image src={"./menu-3-line.svg"} alt={"bar"} width={40}  height={40}  onClick={handleToggle} />
+</div>
+
+
+
+                <ul className={`${header.mobile}  `} 
+                style={{
+                  height:isToggled ? "auto" : "0px",
+                  overflow:isToggled ? "auto" : "hidden",
+                  background:isToggled ? "#0000000f" : "null",
+                }}
+                
+                >
+                    {newMenuItems.map((item, index) => (
+          <li
+            key={index}
+            onMouseEnter={() => setHoveredIndex(index)}
+            onMouseLeave={() => setHoveredIndex(null)}
+            className={header.menuItem}
+          >
+            <a href={item?.herf}>
+              {item?.name}
+              <span className={header.arrow}>
+
+                {hoveredIndex === index ?      <Image src="/svg-icons/arrow-down-s-line.svg" width={25}  height={25} alt="Logo" />                
+ :       <Image src="/svg-icons/arrow-right-s-line.svg" width={25}  height={25} alt="Logo" />             
+}
+              </span>
+            </a>
+          </li>
+        ))}
+        <li><a href="#contact"  >Contact sales</a></li>
+        <li> <a href="#contact" >get quote</a></li>
+                    </ul>
+
+
+                    <ul className={header.desktop}>
                     {newMenuItems.map((item, index) => (
           <li
             key={index}

@@ -18,7 +18,7 @@ export default function Home() {
      {/* <div className="bannerimage">
       <Image src={"/dfdsfdf.png"} width={1920}  height={788}    alt="dsdfsdf"  /> 
      </div> */}
-     <Banner />
+     {/* <Banner />
      <Synexc />
      <CRM />
      <SalesforcePartner />
@@ -28,7 +28,7 @@ export default function Home() {
      <MissionVision />
      <BlogSection />
      <Instantly />
-     <ContactUs />
+     <ContactUs /> */}
      </>
   );
 }
