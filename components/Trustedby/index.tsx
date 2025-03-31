@@ -54,6 +54,7 @@ const Trustedby = () =>{
         }}
         spaceBetween={30}
         slidesPerView={3}
+       
         centeredSlides={true}
         autoplay={{
           delay: 2000,

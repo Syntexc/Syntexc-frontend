@@ -67,3 +67,35 @@ color: rgba(18, 18, 18, 1);
         }
     }
 }
+
+@media (max-width: 768px) {
+    .ratingcard {
+        width: 100%;
+        padding: 12px;
+        border-radius: 16px;
+
+        .innnerbox {
+            flex-direction: column;
+            gap: 10px;
+
+            .image {
+                img {
+                    width: 36px;
+                    height: 36px;
+                }
+            }
+
+            .content {
+                h3 {
+                    font-size: 11px;
+                }
+                p {
+                    font-size: 11px;
+                }
+                .desc {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}

@@ -8,8 +8,8 @@ const Banner = () => {
             <div className={Style.topstyle}>
             <div className={Style.banner_content}>
                 
-                {/* <div className={Style.content_image}> */}
-                {/* <div className={Style.middlestyle}>
+               <div className={Style.content_image}> 
+            <div className={Style.middlestyle}>
                     <h1>
                     SYNEXC
                 </h1>
@@ -19,9 +19,9 @@ const Banner = () => {
                 <h2>WHAT IF YOUR CRM DID <br /><span>MORE THAN JUST</span><br /> MANAGE CUSTOMERS?</h2>
                     
                 <button>Get Started.<span>IT'S FOR FREE!</span></button>
-                </div> */}
-                {/* <Image src={"/Asset 1 1.png"} width={171} height={203} alt="banner"  className={Style.image_content}/> */}
-
+                </div>
+                 <Image src={"/Asset 1 1.png"} width={171} height={203} alt="banner"  className={Style.image_content}/> 
+            </div>
             </div>
             <div className={Style.banner_image}>
                 {/* Add your image here */}

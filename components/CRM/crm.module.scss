@@ -173,6 +173,66 @@ color: #fff;
             }
         }
     }
+
+    @media (max-width: 768px) {
+        padding-top: 48px;
+        padding-bottom: 48px;
+
+        .container {
+            .row {
+                h2 {
+                    font-size: 32px;
+                    line-height: 40px;
+                }
+
+                p {
+                    font-size: 18px;
+                    line-height: 24px;
+                }
+            }
+            .secd{
+                width: 100%;
+            }
+            .row1 {
+                margin-top: 30px;
+
+                ul {
+                    flex-direction: column;
+                    gap: 10px;
+                    padding: 0px 20px;
+
+                    li {
+                        animation-delay: 0s;
+                    }
+                }
+            }
+
+            .row2 {
+                margin-top: 48px;
+                padding: 0px 20px;
+
+                h2 {
+                    font-size: 28px;
+                    line-height: 36px;
+                }
+
+                .inner2 {
+                    flex-direction: column;
+                    gap: 16px;
+
+                    .content {
+                        h3 {
+                            font-size: 24px;
+                        }
+
+                        p {
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 .inner {

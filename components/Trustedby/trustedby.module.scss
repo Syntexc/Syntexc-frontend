@@ -138,6 +138,39 @@
             }
         }
     }
+
+    @media (max-width: 768px) {
+        .container {
+            padding: 0 16px;
+        }
+        .row {
+            flex-direction: column;
+            align-items: center;
+        }
+        .row1 {
+            justify-content: center !important; 
+            flex-direction: column;
+            align-items: center !important;
+            .cScore {
+                width: 100%;
+                height: auto;
+                padding: 20px;
+            }
+        }
+        .row3 {
+            a {
+                width: 100%;
+                margin-top: 20px;
+            }
+        }
+        .ratingcard2 {
+            width: 100% !important;
+            display: flex;
+            flex-direction: column;
+            margin-top: 40px;
+            // align-items: center;
+        }
+    }
 }
 
 
