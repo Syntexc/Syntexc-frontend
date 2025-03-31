@@ -76,10 +76,24 @@ text-decoration: none;
     }
 }
 
+@media (max-width: 768px) {
+    .row1 {
+        grid-template-columns: 1fr !important;
+        padding: 0 40px !important;
+    }
 
+    .h3 {
+        font-size: 32px !important;
+    }
 
+    .p {
+        font-size: 18px !important;
+    }
 
-
+    .box {
+        width: 100% !important;
+    }
+}
 
 .box {
     position: relative;

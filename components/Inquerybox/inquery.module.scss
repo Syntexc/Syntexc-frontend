@@ -207,3 +207,33 @@ margin-top: 40px;
       background: #3575E2; // Slightly darker blue on hover
     }
   }
+
+@media (max-width: 768px) {
+    .box {
+        width: 90%; // Full width on mobile
+        padding: 16px; // Reduced padding for mobile
+        // box-shadow: none; // Remove shadow for mobile
+        border-left: none; // Remove left border for mobile
+
+        .innerbox {
+            gap: 16px; // Adjust gap for mobile
+            ul {
+                grid-template-columns: 1fr; // Stack list items vertically
+            }
+            .inboxgroup {
+                label {
+                    font-size: 16px; // Smaller font size for mobile
+                }
+                input, textarea {
+                    font-size: 14px; // Smaller font size for mobile
+                }
+            }
+            .button {
+                button {
+                    font-size: 14px; // Smaller button font size for mobile
+                    padding: 10px 20px; // Adjust padding for mobile
+                }
+            }
+        }
+    }
+}

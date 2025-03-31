@@ -42,7 +42,7 @@ const Trustedby = () =>{
 
 
 
-<div className={Styles.ratingcard2}>
+<div className={`${Styles.ratingcard2} mobile-none`}>
 <div className="testimonial-container">
       <Swiper
         modules={[Autoplay, Navigation]}
@@ -54,6 +54,47 @@ const Trustedby = () =>{
         }}
         spaceBetween={30}
         slidesPerView={3}
+        centeredSlides={true}
+        autoplay={{
+          delay: 2000,
+          disableOnInteraction: false,
+        }}
+        onSwiper={(swiper) => (swiperRef.current = swiper)}
+        className="testimonialslider"
+      >
+        {ratingCards?.length > 0 ? (
+          ratingCards.map((card, index) => (
+            <SwiperSlide key={index}>
+              <RatingCard
+                image={card.image}
+                username={card.username}
+                role={card.role}
+                desc={card.desc}
+              /> 
+            </SwiperSlide>
+          ))
+        ) : (
+          <p>Loading testimonials...</p>
+        )}
+      </Swiper>
+
+      
+     
+    </div>
+    
+</div>
+<div className={`${Styles.ratingcard2} desktop-none`}>
+<div className="testimonial-container">
+      <Swiper
+        modules={[Autoplay, Navigation]}
+        loop={true}
+        pagination={{ clickable: true }}
+        navigation={{
+          prevEl: ".custom-prev",
+          nextEl: ".custom-next",
+        }}
+        spaceBetween={30}
+        slidesPerView={2}
         centeredSlides={true}
         autoplay={{
           delay: 2000,

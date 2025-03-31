@@ -55,3 +55,11 @@
     position: relative !important;
     top: 0px !important;
   }
+.desktop-none{
+  display: none;
+}
+  @media (max-width:768px){ 
+  .mobile-none{
+    display: none !important;
+  }
+}

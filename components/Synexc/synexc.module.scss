@@ -17,7 +17,7 @@
                 position: relative;
                 overflow: hidden;
                 margin-top: -100px;
-          
+                z-index: 999999;
           &::after{
             background: url("/convince-your-boss-bg 1.png");
             width: 100%;
@@ -43,8 +43,16 @@
                 margin-right: auto;
                 margin-bottom: 12px;
                 position: relative;
-                z-index: 9;
+                z-index: 999999;
+
+                @media (max-width: 768px) {
+                    font-size: 20px !important;
+                    line-height: 26px;
+                    margin-bottom: 2px;
+                z-index: 999999;
+
                 
+                }
             }
             h3 {
                 font-family: "Segoe UI";
@@ -55,7 +63,10 @@
                 text-align: center;
                 vertical-align: bottom;
                 z-index: 9;
+                @media (max-width: 768px) {
+                    font-size: 16px;
                 
+                }
             }
             h4 {
                 font-family: "Segoe UI";
@@ -106,6 +117,9 @@ font-weight: bold;
                         color: #3C3C3C;
                         z-index: 9999;
                         cursor: pointer;
+                        @media (max-width: 768px) {
+                            font-size: 20px;
+                        }
                         &:hover {
                             color: #2baae2;
                         }
@@ -115,6 +129,9 @@ font-weight: bold;
     font-weight: bold;
     position: relative;
     right: -5px;
+    @media (max-width: 768px) {
+        content: "";
+    }
                         }
                         &:last-child {
                             &::after {
@@ -143,6 +160,9 @@ font-weight: bold;
     color: #fff;
     text-decoration: none;
     margin-bottom: 128px; 
+    @media (max-width: 768px) {
+        margin-top: 0px;
+    }
     &:hover {
         background: linear-gradient(to right, #253e90, #2baae2);
     }
@@ -164,7 +184,15 @@ max-width: 858px;
 margin-left: auto;
 margin-right: auto;
 margin-top: 20px;
-margin-bottom: 40px;  span {
+margin-bottom: 40px;  
+@media (max-width: 768px) {
+    margin-top: 0px !important;
+    font-size: 22px !important;
+    line-height: 28px;
+    margin-bottom: 10px;
+
+}
+span {
 color: #181818;
         }
         }
@@ -227,10 +255,74 @@ color: #181818;
                align-items: center;
                 li {
                     img {
-
+                        
                     }
                 }
             }
         }
     }
 }
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+@media (max-width: 768px) {
+    .section {
+        padding-bottom: 48px !important;
+    }
+
+    .row {
+        flex-direction: column;
+        align-items: center;
+    }
+    .inner ul{
+        flex-direction: column;
+    }
+
+    .box {
+        padding: 20px !important;
+        margin-top: 0 !important;
+        h2{
+            font-size: 30px !important;
+        }
+        h4{
+            font-size: 24px !important;
+        }
+    }
+    .content{
+        padding: 0px 20px !important;
+    }
+    .mide {
+        font-size: 32px !important;
+        margin-top: 60px!important;
+    }
+
+    .row1 {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .content p {
+        font-size: 18px !important;
+    }
+
+    .btnn {
+        width: 90%;
+        margin-bottom: 40px !important;
+    }
+    .image{
+        // width: 100%;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            animation:spin 10s linear infinite;
+        }
+    }
+}
+

@@ -114,7 +114,7 @@ const CRM = ()=>{
                                     <Image src={"/start-up 1.png"} width={30} height={30} alt="Connection" />
                                 </div>
                                 <div className={Style.container}>
-                                <h3><Counter end={50} isVisible={isVisible} /><span>+</span></h3>
+                                <h3><Counter end={100} isVisible={isVisible} /><span>+</span></h3>
                                     <p>Projects  <br/> Completed</p>
                                 </div>
                                 </div>
@@ -144,7 +144,7 @@ const CRM = ()=>{
                                     <Image src={"/badge 1.png"} width={24} height={24} alt="Connection" />
                                 </div>
                                 <div className={Style.container}>
-                                <h3><Counter end={50} isVisible={isVisible} /><span>+</span></h3>
+                                <h3><Counter end={30} isVisible={isVisible} /><span>+</span></h3>
                                     <p>Salesforce  <br/> Specialists</p>
                                 </div>
                                 </div>
@@ -157,7 +157,7 @@ const CRM = ()=>{
                                     <Image src={"/exchange-rate 1.png"} width={24} height={24} alt="Connection" />
                                 </div>
                                 <div className={Style.container}>
-                                <h3><Counter end={50} isVisible={isVisible} /><span>+</span></h3>
+                                <h3><Counter end={10} isVisible={isVisible} /><span>+</span></h3>
                                     <p>AppExchange Security  <br/> Reviews Cleared</p>
                                 </div>
                                 </div>

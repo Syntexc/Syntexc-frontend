@@ -21,7 +21,7 @@ const Synexc =()=>{
                         <li>Managed Services </li> 
                     </ul>
                     </div>
-                    <a href="#" className={Style.btnn}>Get a Free Consultation now!</a>
+                    <a href="#contact" className={Style.btnn}>Get a Free Consultation now!</a>
                   </div>
                 </div>
 
@@ -35,8 +35,9 @@ const Synexc =()=>{
                        <p>Our certified Salesforce experts, developers, and strategists bring deep expertise and a passion for delivering results</p>
                         
                     </div>
-                    <div className={Style.image}>
-                        <Image src={"/Asset 4 1.png"} width={556} height={470} alt="Asset" />
+                    <div className={Style.image}> 
+                        <Image src={"/Asset 4 1.png"} width={556} height={470} alt="Asset"
+                         />
                     </div>
                 </div>
                 </div>

@@ -15,13 +15,13 @@ const ExpertPartner = () =>{
     <div className={Style.section2}>
 <div className={Style.style2}>
 <div className={Style.first2}>
-        <div className={Style.box}></div>
+        <div className={`${Style.box} mobile-none`}></div>
         <BoxCard imageurl={"/Component 6.png"} title="CPQ (Configure, Price, Quote)" />
        
         <BoxCard imageurl={"/Component 7.png"} title="Experience Cloud" />
        
         <BoxCard imageurl={"/Component 8.png"} title="Health Cloud" />
-        <div className={Style.box}></div>
+        <div className={`${Style.box} mobile-none`}></div>
     </div>
 
 <div className={Style.threerow}>
@@ -40,7 +40,7 @@ const ExpertPartner = () =>{
 
 
 <div className={Style.onerow}>
-<BoxCard imageurl={"/Component 12.png"} title="Experience Cloud" />
+<BoxCard imageurl={"/Component 12.png"} title="Revenue Cloud" />
 
     <BoxCard imageurl={"/Component 13.png"} title="Agentforce" />
     </div>
@@ -48,12 +48,12 @@ const ExpertPartner = () =>{
 
 
     <div className={Style.first2}>
-        <div className={Style.box}></div>
+        <div className={`${Style.box} mobile-none`}></div>
         <BoxCard imageurl={"/Component 15.png"} title="Marketing Cloud" />
         <BoxCard imageurl={"/Component 16.png"} title="Data Cloud" />
         <BoxCard imageurl={"/Component 17.png"} title="Vlocity" />
 
-        <div className={Style.box}></div>
+        <div className={`${Style.box} mobile-none`}></div>
     </div>
 </div>
     

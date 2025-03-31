@@ -56,8 +56,13 @@ const Footer = ()=>{
         </a>
     </li>
     <li>
-        <a href="https://www.linkedin.com/company/synexc/about/?viewAsMember=true">
-            <Image src={"/twitter-new.png"} width={25} height={25} alt="youtube" />
+        <a href="https://x.com/Synexc_">
+            <Image src={"/again-twitter.png"} width={10} height={10} alt="youtube" 
+            style={{
+                width:"12px",
+                height:"15px"
+            }}
+            />
         </a>
     </li>
 </ul>
@@ -86,7 +91,7 @@ const Footer = ()=>{
                                         {footerlink2arry?.map((item, index) => {
                                         return (
                                             <>
-                                                <li key={index}><a href="#">{item.link}</a></li>
+                                                <li key={index}><a href={item?.href}>{item.link}</a></li>
                                             </>
                                         )
                                     })}</ul>
@@ -122,8 +127,8 @@ export default Footer;
 
 const footerlink1arry = [
     {link:"Upwork" , href:"#"},
-    {link:"Linkedin", href:"#contact"},
-    {link:"Appexchange" , href:"#about"},
+    {link:"Linkedin", href:"https://www.linkedin.com/company/synexc/about/?viewAsMember=true"},
+    {link:"Appexchange" , href:"#services"},
 ]
 
 const footerlink2arry = [
@@ -131,5 +136,5 @@ const footerlink2arry = [
     {link:"Our Team" , href:"#blogs"}, 
     // {link:"FAQ" , href:"#"},
     {link:"Contact Us", href:"#contact"},
-    {link:"Privacy Policy" , href:"#about"},
+    {link:"Privacy Policy" , href:"#"},
 ]

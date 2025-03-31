@@ -3,6 +3,10 @@
     padding-top: 96px;
     padding-bottom: 96px;
     border-bottom: 2px solid rgba(37, 62, 144, 1);
+    @media (max-width: 768px) {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
     .container {
         max-width: 1143px;
         margin-left: auto;
@@ -19,6 +23,10 @@
     margin-bottom: 24px;
                 span {
                     color: #181818;
+                    @media (max-width:768px){
+                        padding: 0px 0px ;
+                        font-size: 20px;
+                    }
                 }
             }
             p {
@@ -99,6 +107,11 @@
                 max-width: 165px;
                 margin-left: auto;
                 margin-right: auto;
+                @media (max-width:768px){
+                    font-size: 12px;
+                line-height: 18px;
+
+                }
             }
             }
              
@@ -136,6 +149,39 @@
         background: linear-gradient(to right, #253e90, #2baae2);
     }
             }
+        }
+    }
+
+    @media (max-width: 768px) {
+        .container {
+            padding: 0 16px;
+        }
+        .row {
+            flex-direction: column;
+            align-items: center;
+        }
+        .row1 {
+            justify-content: center !important; 
+            flex-direction: column;
+            align-items: center !important;
+            .cScore {
+                width: 100%;
+                height: auto;
+                padding: 20px;
+            }
+        }
+        .row3 {
+            a {
+                width: 100%;
+                margin-top: 20px;
+            }
+        }
+        .ratingcard2 {
+            width: 100% !important;
+            display: flex;
+            flex-direction: column;
+            margin-top: 40px;
+            // align-items: center;
         }
     }
 }
