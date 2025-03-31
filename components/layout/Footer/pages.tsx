@@ -68,6 +68,8 @@ const Footer = ()=>{
 
                             <div className={footer.innerbox}>
                                 <div className={footer.col3}>
+                                <p className={footer.headingF}>Find us on</p>
+
                                     <ul>{footerlink1arry?.map((item, index) => {
                                         return (
                                             <>
@@ -78,7 +80,10 @@ const Footer = ()=>{
 
                                 </div>
                                 <div className={footer.col3}>
-                                    <ul>{footerlink2arry?.map((item, index) => {
+                                    <p className={footer.headingF}>Quick Links</p>
+                                    <ul>
+                                        
+                                        {footerlink2arry?.map((item, index) => {
                                         return (
                                             <>
                                                 <li key={index}><a href="#">{item.link}</a></li>
@@ -86,7 +91,7 @@ const Footer = ()=>{
                                         )
                                     })}</ul>
                                 </div>
-                                <div className={footer.col3}>
+                                {/* <div className={footer.col3}>
                                     <ul>{footerlink2arry?.map((item, index) => {
                                         return (
                                             <>
@@ -94,7 +99,7 @@ const Footer = ()=>{
                                             </>
                                         )
                                     })}</ul>
-                                </div>
+                                </div> */}
                             </div>
 
 
@@ -116,15 +121,15 @@ export default Footer;
 
 
 const footerlink1arry = [
-    {link:"FAQ" , href:"#"},
-    {link:"Contact Us", href:"#contact"},
-    {link:"About Us" , href:"#about"},
-    {link:"Blogs" , href:"#blogs"}, 
+    {link:"Upwork" , href:"#"},
+    {link:"Linkedin", href:"#contact"},
+    {link:"Appexchange" , href:"#about"},
 ]
+
 const footerlink2arry = [
-    {link:"Industry"},
-    {link:"Services"},
-    {link:"Terms and Conditions"},
-    {link:"Privacy Policy"}, 
+    {link:"Blogs" , href:"#blogs"}, 
+    {link:"Our Team" , href:"#blogs"}, 
+    // {link:"FAQ" , href:"#"},
+    {link:"Contact Us", href:"#contact"},
+    {link:"Privacy Policy" , href:"#about"},
 ]
- 

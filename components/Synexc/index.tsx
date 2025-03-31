@@ -7,7 +7,7 @@ const Synexc =()=>{
             <div className={Style.container}>
                 <div className={Style.row}>
                   <div className={Style.box}>
-                  <h2>Is Your Salesforce Investment Truly Paying Off?</h2>
+                  <h2>Is Your Salesforce Investment <br /> Truly Paying Off?</h2>
                     <h3>Turning Salesforce Into Your Competitive Edge</h3>
                     <h4>More Than Just <span className={Style.dsd}>A Platform Make</span> It Your <span className={Style.sdsd}>Growth Engine</span></h4>
                     <div className={Style.inner}>
@@ -26,7 +26,7 @@ const Synexc =()=>{
                 </div>
 
 <div id="about">
-<h2 className={Style.mide}>Synexc: Where Strategy Meets CRM, <span> and Success Follows</span></h2>
+<h2 className={Style.mide}>Synexc: Where Strategy Meets CRM, <span> <br /> and Success Follows</span></h2>
 
                 <div className={Style.row1}>
                     <div className={Style.content}>

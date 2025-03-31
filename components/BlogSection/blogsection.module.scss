@@ -41,7 +41,9 @@ margin-right: auto;
             margin-right: auto;
             margin-top: 40px;
             display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr;
+            justify-content: center;
+            justify-items: center;
             gap: 24px;
         }
 
