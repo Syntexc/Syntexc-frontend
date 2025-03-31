@@ -69,8 +69,8 @@ color: #fff;
                                 position: relative;
                                 a {
                                     position: relative;
-                                    width: 40px;
-                                    height: 40px;
+                                    width: 18px;
+                                    height: 18px;
                                     border-radius: 100px;
                                     // background: #fff;
                                     display: flex;
@@ -78,6 +78,8 @@ color: #fff;
                                     align-items: center;
                                     img {
                                         position: relative;
+                                        width: 18px;
+                                        height: 18px;
                                     }
                                 }
                             }
@@ -97,7 +99,13 @@ color: #fff;
                     .col3 {
                         position: relative;
                         max-width: 221px;
-
+                        .headingF {
+                            color: #fff;
+                            font-family: 'Segoe UI Regular';
+font-weight: 600;
+font-size: 14px;
+padding: 0px 16px;
+                        }
                         ul {
                             position: relative;
                             padding: 0px;
