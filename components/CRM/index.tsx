@@ -171,7 +171,8 @@ const CRM = ()=>{
                 <div className={`${Style.row2} ${isVisible ? Style.fadeIn : ""}`} >
       <h2>Big Goals Need Big Solutions: That’s Where Synexc Comes In.</h2>
       <div className={Style.inner2}>
-        <div className={Style.leftBar} style={{ top: `${activeIndex * 80}px` }}></div>
+        <div className={Style.leftBar}></div>
+        {/* <div className={Style.leftBar} style={{ top: `${activeIndex * 80}px` }}></div> */}
         <div className={Style.content} onClick={() => setActiveIndex((prev) => (prev + 1) % contentData.length)}>
           <h3>{contentData[activeIndex].title}</h3>
           <p>{contentData[activeIndex].description}</p>
