@@ -86,7 +86,7 @@ const Trustedby = () =>{
 <div className={`${Styles.ratingcard2} desktop-none`}>
 <div className="testimonial-container">
       <Swiper
-        modules={[Autoplay, Navigation]}
+        modules={[Navigation]}
         loop={true}
         pagination={{ clickable: true }}
         navigation={{
@@ -160,25 +160,26 @@ const ratingCards = [
     {
         image: "/users/second-user (1).png",
         username: "Mike M.",
-        role: "Director of Sales  Tech Solutions Inc.",
+        role: "Head of Customer Success, FinEdge Capital",
         desc: "With Service Cloud and automation from Synexc, our customer support team is thriving. Before, tickets were scattered across different channels..",
     },
     {
         image: "/users/second-user (2).png",
         username: "David S.",
-        role: "Director of Sales  Tech Solutions Inc.",
+        role: "CEO, Global Software Partners",
         desc: "We wanted to launch our app on the Salesforce AppExchange, but the security review process felt like a mountain to climb. Synexc handled ..",
     },
     {
       image: "/users/second-user (1).png",
       username: "Mike M.",
-        role: "Director of Sales  Tech Solutions Inc.",
+      role: "Head of Customer Success, FinEdge Capital",
         desc: "Sales Cloud completely changed our sales process, thanks to Synexc. We struggled with manual lead tracking and disorganiz",
     },
     {
       image: "/users/second-user (2).png",
       username: "David S.",
-        role: "Director of Sales  Tech Solutions Inc.",
+      role: "CEO, Global Software Partners",
+
         desc: "With Service Cloud and automation from Synexc, our customer support team is thriving. Before, tickets were scattered across different channels..",
     },
     {
