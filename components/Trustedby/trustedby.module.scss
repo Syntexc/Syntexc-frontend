@@ -132,6 +132,9 @@
                 position: absolute;
                 top: -30px;
                 left: 130px;
+                @media (max-width:600px) {
+                    display: none;
+                }
             }
             margin-top: 40px;
             a {

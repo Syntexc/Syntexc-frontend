@@ -178,7 +178,7 @@ const CRM = ()=>{
           <p>{contentData[activeIndex].description}</p>
         </div>
         <div className={Style.image}>
-        <Image src={"/Frame 39534.png"} width={199} height={159} alt="" />
+        <Image src={contentData[activeIndex].image} width={199} height={159} alt="" />
         </div>
       </div>
       <a href="#contact" className={Style.btn}>
@@ -199,27 +199,27 @@ const contentData = [
     {
       title: "We Solve Business Problems, Not Just Tech Issues.",
       description: "Salesforce is a tool, but success comes from strategy. We design solutions that fix bottlenecks, improve sales efficiency, and enhance customer engagement.",
-      image: "/Frame39534.png",
+      image: "/Frame395345.png",
     },
     {
       title: "Turn Data into Decisions.",
       description: "We help businesses make informed decisions by integrating Salesforce analytics and AI-driven insights.",
-      image: "/analytics.png",
+      image: "/Frame395341.png",
     },
     {
       title: "Automate for Efficiency.",
       description: "Reduce manual effort with intelligent automation in Salesforce, ensuring smooth business operations.",
-      image: "/automation.png",
+      image: "/Frame395342.png",
     },
     {
       title: "Personalized Customer Experiences.",
       description: "Improve customer engagement with tailored marketing and support solutions powered by Salesforce.",
-      image: "/customer-experience.png",
+      image: "/Frame395343.png",
     },
     {
       title: "Seamless Integrations & Scalability.",
       description: "Connect Salesforce with your existing tools and scale as your business grows effortlessly.",
-      image: "/integration.png",
+      image: "/Frame395344.png",
     },
   ];
 
