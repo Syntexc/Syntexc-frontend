@@ -13,7 +13,7 @@
         margin-right: auto;
         .row {
             h2 {
-                font-family: Segoe UI Regular;
+                font-family: "Segoe UI Bold";
     font-weight: 700;
     font-size: 48px;
     line-height: 56px;
@@ -30,7 +30,7 @@
                 }
             }
             p {
-                font-family: Segoe UI Regular;
+                font-family: "Segoe UI Regular";
                 font-weight: 400;
                 font-size: 24px;
                 line-height: 32px;
@@ -62,7 +62,7 @@
                 border-bottom-right-radius: 24px;
                 border-bottom-left-radius: 68px;
                 h3 {
-                font-family: Segoe UI;
+                font-family:"Segoe UI Bold";
                 font-weight: 700;
                 font-size: 100px;
                 line-height: 84px;
@@ -73,7 +73,7 @@
                 color: #fff;
                 margin-bottom: 30px;
                     span {
-                font-family: Segoe UI;
+                font-family: "Segoe UI Bold";
                 font-weight: 700;
                 font-size: 40px;
                 line-height: 36px;
@@ -84,7 +84,7 @@
             }
             }
                 .cont h4 {
-                font-family: Segoe UI;
+                font-family:"Segoe UI Bold";
                 font-weight: 700;
                 font-size: 20px;
                 line-height: 22px;
@@ -96,7 +96,7 @@
                 margin-bottom: 16px;
             }
                 p {
-                font-family: Segoe UI;
+                font-family:"Segoe UI Bold";
                 font-weight: 700;
                 font-size: 16px;
                 line-height: 24px;
@@ -126,11 +126,18 @@
 
 
         .row3 {
+
+            position: relative;
+            .homefly {
+                position: absolute;
+                top: -30px;
+                left: 130px;
+            }
             margin-top: 40px;
             a {
                 margin-top: 40px;
     background: #253e90;
-    font-family: Segoe UI Regular;
+    font-family: "Segoe UI Regular";
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
@@ -221,7 +228,7 @@
 
     .arrowButtonLeft{
         background: #fff;
-        font-family: Segoe UI Regular;
+        font-family: "Segoe UI Regular";
         font-weight: 400;
         font-size: 16px; 
         padding-top: 7px;
@@ -241,7 +248,7 @@
     }
     .arrowButtonRight{
         background: #253e90;
-        font-family: Segoe UI Regular;
+        font-family: "Segoe UI Regular";
         font-weight: 400;
         font-size: 16px; 
         padding-top: 12px;

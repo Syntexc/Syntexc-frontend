@@ -9,7 +9,7 @@ const Footer = ()=>{
                 <div className={footer.col1}>
                     <div className={footer.widgets}>
                        <div className={footer.footerlogo}>
-                         {/* <Image src={"/footerlogo.png"} width={314} height={78} alt="footerlogo" className={footer.logo} /> */}
+                           <Image src={"/footerlogo.png"} width={314} height={78} alt="footerlogo" className={footer.logo} />  
                          </div>
                         <ul className={footer.contactdet}>
                             <li>
@@ -73,9 +73,12 @@ const Footer = ()=>{
 
                             <div className={footer.innerbox}>
                                 <div className={footer.col3}>
-                                <p className={footer.headingF}>Find us on</p>
+                                 
 
-                                    <ul>{footerlink1arry?.map((item, index) => {
+                                    <ul>
+                                        
+                                        <li><p className={footer.headingF}>Find us on</p></li>
+                                        {footerlink1arry?.map((item, index) => {
                                         return (
                                             <>
                                                 <li key={index}><a href={item?.href}>{item.link}</a></li>
@@ -85,9 +88,9 @@ const Footer = ()=>{
 
                                 </div>
                                 <div className={footer.col3}>
-                                    <p className={footer.headingF}>Quick Links</p>
+                                     
                                     <ul>
-                                        
+                                        <li><p className={footer.headingF}>Quick Links</p></li>
                                         {footerlink2arry?.map((item, index) => {
                                         return (
                                             <>

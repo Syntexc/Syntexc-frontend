@@ -7,21 +7,22 @@ const Synexc =()=>{
             <div className={Style.container}>
                 <div className={Style.row}>
                   <div className={Style.box}>
+                    <Image src={"/homefly.png"} alt={""} width={65} height={79} className={Style.homefly} />
                   <h2>Is Your Salesforce Investment <br /> Truly Paying Off?</h2>
                     <h3>Turning Salesforce Into Your Competitive Edge</h3>
-                    <h4>More Than Just <span className={Style.dsd}>A Platform Make</span> It Your <span className={Style.sdsd}>Growth Engine</span></h4>
+                    <h4>More Than Just <span className={Style.dsd}>A Platform </span>Make It Your <span className={Style.sdsd}>Growth Engine</span></h4>
                     <div className={Style.inner}>
                     <ul>
-                        <li>Consulting</li>
-                        <li>Resource Augmentation</li>  
-                        <li>AppExchange Development</li>
+                        <li><a href="#contact">Consulting</a></li>
+                        <li><a href="#contact">Resource Augmentation</a></li>  
+                        <li><a href="#contact">AppExchange Development</a></li>
                     </ul>
                     <ul>
-                        <li>Implementation</li> 
-                        <li>Managed Services </li> 
+                        <li><a href="#contact">Implementation</a></li> 
+                        <li><a href="#contact">Managed Services</a></li> 
                     </ul>
                     </div>
-                    <a href="#contact" className={Style.btnn}>Get a Free Consultation now!</a>
+                    <a href="#contact" className={Style.btnn}>Get a <b>Free</b> Consultation now!</a>
                   </div>
                 </div>
 

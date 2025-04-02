@@ -49,7 +49,7 @@ const BlogSection = ()=> {
 
 
                 <div className={Style.row2}>
-                    <a href="#">Explore More <strong>INSIGHTS</strong></a>
+                    <a href="/#contact">Explore More <strong>INSIGHTS</strong></a>
                 </div>
 
 

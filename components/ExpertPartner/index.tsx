@@ -84,7 +84,7 @@ const BoxCard = ({imageurl, title}:BoxCardProp)=> {
         <>
         <div className={Style.box}>
 <div className={Style.image}><Image src={imageurl} alt={""} width={72} height={72} /> </div>
-<h3>{title}</h3>
+<a className={Style.link} href="#contact">{title}</a>
         </div>
         </>
     )

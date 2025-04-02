@@ -18,7 +18,7 @@ const BlogCard = ({
         <>
             <div className={Style.box}>
             <div className={Style.image}>
-                    <Image src={image}  width={300} height={200} alt={"test"}   />
+                    <Image src={image}  width={300} height={200} alt={"test"} objectFit="cover"   />
                 </div>
                 <div className={Style.contant}>
                 <h4>{title}</h4>

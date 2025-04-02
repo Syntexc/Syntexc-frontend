@@ -137,7 +137,9 @@ const Trustedby = () =>{
 <div className={`${Styles.arrowButtonRight} swiper-button-next `}  onClick={() => swiperRef.current?.slideNext()}><Image src="/svg-icons/arrow-right-s-line.svg" width={25}  height={25} alt="Logo" /></div>
 </div>
                 <div className={Styles.row3}>
-    <a href="">Join our community </a>
+<Image src={"/homefly.png"} width={70} height={86} alt="" className={Styles.homefly} />
+
+    <a href="/#contact">Join our community </a>
     </div>
             </div>
         </section>

@@ -8,6 +8,15 @@
             position: relative;
             bottom: 50px;
             .box {
+
+
+                .homefly {
+                    position: absolute;
+                    right: 76px;
+                    top: 104px;
+                }
+                
+
                 background: #fff;
                 max-width: 1087px;
                 margin-left: auto;
@@ -32,7 +41,7 @@
           }
           
             h2{
-                font-family: "Segoe UI";
+                font-family: "Segoe UI Regular";
                 font-weight: 700;
                 font-size: 48px;
                 line-height: 100%;
@@ -55,7 +64,7 @@
                 }
             }
             h3 {
-                font-family: "Segoe UI";
+                font-family: "Segoe UI Regular";
                 font-weight: 400;
                 font-size: 24px;
                 line-height: 32px;
@@ -69,7 +78,7 @@
                 }
             }
             h4 {
-                font-family: "Segoe UI";
+                font-family: "Segoe UI Regular";
                 font-weight: 400;
                 font-size: 32px;
                 line-height: 100%;
@@ -79,6 +88,8 @@
                 z-index: 9;
                 margin-top: 20px;
     margin-bottom: 12px;
+    position: relative;
+    z-index: 9;
                 .dsd {
 color: #253E90;
 font-weight: bold;
@@ -106,17 +117,22 @@ font-weight: bold;
                     list-style: none;
                     gap: 20px;
                     li{
-                        font-family: "Segoe UI";
-                        font-weight: 700;
-                        font-size: 24px;
-                        line-height: 30px;
-                        letter-spacing: 0%;
-                        text-align: center;
-                        vertical-align: bottom;
-                        text-transform: uppercase;
-                        color: #3C3C3C;
-                        z-index: 9999;
-                        cursor: pointer;
+                        position: relative;
+                        z-index: 9;
+                        a {
+                            font-family: "Segoe UI Bold ";
+                            font-weight: 700;
+                            font-size: 24px;
+                            line-height: 30px;
+                            letter-spacing: 0%;
+                            text-align: center;
+                            vertical-align: bottom;
+                            text-transform: uppercase;
+                            color: #3C3C3C;
+                            z-index: 9999;
+                            cursor: pointer;
+                            text-decoration: none;
+                        }
                         @media (max-width: 768px) {
                             font-size: 20px;
                         }
@@ -144,7 +160,7 @@ font-weight: bold;
             .btnn {
                 margin-top: 40px;
     background: #253e90;
-    font-family: Segoe UI Regular;
+    font-family:" Segoe UI Regular";
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
@@ -160,6 +176,8 @@ font-weight: bold;
     color: #fff;
     text-decoration: none;
     margin-bottom: 128px; 
+    position: relative;
+    z-index: 9;
     @media (max-width: 768px) {
         margin-top: 0px;
     }
@@ -172,7 +190,7 @@ font-weight: bold;
 
 
         .mide {
-            font-family: Segoe UI;
+            font-family: "Segoe UI Bold";
 font-weight: 700;
 font-size: 48px;
 line-height: 56px;
@@ -208,7 +226,7 @@ color: #181818;
             gap: 94px;
             .content {
                 p {
-                    font-family: "Segoe UI";
+                    font-family: "Segoe UI Regular";
 font-weight: 400;
 font-size: 24px;
 line-height: 32px;
@@ -218,7 +236,7 @@ color: #181818;
 margin-bottom: 12px;
 span {
     font-weight: bold !important;
-    font-family: "Segoe UI";
+    font-family: "Segoe UI Regular";
     font-weight: 400;
     font-size: 24px;
     line-height: 32px;
@@ -233,7 +251,7 @@ span {
         .logostyle {
 
             h2 {
-                font-family: "Segoe UI";
+                font-family: "Segoe UI Regular";
                 font-weight: 700;
                 font-size: 32px;
                 line-height: 100%;
@@ -284,6 +302,8 @@ color: #181818;
     }
 
     .box {
+
+
         padding: 20px !important;
         margin-top: 0 !important;
         h2{
