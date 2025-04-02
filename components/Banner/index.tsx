@@ -5,6 +5,9 @@ import React from "react";
 const Banner = () => {
     return (
         <div className={Style.banner}>
+            <div className={Style.bannerLayers}>
+
+            
             <div className={Style.topstyle}>
             <div className={Style.banner_content}>
                 
@@ -69,6 +72,7 @@ const Banner = () => {
                 {/* <Image src={"/Asset 1 1.png"} width={171} height={203} alt="banner"  className={Style.image_content}/> */}
 
 
+            </div>
             </div>
             </div>
         </div>
