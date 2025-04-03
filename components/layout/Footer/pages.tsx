@@ -17,7 +17,7 @@ const Footer = ()=>{
                                 <Image src={"/map-marker-outline.svg"} width={20} height={20} alt=" Offices: Atlanta, GA | Noida, India" />
                                 </span>
                                 <p>
-                                Offices: Bhutani Cyber Park, Tower B,<br/> block- C, 6th Floor, Sector 62 Noida
+                                Bhutani Cyber Park, Tower B,<br/> block- C, 6th Floor, Sector 62 Noida
                                 </p>
                             </li>
                             <li>
@@ -25,7 +25,7 @@ const Footer = ()=>{
                                 <Image src={"/phone-outline.svg"} width={20} height={20} alt="email" />
                                 </span>
                                 <p>
-                                    <a href="mailto:contact@synexc.com">Contact@synexc.com</a>
+                                    <a href="mailto:contact@synexc.com">contact@synexc.com</a>
                                  
                                 </p>
                             </li>

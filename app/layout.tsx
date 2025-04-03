@@ -18,8 +18,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Synexc",
-  description: "Synexc",
+  title: "#1 Salesforce Consulting Company | CRM solutions | Synexc",
+  description: "Synexc is a top Salesforce consulting firm offering expert , integration, and advisory services in India, USA, UK, Canada, and Australia. Maximize your Salesforce potential with our trusted consultants.",
 };
 
 export default function RootLayout({
@@ -30,8 +30,7 @@ export default function RootLayout({
   return (
     <html lang="en">
        <head>
-        <title>#1 Salesforce Consulting Company | CRM solutions | Synexc</title>
-        <meta name="Synexc is a top Salesforce consulting firm offering expert , integration, and advisory services in India, USA, UK, Canada, and Australia. Maximize your Salesforce potential with our trusted consultants."></meta>
+        
         {/* Google Analytics */}
         <Script async src="https://www.googletagmanager.com/gtag/js?id=G-3W84D54KXJ" />
         <Script id="google-analytics" strategy="afterInteractive">

@@ -31,9 +31,9 @@ const Synexc =()=>{
 
                 <div className={Style.row1}>
                     <div className={Style.content}>
-                        <p>Your CRM should do more than store data. It should drive growth, optimize operations, and power smarter decisions. That’s where Synexc comes in</p>
+                        <p>Your CRM should do more than store data. It should drive growth, optimize operations, and power smarter decisions. That’s where Synexc comes in.</p>
                         <p><span>We design, implement, and optimize custom CRM solutions that help businesses scale, automate, and innovate.</span> Whether you're looking to streamline sales, enhance customer engagement, or integrate AI-powered automation, our experts deliver strategies that work.</p>
-                       <p>Our certified Salesforce experts, developers, and strategists bring deep expertise and a passion for delivering results</p>
+                       <p>Our certified Salesforce experts, developers, and strategists bring deep expertise and a passion for delivering results.</p>
                         
                     </div>
                     <div className={Style.image}> 

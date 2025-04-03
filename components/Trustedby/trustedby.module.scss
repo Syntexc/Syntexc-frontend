@@ -21,6 +21,7 @@
     text-align: center;
     color: #253e90;
     margin-bottom: 24px;
+   
                 span {
                     color: #181818;
                     @media (max-width:768px){
@@ -56,7 +57,7 @@
                 width: 270px;
                 height: 235px;
                 gap: 30px;
-                padding: 37px 12px 12px 12px;
+                padding: 57px 12px 12px 12px;
                 border-top-left-radius: 30px;
                 border-top-right-radius: 24px;
                 border-bottom-right-radius: 24px;
@@ -65,13 +66,16 @@
                 font-family:"Segoe UI Bold";
                 font-weight: 700;
                 font-size: 100px;
-                line-height: 84px;
+                line-height: 14px;
                 letter-spacing: 0%;
                 text-align: center;
                 /* vertical-align: middle; */
                 /* text-transform: uppercase; */
                 color: #fff;
                 margin-bottom: 30px;
+                small {
+                    font-size: 20px;
+                 }
                     span {
                 font-family: "Segoe UI Bold";
                 font-weight: 700;
@@ -126,7 +130,7 @@
 
 
         .row3 {
-
+            margin-top: 40px;
             position: relative;
             .homefly {
                 position: absolute;
@@ -136,7 +140,7 @@
                     display: none;
                 }
             }
-            margin-top: 40px;
+           
             a {
                 margin-top: 40px;
     background: #253e90;

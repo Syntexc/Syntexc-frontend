@@ -102,7 +102,7 @@ const CRM = ()=>{
                                 </div>
                                 <div className={Style.container}>
                                 <h3><Counter end={50} isVisible={isVisible} /><span>+</span></h3>
-                                    <p>Salesforce <br/> Implementation</p>
+                                    <p>Salesforce <br/> Implementations</p>
                                 </div>
                                 </div>
                             </div>

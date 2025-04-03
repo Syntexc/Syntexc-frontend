@@ -9,7 +9,16 @@
             bottom: 50px;
             .box {
 
-
+                background: #fff;
+                max-width: 1087px;
+                margin-left: auto;
+                margin-right: auto;
+                border-radius: 24px;
+                padding: 40px;
+                position: relative;
+                overflow: hidden;
+                margin-top: -100px;
+                z-index: 999999;
                 .homefly {
                     position: absolute;
                     right: 76px;
@@ -21,16 +30,7 @@
                 }
                 
 
-                background: #fff;
-                max-width: 1087px;
-                margin-left: auto;
-                margin-right: auto;
-                border-radius: 24px;
-                padding: 40px;
-                position: relative;
-                overflow: hidden;
-                margin-top: -100px;
-                z-index: 999999;
+               
           &::after{
             background: url("/convince-your-boss-bg 1.png");
             width: 100%;
