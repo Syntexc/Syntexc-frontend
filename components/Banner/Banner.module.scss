@@ -63,7 +63,7 @@
     // padding-left: 40px;
     h1 {
 
-        font-size: 76px;
+        font-size: 100px;
         font-weight: 700;
         color: #fff;
         font-family: 'Segoe UI Regular' !important;
@@ -74,13 +74,13 @@
     }
 
     p {
-        font-size: 22px;
+        font-size: 26px;
         font-weight: 400;
         color: #fff;
     }
 
     h2 {
-        font-size: 36px;
+        font-size: 40px;
         font-weight: 600;
         color: #fff;
         margin-top: 40px;
@@ -93,8 +93,7 @@
     }
 
     button {
-        width: 240px;
-        height: 48px;
+        padding: 15px 18px;
         background-color: #ffffff;
         color: #000000;
         border-radius: 10px;
@@ -144,6 +143,7 @@
     position: relative;
     left: 110px;
     z-index: 9999;
+    top: -45px;
     @media (max-width: 768px) {
         left: 0px;
         z-index: 9;
@@ -207,9 +207,9 @@
 
 .image_content {
     position: absolute;
-    top: -60px;
+    top: -108px;
     right: 0;
-    left: 350px;
+    left: 425px;
     object-fit: contain;
     display: block;
     @media (max-width: 768px) {

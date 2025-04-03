@@ -112,8 +112,8 @@ const menuItems = [
       name: "Insights",
       herf: "#product",
     },
-    {
-      name: "Blogs",
-      herf: "#blogs",
-    },
+    // {
+    //   name: "Blogs",
+    //   herf: "#blogs",
+    // },
   ]

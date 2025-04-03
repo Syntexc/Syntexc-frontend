@@ -26,7 +26,7 @@ export default function Home() {
      <ThinkYour />
      <Trustedby />
      <MissionVision />
-     <BlogSection />
+     {/* <BlogSection /> */}
      <Instantly />
      <ContactUs />
      </>

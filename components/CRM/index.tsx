@@ -182,7 +182,7 @@ const CRM = ()=>{
         </div>
       </div>
       <a href="#contact" className={Style.btn}>
-        Get Started. <strong>It’s for free!</strong>
+      Claim Your Exclusive <strong>Discovery Session</strong>
       </a>
     </div>
 

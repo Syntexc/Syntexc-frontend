@@ -25,7 +25,8 @@ const Footer = ()=>{
                                 <Image src={"/phone-outline.svg"} width={20} height={20} alt="email" />
                                 </span>
                                 <p>
-                                contact@synexc.com
+                                    <a href="mailto:contact@synexc.com">Contact@synexc.com</a>
+                                 
                                 </p>
                             </li>
                             <li>
@@ -33,7 +34,8 @@ const Footer = ()=>{
                                 <Image src={"/email-fast-outline.svg"} width={20} height={20} alt="contact number" />
                                 </span>
                                 <p>
-                                +91 9810512585
+                                    <a href="tel:+919810512585"> +91 9810512585</a>
+                                
                                 </p>
                             </li>
                         </ul>
@@ -129,15 +131,15 @@ export default Footer;
 
 
 const footerlink1arry = [
-    {link:"Upwork" , href:"#"},
-    {link:"Linkedin", href:"https://www.linkedin.com/company/synexc/about/?viewAsMember=true"},
-    {link:"Appexchange" , href:"#services"},
+    // {link:"Upwork" , href:"#"},
+    {link:"LinkedIn", href:"https://www.linkedin.com/company/synexc/about/?viewAsMember=true"},
+    {link:"AppExchange" , href:"#services"},
 ]
 
 const footerlink2arry = [
-    {link:"Blogs" , href:"#blogs"}, 
-    {link:"Our Team" , href:"#blogs"}, 
+    // {link:"Blogs" , href:"#blogs"}, 
+    // {link:"Our Team" , href:"#blogs"}, 
     // {link:"FAQ" , href:"#"},
     {link:"Contact Us", href:"#contact"},
-    {link:"Privacy Policy" , href:"#"},
+    // {link:"Privacy Policy" , href:"#"},
 ]

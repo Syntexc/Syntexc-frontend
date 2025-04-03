@@ -25,7 +25,7 @@ const Banner = () => {
                 <button>
 
 
-                    Get Started.<span>IT'S FOR FREE!</span>
+                    Claim Your Exclusive <span>Discovery Session</span>
                     
                     
                     </button>
