@@ -33,7 +33,7 @@ const Trustedby = () =>{
                 <div className={Styles.row1}>
 <div className={Styles.cScore}>
 
-    <h3><small>Over</small> 97<span>%</span></h3>
+    <h3><small>Over </small>97<span>%</span></h3>
 <div className={Styles.cont}>
 <h4>Client Satisfaction</h4>
 <p>Because great solutions create great experiences.</p>
