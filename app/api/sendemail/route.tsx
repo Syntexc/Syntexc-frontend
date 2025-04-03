@@ -12,16 +12,16 @@ export async function POST(request: NextRequest) {
       port: 587,
       secure: false,
       auth: {
-        user: "careers@rolconsultancy.com",
-        pass: "ukch asot uygi ujfd",
+        user: "contact@synexc.com",
+        pass: "grip xobu fsva wtnh",
       },
     });
 
-    // Send mail to careers@rolconsultancy.com
+    // Send mail to contact@synexc.com
     const info = await transporter.sendMail({
       from: email,
-      to: "careers@rolconsultancy.com",
-      subject: `Inquiry from RQL Consultancy`,
+      to: "contact@synexc.com",
+      subject: `Inquiry from Synexc`,
       text: "RQL Consultancy Contact Form",
       html: `<b> First Name: ${firstName} <br> 
                 Last Name: ${lastName} <br> 
@@ -33,13 +33,24 @@ export async function POST(request: NextRequest) {
 
     // Send confirmation email to user
     const recipient = await transporter.sendMail({
-      from: "careers@rolconsultancy.com",
+      from: "contact@synexc.com",
       to: email,
-      subject: `RQL Consultancy`,
-      text: "RQL Consultancy",
-      html: `<b> We will contact you soon </b> <br/> 
-             <b> Contact no: +91 93040 53124 </b> <br> 
-             ${work_experience ? `Message: ${work_experience}` : ""}`,
+      subject: "We’ve Received Your Request! 🚀",
+      text: `Hi,
+    
+    Thank you for reaching out to Synexc! We’ve received your details, and our sales team will be in touch with you shortly.
+    
+    If you need any assistance in the meantime, feel free to email us at contact@synexc.com or call us at +91 9810512585. We’re here to help!
+    
+    Looking forward to connecting with you.
+    
+    Best regards,
+    Team Synexc`,
+      html: `<p>Hi,</p>
+             <p>Thank you for reaching out to <b>Synexc</b>! We’ve received your details, and our sales team will be in touch with you shortly.</p>
+             <p>If you need any assistance in the meantime, feel free to email us at <a href="mailto:contact@synexc.com">contact@synexc.com</a> or call us at <b>+91 9810512585</b>. We’re here to help!</p>
+             <p>Looking forward to connecting with you.</p>
+             <p>Best regards, <br> <b>Team Synexc</b></p>`
     });
 
     console.log("Message sent: %s", info.messageId);
