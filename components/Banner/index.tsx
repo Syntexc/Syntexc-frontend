@@ -22,13 +22,13 @@ const Banner = () => {
                 <h2>WHAT IF YOUR CRM DID <br /><span>MORE THAN JUST</span><br /> MANAGE CUSTOMERS?</h2>
                     
                     <a href="#contact">
-                <button>
+              
 
 
                     Claim Your Exclusive <span>Discovery Session</span>
                     
                     
-                    </button>
+                     
                     </a>
                 </div>
                  <Image src={"/new-arrow.png"} width={171} height={203} alt="banner"  className={Style.image_content}/> 

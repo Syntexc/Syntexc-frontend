@@ -92,13 +92,14 @@
         color: lightblue;
     }
 
-    button {
+    a {
         padding: 15px 18px;
         background-color: #ffffff;
         color: #000000;
         border-radius: 10px;
         margin-top: 40px;
         cursor: pointer;
+        text-decoration: none;
 
         &:hover {
             background: linear-gradient(to right, #e0f2ff, #d1dae5);
@@ -117,9 +118,11 @@
         height: auto; // Allow height to adjust
         flex-direction: column; // Stack elements vertically
         text-align: center; // Center text on mobile
-        button {
+        a {
             margin-top: 20px;
             align-self: center;
+            position: relative;
+            z-index: 999;
         }
         h1 {
             font-size: 40px;
@@ -146,7 +149,7 @@
     top: -45px;
     @media (max-width: 768px) {
         left: 0px;
-        z-index: 9;
+        z-index: 9999;
         top: 0px;
 
     }
