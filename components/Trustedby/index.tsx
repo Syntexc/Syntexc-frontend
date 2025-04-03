@@ -152,10 +152,10 @@ export default Trustedby ;
 
 const ratingCards = [
     {
-        image: "/user1.png",
-        username: "Alex R.",
-        role: "Director of Sales  Tech Solutions Inc.",
-        desc: "Sales Cloud completely changed our sales process, thanks to Synexc. We struggled with manual lead tracking and disorganiz",
+        image: "/richardwilson.jpg",
+        username: "Richard Wilson.",
+        role: "Director Of Sales ",
+        desc: "Synexc is a top Salesforce consulting firm that transformed our CRM experience. Their expert team provided seamless integration, process optimization, and tailored solutions to boost efficiency. Highly responsive and professional, they truly understand business needs. For Salesforce consulting in USA Synexc is the best choice!",
     },
     {
         image: "/users/second-user (1).png",

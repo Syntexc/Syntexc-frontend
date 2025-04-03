@@ -29,7 +29,7 @@ const RatingCard = ({
                             <li><Image src={"/star.svg"} alt={"star"} width={"11"} height={"11"} /></li>
                             <li><Image src={"/star.svg"} alt={"star"} width={"11"} height={"11"} /></li>
                         </ul>
-                        <p className={Style.desc}> {desc}</p>
+                        <p className={Style.desc} > {desc}</p>
                     </div>
                 </div>
             </div>
