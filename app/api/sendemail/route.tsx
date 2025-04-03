@@ -21,7 +21,7 @@ export async function POST(request: NextRequest) {
     const info = await transporter.sendMail({
       from: email,
       to: "contact@synexc.com",
-      subject: `Inquiry from Synexc`,
+      subject: `Inquiry from Salesforce Consulting Company`,
       text: "RQL Consultancy Contact Form",
       html: `<b> First Name: ${firstName} <br> 
                 Last Name: ${lastName} <br> 
