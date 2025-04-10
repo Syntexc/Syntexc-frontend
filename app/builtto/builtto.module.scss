@@ -1,6 +1,9 @@
 .section {
 padding-top: 96px; 
 padding-bottom: 96px; 
+@media (max-width:768px) {
+padding: 30px;
+  }
 // background: #F7FDFF;
 .container {
 max-width: 1024px;
@@ -25,6 +28,10 @@ h2 {
     span {
         color: #181818;
     }
+    @media (max-width:768px) {
+        font-size: 28px;
+        line-height: 28px;
+          }
 }
 p {
     font-family:"Segoe UI Regular";
@@ -34,6 +41,10 @@ line-height: 32px;
 letter-spacing: 0%;
 text-align: center;
 vertical-align: bottom;
+@media (max-width:768px) {
+    font-size: 16px;
+line-height: 24px;
+      }
 
 }
 }
