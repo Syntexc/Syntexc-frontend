@@ -60,7 +60,8 @@ background-size: cover;
             }
             span {
                 position: relative;
-                border: 2px solid rgba(43, 170, 226, 1);
+    border: 1px solid #2baae2;
+    border-image-source: linear-gradient(90deg, #253E90 0%, #2BAAE2 100%);
     background: #fff;
     width: 60px;
     height: 40px;
