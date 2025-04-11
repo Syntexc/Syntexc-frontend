@@ -43,7 +43,7 @@ const OurLeadershipTeam = ()=>{
     </div>
 
     <div className={Style.container3}>
-        <a href="#">Team Page <Image src={"/arrow2.svg"} width={24} height={24} alt="arrow2" /></a>
+        <a href="#">Join our <b>&nbsp;community</b> </a>
     </div>
 </section>
         </>

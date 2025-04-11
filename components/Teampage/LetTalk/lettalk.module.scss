@@ -4,7 +4,10 @@ padding-bottom: 60px;
 background-size: cover;
     background-repeat: no-repeat;
     @media (max-width:768px) {
-    padding: 30px;
+     padding-top: 0px;
+     padding-bottom: 60px;
+     padding-left: 20px;
+     padding-right: 20px;
                               }
 .container {
     max-width: 1016px;
@@ -25,7 +28,10 @@ background-size: cover;
     gap: 24px;
     position: relative;
     @media (max-width:768px) {
-        padding: 30px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        padding-right: 59px;
+        padding-left: 59px;
                                   }
 .innerbox {
     position: relative;
@@ -54,8 +60,7 @@ background-size: cover;
             }
             span {
                 position: relative;
-    border: 1px solid;
-    border-image-source: linear-gradient(90deg, #253E90 0%, #2BAAE2 100%);
+                border: 2px solid rgba(43, 170, 226, 1);
     background: #fff;
     width: 60px;
     height: 40px;
@@ -88,8 +93,10 @@ background-size: cover;
         top: -40px;
         right: -30px;
         @media (max-width:768px) {
-            width: 80px;
-            height: 80px;
+            width: 95px;
+            height: 95px;
+            top: -27px;
+            right: 0px;
                                          }
         img {
             line-height: 0px;
@@ -111,8 +118,8 @@ h2 {
     color: #fff;
     text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     @media (max-width:768px) {
-     font-size: 28px;
-     line-height: 34px;
+     font-size: 24px;
+     line-height: 1.4px;
                                   }
 
     
@@ -126,6 +133,9 @@ p{
     vertical-align: bottom;
     color: #fff;
     max-width: 851px;
+    @media (max-width:768px) {
+       flex: 1;
+                                     }
 }
 a { 
     background: #fff;

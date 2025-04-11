@@ -5,6 +5,8 @@
     padding-bottom: 96px;
     @media (max-width:768px) {
         padding: 30px;
+        padding-top: 40px;
+        padding-bottom: 40px;
         overflow: hidden;
                                      }
     .layer {
@@ -16,17 +18,13 @@
     display: block;
     @media (max-width:768px) {
         position: absolute;
-        top: 0;
-        left: -50%;
-        right: 0;
-        margin: auto;
-        display: block;
-        transform: translate(-50px, 0%);
+        top: -22px;
                                      }
         img {
             position: relative;
             margin: auto;
             display: block;
+            width: 100%;
         }
     }
 
@@ -50,8 +48,9 @@
             // margin-top: 20px;
             margin-bottom: 24px;
             @media (max-width:768px) {
-                font-size: 28px;
-                line-height: 34px;
+                font-size: 24px;
+                line-height: 1.4;
+                margin-bottom: 12px;
                                              }
             span {
                 color: #181818;
@@ -69,6 +68,7 @@
             margin-bottom: 12px;
             @media (max-width:768px) {
              font-size: 16px;
+             line-height: 24px;
                                              }
         }
         .btn {

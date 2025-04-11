@@ -3,73 +3,76 @@
     position: relative;
     padding-top: 140px;
     padding-bottom: 144px;
-    background-size:cover ;
+    background-size: cover;
     background-position: center;
 
     @media (max-width:768px) {
-padding: 30px;
-                                      }
+        padding: 30px;
+        padding-top: 86px;
+        padding-bottom: 86px;
+        background: linear-gradient(18.28deg, rgba(37, 62, 144, 0.6) -22.98%, rgba(25, 42, 97, 0.9) 47.86%, #0B122A 118.7%);
+
+    }
 
 
-.rounded1 {
-    width: 22px;
-height: 22px; 
-border-radius: 30px; 
-backdrop-filter: blur(4px);
-background: #D65717;
-}
-.rounded2 {
-width: 22px;
-height: 22px; 
-border-radius: 30px; 
-backdrop-filter: blur(4px);
-background: #2BAAE2;
-}
+    .rounded1 {
+        width: 22px;
+        height: 22px;
+        border-radius: 30px;
+        backdrop-filter: blur(4px);
+        background: #D65717;
+    }
 
-.layer1 {
-    position: absolute;
-    top: 61px;
-    left: 68px;
-    @media (max-width:768px) {
-                              
-        position: absolute;
-        top: 11px;
-        left: 38px;
-                                                       }
-}
-.layer2 {
-    position: absolute;
-    bottom: 64px;
-    right: 70px;
-    @media (max-width:768px) {
-                              
-        position: absolute;
-        bottom: 14px;
-        right: 20px;
-                                                       }
-}
-.layer3 {
-    position: absolute;
-    top: 98px;
-    right: 137px;
-    @media (max-width:768px) {
-                              
-        position: absolute;
-        top: 58px;
-        right: 17px;
-                                                       }
-}
-.layer4 {
-    position: absolute;
-    bottom: 76px;
-    left: 127px;
+    .rounded2 {
+        width: 22px;
+        height: 22px;
+        border-radius: 30px;
+        backdrop-filter: blur(4px);
+        background: #2BAAE2;
+    }
 
-    @media (max-width:768px) {
+    .layer1 {
         position: absolute;
-        bottom: 16px;
-        left: 17px;
-                                                       }
-}
+        top: 61px;
+        left: 68px;
+
+        @media (max-width:768px) {
+            position: absolute;
+            top: 45px;
+            left: 70px;
+        }
+    }
+
+    .layer2 {
+        position: absolute;
+        bottom: 64px;
+        right: 70px;
+
+        @media (max-width:768px) {
+display: none;
+        }
+    }
+
+    .layer3 {
+        position: absolute;
+        top: 98px;
+        right: 137px;
+
+        @media (max-width:768px) {
+
+            display: none;
+        }
+    }
+
+    .layer4 {
+        position: absolute;
+        bottom: 76px;
+        left: 127px;
+
+        @media (max-width:768px) {
+            display: none;
+        }
+    }
 
 
 
@@ -78,51 +81,82 @@ background: #2BAAE2;
 
         .row {
             position: relative;
+
             .heading2 {
                 max-width: 900px;
                 margin-left: auto;
                 margin-right: auto;
                 position: relative;
+
+
+                @media (max-width:768px) {
+                    gap: 4px;
+                    
+                }
+
                 .layeer1 {
                     position: absolute;
                     top: 34px;
                     right: 30px;
                     object-fit: cover;
+                    @media (max-width:768px) {
+                        
+                        top: auto;
+                        right: 10px;
+                        object-fit: cover;
+                        width: 61px;
+                        height: 72px;
+                        bottom: -10px;
+                        
+                    }
                 }
+
                 display: flex;
                 flex-direction: column;
                 gap: 34px;
+
                 h4 {
                     font-family: "Segoe UI bold";
                     position: relative;
-font-weight: 700;
-font-size: 48px;
-line-height: 58px;
-letter-spacing: 0%;
-text-align: center;
-vertical-align: bottom;
-text-transform: uppercase;
-color: #fff;
+                    font-weight: 700;
+                    font-size: 48px;
+                    line-height: 58px;
+                    letter-spacing: 0%;
+                    text-align: center;
+                    vertical-align: bottom;
+                    text-transform: uppercase;
+                    color: #fff;
 
-@media (max-width:768px) {
- font-size: 28px;
- line-height: 34px;
-                                          }
+                    @media (max-width:768px) {
+                        font-size: 36px;
+        line-height: 1.4;
+                    }
+
+br {
+    display: none;
+    @media (max-width:768px) {
+   display: block;
+    }
+}
+
                     span {
                         position: relative;
+
                         img {
                             position: relative;
                             left: -5px;
                             top: 17px;
+
                             @media (max-width:768px) {
-                              
-                                width: 30px;
-                                height: 30px;
-                                top: 3px;
-                                                                         }
+                                width: 53px;
+                                height: 53px;
+                                top: 13px;
+                                left: 5px;
+                            }
                         }
                     }
                 }
+
                 h3 {
                     font-family: "Segoe UI bold";
                     font-weight: 700;
@@ -133,74 +167,92 @@ color: #fff;
                     vertical-align: bottom;
                     text-transform: uppercase;
                     color: #fff;
-                    
-                    
+
+
                 }
 
 
                 .name {
                     position: relative;
                     text-align: center;
+
                     img {
                         position: relative;
+
                         @media (max-width:768px) {
-                              
-                          max-width: 100%;
-                          height: auto;
-                          width: 100%;
-                                                                     }
+
+                            max-width: 216px;
+                            height: auto;
+                            width: 100%;
+                        }
                     }
                 }
             }
+
             .perstyle {
                 margin-top: 40px;
+
+                @media (max-width:768px) {
+                    margin-top: 24px;
+                }
+
+
                 p {
                     font-family: "Segoe UI Regular";
-font-weight: 400;
-font-size: 24px;
-line-height: 34px;
-letter-spacing: 0%;
-text-align: center;
-vertical-align: bottom;
-max-width: 872px; 
-margin-left: auto;
-margin-right: auto;
-color: #fff;
+                    font-weight: 400;
+                    font-size: 24px;
+                    line-height: 34px;
+                    letter-spacing: 0%;
+                    text-align: center;
+                    vertical-align: bottom;
+                    max-width: 872px;
+                    margin-left: auto;
+                    margin-right: auto;
+                    color: #fff;
 
-@media (max-width:768px) {
-                              
-    font-size: 16px;
-    line-height: 20px;
-                                                   }
+                    @media (max-width:768px) {
+
+                        font-size: 18px;
+                        line-height: 24px;
+                    }
 
                 }
             }
 
             .midheight {
                 margin-top: 40px;
+                @media (max-width:768px) {
+                    margin-top: 24px;
+                    
+                }
+
                 h3 {
                     font-family: "Segoe UI bold";
-font-weight: 700;
-font-size: 28px;
-line-height: 28px;
-letter-spacing: 0%;
-text-align: center;
-vertical-align: bottom;
-color: #fff;
-@media (max-width:768px) {
-                              
-    font-size: 20px;
-    line-height: 30px;
-                                                   }
-span {
-    color: #2BAAE2;
-    text-transform: uppercase;
-}
+                    font-weight: 700;
+                    font-size: 28px;
+                    line-height: 28px;
+                    letter-spacing: 0%;
+                    text-align: center;
+                    vertical-align: bottom;
+                    color: #fff;
+
+                    @media (max-width:768px) {
+
+                        font-size: 28px;
+                        line-height: 40px;
+                    }
+
+                    span {
+                        color: #2BAAE2;
+                        text-transform: uppercase;
+                    }
 
                 }
             }
+
             .btn {
                 margin-top: 40px;
+
                 a {
                     padding: 15px 18px;
                     background-color: #fff;
@@ -214,7 +266,8 @@ span {
                     margin-left: auto;
                     margin-right: auto;
                     display: block;
-                    &:hover{
+
+                    &:hover {
                         background: linear-gradient(to right, #e0f2ff, #d1dae5);
                         color: #181818;
                     }
@@ -222,4 +275,4 @@ span {
             }
         }
     }
-} 
+}

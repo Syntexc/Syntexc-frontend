@@ -2,7 +2,7 @@
     padding-top: 96px;
     padding-bottom: 96px;
     @media (max-width:768px) {
-     padding: 30px;
+     padding: 40px 20px;
           }
     .container {
         max-width: 1024px;
@@ -23,8 +23,9 @@ text-transform: uppercase;
 color: #3C3C3C;
 margin-bottom: 20px;
 @media (max-width:768px) {
-    font-size: 28px;
-    line-height: 34px;
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 12px;
         }
 }
 p{
@@ -54,7 +55,11 @@ display: flex;
 gap: 24px;
 align-items: end;
 @media (max-width:768px) {
-   flex-direction: column;
+    flex-direction: column;
+    max-width: 272px;
+    width: 100%;
+    margin: 0 auto;
+    align-items: center;
         }
 .row1 {
     position: relative;
@@ -125,6 +130,11 @@ img {
     padding-left: 31px;
     padding-right: 24px;
     position: relative;
+    @media (max-width:768px) {
+        width: 100%;
+        box-sizing: border-box;
+        
+    }
     
     .image {
         position: absolute;

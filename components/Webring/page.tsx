@@ -12,7 +12,7 @@ const Webring = ()=>{
                 </div>
                 <div className={Style.row}>
                      
-                    <h2>We bring:</h2>
+                    <h2 className={Style.we}>We bring:</h2>
                      
                 </div>
 
@@ -34,6 +34,10 @@ const Webring = ()=>{
     />
 </div>
 
+
+<div className={Style.bottomtext}>
+    <p>We walk with you through every stage from discovery to deployment to growth ensuring your investment performs, your people adopt, and your business transforms.</p>
+</div>
 
 
             </div>

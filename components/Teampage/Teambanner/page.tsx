@@ -16,7 +16,7 @@ const Teambanner = ()=>{
         <div className={Style.heading2}>
             <Image src={"/sdlfsdf.svg"} alt={""} width={171} height={203} className={Style.layeer1} />
             <h4>Meet the         <span>
-                <Image src={"/Filesdasds.svg"} alt={""} width={77} height={77} /></span>Minds Behind</h4>
+                <Image src={"/dfsdfsdf.svg"} alt={""} width={77} height={77} /></span>   <br/>Minds Behind</h4>
             <div  className={Style.name}>
             <Image src={"/name.svg"} alt={""} width={587} height={119} />
             </div>

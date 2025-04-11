@@ -2,7 +2,8 @@
     background: #EAF9FF;
     padding-bottom: 90px;
     @media (max-width:768px) {
-       padding: 30px;
+       padding: 20px;
+       padding-bottom: 40px;
  }
 
     .container {
@@ -19,18 +20,25 @@
             gap: 40px;
             position: relative;
             overflow: hidden;
-            top: -80px;
+            margin-top: -80px;
 
             @media (max-width:768px) {
-               padding: 30px;
+               padding: 35px 28px 95px 28px;
                 flex-direction: column;
                 box-sizing: border-box;
+                
+                
           }
 
             .content {
                 display: flex;
-                flex-direction: column;
-                gap: 24px;
+                    flex-direction: column;
+                    gap: 24px;
+                    max-width: 566px;
+                    width: 100%;
+                    @media (max-width:768px) {
+                      gap: 4px;
+                  }
                 h3 {
                     font-family: "Segoe UI bold";
                     font-weight: 700;
@@ -39,8 +47,9 @@
                     letter-spacing: 0%;
                     color: #181818;
                     @media (max-width:768px) {
-               
-                        font-size: 28px;
+                        font-size: 24px;
+                        text-align: center;
+                        line-height: 1.4;
                   }
                     
                 }
@@ -57,6 +66,7 @@
                         vertical-align: bottom;
                         @media (max-width:768px) {
                           font-size: 16px;
+                          text-align: center;
                         }
                         
                         
@@ -84,6 +94,11 @@
                     &:hover{
                         background: linear-gradient(to right, #253e90, #2baae2);
                     }
+                    @media (max-width:768px) {
+                       position: absolute;
+                       bottom: 35px;
+                      }
+
                 }
             }
 
@@ -92,11 +107,17 @@
                 .bigimage {
                     position: relative;
                     width: 100%;
+                    @media (max-width:768px) {
+                        height: auto;
+                       }
                 }
                 .learr {
                     position: absolute;
     top: 0px;
     right: 0px;
+    @media (max-width:768px) {
+        display: none;
+       }
                 }
             }
 
@@ -142,13 +163,17 @@ left: 0px;
     margin-top: 105px;
     margin-bottom: 40px;
     @media (max-width:768px) {
-       font-size: 28px;
-       line-height: 34px;
-       margin: 0px;
-       margin-bottom: 20px;
+        font-size: 24px;
+        line-height: 32px;
+        margin: 0;
+        margin-bottom: 20px;
+        margin-top: 43px;
                         }
     span {
         color: #181818;
+        @media (max-width:768px) {
+            color: #253e90;
+                            }
     }
         }
 
@@ -162,6 +187,7 @@ left: 0px;
             gap: 40px;
             @media (max-width:768px) {
                 flex-direction: column;
+                gap: 20px;
                                  }
             .content {
                 position: relative;
@@ -175,7 +201,9 @@ left: 0px;
                     margin-bottom: 16px;
 
                     @media (max-width:768px) {
-                       font-size: 16px;
+                        font-size: 18px;
+                        line-height: 28px;
+                        text-align: center;
                                          }
                     
                     

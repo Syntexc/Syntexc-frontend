@@ -4,8 +4,9 @@ padding-bottom: 60px;
 background-size: cover;
     background-repeat: no-repeat;
     @media (max-width:768px) {
-        padding-left: 30px;
-        padding-right: 30px;
+        padding-left: 20px;
+        padding-right: 20px;
+       
     }
 .container {
     max-width: 1016px;
@@ -26,7 +27,7 @@ background-size: cover;
     gap: 24px;
     position: relative;
     @media (max-width:768px) {
-      padding: 30px;
+      padding: 40px 59px;
     }
     .phone {
         width: 111px;
@@ -41,13 +42,15 @@ background-size: cover;
         top: -40px;
         right: -30px;
         @media (max-width:768px) { 
-            width: 80px;
-            height: 80px;
+            width: 95px;
+            height: 95px;
+            top: -40px;
+    right: -5px;
           }
         img {
             line-height: 0;
-    width: 50px;
-    height: 50px;
+    width: 45px;
+    height: 45px;
 
         }
     }
@@ -63,8 +66,8 @@ h2 {
     color: #fff;
     text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     @media (max-width:768px) {
-        font-size: 28px;
-        line-height: 28px;
+        font-size: 24px;
+        line-height: 30px;
       }
 
     

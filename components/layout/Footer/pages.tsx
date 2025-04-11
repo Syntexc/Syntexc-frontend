@@ -16,8 +16,7 @@ const Footer = ()=>{
                                 <span className={footer.icon}>
                                 <Image src={"/map-marker-outline.svg"} width={20} height={20} alt=" Offices: Atlanta, GA | Noida, India" />
                                 </span>
-                                <p>
-                                Bhutani Cyber Park, Tower B,<br/> block- C, 6th Floor, Sector 62 Noida
+                                <p>Bhutani Cyber Park, Tower B,<br/> block- C, 6th Floor, Sector 62 Noida
                                 </p>
                             </li>
                             <li>
