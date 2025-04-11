@@ -95,8 +95,11 @@
                         background: linear-gradient(to right, #253e90, #2baae2);
                     }
                     @media (max-width:768px) {
-                       position: absolute;
-                       bottom: 35px;
+                        position: absolute;
+                        bottom: 35px;
+                        margin: 0 auto;
+                        left: 0;
+                        right: 0;
                       }
 
                 }
@@ -213,6 +216,8 @@ left: 0px;
                 position: relative;
                 img {
 position: relative;
+display: block;
+margin: 0 auto;
                 }
             }
         }

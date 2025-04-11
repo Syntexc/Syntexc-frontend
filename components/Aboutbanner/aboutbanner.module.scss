@@ -163,6 +163,10 @@
 
             .perstyle {
                 margin-top: 40px;
+                display: flex
+;
+    flex-direction: column;
+    gap: 10px;
                 @media (max-width:768px) {
                     margin-top: 24px;
                 }
@@ -179,10 +183,23 @@
                     margin-left: auto;
                     margin-right: auto;
                     color: #fff;
+                    .sdfsd {
+                        display: none;
+                      }
                     @media (max-width:768px) {
                         font-size: 18px;
                         line-height: 1.4em;
+                        .sdfsd {
+                            display: block;
+                          }
+                        br {
+                            margin-bottom: 20px;
+                        }
+
                     }
+             
+
+
                 }
             }
 
@@ -200,6 +217,14 @@
                     span {
                         color: #2BAAE2;
                     }
+                    @media (max-width:768px) {
+
+                        position: relative;
+                        line-height: 40px;
+                     }
+
+
+
                 }
             }
             .btn {

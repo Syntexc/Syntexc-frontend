@@ -52,3 +52,45 @@ line-height: 24px;
 }
 }
 }
+
+
+.container3 {
+    padding-top: 60px;
+    position: relative;
+    display: none;
+    @media (max-width:768px) {
+        padding-top: 22px;
+        display: block;
+    }
+    a {
+        position: relative;
+        background: #253E90; 
+padding-top: 12px;
+padding-right: 24px;
+padding-bottom: 12px;
+padding-left: 24px;
+border-radius: 12px;
+display: flex;
+width: fit-content;
+align-items: center;
+color: #fff;
+text-decoration: none;
+margin-left: auto;
+margin-right: auto;
+font-family:"Segoe UI Regular";
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+letter-spacing: 0%;
+vertical-align: bottom;
+text-transform: uppercase;
+&:hover{
+background: linear-gradient(to right, #253e90, #2baae2);
+}
+img {
+    line-height: 0px;
+}
+
+
+    }
+}

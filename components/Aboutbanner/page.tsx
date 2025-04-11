@@ -21,9 +21,9 @@ const Aboutbanner = ()=>{
             <h3>But something’s <span className={Style.missing}>missing!!</span></h3>
         </div>
         <div className={Style.perstyle}>
-            <p>Maybe your systems don’t talk to each other.
- Maybe your teams are stuck using only 33% of what Salesforce can actually do.
- Or maybe, you’re growing fast and need a solution that can scale with you.</p>
+            <p>Maybe your systems don’t talk to each other.  </p>
+            <p>Maybe your teams are stuck using only 33% of what Salesforce can actually do.  </p>
+            <p>Or maybe, you’re growing fast and need a solution that can scale with you.</p>
         </div>
         <div className={Style.midheight}>
             <h3>
