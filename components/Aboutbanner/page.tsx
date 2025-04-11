@@ -18,7 +18,7 @@ const Aboutbanner = ()=>{
             <h4>You’ve got the vision <span>
                 <Image src={"/Filesdasds.svg"} alt={""} width={77} height={77} /></span></h4>
             <h3>You’ve invested in technology</h3>
-            <h3>But something’s <span>missing!!</span></h3>
+            <h3>But something’s <span className={Style.missing}>missing!!</span></h3>
         </div>
         <div className={Style.perstyle}>
             <p>Maybe your systems don’t talk to each other.

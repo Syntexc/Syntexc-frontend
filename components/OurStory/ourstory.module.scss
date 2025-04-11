@@ -80,6 +80,10 @@
                     text-decoration: none; 
                     position: relative;
                     z-index: 9;
+                    text-transform: uppercase;
+                    &:hover{
+                        background: linear-gradient(to right, #253e90, #2baae2);
+                    }
                 }
             }
 
