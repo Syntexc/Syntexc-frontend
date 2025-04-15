@@ -1,6 +1,9 @@
 import Image from "next/image";
 import Style from "./synexc.module.scss"
+import { useSpinnerRotation } from "@/hooks/useSpinnerRotation";
 const Synexc =()=>{
+
+    const spinnerRef = useSpinnerRotation();
     return(
         <>
         <section className={Style.section}>
@@ -36,10 +39,40 @@ const Synexc =()=>{
                        <p>Our certified Salesforce experts, developers, and strategists bring deep expertise and a passion for delivering results.</p>
                         
                     </div>
-                    <div className={Style.image}> 
-                        <Image src={"/Asset 4 1.png"} width={556} height={470} alt="Asset"
+                    {/* <div className={Style.image}> 
+                        <Image src={"/objects.svg"} width={556} height={470} alt="Asset"
                          />
-                    </div>
+                          <Image src={"/spinner.svg"} width={556} height={470} alt="Asset"
+                         />
+                    </div> */}
+
+
+
+
+<div className={Style.containerSecond}>
+      <div className={Style.imageWrapper}>
+        <Image
+          src="/objects.svg"
+          alt="Background"
+          width={556}
+          height={470}
+          className={Style.staticBg}
+        />
+       <img
+  src="/fixed-spinner.svg"
+  alt="Rotating Spinner"
+  className={Style.spinner}
+  width={556}
+  height={470}
+/>
+      </div>
+
+      {/* <div className={Style.textTopLeft}>Streamline Sales</div>
+      <div className={Style.textBottomLeft}>Enhance Customer Engagement</div>
+      <div className={Style.textRight}>AI-Powered Automation</div> */}
+    </div>
+
+                    
                 </div>
                 </div>
 
