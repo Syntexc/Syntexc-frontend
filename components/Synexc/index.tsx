@@ -50,27 +50,52 @@ const Synexc =()=>{
 
 
 <div className={Style.containerSecond}>
-      <div className={Style.imageWrapper}>
-        <Image
-          src="/objects.svg"
-          alt="Background"
-          width={556}
-          height={470}
-          className={Style.staticBg}
-        />
-       <img
-  src="/fixed-spinner.svg"
-  alt="Rotating Spinner"
-  className={Style.spinner}
-  width={556}
-  height={470}
-/>
-      </div>
+  <div className={Style.imageWrapper}>
+    <Image
+       src="/circel-bg.svg"
+      alt="Background"
+      width={434}
+      height={416}
+      className={Style.staticBg}
+    />
 
-      {/* <div className={Style.textTopLeft}>Streamline Sales</div>
-      <div className={Style.textBottomLeft}>Enhance Customer Engagement</div>
-      <div className={Style.textRight}>AI-Powered Automation</div> */}
+    <div className={Style.orbit + " " + Style.orbit1}>
+      <div className={Style.orbitItem}>
+      <Image
+        src="/first-rotate.svg"
+        alt="Rotating Spinner"
+        width={158}
+        height={168}
+      />
+
+      </div>
     </div>
+
+    <div className={Style.orbit + " " + Style.orbit2}>
+      <div className={Style.orbitItem}>
+      <Image
+        src="/second-rotate.svg"
+        alt="Rotating Spinner"
+        width={180}
+        height={170}
+      />
+      </div>
+    </div>
+
+    <div className={Style.orbit + " " + Style.orbit3}>
+      <div className={Style.orbitItem}>
+      <Image
+        src="/third-rotate.svg"
+        alt="Rotating Spinner"
+        width={247}
+        height={229}
+      />
+      </div>
+    </div>
+  </div>
+</div>
+
+
 
                     
                 </div>
