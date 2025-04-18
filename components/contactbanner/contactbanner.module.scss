@@ -1,0 +1,242 @@
+.section {
+    background: url('/Frame427319196.png');
+    position: relative;
+    padding-top: 140px;
+    padding-bottom: 180px;
+    background-size: cover;
+    background-position: center -150px;
+
+    @media (max-width:768px) {
+        padding: 26px;
+        padding-bottom: 98px;
+        padding-top: 60px;
+    }
+
+
+    .rounded1 {
+        width: 22px;
+        height: 22px;
+        border-radius: 30px;
+        backdrop-filter: blur(4px);
+        background: #D65717;
+    }
+
+    .rounded2 {
+        width: 22px;
+        height: 22px;
+        border-radius: 30px;
+        backdrop-filter: blur(4px);
+        background: #2BAAE2;
+    }
+
+    .layer1 {
+        position: absolute;
+        top: 61px;
+        left: 68px;
+
+        @media (max-width:768px) { 
+            display: none;
+           
+        }
+    }
+
+    .layer2 {
+        position: absolute;
+        bottom: 152px;
+        right: 64px;
+
+        @media (max-width:768px) {
+            position: absolute;
+            top: 28px;
+            right: 24px;
+        }
+    }
+
+    .layer3 {
+        position: absolute;
+        top: 138px;
+        right: 171px;
+
+        @media (max-width:768px) {
+            display: none;
+        }
+    }
+
+    .layer4 { 
+        position: absolute;
+        bottom: 76px;
+        left: 127px;
+
+        @media (max-width:768px) {
+        display: none;
+        }
+
+    }
+    .container {
+        position: relative;
+        max-width: 1247px;
+        margin-left: auto;
+        margin-right: auto;
+        .row {
+            position: relative;
+            display: flex;
+            justify-content: space-around;
+
+            .textbox {
+                .heading2 { 
+                    display: flex;
+                    flex-direction: column;
+                    gap: 0px;
+                    position: relative;
+                    @media (max-width:768px) {
+                        gap:4px;
+                        
+                    }
+                    .layeer1 {
+                        position: absolute;
+                        top: -160px;
+                        left: -60px;
+                        width: 280px;
+                        height: auto;
+                        object-fit: cover;
+                        @media (max-width:768px) {
+                            top: -60px;
+                            left: 0px;
+                            width: 81px; 
+                            
+                        }
+                    }
+                    .missing {
+                        opacity: 0.5;
+                        &:hover {
+                            opacity: 1;
+                            cursor: pointer;
+                        }
+                    }
+                   
+    
+                    h4 {
+                        font-family: "Segoe UI bold";
+                        position: relative;
+                        font-weight: 700;
+                        font-size: 68px;
+                        line-height: 96px;
+                        letter-spacing: 0%;
+                        
+                        vertical-align: bottom;
+                        text-transform: uppercase;
+                        color: #fff;
+                        @media (max-width:768px) {
+                            font-size: 36px;
+                            line-height: 1.4;
+                        }
+    
+                        span {
+                            position: relative;
+                            left: 10px;
+                                top: 0px;
+    
+                            img {
+                                position: relative;
+                                top: 14px;
+                                left: -8px;
+                                
+                                 
+    
+                                @media (max-width:768px) {
+                                    position: absolute;
+                                }
+                            }
+                        }
+                    }
+    
+                    h3 {
+                        font-family: "Segoe UI bold";
+                        font-weight: 700;
+                        font-size: 52px;
+                        line-height: 58px;
+                        letter-spacing: 0%; 
+                        vertical-align: bottom;
+                        text-transform: uppercase;
+                        color: #fff;
+    
+                        @media (max-width:768px) {
+                            font-size: 38px;
+                            line-height: 1.3;
+                        }
+                    }
+                }
+    
+                .perstyle {
+                    margin-top: 24px;
+                    display: flex;
+                    max-width: 714px;
+        flex-direction: column;
+        gap: 10px;
+                    @media (max-width:768px) {
+                        margin-top: 24px;
+                    }
+    
+                    p {
+                        font-family: "Segoe UI Regular";
+                        font-weight: 400;
+                        font-size: 24px;
+                        line-height: 34px;
+                        letter-spacing: 0%; 
+                        vertical-align: bottom; 
+                        color: #fff;
+                        .sdfsd {
+                            display: none;
+                          }
+                        @media (max-width:768px) {
+                            font-size: 18px;
+                            line-height: 1.4em;
+                            .sdfsd {
+                                display: block;
+                              }
+                            br {
+                                margin-bottom: 20px;
+                            }
+    
+                        }
+                 
+    
+    
+                    }
+                }
+    
+                .midheight {
+                    margin-top: 24px;
+                    max-width: 598px;
+                    h3 {
+                        font-family: "Segoe UI bold";
+                        font-weight: 700;
+                        font-size: 28px;
+                        line-height: 41px;
+                        letter-spacing: 0%; 
+                        vertical-align: bottom;
+                        color: #fff;
+                        span {
+                            color: #2BAAE2;
+                        }
+                        @media (max-width:768px) {
+    
+                            position: relative;
+                            line-height: 40px;
+                         }
+    
+    
+    
+                    }
+                }
+            }
+           
+
+            .imagebox {
+                position: relative;
+                bottom: -30px;
+            }
+            
+        }
+    }
+}

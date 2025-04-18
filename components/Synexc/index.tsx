@@ -50,28 +50,35 @@ const Synexc =()=>{
 
 
 <div className={Style.containerSecond}>
+
+<div className={Style.roundedlogo}>
+  <Image src={"/roundedlogo.svg"} width={120} height={120} alt="roundedlogo" />
+</div>
+
+
+
   <div className={Style.imageWrapper}>
     <Image
-       src="/circel-bg.svg"
+       src="/stateroundaff.svg"
       alt="Background"
-      width={434}
-      height={416}
+      width={412}
+      height={411}
       className={Style.staticBg}
     />
 
     <div className={Style.orbit + " " + Style.orbit1}>
       <div className={Style.orbitItem}>
       <Image
-        src="/first-rotate.svg"
+        // src="/first-rotate.svg"
+        src="/Assetca.svg"
         alt="Rotating Spinner"
-        width={158}
-        height={168}
+        width={557}
+        height={471}
       />
-
       </div>
     </div>
 
-    <div className={Style.orbit + " " + Style.orbit2}>
+    {/* <div className={Style.orbit + " " + Style.orbit2}>
       <div className={Style.orbitItem}>
       <Image
         src="/second-rotate.svg"
@@ -80,9 +87,9 @@ const Synexc =()=>{
         height={170}
       />
       </div>
-    </div>
+    </div> */}
 
-    <div className={Style.orbit + " " + Style.orbit3}>
+    {/* <div className={Style.orbit + " " + Style.orbit3}>
       <div className={Style.orbitItem}>
       <Image
         src="/third-rotate.svg"
@@ -91,7 +98,7 @@ const Synexc =()=>{
         height={229}
       />
       </div>
-    </div>
+    </div> */}
   </div>
 </div>
 

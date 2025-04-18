@@ -238,6 +238,7 @@ color: #181818;
             align-items: center;
             gap: 94px;
             .content {
+                max-width: 597px;
                 p {
                     font-family: "Segoe UI Regular";
 font-weight: 400;
@@ -362,15 +363,25 @@ color: #181818;
 
 .containerSecond {
     position: relative;
-    width: 556px;
-    height: 470px;
+    width: 412px;
+    height: 412px;
     margin: auto;
+.roundedlogo {
+    position: absolute;
+    top: 50%;
+    left: 48%;
+    transform: translate(-50%, -50%);
+    z-index: 9;
+}
+
+
+
   }
   
   .imageWrapper {
     position: relative;
-    width: 434px;
-    height: 416px;
+    width: 412px;
+    height: 412px;
   }
   
   .staticBg
@@ -399,8 +410,10 @@ color: #181818;
   
   .imageWrapper {
     position: relative;
-    width: 100%;
-    height: 100%;
+    // width: 100%;
+    // height: 100%;
+    transform-origin: center center;
+    animation: orbit 7s linear infinite;
   }
   
   .staticBg {
@@ -411,24 +424,25 @@ color: #181818;
   
   .orbit {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform-origin: center center;
-    animation: orbit 7s linear infinite;
+    position: absolute;
+    left: -40px;
+    top: -15px;
+    // transform-origin: center center;
+    // animation: orbit 7s linear infinite;
   }
    
   
-  .orbit1 .orbitItem {
-    transform: translateX(130px);
-  }
+//   .orbit1 .orbitItem {
+//     transform: translateX(130px);
+//   }
   
-  .orbit2 .orbitItem {
-    transform: translateX(-130px);
-  }
+//   .orbit2 .orbitItem {
+//     transform: translateX(-130px);
+//   }
   
-  .orbit3 .orbitItem {
-    transform: translateY(-130px);
-  }
+//   .orbit3 .orbitItem {
+//     transform: translateY(-130px);
+//   }
   
   
   @keyframes spin {
