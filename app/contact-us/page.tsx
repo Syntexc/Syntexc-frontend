@@ -1,4 +1,5 @@
 import ContactBanner from "@/components/contactbanner/page";
+import ContactCollaborate from "@/components/ContactCollaborate/page";
 import ContactTalktoUs from "@/components/ContactTalktoUs/page";
 import ContactUs from "@/components/ContactUs";
 import ContactusMap from "@/components/ContactusMap/page";
@@ -11,6 +12,7 @@ const ContactUss = ()=>{
  <ContactTalktoUs />
  <ContactusMap />
  <JointheTeam />
+ <ContactCollaborate />
  <ContactUs />
 
         </>
