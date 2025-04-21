@@ -2,6 +2,7 @@
 import Image from "next/image";
 import header from "../Header/header.module.scss"
 import React, { useState } from "react";
+import Link from "next/link";
 
 const Header = ()=>{
     const [hoveredIndex, setHoveredIndex] = React.useState<number | null>(null);
@@ -16,7 +17,9 @@ const Header = ()=>{
         <div className={header.containerbox}>
         <div className={header.row}>
                 <div className={header.logo}>
+                    <Link href="/">
                     <Image src="/Logo.png" width={220}  height={62} alt="Logo" priority />
+                    </Link>
                 </div>
                 <div className={header.nav}>
 
@@ -41,7 +44,7 @@ const Header = ()=>{
             onMouseLeave={() => setHoveredIndex(null)}
             className={header.menuItem}
           >
-            <a href={item?.herf}>
+            <Link href={item?.herf}>
               {item?.name}
               <span className={header.arrow}>
 
@@ -49,7 +52,7 @@ const Header = ()=>{
  :       <Image src="/svg-icons/arrow-right-s-line.svg" width={25}  height={25} alt="Logo" />             
 }
               </span>
-            </a>
+            </Link>
           </li>
         ))}
         <li><a href="#contact"  >Contact sales</a></li>
@@ -79,7 +82,7 @@ const Header = ()=>{
                     </ul>
                 </div>
                 <div className={header.getinquery}>
-                    <a href="#contact" className={header.sales}>Contact Us</a>
+                    <Link href="/contact-us" className={header.sales}>Contact Us</Link>
                     <a href="#contact" className={header.getinquery}>get quote</a>
                 </div>
                 </div>
@@ -102,7 +105,7 @@ const menuItems = [
   const newMenuItems = [
     {
       name: "Company",
-      herf: "#about",
+      herf: "/about-us",
     },
     {
       name: "Services",

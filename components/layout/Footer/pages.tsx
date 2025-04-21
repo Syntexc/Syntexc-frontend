@@ -1,5 +1,6 @@
 import Image from "next/image";
 import footer from "../Footer/footer.module.scss"
+import Link from "next/link";
 const Footer = ()=>{
     return (
         <>
@@ -95,7 +96,7 @@ const Footer = ()=>{
                                         {footerlink2arry?.map((item, index) => {
                                         return (
                                             <>
-                                                <li key={index}><a href={item?.href}>{item.link}</a></li>
+                                                <li key={index}><Link href={item?.href}>{item.link}</Link></li>
                                             </>
                                         )
                                     })}</ul>
@@ -137,8 +138,8 @@ const footerlink1arry = [
 
 const footerlink2arry = [
     // {link:"Blogs" , href:"#blogs"}, 
-    // {link:"Our Team" , href:"#blogs"}, 
+    {link:"Our Team" , href:"/team"}, 
     // {link:"FAQ" , href:"#"},
-    {link:"Contact Us", href:"#contact"},
+    {link:"Contact Us", href:"/contact-us"},
     // {link:"Privacy Policy" , href:"#"},
 ]
