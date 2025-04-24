@@ -1,68 +1,110 @@
 .section {
     background: linear-gradient(141.95deg, #253E90 7.73%, #0B122A 83.43%);
-padding-top: 40px;
-padding-bottom: 40px;
-.container {
-    max-width: 1102px;
-    margin-left: auto;
-    margin-right: auto;
-    .row {
-        position: relative;
-        .mapitems {
-            width: fit-content;
-            max-width: fit-content;
-            position: relative;
-           .addbox {
-            position: relative;
-            border: 1px solid rgba(255, 255, 255, 1);
-            max-width: 296px;
-            border-width: 1px;
-            padding-top: 12px;
-            padding-right: 20px;
-            padding-bottom: 12px;
-            padding-left: 20px;
-            gap: 16px;
-            border-radius: 12px;
-            background: rgba(0, 0, 0, 0.4);
-            margin-bottom: 11px;
-            h3{
-                font-family: "Segoe UI bold";
-font-weight: 700;
-font-size: 18px;
-line-height: 26px;
-letter-spacing: 0%;
-vertical-align: bottom;
-text-transform: uppercase;
-color: rgba(255, 255, 255, 1);
+    padding-top: 40px;
+    padding-bottom: 40px;
+    @media (max-width:768px) {
+        padding-left: 20px;
+        padding-right: 20px;
+     }
 
-            }
-            p {
-                font-family: "Segoe UI Regular";
-                font-weight: 400;
-                font-size: 16px;
-                line-height: 24px;
-                letter-spacing: 0%;
-                vertical-align: bottom;
-                color: #fff;
-                
-            }
-           }
-           img {
-            margin: auto;
-    display: block;
-           }
-        }
+    .container {
+        max-width: 1102px;
+        margin-left: auto;
+        margin-right: auto;
 
-        .map1 {
-            position: absolute;
-            top: 121px;
-            left: 94px;
-        }
-        .map2 {
-            position: absolute;
-            top: 88px;
-            right: 203px;
+        .row {
+            position: relative;
+            .mapstyle {
+                @media (max-width:768px) {
+                    width: 100%;
+                    height: auto;
+                    }
+            }
+
+            .mapitems {
+                width: fit-content;
+                max-width: fit-content;
+                position: relative;
+
+                .addbox {
+                    position: relative;
+                    border: 1px solid rgba(255, 255, 255, 1);
+                    max-width: 296px;
+                    border-width: 1px;
+                    padding-top: 12px;
+                    padding-right: 20px;
+                    padding-bottom: 12px;
+                    padding-left: 20px;
+                    gap: 16px;
+                    border-radius: 12px;
+                    background: rgba(0, 0, 0, 0.4);
+                    margin-bottom: 11px;
+                    @media (max-width:768px) {
+                        padding: 4px 6px;
+                        }
+
+                    h3 {
+                        font-family: "Segoe UI bold";
+                        font-weight: 700;
+                        font-size: 18px;
+                        line-height: 26px;
+                        letter-spacing: 0%;
+                        vertical-align: bottom;
+                        text-transform: uppercase;
+                        color: rgba(255, 255, 255, 1);
+                        @media (max-width:768px) {
+                            font-size: 10px;
+                        line-height: 16px;
+                            }
+
+                    }
+
+                    p {
+                        font-family: "Segoe UI Regular";
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 24px;
+                        letter-spacing: 0%;
+                        vertical-align: bottom;
+                        color: #fff;
+                        @media (max-width:768px) {
+                            font-size: 10px;
+                        line-height: 16px;
+                            }
+
+                    }
+                }
+
+                img {
+                    margin: auto;
+                    display: block;
+                    @media (max-width:768px) {
+                     width: 20px;
+                     height: 20px;
+                        }
+                }
+            }
+
+            .map1 {
+                position: absolute;
+                top: 121px;
+                left: 94px;
+                @media (max-width:768px) {
+                    top: 0px;
+                    left: 16px;
+                       }
+            }
+
+            .map2 {
+                position: absolute;
+                top: 88px;
+                right: 203px;
+                @media (max-width:768px) {
+                    top: -11px;
+                   right: 24px;
+                   max-width: 140px;
+                       }
+            }
         }
     }
-}
 }

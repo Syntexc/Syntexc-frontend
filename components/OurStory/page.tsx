@@ -19,7 +19,12 @@ const OurStory = () => {
                         <div className={Style.image}>
 
                             <Image src={"/homefly.png"} width={59} height={79} alt="image" className={Style.learr} />
-                            <Image src={"/44955449_9086038 1.svg"} width={478} height={478} alt="image" className={Style.bigimage} />
+
+                            <div className={Style.boxani}>
+                            <Image src={"/Group39661.png"} width={134} height={182} alt="image" className={Style.lightimage} />
+                            <Image src={"/44955449_9086038.png"} width={478} height={478} alt="image" className={Style.bigimage} />
+                            </div>
+                           
                         </div>
                     </div>
 

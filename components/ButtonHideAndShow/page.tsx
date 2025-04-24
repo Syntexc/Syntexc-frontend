@@ -18,7 +18,7 @@ const ButtonHideAndShow = ({ iconurl, text }: ButtonHideAndShowProp) => {
   return (
     <>
       <div className={Style.box} onClick={handleToggle}>
-        {isToggled ? <> <div className={Style.icon}>
+        {!isToggled ? <> <div className={Style.icon}>
           <Image src={iconurl} width={24} height={24} alt="icon" />
         </div></> : <> <p className={Style.text}>{text}</p></>}
       </div>

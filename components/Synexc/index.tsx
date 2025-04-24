@@ -66,11 +66,16 @@ const Synexc =()=>{
       className={Style.staticBg}
     />
 
+    <h3 className={Style.anim1}>streamline sales</h3>
+    <h3 className={Style.anim2}>AI-powered automation</h3>
+    <h3 className={Style.anim3}>enhance customer engagement</h3>
+
     <div className={Style.orbit + " " + Style.orbit1}>
       <div className={Style.orbitItem}>
       <Image
         // src="/first-rotate.svg"
-        src="/Assetca.svg"
+        src="/Assetca1.svg"
+        // src="/Assetca.svg"
         alt="Rotating Spinner"
         width={557}
         height={471}

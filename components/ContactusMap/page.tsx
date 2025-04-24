@@ -6,7 +6,7 @@ return(
     <section className={Style.section}>
         <div className={Style.container}>
             <div className={Style.row}>
-                <Image src={"/map.svg"} alt={"Clippathgroup"} width={1102} height={544} />
+                <Image src={"/map.svg"} alt={"Clippathgroup"} width={1102} height={544} className={Style.mapstyle}  />
                 <div className={`${Style.map1} ${Style.mapitems}`}>
                     <div className={Style.addbox}>
                         <h3>Global Presence</h3>

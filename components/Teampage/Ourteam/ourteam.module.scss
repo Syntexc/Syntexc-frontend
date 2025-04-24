@@ -39,8 +39,7 @@ font-family: "Segoe UI Bold";
     max-width: fit-content;
     margin-left: auto;
     margin-right: auto;
-    display: grid
-;
+    display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 98px;
     row-gap: 40px;
@@ -56,8 +55,16 @@ font-family: "Segoe UI Bold";
     gap: 8px;
     .image {
         position: relative;
+        &:hover {
+            img {
+                -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+          filter: grayscale(0%);
+            }
+        }
         img {
 position: relative;
+-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+filter: grayscale(100%);
         }
     }
     .content {

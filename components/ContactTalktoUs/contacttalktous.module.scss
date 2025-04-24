@@ -2,15 +2,26 @@
    padding-top: 96px;
    padding-bottom: 96px;
    position: relative;
+   @media (max-width:768px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    }
    .layeer {
     position: absolute;
     top: 0px;
     left: 0;
     right: 0;
     margin: auto;
-    display: flex
-;
+    display: flex;
     justify-content: center;
+    @media (max-width:768px) {
+        max-width: 100%;
+        width: 100%;
+        img {
+            width: 100%;
+            height: auto;
+        }
+        }
    }
    .container {
     max-width: 1040px;
@@ -20,6 +31,9 @@
     position: relative;
     display: flex;
     justify-content: space-between;
+    @media (max-width:768px) {
+     flex-direction: column;
+        }
     .contentbox {
         position: relative;
         h2 {
@@ -30,6 +44,11 @@ line-height: 56px;
 letter-spacing: 0%;
 vertical-align: bottom;
 color: rgba(37, 62, 144, 1);
+@media (max-width:768px) {
+    font-size: 32px;
+line-height: 40px;
+text-align: center;
+       }
 
         }
         h3 {
@@ -42,6 +61,12 @@ color: rgba(37, 62, 144, 1);
             color: rgba(24, 24, 24, 1);
             margin-top: 20px;
             margin-bottom: 24px;
+            @media (max-width:768px) {
+                font-size: 24px;
+            line-height: 32px;
+            margin: 0px;
+            text-align: center;
+                   }
             
         }
 p {
@@ -53,7 +78,15 @@ p {
     vertical-align: bottom;
     color: rgba(24, 24, 24, 1);
     margin-bottom: 24px;
-    
+    @media (max-width:768px) {
+        font-size: 16px;
+    line-height: 24px;
+   max-width: 238px;
+   margin-left: auto;
+   margin-right: auto;
+    text-align: center;
+    margin-top: 12px;
+           }
 }
  a {
     background: #253e90;
@@ -73,6 +106,10 @@ p {
     position: relative;
     z-index: 9;
     text-transform: uppercase;
+    @media (max-width:768px) {
+        margin-left: auto;
+        margin-right: auto;
+     }
     &:hover{
         background: linear-gradient(to right, #253e90, #2baae2);
     }
@@ -80,6 +117,15 @@ p {
     }
     .imagebox {
         position: relative;
+        @media (max-width:768px) {
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 40px;
+            img {
+                width: 174px;
+                height: auto;
+            }
+         }
     }
 }
 

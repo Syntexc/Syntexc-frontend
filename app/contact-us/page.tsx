@@ -10,10 +10,10 @@ const ContactUss = ()=>{
         <>
  <ContactBanner /> 
  <ContactTalktoUs />
- <ContactusMap />
- <JointheTeam />
+<ContactusMap />
+  <JointheTeam />
  <ContactCollaborate />
- <ContactUs />
+  <ContactUs />  
 
         </>
     )
