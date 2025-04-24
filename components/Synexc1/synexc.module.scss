@@ -1,0 +1,232 @@
+.section {
+    background: linear-gradient(#fff0 9.67%, #2baae24d 100%);
+    
+    padding-bottom: 96px;
+    z-index: 9999;
+
+    .container {
+        .row {
+            position: relative;
+            bottom: 50px;
+            .box {
+
+                background: #fff;
+                max-width: 1087px;
+                margin-left: auto;
+                margin-right: auto;
+                border-radius: 24px;
+                padding: 40px;
+                position: relative;
+                overflow: hidden;
+                margin-top: -50px;
+                z-index: 999999;
+                box-shadow: 0px 0px 23.9px 0px #2F373A4D;
+
+                .layer34 {
+                    position: absolute;
+                    right: 0px;
+                    top: 0px;
+                    width: 230px;
+                    height: auto;
+                }
+                
+                .layer35 {
+                    position: absolute;
+                    left: 0px;
+                    bottom: 0px;
+                    width: 250px;
+                    height: auto;
+                }
+                
+
+               
+        //   &::after{
+        //     background: url("/convince-your-boss-bg 1.png");
+        //     width: 100%;
+        //     height: 100%;
+        //     position:absolute;
+        //     content:"";
+        //     bottom: 0px;
+        //     background-size: 100% auto;
+        //     left: 0px;
+        //     background-position:bottom ;
+        //     background-repeat: no-repeat;
+        //   }
+          
+            h2{
+                font-family: "Segoe UI Regular";
+                font-weight: 700;
+                font-size: 48px;
+                line-height: 55px;
+                letter-spacing: 0%;
+                text-align: center;
+                max-width: 747px;
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: 12px;
+                position: relative;
+                z-index: 999999;
+
+                @media (max-width: 768px) {
+                    font-size: 20px !important;
+                    line-height: 26px;
+                    margin-bottom: 2px;
+                z-index: 999999;
+
+                
+                }
+            }
+            h3 {
+                font-family: "Segoe UI Regular";
+                font-weight: 400;
+                font-size: 24px;
+                line-height: 32px;
+                letter-spacing: 0%;
+                text-align: center;
+                vertical-align: bottom;
+                z-index: 9;
+                @media (max-width: 768px) {
+                    font-size: 16px;
+                
+                }
+            }
+            h4 {
+                font-family: "Segoe UI Regular";
+                font-weight: 400;
+                font-size: 32px;
+                line-height: 100%;
+                letter-spacing: 0%;
+                text-align: center;
+                color: #181818;
+                z-index: 9;
+                margin-top: 20px;
+    margin-bottom: 12px;
+    position: relative;
+    z-index: 9;
+                .dsd {
+color: #253E90;
+font-weight: bold;
+                }
+                .sdsd {
+                    color: #2BAAE2;
+                    font-weight: bold;
+                }
+                
+            }
+            p {
+                font-family: "Segoe UI Regular";
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: bottom;
+    max-width: 873px;
+    margin-left: auto;
+    margin-right: auto;
+    
+            }
+            
+            .btnn {
+                margin-top: 34px;
+                background: #253e90;
+                font-family: "Segoe UI Regular";
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 24px;
+                padding-top: 12px;
+                padding-right: 24px;
+                padding-bottom: 12px;
+                padding-left: 24px;
+                border-radius: 12px;
+                margin-left: auto;
+                margin-right: auto;
+                display: block;
+                width: fit-content;
+                color: #fff;
+                text-decoration: none;
+                margin-bottom: 40px;
+                position: relative;
+                z-index: 9;
+    @media (max-width: 768px) {
+        margin-top: 0px;
+    }
+    &:hover {
+        background: linear-gradient(to right, #253e90, #2baae2);
+    }
+            }
+
+            .image {
+                margin-left: auto;
+                margin-right: auto;
+                display: flex;
+                justify-content: center;
+            }
+        }
+        }
+
+.outerbox {
+    display: flex;
+    flex-direction: column;
+    gap: 120px;
+}
+
+        .newdesing {
+
+            max-width: 1248px;
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .textbox {
+                max-width: 700px;
+h3 {
+    font-family: "Segoe UI bold";
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 56px;
+    letter-spacing: 0%;
+    vertical-align: bottom;
+    color: #253E90;
+    margin-bottom: 24px;
+    
+}
+
+.style22 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    .style33 {
+        h5 {
+            font-family: "Segoe UI bold";
+font-weight: 700;
+font-size: 24px;
+line-height: 32px;
+letter-spacing: 0%;
+vertical-align: bottom;
+color: #181818;
+        }
+        p {
+            font-family: "Segoe UI Regular";
+font-weight: 400;
+font-size: 24px;
+line-height: 32px;
+letter-spacing: 0%;
+vertical-align: bottom;
+
+        }
+    }
+}
+            }
+
+            .image {
+
+            }
+        }
+
+
+    }
+}
