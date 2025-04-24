@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Style from "./aboutbanner.module.scss"
+import Link from "next/link";
 
 const Aboutbanner = ()=>{
     return(
@@ -32,7 +33,7 @@ const Aboutbanner = ()=>{
         </div>
 
         <div className={Style.btn}>
-            <a href="#">That’s the future we build <b>at Synexc.</b></a>
+            <Link href="/contact-us">That’s the future we build <b>at Synexc.</b></Link>
         </div>
     </div>
 </div>

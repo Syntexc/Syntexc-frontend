@@ -14,7 +14,7 @@ const ContactTalktoUs = () =>{
 <h2>Talk to Us</h2>
 <h3>No bots, no barriers </h3>
 <p>Just real people, real solutions, and real results.</p>
-<a href="#">Book Consultation</a>
+<a href="#contact" >Book Consultation</a>
 
     </div>
     <div className={Style.imagebox}>

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Style from "./ourstory.module.scss"
+import Link from "next/link";
 
 const OurStory = () => {
     return (
@@ -14,7 +15,7 @@ const OurStory = () => {
                                 <p>Many organizations invest in Salesforce with high hopes only to encounter fragmented systems, underutilized features, and disconnected teams. The result? Wasted resources, stalled growth, and missed opportunities.</p>
                                 <p> That’s where clarity, strategy, and expertise become essential. That’s where Synexc comes in.</p>
                             </div>
-                            <a href="#">Get a <b>Free</b> Consultation now!</a>
+                           <Link href="/contact-us">  Get a <b>Free</b> Consultation now! </Link>
                         </div>
                         <div className={Style.image}>
 

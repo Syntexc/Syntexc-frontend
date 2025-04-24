@@ -43,7 +43,11 @@ color: #253E90;
                         vertical-align: bottom;
                         color: #181818;
                         margin-bottom: 20px;
-                        
+                        @media (max-width:768px){ 
+                            font-size: 20px;
+                            line-height: 23px;
+                            text-align: center;
+                        }
                     }
                     p {
                         font-family: 'Segoe UI Regular';
@@ -53,7 +57,11 @@ color: #253E90;
                         letter-spacing: 0%;
                         vertical-align: bottom;
                         color: #181818;
-                        
+                        @media (max-width:768px){ 
+                            font-size: 16px;
+                            line-height: 23px;
+                            text-align: center;
+                        }
                     }
                 }
             }
@@ -74,9 +82,10 @@ color: #253E90;
                 .contentbox {
                     width: 100%;
                     h2{
-                        font-size: 35px;
-                        line-height: 50px; 
+                        font-size: 26px;
+                        line-height: 33px;                
                         padding: 0px;
+                        text-align: center;
                     }
                 }
                 .frombox{

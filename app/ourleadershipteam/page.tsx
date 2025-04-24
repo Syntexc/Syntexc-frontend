@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Style from "./ourleadershipteam.module.scss"
+import Link from "next/link";
 
 const OurLeadershipTeam = ()=>{
     return(
@@ -43,7 +44,7 @@ const OurLeadershipTeam = ()=>{
     </div>
 
     <div className={Style.container3}>
-        <a href="#">Join our <b>&nbsp;community</b> </a>
+        <Link href="/contact-us">Join our <b>&nbsp;community</b> </Link>
     </div>
 </section>
         </>

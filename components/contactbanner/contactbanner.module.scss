@@ -2,9 +2,10 @@
     background: url('/Frame427319196.png');
     position: relative;
     padding-top: 140px;
-    padding-bottom: 180px;
+    padding-bottom: 140px;
     background-size: cover;
-    background-position: center -150px;
+    // background-position: center -150px;
+    background-repeat: no-repeat;
    
     @media (max-width:768px) {
         padding: 9px;

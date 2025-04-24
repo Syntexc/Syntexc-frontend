@@ -24,7 +24,7 @@ const Header = ()=>{
                 <div className={header.nav}>
 
 <div className={header.mobilebar}>
-  <Image src={"./menu-3-line.svg"} alt={"bar"} width={40}  height={40}  onClick={handleToggle} />
+  <Image src={"./hamburger.svg"} alt={"bar"} width={40}  height={40}  onClick={handleToggle} />
 </div>
 
 

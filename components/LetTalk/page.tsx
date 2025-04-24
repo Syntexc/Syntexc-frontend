@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Style from "./lettalk.module.scss"
+import Link from "next/link";
 const LetTalk = () =>{
     return(
         <>
@@ -12,7 +13,7 @@ const LetTalk = () =>{
                 <h2>Let’s Talk </h2>
                 <p>Your growth story deserves a partner who’s just as invested as you are.<br /><br />
                 Let’s explore how Synexc can help you unlock the full potential of Salesforce and build a smarter, stronger future.</p>
-                <a href="#">Contact Us Now</a>
+                <Link href="/contact-us">Contact Us Now</Link>
             </div>
         </section>
         </>
