@@ -1,3 +1,4 @@
+"use client"
 import Image from "next/image";
 import Style from "./synexc.module.scss"
 import { useSpinnerRotation } from "@/hooks/useSpinnerRotation";
