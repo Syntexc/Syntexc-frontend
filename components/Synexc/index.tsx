@@ -31,7 +31,7 @@ const Synexc =()=>{
                 </div>
 
 <div id="about">
-<h2 className={Style.mide}>Synexc: Where Strategy Meets CRM, <span> <br /> and Success Follows</span></h2>
+<h2 className={Style.mide}>Synexc: Where Strategy Meets CRM, <span>   and Success Follows</span></h2>
 
                 <div className={Style.row1}>
                     <div className={Style.content}>

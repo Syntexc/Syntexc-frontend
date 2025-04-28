@@ -21,6 +21,11 @@ box-shadow: 0px 29px 35px rgba(0, 0, 0, 0.1); /* Adjust values as needed */
     text-align: center;
     color: #253e90;
     margin-bottom: 24px;
+    @media (max-width:768px){ 
+        font-size: 20px;
+        line-height: 23px;
+    }
+
     span {
         color: #181818;
     }
@@ -82,7 +87,9 @@ height: 104px;
                     position: absolute;
                     bottom: 0px;
                     right: -53px;
-                    
+                    @media (max-width:768px){ 
+                       display: none;
+                    }
                 }
 
                 

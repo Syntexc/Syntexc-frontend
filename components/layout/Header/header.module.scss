@@ -175,6 +175,13 @@ z-index: 999999;
 
 .mobilebar {
     display: block;
+        background-color: #253e90;
+        padding: 12px 20px;
+        border-radius: 9px;
+        img {
+            width: 20px;
+            height: 20px;
+        }
 }
 
     .getinquery {

@@ -96,9 +96,12 @@ vertical-align: bottom;
                 .tabws {
                     flex-direction: column;
                     gap: 10px;
-
+                    display: flex
+                    ;
+                        flex-direction: row;
+                        flex-wrap: wrap;
                     li {
-                        padding: 10px;
+                        padding: 10px 22px;
                         font-size: 12px;
                     }
                 }

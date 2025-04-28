@@ -161,6 +161,46 @@ font-weight: bold;
                 margin-right: auto;
                 display: flex;
                 justify-content: center;
+                position: relative;
+                max-width: 828px;
+                margin-top: 60px;
+                .industryLogo{
+                    position: absolute;
+                    background-color: #fff;
+                    padding: 20px;
+                    border-radius: 50%;
+                    box-shadow: 0 0 23.9px #2f373a4d;
+                    top: -35px;
+                    left: 311px;
+                    /* right: auto; */
+                    width: 45px;
+                    display: flex;
+                    height: 45px;
+                    justify-content: center;
+                    align-items: center;
+                    /* margin: 0 11px 0px -97px; */ 
+                    
+
+                }
+                .cyberLogo{
+                    position: absolute; 
+                    left: 0;
+                    bottom: 0px;
+                    background-color: #fff;
+                    padding: 20px;
+                    border-radius: 50%;
+                    box-shadow: 0px 0px 23.9px 0px #2F373A4D;
+                }
+                .blubLogo{
+                    position: absolute; 
+                    right: 0;
+                    bottom: 0px;
+                    background-color: #fff;
+                    padding: 20px;
+                    border-radius: 50%;
+                    box-shadow: 0px 0px 23.9px 0px #2F373A4D;
+                }
+
             }
         }
         }

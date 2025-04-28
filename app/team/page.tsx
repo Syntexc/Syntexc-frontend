@@ -8,7 +8,7 @@ const Teampage = ()=>{
         <>
         <Teambanner />
         <OurTeam />
-<Partnerships />
+        <Partnerships />
         <LetTalk />
         </>
     )

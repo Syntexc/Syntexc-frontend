@@ -11,6 +11,21 @@ const Header = ()=>{
     const handleToggle = () => {
       setIsToggled(!isToggled);
     };
+
+    const ref = React.useRef<HTMLDivElement>(null);
+    React.useEffect(() => {
+      const handleClickOutside = (event: MouseEvent) => {
+        if (ref.current && !ref.current.contains(event.target as Node)) {
+          setIsToggled(false);
+        }
+      };
+      document.addEventListener("mousedown", handleClickOutside);
+      return () => {
+        document.removeEventListener("mousedown", handleClickOutside);
+      };
+    }
+    , [ref]);
+
     return (
         <>
         <header className={header.header}>
@@ -24,17 +39,18 @@ const Header = ()=>{
                 <div className={header.nav}>
 
 <div className={header.mobilebar}>
-  <Image src={"./menu-3-line.svg"} alt={"bar"} width={40}  height={40}  onClick={handleToggle} />
+  <Image src={"./hamburger.svg"} alt={"bar"} width={40}  height={40}  onClick={handleToggle} />
 </div>
 
 
 
-                <ul className={`${header.mobile}  `} 
+                <ul className={`${header.mobile}` } 
                 style={{
                   height:isToggled ? "auto" : "0px",
                   overflow:isToggled ? "auto" : "hidden",
                   background:isToggled ? "#0000000f" : "null",
                 }}
+                ref={ref}
                 
                 >
                     {newMenuItems.map((item, index) => (
@@ -55,8 +71,8 @@ const Header = ()=>{
             </Link>
           </li>
         ))}
-        <li><a href="#contact"  >Contact sales</a></li>
-        <li> <a href="#contact" >get quote</a></li>
+        <li><a href="/contact-us">Contact sales</a></li>
+        <li> <a href="/contact-us">get quote</a></li>
                     </ul>
 
 

@@ -42,6 +42,9 @@
                     @media (max-width:768px) {
                         padding: 4px 6px;
                         }
+                    &:hover {
+                        background-color: #000;
+                    }
 
                     h3 {
                         font-family: "Segoe UI bold";

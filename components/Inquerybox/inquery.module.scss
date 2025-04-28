@@ -213,8 +213,7 @@ margin-top: 40px;
         width: 90%; // Full width on mobile
         padding: 16px; // Reduced padding for mobile
         // box-shadow: none; // Remove shadow for mobile
-        border-left: none; // Remove left border for mobile
-
+        border-left: 4px solid #2baae2;
         .innerbox {
             gap: 16px; // Adjust gap for mobile
             ul {

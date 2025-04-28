@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:ror="http://rorweb.com/0.1/" >
+<channel>
+ <title>ROR Sitemap for https://synexc.com/</title>
+ <link>https://synexc.com/</link>
+ <description>ROR Sitemap</description>  
+ 
+<item>
+   <title>#1 Salesforce Consulting Company | CRM solutions | Synexc</title>  
+   <link>https://synexc.com/</link>
+   <description>#1 Salesforce Consulting Company | CRM solutions | Synexc</description>
+   <ror:updatePeriod>daily</ror:updatePeriod>
+   <ror:sortOrder>0</ror:sortOrder>
+   <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+   <title>#1 Salesforce Consulting Company | CRM solutions | Synexc</title>  
+   <link>https://synexc.com/about-us</link>
+   <description>#1 Salesforce Consulting Company | CRM solutions | Synexc</description>
+   <ror:updatePeriod>daily</ror:updatePeriod>
+   <ror:sortOrder>1</ror:sortOrder>
+   <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+   <title>#1 Salesforce Consulting Company | CRM solutions | Synexc</title>  
+   <link>https://synexc.com/contact-us</link>
+   <description>#1 Salesforce Consulting Company | CRM solutions | Synexc</description>
+   <ror:updatePeriod>daily</ror:updatePeriod>
+   <ror:sortOrder>1</ror:sortOrder>
+   <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+   <title>#1 Salesforce Consulting Company | CRM solutions | Synexc</title>  
+   <link>https://synexc.com/team</link>
+   <description>#1 Salesforce Consulting Company | CRM solutions | Synexc</description>
+   <ror:updatePeriod>daily</ror:updatePeriod>
+   <ror:sortOrder>1</ror:sortOrder>
+   <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+</channel>
+</rss>

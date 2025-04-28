@@ -29,8 +29,21 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-       <head>
-        
+      <head>
+
+        <meta name="author" content="Synexc" />
+        <meta name="distribution" content="Global" />
+        <meta name="geo.region" content="IN-UP" />
+        <meta name="geo.placename" content="Noida" />
+        <meta name="geo.position" content="28.570633;77.327215" />
+        <meta name="ICBM" content="28.570633, 77.327215" />
+        <meta name="Language" content="English" />
+        <meta name="YahooSeeker" content="INDEX, FOLLOW" />
+        <meta name="msnbot" content="INDEX, FOLLOW" />
+        <meta name="allow-search" content="yes" />
+        <meta name="robots" content="noydir,noodp" />
+        <meta name="rating" content="General" />
+        <meta name="revisit-after" content="2 days" />
         {/* Google Analytics */}
         <Script async src="https://www.googletagmanager.com/gtag/js?id=G-3W84D54KXJ" />
         <Script id="google-analytics" strategy="afterInteractive">
@@ -53,7 +66,7 @@ export default function RootLayout({
           `}
         </Script>
       </head>
-      <body> 
+      <body>
         <noscript>
           <iframe
             src="https://www.googletagmanager.com/ns.html?id=GTM-KF2L89Q9"
