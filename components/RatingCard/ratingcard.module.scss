@@ -3,8 +3,7 @@
     position: relative;
     border: 0.91px solid rgba(37, 62, 144, 1);
     border-radius: 24px;
-    padding: 18px;
-    box-sizing: border-box;
+    padding: 18px; 
     .innnerbox {
         position: relative;
         display: flex
@@ -87,6 +86,7 @@ height: auto;
         width: 100%;
         padding: 12px;
         border-radius: 16px;
+        box-sizing: border-box;
 
         .innnerbox {
             flex-direction: column;

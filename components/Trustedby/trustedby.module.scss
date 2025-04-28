@@ -22,7 +22,7 @@
     color: #253e90;
     margin-bottom: 24px;
     @media (max-width:768px){ 
-        font-size: 20px;
+        font-size: 21px;
         line-height: 23px;
     }
                 span {
@@ -54,6 +54,11 @@
             align-items: flex-end;
             // flex-wrap: wrap;
             width: 100%;
+            @media (max-width:768px){
+                max-width: 270px;
+                margin-left: auto;
+                margin-right: auto;
+            }
             .cScore {
                 background: linear-gradient(50.51deg, #2BAAE2 10.46%, #253E90 84.75%);
                 box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
@@ -204,7 +209,17 @@
 }
 
 
-
+.slidercard {
+    
+    @media (max-width:768px){
+        height: 100% !important;
+     }
+}
+.slidercard>div {
+    @media (max-width:768px){
+        height: 100% !important;
+     }
+}
 .swiper-button-prev, .swiper-button-next {
     background-color: #fff;
     border-radius: 50%;

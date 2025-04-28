@@ -97,16 +97,16 @@ const Trustedby = () =>{
         spaceBetween={30}
         slidesPerView={1}
         centeredSlides={true}
-        autoplay={{
-          delay: 2000,
-          disableOnInteraction: false,
-        }}
+        // autoplay={{
+        //   delay: 2000,
+        //   disableOnInteraction: false,
+        // }}
         onSwiper={(swiper) => (swiperRef.current = swiper)}
         className="testimonialslider"
       >
         {ratingCards?.length > 0 ? (
           ratingCards.map((card, index) => (
-            <SwiperSlide key={index}>
+            <SwiperSlide key={index} className={Styles.slidercard}>
               <RatingCard
                 image={card.image}
                 username={card.username}

@@ -19,27 +19,20 @@ const Synexc1 =()=>{
                     <a href="#contact" className={Style.btnn}>Get a <b>Free</b> Consultation now!</a>
                     <div className={Style.image}>
  <span className={Style.industryLogo}>
-
-  <Image src={"/logo-industry.svg"} width={57} height={28} alt={"Group39549"}  />
-  {/* <span>
-  <Image src={"/updated-logo.svg"} width={57} height={28} alt={"Group39549"}  />
-
-  </span> */}
-  
+  <Image src={"/logo-industry.svg"} width={57} height={28} alt={"Group39549"}  priority className={Style.defaultlogo} />
+  <Image src={"/hoverlogo.svg"} width={57} height={28} alt={"Group39549"} className={Style.hoverlogo}  priority />
  </span>
- {/* <span className={Style.industryLogoUpdated}>
-
-  <Image src={"/logo-industry.svg"} width={57} height={28} alt={"Group39549"}  />
- </span> */}
+ 
  <span  className={Style.cyberLogo} >
-  <Image src={"/cyber.svg"} width={80} height={80} alt={"Group39549"}    />
-
+  <Image src={"/cyber.svg"} width={80} height={80} alt={"Group39549"}  priority   />
  </span>
-  <Image src={"/dotted.svg"} width={828} height={232} alt={"Group39549"}   className={Style.dottedLogo}   />
-  <span className={Style.blubLogo} >
 
-  <Image src={"/blub-hover.svg"} width={80} height={80} alt={"Group39549"}     />
+ 
+  <span className={Style.blubLogo} >
+  <Image src={"/blub-hover.svg"} width={80} height={80} alt={"Group39549"}  priority    />
   </span>
+
+  <Image src={"/dotted.svg"} width={828} height={232} alt={"Group39549"}  priority  className={Style.dottedLogo}   />
 </div>
                   </div>
                 </div>
@@ -75,7 +68,7 @@ const Synexc1 =()=>{
 
 
 
-<div className={Style.newdesing}>
+<div className={`${Style.newdesing} ${Style.revis}`}>
 <div className={Style.image}>
 
 <Image src={"/Framew427319139.png"} width={468} height={468} alt={"Frame427319139"} />
@@ -125,7 +118,7 @@ const Synexc1 =()=>{
 
 
 
-<div className={Style.newdesing}>
+<div className={`${Style.newdesing} ${Style.revis}`}>
 <div className={Style.image}>
 
 <Image src={"/Framedd427319139.png"} width={468} height={468} alt={"Frame427319139"} />

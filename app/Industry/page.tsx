@@ -10,10 +10,10 @@ const IndustryPage =()=>{
     return(
         <>
         <AboutbannerIndustry />
-        <Synexc1 />
-        <SalesforcePartner />
-        <ActuallyWorks />
-  <Trustedby />
+       <Synexc1 />
+         <SalesforcePartner />
+       <ActuallyWorks />
+   <Trustedby /> 
         </>
     )
 }
