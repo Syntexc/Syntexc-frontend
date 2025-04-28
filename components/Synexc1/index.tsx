@@ -18,7 +18,28 @@ const Synexc1 =()=>{
                     <p>We believe in tailored, scalable, business-aware solutions that work in your world. We take the time to understand your workflows, and then use powerful cloud tools to make them smarter.</p>
                     <a href="#contact" className={Style.btnn}>Get a <b>Free</b> Consultation now!</a>
                     <div className={Style.image}>
-  <Image src={"/Group39549.png"} width={828} height={232} alt={"Group39549"} />
+ <span className={Style.industryLogo}>
+
+  <Image src={"/logo-industry.svg"} width={57} height={28} alt={"Group39549"}  />
+  {/* <span>
+  <Image src={"/updated-logo.svg"} width={57} height={28} alt={"Group39549"}  />
+
+  </span> */}
+  
+ </span>
+ {/* <span className={Style.industryLogoUpdated}>
+
+  <Image src={"/logo-industry.svg"} width={57} height={28} alt={"Group39549"}  />
+ </span> */}
+ <span  className={Style.cyberLogo} >
+  <Image src={"/cyber.svg"} width={80} height={80} alt={"Group39549"}    />
+
+ </span>
+  <Image src={"/dotted.svg"} width={828} height={232} alt={"Group39549"}   className={Style.dottedLogo}   />
+  <span className={Style.blubLogo} >
+
+  <Image src={"/blub-hover.svg"} width={80} height={80} alt={"Group39549"}     />
+  </span>
 </div>
                   </div>
                 </div>

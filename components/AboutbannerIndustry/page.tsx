@@ -29,7 +29,9 @@ const AboutbannerIndustry = ()=>{
         </div>
        </div>
        <div className={Style.imagebox}>
-        <Image src={"/Frame427319200.png"} width={639} height={556} alt={"Frame427319200"} />
+       <Image src={"/industry-banner.svg"} width={639} height={556} alt={"Frame427319200"} 
+        priority={true}
+        />
        </div>
     </div>
 </div>

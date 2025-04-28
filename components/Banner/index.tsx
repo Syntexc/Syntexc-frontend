@@ -25,8 +25,8 @@ const Banner = () => {
               
 
 
-                    Claim Your Exclusive <span>Discovery Session</span>
-                    
+                    Get Started. <span>ITS FOR FREE!</span>
+                     
                     
                      
                     </a>

@@ -6,8 +6,10 @@ import { useState } from "react";
 interface ButtonHideAndShowProp {
   iconurl?: any;
   text?: string;
+  backgroundColor?: string;
+  textColor?: string;
 }
-const ButtonHideAndShow = ({ iconurl, text }: ButtonHideAndShowProp) => {
+const ButtonHideAndShow = ({ iconurl, text , backgroundColor , textColor }: ButtonHideAndShowProp) => {
 
 
   const [isToggled, setIsToggled] = useState(false);
@@ -18,9 +20,11 @@ const ButtonHideAndShow = ({ iconurl, text }: ButtonHideAndShowProp) => {
   return (
     <>
       <div className={Style.box} onClick={handleToggle}>
-        {!isToggled ? <> <div className={Style.icon}>
+        {!isToggled ? <> <div className={Style.icon} style={{ backgroundColor: backgroundColor }}>
           <Image src={iconurl} width={24} height={24} alt="icon" />
-        </div></> : <> <p className={Style.text}>{text}</p></>}
+        </div></> : <> <p className={Style.text} 
+        style={{ color: textColor }}
+        >{text}</p></>}
       </div>
     </>
   )

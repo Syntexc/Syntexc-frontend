@@ -9,7 +9,7 @@ import MissionVision from "@/components/MissionVision";
 import SalesforcePartner from "@/components/SalesforcePartner";
 import Synexc from "@/components/Synexc";
 import ThinkYour from "@/components/ThinkYour";
-import Trustedby from "@/components/Trustedby";
+import Trustedby from "@/components/Trustedby"; 
 import Image from "next/image"; 
 
 export default function Home() {
@@ -24,7 +24,7 @@ export default function Home() {
      <SalesforcePartner />
      <ExpertPartner />
      <ThinkYour />
-     <Trustedby />
+     <Trustedby /> 
      <MissionVision />
      {/* <BlogSection /> */}
      <Instantly />

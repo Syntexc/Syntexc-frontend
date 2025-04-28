@@ -87,7 +87,7 @@ const Trustedby = () =>{
 <div className={`${Styles.ratingcard2} desktop-none`}>
 <div className="testimonial-container">
       <Swiper
-        modules={[Navigation]}
+        modules={[Autoplay, Navigation]}
         loop={true}
         pagination={{ clickable: true }}
         navigation={{
@@ -95,7 +95,7 @@ const Trustedby = () =>{
           nextEl: ".custom-next",
         }}
         spaceBetween={30}
-        slidesPerView={2}
+        slidesPerView={1}
         centeredSlides={true}
         autoplay={{
           delay: 2000,
