@@ -12,10 +12,10 @@ const Header = ()=>{
       setIsToggled(!isToggled);
     };
 
-    const ref = React.useRef<HTMLDivElement>(null);
+    const ref = React.useRef<any>(null)
     React.useEffect(() => {
       const handleClickOutside = (event: MouseEvent) => {
-        if (ref.current && !ref.current.contains(event.target as Node)) {
+        if (ref.current && !ref.current?.contains(event.target as Node)) {
           setIsToggled(false);
         }
       };
