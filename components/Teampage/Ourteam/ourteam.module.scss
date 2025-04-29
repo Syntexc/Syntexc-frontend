@@ -48,6 +48,10 @@ font-family: "Segoe UI Bold";
         gap: 24px;
                                       }
 
+                                      .grayscale {
+                                        filter: grayscale(100%);
+                                      }
+
 .teamcard {
     max-width: 267px;
     display: flex;
@@ -55,17 +59,21 @@ font-family: "Segoe UI Bold";
     gap: 8px;
     .image {
         position: relative;
-        &:hover {
-            img {
-                -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
-          filter: grayscale(0%);
-            }
-        }
-        img {
-position: relative;
--webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-filter: grayscale(100%);
-        }
+        // &:hover {
+        //     img {
+        //         -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+        //   filter: grayscale(0%);
+        //     }
+        // }
+//         img {
+// position: relative;
+// -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+// filter: grayscale(100%);
+//         }
+img {
+    transition: filter 0.3s ease;
+  cursor: pointer;
+}
     }
     .content {
         position: relative;
