@@ -44,7 +44,7 @@ const OurLeadershipTeam = ()=>{
     </div>
 
     <div className={Style.container3}>
-        <Link href="/contact-us">Join our <b>&nbsp;community</b> </Link>
+        <Link href="https://www.linkedin.com/company/synexc/about/?viewAsMember=true">Join our <b>&nbsp;community</b> </Link>
     </div>
 </section>
         </>
@@ -132,7 +132,7 @@ const teamarray = [
         id:1,
         teamimage:"/team1.png",
         teamname:"Nishu Mahaseth",
-        teamrole:"Chief- People success and strategist",
+        teamrole:"Chief- People success & strategist",
         teamdesc:"Championing culture, performance, and alignment from the inside out.",
     },
     {

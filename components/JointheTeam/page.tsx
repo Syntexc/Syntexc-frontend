@@ -15,6 +15,7 @@ const JointheTeam = ()=>{
                <ButtonHideAndShow
                iconurl={"/Arrow30.svg"}
                text="careers@synexc.com"
+               action="mailto:careers@synexc.com"
 
                />
                <ButtonHideAndShow

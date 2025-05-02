@@ -17,7 +17,7 @@ return(
                 <div className={`${Style.map2} ${Style.mapitems}`}>
                     <div className={Style.addbox}>
                         <h3>Headquarters</h3>
-                        <p>Synexc Technologies Pvt. Ltd. Bhutani Cyber Park, Tower B, block- C, 6th Floor, Sector 62 Noida</p>
+                        <p>Synexc IT Solutions LLP<br/> Bhutani Cyber Park, Tower B, Block- C, 6th Floor, Sector 62 Noida, Uttar Pradesh 201309, India</p>
                     </div>
                     <Image src={"/google-maps.svg"} alt={"Clippathgroup"} width={80} height={80} />
                 </div>

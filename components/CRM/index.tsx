@@ -88,7 +88,7 @@ const CRM = ()=>{
          <section className={Style.section} ref={sectionRef}>
             <div className={Style.container}>
                 <div className={Style.row}>
-                    <h2>From CRM to Business Breakthroughs - <br/> The Synexc Effect </h2>
+                    <h2>From CRM to Business Breakthroughs <br/> The Synexc Effect </h2>
                     <p>Proven Expertise. Measurable Impact. Continuous Innovation.</p>
                 </div>
 

@@ -23,7 +23,7 @@ const Teambanner = ()=>{
         </div>
         <div className={Style.midheight}>
             <h3>
-            Where strategy meets <span>execution</span>—and people power the <span>platform.</span>
+            Where strategy meets <span>execution</span> & people power the <span>platform.</span>
             </h3>
         </div>
         <div className={Style.perstyle}>

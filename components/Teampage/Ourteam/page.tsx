@@ -93,11 +93,11 @@ const teamcardarray = [
     {id:2,
         image:"/Nishu-Mahaseth.png",
         name:"Nishu Mahaseth",
-        role:"Chief- People Success And Strategist ",
+        role:"Chief- People Success & Strategist ",
     },
     { id:3,
         image:"/Asheesh-Pandey.png",
         name:"Asheesh Pandey",
-        role:"Head- Revenue and Growth Strategist ",
+        role:"Head- Revenue & Growth Strategist ",
     },
 ]

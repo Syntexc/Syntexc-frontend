@@ -26,12 +26,12 @@ const Synexc =()=>{
                         <li><a href="#contact">Managed Services</a></li> 
                     </ul>
                     </div>
-                    <a href="#contact" className={Style.btnn}>Get a <b>Free</b> Consultation now!</a>
+                    <a href="#contact" className={Style.btnn}>Get a <b>Free</b> Consultation Now!</a>
                   </div>
                 </div>
 
 <div id="about">
-<h2 className={Style.mide}>Synexc: Where Strategy Meets CRM, <span>   and Success Follows</span></h2>
+<h2 className={Style.mide}>Synexc: Where Strategy Meets CRM, <span>   And Success Follows</span></h2>
 
                 <div className={Style.row1}>
                     <div className={Style.content}>

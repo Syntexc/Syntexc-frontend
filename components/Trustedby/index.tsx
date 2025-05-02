@@ -140,7 +140,7 @@ const Trustedby = () =>{
                 <div className={Styles.row3}>
 <Image src={"/homefly.png"} width={70} height={86} alt="" className={Styles.homefly} />
 
-    <a href="/#contact">Join our community </a>
+    <a href="https://www.linkedin.com/company/synexc/about/?viewAsMember=true" target="_blank">Join our community </a>
     </div>
             </div>
         </section>

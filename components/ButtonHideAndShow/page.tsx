@@ -8,8 +8,9 @@ interface ButtonHideAndShowProp {
   text?: string;
   backgroundColor?: string;
   textColor?: string;
+  action?: string;
 }
-const ButtonHideAndShow = ({ iconurl, text , backgroundColor , textColor }: ButtonHideAndShowProp) => {
+const ButtonHideAndShow = ({ iconurl, text , backgroundColor , textColor , action }: ButtonHideAndShowProp) => {
 
 
   const [isToggled, setIsToggled] = useState(false);
@@ -24,7 +25,12 @@ const ButtonHideAndShow = ({ iconurl, text , backgroundColor , textColor }: Butt
           <Image src={iconurl} width={24} height={24} alt="icon" />
         </div></> : <> <p className={Style.text} 
         style={{ color: textColor }}
-        >{text}</p></>}
+        >
+          <a href={action}>
+          {text}
+
+          </a>
+          </p></>}
       </div>
     </>
   )
