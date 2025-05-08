@@ -78,23 +78,37 @@ const Header = ()=>{
 
                     <ul className={header.desktop}>
                     {newMenuItems.map((item, index) => (
-          <li
-            key={index}
-            onMouseEnter={() => setHoveredIndex(index)}
-            onMouseLeave={() => setHoveredIndex(null)}
-            className={header.menuItem}
-          >
-            <a href={item?.herf}>
-              {item?.name}
-              <span className={header.arrow}>
+  <li
+    key={index}
+    onMouseEnter={() => setHoveredIndex(index)}
+    onMouseLeave={() => setHoveredIndex(null)}
+    className={header.menuItem}
+    style={{ position: "relative" }}
+  >
+    <Link href={item?.herf}>
+      {item?.name}
+      <span className={header.arrow}>
+        {hoveredIndex === index ? (
+          <Image src="/svg-icons/arrow-down-s-line.svg" width={25} height={25} alt="Arrow" />
+        ) : (
+          <Image src="/svg-icons/arrow-right-s-line.svg" width={25} height={25} alt="Arrow" />
+        )}
+      </span>
+    </Link>
 
-                {hoveredIndex === index ?      <Image src="/svg-icons/arrow-down-s-line.svg" width={25}  height={25} alt="Logo" />                
- :       <Image src="/svg-icons/arrow-right-s-line.svg" width={25}  height={25} alt="Logo" />             
-}
-              </span>
-            </a>
+    {/* Dropdown menu */}
+    {hoveredIndex === index && item.subItems && (
+      <ul className={header.subDropdown}>
+        {item.subItems.map((subItem, subIndex) => (
+          <li key={subIndex}>
+            <a href={subItem.href}>{subItem.name}</a>
           </li>
         ))}
+      </ul>
+    )}
+  </li>
+))}
+
                     </ul>
                 </div>
                 <div className={header.getinquery}>
@@ -122,10 +136,15 @@ const menuItems = [
     {
       name: "Company",
       herf: "/about-us",
+      subItems: [
+        { name: "About Us", href: "/about-us" },
+        { name: "Contact Us", href: "/contact-us" },
+        { name: "Team", href: "/team" },
+      ],
     },
     {
       name: "Services",
-      herf: "#services",
+      herf: "/Industry",
     },
     {
       name: "Insights",

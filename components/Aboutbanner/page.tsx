@@ -1,8 +1,12 @@
+"use client"
 import Image from "next/image";
 import Style from "./aboutbanner.module.scss"
 import Link from "next/link";
+import InqueryBox from "../Inquerybox";
+import { useState } from "react";
 
 const Aboutbanner = ()=>{
+    const [isVisible, setIsVisible] = useState(false);
     return(
         <>
 <section className={Style.section}>
@@ -32,12 +36,22 @@ const Aboutbanner = ()=>{
             </h3>
         </div>
 
-        <div className={Style.btn}>
-            <Link href="/contact-us">That’s the future we build <b>at Synexc.</b></Link>
+        <div className={Style.btn} 
+        onClick={() => setIsVisible(true)}>
+        
+            <span >That’s the future we build <b>at Synexc.</b></span>
         </div>
     </div>
 </div>
 </section>
+{isVisible && (
+     <div className={Style.popupOverlay}>
+    <div className={Style.frombox}>
+                <InqueryBox />
+            </div>
+            </div>
+)}
+
         </>
     )
 }
