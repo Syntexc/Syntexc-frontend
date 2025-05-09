@@ -139,12 +139,16 @@ const menuItems = [
       subItems: [
         { name: "About Us", href: "/about-us" },
         { name: "Contact Us", href: "/contact-us" },
-        { name: "Team", href: "/team" },
+        { name: "Team", href: "/team" }, 
       ],
     },
     {
       name: "Services",
       herf: "/Industry",
+      subItems: [
+        {name:"Salesforce App Development" , href:"/salesforce-app-development"},
+
+      ]
     },
     {
       name: "Insights",

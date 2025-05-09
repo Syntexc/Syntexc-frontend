@@ -2,7 +2,11 @@ import Image from "next/image";
 import Style from "./ourstory.module.scss"
 import Link from "next/link";
 
-const OurStory = () => {
+interface OurStoryProps {
+        setOpen: (open: boolean) => void;
+}
+
+const OurStory = ({setOpen}:OurStoryProps) => {
     return (
         <>
             <section className={Style.section}>
@@ -15,7 +19,10 @@ const OurStory = () => {
                                 <p>Many organizations invest in Salesforce with high hopes only to encounter fragmented systems, underutilized features, and disconnected teams. The result? Wasted resources, stalled growth, and missed opportunities.</p>
                                 <p> That’s where clarity, strategy, and expertise become essential. That’s where Synexc comes in.</p>
                             </div>
-                           <Link href="/contact-us">  Get a <b>Free</b> Consultation now! </Link>
+                            <span onClick={()=>setOpen(true)}>
+
+                      Get a <b>Free</b> Consultation now!  
+                            </span>
                         </div>
                         <div className={Style.image}>
 

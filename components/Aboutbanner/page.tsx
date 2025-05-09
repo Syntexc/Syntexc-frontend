@@ -5,7 +5,11 @@ import Link from "next/link";
 import InqueryBox from "../Inquerybox";
 import { useState } from "react";
 
-const Aboutbanner = ()=>{
+interface NewProps {
+    setOpen: (open: boolean) => void;
+}
+
+const Aboutbanner = ({ setOpen }: NewProps) => {
     const [isVisible, setIsVisible] = useState(false);
     return(
         <>
@@ -39,7 +43,7 @@ const Aboutbanner = ()=>{
         <div className={Style.btn} 
         onClick={() => setIsVisible(true)}>
         
-            <span >That’s the future we build <b>at Synexc.</b></span>
+            <span onClick={()=>setOpen(true)}>That’s the future we build <b>at Synexc.</b></span>
         </div>
     </div>
 </div>

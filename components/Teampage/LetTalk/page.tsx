@@ -23,6 +23,7 @@ const LetTalk = () =>{
                text="hello@synexc.com"
                 backgroundColor={"#fff"}
                 textColor={"#000"}
+                action="mailto:hello@synexc.com"
                />
                             {/* </span> */}
                     </li>
@@ -34,6 +35,8 @@ const LetTalk = () =>{
                text="Talk to us for partnerships"
                backgroundColor={"#fff"}
                textColor={"#000"}
+                action="mailto:hello@synexc.com"
+
                />
                     </li>
                     <li>
@@ -45,6 +48,7 @@ const LetTalk = () =>{
                text="@SynexcTech"
                backgroundColor={"#fff"}
                textColor={"#000"}
+               action="https://www.linkedin.com/company/synexc/about/?viewAsMember=true"
                />
                     </li>
                 </ul>

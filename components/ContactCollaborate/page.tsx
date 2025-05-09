@@ -20,11 +20,13 @@ const ContactCollaborate = () => {
     <ButtonHideAndShow
                iconurl={"/Arrow30.svg"}
                text="careers@synexc.com"
+               action="mailto:careers@synexc.com"
 
                />
                <ButtonHideAndShow
                iconurl={"/usericonnew.svg"}
-               text="+91 9810640078"
+               text="+919810640078"
+               action="tel:+91 9810640078"
 
                />
     </div>
@@ -35,6 +37,8 @@ const ContactCollaborate = () => {
     <ButtonHideAndShow
                iconurl={"/dubbeluser.svg"}
                text="Talk to us for Partnership"
+               action="mailto:careers@synexc.com"
+
 
                />
              

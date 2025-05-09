@@ -73,7 +73,7 @@ const InqueryBox = ({  boxcontainer , ...rest}:InqueryBoxProp) =>{
   };
     return(
         <>
-        <div className={` ${Style.box} ${boxcontainer==="full" && Style.full }   `} {...rest}>
+        <div className={` ${Style.box} ${boxcontainer==="full" && Style.full } modelbox  `} {...rest}>
         {finalModel && (
           <div className={Style.modalForm}>
             <div className={Style.modalContent}>

@@ -21,6 +21,7 @@ const JointheTeam = ()=>{
                <ButtonHideAndShow
                iconurl={"/linkd.svg"}
                text="@SynexcTech"
+               action="https://www.linkedin.com/company/synexc/about/?viewAsMember=true"
 
                />
 

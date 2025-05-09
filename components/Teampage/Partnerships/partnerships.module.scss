@@ -72,7 +72,7 @@
                                              }
         }
         .btn {
-            a {
+            span {
                 margin-top: 24px;
     background: #253e90;
     font-family: "Segoe UI Regular";
@@ -97,4 +97,14 @@
             }
         }
     }
+}
+
+
+.button {
+  padding: 10px 20px;
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }

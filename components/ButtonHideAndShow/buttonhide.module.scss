@@ -1,10 +1,11 @@
 .box {
    cursor: pointer;
    width: fit-content;
+ 
     .icon {
         position: relative;
         width: 60px;
-        height: 40px;
+        height: 40px;   
         border: 1px solid #253e90;
         border-radius: 40px;
         padding: 4px 6px;
@@ -41,6 +42,9 @@ img {
         a {
             text-decoration: none !important;
             color: #181818 !important;
+            background: transparent !important;
+            font-weight: 700;
+
         }
     }
 }
