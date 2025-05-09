@@ -26,7 +26,7 @@ const SalesforceApps = ()=>{
             </div>
             <div className={Style.conatent}>
                 <h4>{item.title}</h4>
-                <p>{item.contant}</p>
+                {/* <p>{item.contant}</p> */}
             </div>
         </div>
         </>
