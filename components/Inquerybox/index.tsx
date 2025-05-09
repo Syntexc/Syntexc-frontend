@@ -3,7 +3,15 @@ import { useState } from "react";
 import  Style  from "./inquery.module.scss";
 import axios from "axios";
 import RotatingLoader from "../CustomLoader";
-const InqueryBox = () =>{
+
+
+
+
+interface InqueryBoxProp extends React.HTMLAttributes<HTMLDivElement> {
+   boxcontainer?: "full" | "container"
+}
+
+const InqueryBox = ({  boxcontainer , ...rest}:InqueryBoxProp) =>{
     const [loader, setLoader] = useState(false);
   const [finalModel, setFinalModel] = useState(false);
 
@@ -65,7 +73,7 @@ const InqueryBox = () =>{
   };
     return(
         <>
-        <div className={Style.box}>
+        <div className={` ${Style.box} ${boxcontainer==="full" && Style.full }   `} {...rest}>
         {finalModel && (
           <div className={Style.modalForm}>
             <div className={Style.modalContent}>

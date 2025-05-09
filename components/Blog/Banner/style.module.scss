@@ -1,0 +1,92 @@
+.section {
+    background: url("/Frame42731918622.png");
+    padding-top: 87px;
+    padding-bottom: 87px;
+    background-size: 100dvw;
+    background-repeat: no-repeat;
+    .container {
+        max-width: 1248px;
+        margin-left: auto;
+        margin-right: auto;
+        .row {
+            position: relative;
+
+            .box {
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                gap: 24px;
+                justify-content: center;
+                text-align: center;
+
+                .logo {
+                    position: relative;
+                    img {
+                        position: relative;
+                    }
+                }
+                h2 {
+                    position: relative;
+                    font-family: "Segoe UI bold";
+font-weight: 700;
+font-size: 40px;
+line-height: 100%;
+letter-spacing: 0%;
+text-align: center;
+vertical-align: bottom;
+text-transform: uppercase;
+color: #fff;
+span {
+    color: #2BAAE2;
+}
+
+                }
+                p{
+                    font-family: "Segoe UI regular";
+                    font-weight: 400;
+                    font-size: 24px;
+                    line-height: 30px;
+                    letter-spacing: 0%;
+                    text-align: center;
+                    vertical-align: bottom;
+                    color: #fff;
+                    max-width: 956px;
+                    margin-left: auto;
+                    margin-right: auto;
+                    
+                }
+            }
+
+
+            a {
+                margin-top: 40px;
+                background: #fff;
+                font-family: "Segoe UI Regular";
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 24px;
+                padding-top: 12px;
+                padding-right: 24px;
+                padding-bottom: 12px;
+                padding-left: 24px;
+                border-radius: 12px;
+                margin-left: auto;
+                margin-right: auto;
+                display: block;
+                width: fit-content;
+                color: #181818;
+                text-decoration: none;
+                cursor: pointer;
+                &:hover{
+                    background: linear-gradient(to right, #e0f2ff, #d1dae5);
+    color: #181818;
+    padding-top: 12px;
+    padding-right: 24px;
+    padding-bottom: 12px;
+    padding-left: 24px;
+    box-shadow: inset 0 0 0 4px #fffc;
+                }
+                        }
+        }
+    }
+}

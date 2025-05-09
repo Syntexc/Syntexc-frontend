@@ -1,0 +1,52 @@
+.section {
+    background: url("/Frame427319081.png");
+    padding-top: 62px;
+    padding-bottom:200px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    .container {
+        position: relative;
+        .textblock {
+            max-width: 796px;
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            background: #fff;
+            box-shadow: 1px 1px 3px 7px #fff;
+            h2 {
+                font-family: "Segoe UI bold";
+font-weight: 700;
+font-size: 30px;
+line-height: 100%;
+letter-spacing: 0%;
+text-align: center;
+vertical-align: bottom;
+color: #253E90;
+margin-bottom: 20px;
+
+
+
+
+            }
+
+
+            .pere {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                p {
+                    font-family: "Segoe UI Regular";
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 100%;
+            letter-spacing: 0%;
+            text-align: center;
+            vertical-align: bottom;
+            color: #181818;
+            
+                }
+            }
+        }
+    }
+}

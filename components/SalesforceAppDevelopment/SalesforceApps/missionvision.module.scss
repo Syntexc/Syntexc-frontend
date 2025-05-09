@@ -1,0 +1,179 @@
+.section {
+    background:  
+    linear-gradient(180deg, rgba(255, 255, 255, 0) 9.67%, rgba(43, 170, 226, 0.3) 100%);
+    
+padding-top: 60px;
+padding-bottom: 60px;
+position: relative;
+box-shadow: 0px 29px 35px rgba(0, 0, 0, 0.1); /* Adjust values as needed */
+    .conatiner {
+        max-width: 1072px;
+        margin-left: auto;
+        margin-right: auto;
+        .row {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            h2 {
+                font-family: "Segoe UI Bold";
+    font-weight: 700;
+    font-size: 46px;
+    line-height: 56px;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #253e90;
+    margin-bottom: 24px;
+    text-align: center;
+    @media (max-width:768px){ 
+        font-size: 20px;
+        line-height: 23px;
+    }
+
+    span {
+        color: #181818;
+    }
+            }
+.textheading {
+    max-width: 910px;
+    margin-left: auto;
+    margin-right: auto;
+    h3 {
+        font-family: "Segoe UI bold";
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 32px;
+        letter-spacing: 0%;
+        text-align: center;
+        vertical-align: bottom;
+        color: #181818;
+        }
+
+        p{
+            font-family:"Segoe UI Regular";
+font-weight: 400;
+font-size: 24px;
+line-height: 32px;
+letter-spacing: 0%;
+text-align: center;
+vertical-align: bottom;
+color: #181818;
+margin-top: 10px;
+
+        }
+}
+               
+        }
+
+        .row1 {
+           display: flex;
+           margin-top: 60px;
+           margin-bottom: 60px;
+           justify-content: space-between;
+           flex-wrap: wrap;
+            .boxstyle {
+                position: relative;
+                max-width: 277px;
+                flex: 1 1 100%;
+                margin-bottom: 20px;
+                .image {
+                    position: relative;
+                    margin-bottom: 16px;
+                    img {
+                        position: relative;
+width: 104px;
+height: 104px;
+                    }
+                }
+                .conatent {
+                    h4 {
+                       font-family: 'Segoe UI Bold';
+                        font-weight: 700;
+                        font-size: 18px;
+                        line-height: 26px;
+                        letter-spacing: 0%;
+                        vertical-align: bottom;
+                        text-transform: uppercase;
+                        color: #181818;
+                        
+                    }
+                    p {
+                       font-family: 'Segoe UI Regular';
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 24px;
+                        letter-spacing: 0%;
+                        vertical-align: bottom;
+                        color: #181818;
+                        
+                    }
+                }
+            }
+            .boxstyle {
+
+                &::after{
+                    content: "";
+                    display: block;
+                    border: 1px #181818;
+                    width: 0px;
+                    height: 182px;
+                    border-style: dashed;
+                    position: absolute;
+                    bottom: 0px;
+                    right: -53px;
+                    @media (max-width:768px){ 
+                       display: none;
+                    }
+                }
+
+                
+               
+             }
+        }
+
+
+
+        .footertext {
+            position: relative;
+            p {
+                font-family:"Segoe UI bold";
+font-weight: 700;
+font-size: 24px;
+line-height: 32px;
+letter-spacing: 0%;
+text-align: center;
+vertical-align: bottom;
+color: #253E90;
+max-width: 690px;
+margin-left: auto;
+margin-right: auto;
+
+            }
+        }
+    }
+}
+
+
+.boxstyle:last-child {
+   &::after {
+    display: none !important;
+   }
+                        }
+
+@media (max-width: 768px) {
+    .section {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .row1 {
+        flex-direction: column;
+        align-items: center;
+    }
+    .boxstyle {
+        max-width: 100%;
+        text-align: center;
+    }
+}
+
+
+
+                       
