@@ -202,7 +202,7 @@ const SmallCard = ({ image, title, description, readmore }: SmallCardProp) => {
         <>
             <div className={Style.blogcard} >
                 <div className={Style.image}>
-                    <Image src={image} width={312} height={200} alt={title} />
+                    <Image src={image} width={312} height={200} alt={title || "Default Alt Text"} />
                 </div>
                 <div className={Style.contentbox}>
                     <h3>{title}</h3>
