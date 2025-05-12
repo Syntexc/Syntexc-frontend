@@ -1,0 +1,57 @@
+.section {
+    position: relative;
+    background: linear-gradient(138.13deg, #253E90 8.32%, #0B122A 76.37%);
+padding-top: 96px;
+padding-bottom: 96px;
+
+.container {
+    max-width: 1160px;
+    margin-left: auto;
+    margin-right: auto;
+}
+}
+
+
+
+
+.tabws {
+    .inactive {
+       
+        font-family: "Segoe UI Regular";
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 22px;
+        letter-spacing: 0%;
+        vertical-align: bottom;
+        text-transform: uppercase;
+        color:#fff;
+border-radius: 10px;
+padding-top: 8px;
+padding-right: 16px;
+padding-bottom: 8px;
+padding-left: 16px;
+background: #253E9033;
+border: 1px solid #253E9033;
+cursor: pointer;
+    }
+
+
+    .active {
+        font-family: "Segoe UI Regular";
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 22px;
+        letter-spacing: 0%;
+        vertical-align: bottom;
+        text-transform: uppercase;
+        color:#253E90;
+border-radius: 10px;
+padding-top: 8px;
+padding-right: 16px;
+padding-bottom: 8px;
+padding-left: 16px;
+background: #fff;
+border: 1px solid #fff;
+cursor: pointer;  
+    }
+}
