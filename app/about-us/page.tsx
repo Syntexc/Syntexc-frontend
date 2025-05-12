@@ -25,7 +25,9 @@ const AboutUs = ()=>{
         {open && (
             <div className="overlay" >
           <div className="popup">
-            <button onClick={() => setOpen(false)} className="closeButton">
+            <button onClick={() => setOpen(false)} className="closeButton" style={{
+              color:"red"
+            }}>
               &times;
             </button>
             <InqueryBox />

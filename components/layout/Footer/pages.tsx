@@ -10,7 +10,8 @@ const Footer = ()=>{
                 <div className={footer.col1}>
                     <div className={footer.widgets}>
                        <div className={footer.footerlogo}>
-                           <Image src={"/footerlogo.png"} width={314} height={78} alt="footerlogo" className={footer.logo} />  
+                       <Link href="/"><Image src={"/footerlogo.png"} width={314} height={78} alt="footerlogo" className={footer.logo} />  </Link>
+                           
                          </div>
                         <ul className={footer.contactdet}>
                             <li>

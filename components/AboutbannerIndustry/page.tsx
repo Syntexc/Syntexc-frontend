@@ -1,7 +1,15 @@
+"use client"
 import Image from "next/image";
-import Style from "./aboutbanner.module.scss"
+import Style from "./aboutbanner.module.scss";
+import InqueryBox from "../Inquerybox";
+import { useState } from "react";
 
-const AboutbannerIndustry = ()=>{
+
+interface NewProps {
+    setOpen: (open: boolean) => void;
+}
+
+const AboutbannerIndustry = ({setOpen}:NewProps)=>{ 
     return(
         <>
 <section className={Style.section}>
@@ -25,7 +33,7 @@ const AboutbannerIndustry = ()=>{
        
 
         <div className={Style.btn}>
-            <a href="#">Get Started. <b>its for free!</b></a>
+            <a   onClick={() => setOpen(true)}>Get Started. <b>its for free!</b></a>
         </div>
        </div>
        <div className={Style.imagebox}>
@@ -36,6 +44,7 @@ const AboutbannerIndustry = ()=>{
     </div>
 </div>
 </section>
+ 
         </>
     )
 }
