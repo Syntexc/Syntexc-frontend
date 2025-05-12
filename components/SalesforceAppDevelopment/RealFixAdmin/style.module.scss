@@ -1,0 +1,201 @@
+.section {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 9.67%, rgba(43, 170, 226, 0.3) 100%);
+    padding-bottom: 96px;
+   .cardview {
+    background: #fff;
+    box-shadow: 0 0 23.9px #2f373a4d;
+    padding-top: 40px;
+    padding-left: 60px;
+    padding-right: 60px;
+    border-radius: 24px;
+    width: 100%;
+    max-width: 1193px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    justify-content: center;
+    margin-top: -80px;
+&:before {
+    content: "";
+    background: url("/image415.svg");
+    width: 112px;
+    height: 53px;
+    position: absolute;
+    bottom: 0;
+    background-repeat: no-repeat;
+    left: 0;
+}
+&:after {
+    content: "";
+    background: url("/experience-overview-trees 1.svg");
+    width: 217px;
+    height: 169px;
+    position: absolute;
+    bottom: -10px;
+    background-repeat: no-repeat;
+    right: -20px;
+}
+
+h2 {
+    font-family: "Segoe UI bold";
+font-weight: 700;
+font-size: 48px;
+line-height: 100%;
+letter-spacing: 0%;
+text-align: center;
+color: #253E90;
+span {
+color: #181818;
+}
+}
+p {
+    font-family: "Segoe UI Regular";
+font-weight: 400;
+font-size: 24px;
+line-height: 32px;
+letter-spacing: 0%;
+text-align: center;
+vertical-align: bottom;
+color: #181818;
+max-width: 821px;
+width: 100%;
+margin-left: auto;
+margin-right: auto;
+margin-top: 12px;
+
+}
+
+
+
+.image {
+    display: block;
+    margin-left:auto ;
+    margin-right: auto;
+}
+    }
+
+
+.powerhouseouter {
+    display: flex;
+    max-width: 1248px;
+    gap: 60x;
+    flex-direction: column;
+    margin-top: 93px;
+    margin-left: auto;
+    margin-right: auto;
+    h2 {
+        font-family: "Segoe UI bold";
+font-weight: 700;
+font-size: 56px;
+line-height: 100%;
+letter-spacing: 0%;
+text-align: center;
+vertical-align: bottom;
+color: #253E90;
+margin-bottom: 60px;
+span {
+color: #181818;
+}
+
+    }
+
+    .powerhouse {
+        display: flex; 
+        gap: 70px;
+        flex-direction: column;
+
+
+        .powerhousebox {
+            position: relative;
+            .heading {
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                gap: 24px;
+                h3 {
+                    font-family: "Segoe UI bold";
+                    font-weight: 700;
+                    font-size: 48px;
+                    line-height: 56px;
+                    letter-spacing: 0%;
+                    text-align: center;
+                    vertical-align: bottom;
+                    color: #253E90;
+                    
+                }
+                .sub {
+                    position: relative;
+                display: flex;
+                flex-direction: column;
+                gap: 12px;
+                    position: relative;
+                    h4 {
+                        font-family: "Segoe UI bold";
+font-weight: 700;
+font-size: 24px;
+line-height: 32px;
+letter-spacing: 0%;
+text-align: center;
+vertical-align: bottom;
+color: #181818;
+
+                    }
+                    h5 {
+                        font-family: "Segoe UI bold";
+font-weight: 700;
+font-size: 24px;
+line-height: 32px;
+letter-spacing: 0%;
+text-align: center;
+vertical-align: bottom;
+text-transform: uppercase;
+color: #181818;
+
+                    }
+                }
+            }
+
+            .powerhousecontent {
+                display: flex;
+                align-items: center;
+                margin-top: 40px;
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    p {
+        font-family: "Segoe UI Regular";
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 32px;
+        letter-spacing: 0%;
+        vertical-align: bottom;
+        color: #181818;
+        
+    }
+    ul {
+        li {
+            font-family: "Segoe UI Regular";
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 32px;
+            letter-spacing: 0%;
+            vertical-align: bottom;
+            color: #181818;
+        }
+    }
+}
+.image {
+    img {
+
+    }
+}
+            }
+        }
+        
+    }
+}
+}

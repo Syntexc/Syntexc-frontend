@@ -1,9 +1,10 @@
-import Image from "next/image";
 import Style from "./style.module.scss"
-const SalesforceAppDevelopmentBanner = ()=>{
+
+import Image from "next/image";
+
+const DataMigrationBanner = () =>{
     return(
-        <>
-     
+      <> 
 <section className={Style.section}>
 <div className={`${Style.layer1} ${Style.rounded1}`}></div>
 <div className={`${Style.layer2} ${Style.rounded1}`}></div>
@@ -15,25 +16,23 @@ const SalesforceAppDevelopmentBanner = ()=>{
 <div className={Style.row}>
        <div className={Style.contentbox}>
        <div className={Style.heading2}> 
-            <h4>Build What Salesforce Doesn’t, Yet</h4>
-            <h5>Custom Salesforce App Development by Synexc</h5>
+            <h4>Data Migration <span>Done Right</span></h4>
+            <h5>Don’t Just Move Your Data, Elevate It.</h5>
              
         </div>
         <div className={Style.perstyle}>
             
-            <p>Salesforce is powerful out of the box but every business eventually runs into this thought:</p>
-            <p><b>“I wish Salesforce could just do this one thing…”</b></p>
-            <p>That’s where custom app development comes in</p>
-            <div className={Style.textbold}>And that’s where Synexc thrives.</div>
+            <p>Make every record count with Salesforce-aligned migration strategies.</p>
+            
         </div>
        
-
         <div className={Style.btn}>
             <a href="#">Get Started. <b>its for free!</b></a>
         </div>
+       
        </div>
        <div className={Style.imagebox}>
-       <Image src={"/Group39660.png"} width={639} height={556} alt={"Frame427319200"} 
+       <Image src={"/Group39662.svg"} width={639} height={556} alt={"Frame427319200"} 
         priority={true}
         />
        </div>
@@ -44,4 +43,5 @@ const SalesforceAppDevelopmentBanner = ()=>{
         
     )
 }
-export default SalesforceAppDevelopmentBanner;
+
+export default DataMigrationBanner;
