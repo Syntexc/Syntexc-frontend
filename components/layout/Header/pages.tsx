@@ -101,7 +101,7 @@ const Header = ()=>{
       <ul className={header.subDropdown}>
         {item.subItems.map((subItem, subIndex) => (
           <li key={subIndex}>
-            <a href={subItem.href}>{subItem.name}</a>
+            <Link href={subItem.href}>{subItem.name}</Link>
           </li>
         ))}
       </ul>
@@ -147,6 +147,8 @@ const menuItems = [
       herf: "/Industry",
       subItems: [
         {name:"Salesforce App Development" , href:"/salesforce-app-development"},
+        {name:"Data Migration" , href:"/data-migration"}, 
+        {name:"Saleforce App Development 2" , href:"/salesforce-app-development2"},
 
       ]
     },
@@ -154,8 +156,8 @@ const menuItems = [
       name: "Insights",
       herf: "#product",
     },
-    // {
-    //   name: "Blogs",
-    //   herf: "#blogs",
-    // },
+    {
+      name: "Blogs",
+      herf: "/blog",
+    },
   ]
