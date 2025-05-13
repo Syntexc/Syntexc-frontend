@@ -8,7 +8,7 @@
 
     @media (max-width:768px) {
         padding: 10px;
-        padding-bottom: 162px;
+        padding-bottom: 47px;
         padding-top: 60px;
     }
 
@@ -88,7 +88,11 @@
             }
 
             .contentbox {
-
+                @media (max-width:768px) {
+                    padding-left: 10px;
+                    padding-right: 10px;
+                }
+    
                 .heading2 {
                     max-width: 653px;
                     display: flex;
@@ -113,9 +117,15 @@
                         color: #fff;
 
                         @media (max-width:768px) {
+                            
+                            font-weight: 700;
                             font-size: 36px;
                             line-height: 1.4;
+                            letter-spacing: 0%;
                             text-align: center;
+                            vertical-align: bottom;
+                            text-transform: uppercase;
+                            
                         }
 
 
@@ -140,16 +150,28 @@
                     }
 
                     h5 {
+                    font-family: "Segoe UI bold";
+                    font-weight: 700;
+                    font-size: 24px;
+                    line-height: 34px;
+                    letter-spacing: 0%;
+                    vertical-align: bottom;
+                    text-transform: uppercase;
+                    color: #fff;
+                    margin-top: 32px;
+                    @media (max-width:768px) {
                         font-family: "Segoe UI bold";
-font-weight: 700;
-font-size: 24px;
-line-height: 34px;
-letter-spacing: 0%;
-vertical-align: bottom;
-text-transform: uppercase;
-color: #fff;
-margin-top: 32px;
-
+                        font-weight: 700;
+                        font-size: 24px;
+                        line-height: 34px;
+                        letter-spacing: 0%;
+                        text-align: center;
+                        vertical-align: bottom;
+                        text-transform: uppercase;
+                        margin-top: 12px;
+                        
+                        
+                    }
                     }
                 }
 
@@ -181,10 +203,14 @@ margin-top: 32px;
                             color: #2BAAE2;
                         }
 
-                        @media (max-width:768px) {
-                            font-size: 18px;
-                            line-height: 1.4em;
+                        @media (max-width:768px) { 
+                            font-weight: 400;
+                            font-size: 16px;
+                            line-height: 100%;
+                            letter-spacing: 0%;
                             text-align: center;
+                            vertical-align: bottom;
+                            
 
                         }
 
@@ -201,7 +227,15 @@ margin-top: 32px;
                         letter-spacing: 0%;
                         vertical-align: bottom;
                         color: #fff;
+                        @media (max-width:768px) { 
+font-weight: 700;
+font-size: 16px;
+line-height: 100%;
+letter-spacing: 0%;
+text-align: center;
+vertical-align: bottom;
 
+                        }
                     }
                 }
 

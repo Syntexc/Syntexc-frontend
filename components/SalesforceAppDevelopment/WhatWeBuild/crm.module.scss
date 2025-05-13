@@ -2,6 +2,9 @@
     padding-top: 96px;
     padding-bottom: 96px;
     background: radial-gradient(71.32% 95.19% at 50% -6.95%, #253E90 0%, #0B122A 88.76%);
+    @media (max-width: 768px) {
+padding: 40px 20px;
+    }
 
     .container {
         position: relative;
@@ -22,6 +25,18 @@
                 vertical-align: bottom;
                 color: #fff;
                 margin-bottom: 24px;
+                @media (max-width: 768px) { 
+                    font-weight: 700;
+                    font-size: 24px;
+                    line-height: 100%;
+                    letter-spacing: 0%;
+                    text-align: center;
+                    vertical-align: middle;
+                    
+                        }
+
+
+
 
             }
 
@@ -98,7 +113,11 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        @media (max-width: 768px) {
+            width: 52px;
+        height: 52px;
 
+        }
         img {
             width: 34px;
             height: 34px;
@@ -108,18 +127,28 @@
 
     .container {
         h3 {
-            font-family: "Segoe UI bold";
-font-weight: 700;
-font-size: 24px;
-line-height: 100%;
-letter-spacing: 0%;
-text-align: center;
-vertical-align: bottom;
-text-transform: uppercase;
-            color: #fff;
-            text-shadow: 0px 4px 4px 0px #00000040;
-
-            margin-bottom: 12px;
+                font-family: "Segoe UI bold";
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 100%;
+                letter-spacing: 0%;
+                text-align: center;
+                vertical-align: bottom;
+                text-transform: uppercase;
+                color: #fff;
+                text-shadow: 0px 4px 4px 0px #00000040;
+                margin-bottom: 12px;
+                @media (max-width: 768px) { 
+                    font-weight: 700;
+                    font-size: 18px;
+                    line-height: 1.4;
+                    letter-spacing: 0%;
+                    text-align: center;
+                    vertical-align: bottom;
+                    text-transform: uppercase;
+                    
+        
+                }
 
 
             span {
@@ -148,6 +177,17 @@ text-transform: uppercase;
             margin-left: auto;
             margin-right: auto;
             color: #fff;
+            @media (max-width: 768px) {  
+                font-family: Raleway;
+font-weight: 600;
+font-size: 16px;
+line-height: 22px;
+letter-spacing: 0%;
+text-align: center;
+vertical-align: bottom;
+
+    
+            }
         }
     }
 }
@@ -158,6 +198,14 @@ text-transform: uppercase;
 display: flex;
 gap: 48px;
 justify-content: center;
+
+
+@media (max-width: 768px) { 
+ flex-direction: column;
+ padding-left: 20px;
+ padding-right: 20px;
+        }
+
     .one {
         border-top-left-radius: 30px;
         border-top-right-radius: 24px;
@@ -173,7 +221,6 @@ justify-content: center;
         width: 100%;
         background: #253E9040;
         box-shadow: 0px 4px 4px 0px #00000040;
-    
     position: relative;
     
         .image {
@@ -183,7 +230,9 @@ justify-content: center;
         }
     
         @media (max-width: 768px) {
-            width: 248px;
+            width: 100%;
+            box-sizing: border-box;
+
         }
     
     }
@@ -234,11 +283,20 @@ justify-content: center;
     flex-direction: column;
     margin-top: 96px;
     gap: 40px;
+    @media (max-width: 768px) {
+
+        margin-top: 80px;
+        gap: 24px;
+    }
+
     .heading1 {
         position: relative;
         display: flex;
     flex-direction: column;
     gap: 12px;
+    @media (max-width: 768px) {
+       text-align: center;
+    }
     h2 {
         font-family: "Segoe UI bold";
 font-weight: 700;
@@ -247,6 +305,17 @@ line-height: 50px;
 letter-spacing: 0%;
 vertical-align: bottom;
 color: #fff;
+
+@media (max-width: 768px) { 
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1.4;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: bottom;
+    
+ }
+
     }
     p {
         font-family: "Segoe UI bold";
@@ -255,6 +324,16 @@ font-size: 30px;
 line-height: 100%;
 letter-spacing: 0%;
 color: #fff;
+
+@media (max-width: 768px) {  
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.4;
+    letter-spacing: 0%;
+    text-align: center;
+    
+    
+ }
 
     }
     }
@@ -266,6 +345,15 @@ color: #fff;
         display: flex;
         align-items: center;
         justify-content: space-between;
+
+        @media (max-width: 768px) { 
+          flex-direction: column;
+          padding-left: 20px;
+          padding-right: 20px;
+            
+         }
+
+
         .contantbox {
             position: relative;
             ul{
@@ -277,12 +365,24 @@ color: #fff;
                     line-height: 166%;
                     letter-spacing: 0%;
                     color: #fff;
+                    @media (max-width: 768px) {  
+                        font-weight: 400;
+                        font-size: 20px;
+                        line-height: 166%;
+                        letter-spacing: 0%;
+                        
+                          
+                       }
                     
                 }
             }
         }
         .imagebox {
             position: relative;
+            @media (max-width: 768px) {   
+
+margin-top: 24px;
+            }
         }
     }
 }
