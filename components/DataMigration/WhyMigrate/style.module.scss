@@ -2,6 +2,14 @@
     background:  linear-gradient(180deg, rgba(255, 255, 255, 0) 9.67%, rgba(43, 170, 226, 0.3) 100%);
     padding-bottom: 96px;
 
+    @media (max-width:768px) { 
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 40px;
+
+        }
+
+
     .containerabout {
         max-width: 1087px; 
         box-shadow: 0px 0px 23.9px 0px #2F373A4D;
@@ -17,11 +25,19 @@ margin-top: -80px;
 position: relative;
 z-index: 9;
 text-align: center;
+@media (max-width:768px) { 
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 40px;
+    }
         .contentbox {
             position: relative;
             display: flex;
             flex-direction: column;
             gap: 20px;
+            @media (max-width:768px) { 
+                gap: 12px;
+                }
             h2 {
                 font-family: "Segoe UI bold";
 font-weight: 700;
@@ -30,7 +46,15 @@ line-height: 100%;
 letter-spacing: 0%;
 text-align: center;
 color: #181818;
+@media (max-width:768px) {  
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.4;
+    letter-spacing: 0%;
+    text-align: center;
+    
 
+    }
             }
             .pre {
                 display: flex;
@@ -40,7 +64,7 @@ color: #181818;
                     font-family: "Segoe UI Regular";
                     font-weight: 400;
                     font-size: 16px;
-                    line-height: 100%;
+                    line-height: 1.4;
                     letter-spacing: 0%;
                     text-align: center;
                     vertical-align: bottom;
@@ -56,7 +80,16 @@ color: #181818;
                     text-align: center;
                     vertical-align: bottom;
                     color: #2BAAE2;
+                    @media (max-width:768px) {  
+                        font-weight: 700;
+                        font-size: 16px;
+                        line-height: 24px;
+                        letter-spacing: 0%;
+                        text-align: center;
+                        vertical-align: bottom;
+                        
                     
+                        }
                 }
                 h4 {
                     font-family: "Segoe UI Regular";
@@ -67,13 +100,28 @@ color: #181818;
                     text-align: center;
                     vertical-align: bottom;
                     color: #181818;
-                    
+                    @media (max-width:768px) {  
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+letter-spacing: 0%;
+text-align: center;
+vertical-align: bottom;
+
+                       }
                 }
             }
         }
         .image {
             display: block;
             margin-top: 20px;
+            @media (max-width:768px) { 
+                gap: 12px;
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+                }
         }
     }
 
@@ -87,15 +135,31 @@ color: #181818;
         margin-right: auto;
         width: 100%;
         margin-top: 62px;
+
+        @media (max-width:768px) { 
+            margin-top: 50px;
+            gap: 24px;
+         }
+
         h3 {
             font-family: "Segoe UI bold";
-font-weight: 700;
-font-size: 56px;
-line-height: 100%;
-letter-spacing: 0%;
-text-align: center;
-vertical-align: bottom;
-color: #253E90;
+            font-weight: 700;
+            font-size: 56px;
+            line-height: 100%;
+            letter-spacing: 0%;
+            text-align: center;
+            vertical-align: bottom;
+            color: #253E90;
+            @media (max-width:768px) {  
+                font-weight: 700;
+                font-size: 32px;
+                line-height: 1.4;
+                letter-spacing: 0%;
+                text-align: center;
+                vertical-align: bottom;
+                
+    
+             }
 span {
     color: #181818;
 }
@@ -107,29 +171,48 @@ span {
             flex-direction: column;
             gap: 40px;
             position: relative;
+            @media (max-width:768px) {  
+                gap: 8px;
+                max-width: 288px;
+                width: 100%;
+                margin-left: auto;
+                margin-right: auto;
+
+              }
             .stepboxheading {
                 display: flex;
             flex-direction: column;
             gap: 12px; 
-            h2 {
-                font-family: "Segoe UI bold";
-font-weight: 700;
-font-size: 40px;
-line-height: 56px;
-letter-spacing: 0%;
-text-align: center;
-vertical-align: bottom;
-color: #181818;
-span {
-    color: #253E90;
-}
+                    h2 {
+                    font-family: "Segoe UI bold";
+                    font-weight: 700;
+                    font-size: 40px;
+                    line-height: 56px;
+                    letter-spacing: 0%;
+                    text-align: center;
+                    vertical-align: bottom;
+                    color: #181818;
+                    span {
+                    color: #253E90;
+                    }
+                    @media (max-width:768px) {  
+                        font-weight: 700;
+                        font-size: 24px;
+                        line-height: 1.4;
+                        letter-spacing: 0%;
+                        text-align: left;
+                        vertical-align: bottom;
+                        
 
-            } 
+
+                      }
+                    } 
 
             .stepsub {
-                display: flex;
-            flex-direction: column;
-            gap: 12px; 
+                    display: flex;
+                    flex-direction: column;
+                    gap: 12px; 
+                   
                 h4 {
                     font-family: "Segoe UI bold";
 font-weight: 700;
@@ -139,6 +222,15 @@ letter-spacing: 0%;
 text-align: center;
 vertical-align: bottom;
 color: #181818;
+@media (max-width:768px) { 
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.4;
+    letter-spacing: 0%;
+    vertical-align: bottom;
+    text-align: left;
+    
+}
                 }
                 h5 {
                     font-family: Segoe UI;
@@ -150,6 +242,17 @@ text-align: center;
 vertical-align: bottom;
 text-transform: uppercase;
 color: #181818;
+@media (max-width:768px) {  
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.4;
+    letter-spacing: 0%;
+    vertical-align: bottom;
+    text-transform: uppercase;
+    text-align: left;
+    
+    
+}
                 }
             }
             }
@@ -163,6 +266,11 @@ color: #181818;
     width: 100%;
     justify-content: space-between;
 
+    @media (max-width:768px) { 
+       flex-direction: column;
+        
+    }
+
     .content {
         display: flex;
             flex-direction: column;
@@ -173,6 +281,11 @@ color: #181818;
             display: flex;
             flex-direction: column;
             gap: 20px;
+             @media (max-width:768px) {  
+                gap: 2px;
+                margin-left: 40px;
+
+              }
             li {
                 font-family: "Segoe UI Regular";
     font-weight: 400;
@@ -182,6 +295,13 @@ color: #181818;
     vertical-align: bottom;
     position: relative;
     list-style: none;
+    @media (max-width:768px) {  
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 32px;
+        letter-spacing: 0%;
+        vertical-align: bottom; 
+     }
     &::before {
         content: "";
         position:absolute;
@@ -215,6 +335,14 @@ vertical-align: bottom;
 color: #253E90;
 
     }
+    @media (max-width:768px) {  
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.4;
+        letter-spacing: 0%;
+        vertical-align: bottom;
+        
+     }
         }
 
 
@@ -232,9 +360,15 @@ color: #253E90;
     position: absolute;
     left: 0px;
     top: 20px;
+    @media (max-width:768px) {
+        display: none;
+    }
 }
 .layerb {
     position: absolute;
     right: 0px;
     top: 20px;
+    @media (max-width:768px) {
+        display: none;
+    }
 }

@@ -22,7 +22,8 @@ const Bannersal2 = () => {
 
 
                                 <div className={Style.mincard}>
-                                    <div className={Style.mincardview}>
+                                <div className={Style.mincardinner}>
+                                  <div className={Style.mincardview}>
                                         <div className={Style.image}>
                                             <Image src={"/Component45.svg"} alt={"Component45"} width={72} height={72} />
                                         </div>
@@ -38,6 +39,8 @@ const Bannersal2 = () => {
                                             <p>Reports are <br /> unreliable.</p>
                                         </div>
                                     </div>
+                                  </div>
+                                  <div className={Style.mincardinner}>
                                     <div className={Style.mincardview}>
                                         <div className={Style.image}>
                                             <Image src={"/Component345.svg"} alt={"Component45"} width={72} height={72} />
@@ -54,6 +57,8 @@ const Bannersal2 = () => {
                                             <p>Small changes take weeks.</p>
                                         </div>
                                     </div>
+                                    </div>
+                                    <div className={Style.mincardinner}>
                                     <div className={Style.mincardview}>
                                         <div className={Style.image}>
                                             <Image src={"/Component3345.svg"} alt={"Component45"} width={72} height={72} />
@@ -61,6 +66,7 @@ const Bannersal2 = () => {
                                         <div className={Style.content}>
                                             <p>And no one’s quite sure who’s supposed to fix what.</p>
                                         </div>
+                                    </div>
                                     </div>
 
 

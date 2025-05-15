@@ -17,7 +17,7 @@ const RealFixAdmin = () => {
 
 
                 <div className={Style.powerhouseouter}>
-                    <h2>Our Two-Punch Powerhouse</h2>
+                    <h2>Our Two-Punch <span>Powerhouse</span></h2>
                     <div className={Style.powerhouse}>
                         <div className={Style.powerhousebox}>
                             <div className={Style.heading}>
@@ -57,7 +57,7 @@ const RealFixAdmin = () => {
                                 </div>
                             </div>
 
-                            <div className={Style.powerhousecontent}>
+                            <div className={`${Style.powerhousecontent} ${Style.powerhousecontent2} `}>
                             <div className={Style.image}>
                                     <Image src="/Frame 4273193282.png" width={527} height={397} alt="Frame427319328" />
                                 </div>

@@ -26,7 +26,7 @@ const DataMigrationBanner = () =>{
             
         </div>
        
-        <div className={Style.btn}>
+        <div className={`${Style.btn} ${Style.btndsktop}`}>
             <a href="#">Get Started. <b>its for free!</b></a>
         </div>
        
@@ -36,6 +36,10 @@ const DataMigrationBanner = () =>{
         priority={true}
         />
        </div>
+
+       <div className={Style.btnmobile}>
+            <a href="#">Get Started. <b>its for free!</b></a>
+        </div>
     </div>
 </div>
 </section>

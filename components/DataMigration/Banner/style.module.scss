@@ -8,7 +8,7 @@
 
     @media (max-width:768px) {
         padding: 10px;
-        padding-bottom: 162px;
+        padding-bottom: 143px;
         padding-top: 60px;
     }
 
@@ -117,10 +117,15 @@
                             color: #2BAAE2;
                         }
 
-                        @media (max-width:768px) {
-                            font-size: 36px;
-                            line-height: 1.4;
-                            text-align: center;
+                        @media (max-width:768px) { 
+                        font-weight: 700;
+                        font-size: 36px;
+                        line-height: 1.4;
+                        letter-spacing: 0%;
+                        text-align: center;
+                        vertical-align: bottom;
+                        text-transform: uppercase;
+
                         }
 
 
@@ -154,6 +159,16 @@
                         line-height: 34px;  
                         color: #fff;
                         margin-top: 24px;
+                          @media (max-width:768px) {  
+                            font-weight: 700;
+                            font-size: 16px;
+                            line-height: 100%;
+                            letter-spacing: 0%;
+                            text-align: center;
+                            vertical-align: bottom;
+                            
+
+                        }
 
                     }
                 }
@@ -186,10 +201,14 @@
                             color: #2BAAE2;
                         }
 
-                        @media (max-width:768px) {
-                            font-size: 18px;
-                            line-height: 1.4em;
+                        @media (max-width:768px) { 
+                            font-weight: 400;
+                            font-size: 16px;
+                            line-height: 1.4;
+                            letter-spacing: 0%;
                             text-align: center;
+                            vertical-align: bottom;
+                            
 
                         }
 
@@ -265,3 +284,38 @@
         }
     }
 }
+
+
+@media (max-width:767px) {
+    .btnmobile {
+display: block;
+margin-top: 43px;
+a {
+    padding: 15px 18px;
+    background-color: #fff;
+    color: #000 !important;
+    border-radius: 10px;
+    margin-top: 40px;
+    cursor: pointer;
+    text-decoration: none;
+    width: fit-content;
+    font-family: Segoe UI Regular;
+    display: block;
+    border: 1px solid #2baae2;
+    text-transform: uppercase;
+    
+}
+    } 
+    .btndsktop {
+        display: none !important;
+    }
+}
+@media (min-width:768px) {
+    .btnmobile {
+display: none;
+    } 
+    .btndsktop {
+        display: block;
+    }
+}
+

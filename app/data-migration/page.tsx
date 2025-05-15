@@ -8,10 +8,10 @@ const DataMigration = ()=>{
     return(
         <>
         <DataMigrationBanner />
-        <WhyMigrate />
-        <SalesforcePartner />
+         <WhyMigrate />
+      <SalesforcePartner />
         <CRMWithout />
-        <Trustedby />
+        <Trustedby />  
         </>
     )
 }

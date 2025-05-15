@@ -11,9 +11,9 @@ const BlogPage = ()=>{
         <BannerSection />
         <WeDesign />
         <FeaturedReads />
-        <Trustedby2 />
-        <ManufacturingBlog  />
-        <ContactUs />
+       <Trustedby2 />
+      <ManufacturingBlog  />
+           <ContactUs />  
         </>
     )
 }
