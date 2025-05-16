@@ -4,7 +4,7 @@ const ContactusSales = ()=>{
     return(
         <>
 
-<section className={Style.section} >
+<section className={Style.section} id="contact">
     <div className={Style.container}>
         <div className={Style.row}>
             <div className={Style.headingbox}>

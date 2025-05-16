@@ -12,7 +12,7 @@ const Manufacturing = () => {
                     <h4>We know your industry. We know Salesforce. And we know how to connect the two <br /> in a way that drives actual results.</h4>
                     </div>
                     <div className={Style.btn}>
-            <a href="#">Book a  <b>consultation now</b></a>
+            <a href="#contact">Book a  <b>consultation now</b></a>
         </div>
                 </div>
             </div>

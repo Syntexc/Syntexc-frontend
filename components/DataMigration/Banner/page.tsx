@@ -1,8 +1,10 @@
 import Style from "./style.module.scss"
 
 import Image from "next/image";
-
-const DataMigrationBanner = () =>{
+interface NewProps {
+    setOpen: (open: boolean) => void;
+}
+const DataMigrationBanner = ({setOpen}:NewProps) =>{
     return(
       <> 
 <section className={Style.section}>
@@ -27,7 +29,7 @@ const DataMigrationBanner = () =>{
         </div>
        
         <div className={`${Style.btn} ${Style.btndsktop}`}>
-            <a href="#">Get Started. <b>its for free!</b></a>
+            <a onClick={() => setOpen(true)}>Get Started. <b>its for free!</b></a>
         </div>
        
        </div>
@@ -38,7 +40,7 @@ const DataMigrationBanner = () =>{
        </div>
 
        <div className={Style.btnmobile}>
-            <a href="#">Get Started. <b>its for free!</b></a>
+            <a onClick={() => setOpen(true)}>Get Started. <b>its for free!</b></a>
         </div>
     </div>
 </div>

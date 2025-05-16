@@ -1,5 +1,9 @@
 import Style from "./style.module.scss"
-const CRMWithout = () => {
+
+interface NewProps {
+    setOpen: (open: boolean) => void;
+}
+const CRMWithout = ({setOpen}:NewProps) => {
     return(
         <>
 
@@ -12,7 +16,7 @@ const CRMWithout = () => {
                     <h4>Make the move with confidence. Make it with Synexc.</h4>
                     </div>
                     <div className={Style.btn}>
-            <a href="#">Book a  <b>consultation now</b></a>
+            <a onClick={() => setOpen(true)}>Book a  <b>consultation now</b></a>
         </div>
                 </div>
             </div>

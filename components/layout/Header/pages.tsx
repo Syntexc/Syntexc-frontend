@@ -144,7 +144,7 @@ const menuItems = [
     },
     {
       name: "Services",
-      herf: "/Industry",
+      herf: "#",
       subItems: [
         {name:"Salesforce App Development" , href:"/salesforce-app-development"},
         {name:"Data Migration" , href:"/data-migration"}, 
@@ -154,7 +154,10 @@ const menuItems = [
     },
     {
       name: "Insights",
-      herf: "#product",
+      herf: "#",
+      subItems: [
+        { name: "Industry", href: "/Industry" },
+      ],
     },
     {
       name: "Blogs",

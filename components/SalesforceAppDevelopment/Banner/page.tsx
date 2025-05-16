@@ -29,7 +29,7 @@ const SalesforceAppDevelopmentBanner = ()=>{
        
 
         <div className={Style.btn}>
-            <a href="#">Get Started. <b>its for free!</b></a>
+            <a href="#contact">Get Started. <b>its for free!</b></a>
         </div>
        </div>
        <div className={Style.imagebox}>
