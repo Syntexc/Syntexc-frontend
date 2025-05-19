@@ -1,18 +1,14 @@
-import LetTalk from "@/components/Teampage/LetTalk/page";
-import OurTeam from "@/components/Teampage/Ourteam/page";
-import Partnerships from "@/components/Teampage/Partnerships/page";
-import Teambanner from "@/components/Teampage/Teambanner/page";
+import { Metadata } from "next";
+import Teampage from "./TeamClient";
 
-const Teampage = ()=>{
-    return(
-        <>
-        <Teambanner />
-        <OurTeam />
-        <Partnerships />
-        <LetTalk />
-        </>
-    )
+
+export const metadata:Metadata = {
+    title:"Meet Our Experts | Salesforce Integration Consultants",
+    description:"Discover Synexc’s certified Salesforce consultants specializing in CRM, cloud, and integration services for businesses across India."
 }
 
+export default function TeamPage(){
+    return <Teampage />
+}
 
-export default Teampage;
+ 

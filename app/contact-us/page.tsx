@@ -1,22 +1,15 @@
-import ContactBanner from "@/components/contactbanner/page";
-import ContactCollaborate from "@/components/ContactCollaborate/page";
-import ContactTalktoUs from "@/components/ContactTalktoUs/page";
-import ContactUs from "@/components/ContactUs";
-import ContactusMap from "@/components/ContactusMap/page";
-import JointheTeam from "@/components/JointheTeam/page";
+ 
 
-const ContactUss = ()=>{
-    return(
-        <>
- <ContactBanner /> 
- <ContactTalktoUs />
-<ContactusMap />
-  <JointheTeam />
- <ContactCollaborate />
-  <ContactUs />  
+import { Metadata } from "next"; 
+import ContactUss from "./ContactUsClient";
 
-        </>
-    )
+
+export const metadata: Metadata = {
+  title: "Contact Synexc | Salesforce CRM Consultant India",
+  description:
+    "Connect with Synexc, a leading Salesforce CRM consultant in India. Get expert support for implementation, consulting, and integrations.",
+};
+
+export default function ContactPage() {
+  return <ContactUss />;
 }
-
-export default ContactUss;

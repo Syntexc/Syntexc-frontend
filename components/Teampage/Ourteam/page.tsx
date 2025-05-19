@@ -16,12 +16,12 @@ const OurTeam = ()=> {
         return(
             <>
             <TeamCard
-            key={index}
-            image={items.image}
-            name={items.name}
-            role={items.role}
+            key={items?.id}
+            image={items?.image}
+            name={items?.name}
+            role={items?.role}
             isActive={activeId === items?.id}
-          onClick={() => setActiveId(items?.id)}
+            onClick={() => setActiveId(items?.id)}
             />
             </>
         )

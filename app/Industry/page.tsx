@@ -1,42 +1,14 @@
-"use client"
-import AboutbannerIndustry from "@/components/AboutbannerIndustry/page";
-import ActuallyWorks from "@/components/ActuallyWorks/page";
-import InqueryBox from "@/components/Inquerybox";
-import SalesforcePartner from "@/components/SalesforcePartner";
-import Synexc1 from "@/components/Synexc1";
-import Trustedby from "@/components/Trustedby";
-import { useState } from "react";
-
- 
-
-const IndustryPage =()=>{
-
-     const [open , setOpen] = useState(false);
-    return(
-        <>
-        <AboutbannerIndustry  setOpen={setOpen} />
-       <Synexc1 />
-         <SalesforcePartner />
-       <ActuallyWorks />
-   <Trustedby /> 
+import { Metadata } from "next";
+import IndustryPage from "./IndustryClient";
 
 
 
-   {open && (
-            <div className="overlay">
-          <div className="popup">
-            <button onClick={() => setOpen(false)} className="closeButton" style={{
-              color:"red"
-            }}>
-              &times;
-            </button>
-            <InqueryBox />
-          </div>
-        </div>
-
-        )}
-
-        </>
-    )
+export const metadata: Metadata = {
+    title: "Industries We Serve | Salesforce Consulting Services",
+    description: " Explore how our Salesforce consulting agency supports industries with CRM, cloud solutions, and integration services tailored to your goals."
+    
 }
-export default IndustryPage;
+
+export default function IndustryPages(){
+  return <IndustryPage/>
+}
