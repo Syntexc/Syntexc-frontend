@@ -18,11 +18,24 @@ const WhyMigrate = () => {
                         </div>
                     </div>
                     <div className={Style.image}>
-                        <Image src={"/5566766_2892184 1.svg"} alt={"5566766_2892184"} width={681} height={455} />
+                        <Image src={"/new-public-banner.svg"} alt={"5566766_2892184"} width={681} height={455} priority={true} />
                     </div>
+
+                     <div className={Style.imageWrapper}>
+        {/* Background image */}
+        <Image
+          src="/new-public-banner.svg"
+          alt="5566766_2892184"
+          width={681}
+          height={455}
+          priority
+          className={Style.backgroundImage}
+        />
+ 
+        <Image src="/book.svg" className={`${Style.flyingFile} ${Style.delay1}`}  width={100} height={100} alt="test" />
+<Image src="/book.svg" className={`${Style.flyingFile} ${Style.delay2}`} width={100} height={100} alt="test" />
+      </div>
                 </div>
-
-
 
                 <div className={Style.contentblock}>
                     <h3>Our 6-Step <span>Migration Framework</span></h3>

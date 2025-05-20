@@ -280,6 +280,9 @@ vertical-align: bottom;
             }
 
             .imagebox {
+                position: relative;
+                margin-right: 0;
+                margin-left: auto;
                img {
                 @media (max-width:768px) {
                     max-width: 100%;
@@ -292,3 +295,65 @@ vertical-align: bottom;
         }
     }
 }
+
+@keyframes firstLayer{
+  25%  {transform: scale(0.9);}
+  75%  {transform: scale(1.1);}
+}
+@keyframes secondLayer{
+  25%  {transform: scale(0.9);}
+  75%  {transform: scale(1.1);}
+}
+@keyframes thirdLayer{
+  25%  {transform: scale(0.9);}
+  75%  {transform: scale(1.1);}
+}
+@keyframes fourLayer{
+  25%  {transform: scale(0.9);}
+  75%  {transform: scale(1.1);}
+}
+@keyframes fiveLayer{
+  25%  {transform: scale(0.9);}
+  75%  {transform: scale(1.1);}
+}
+@keyframes sixLayer{
+  25%  {transform: scale(0.9);}
+  75%  {transform: scale(1.1);}
+} 
+.firstLayer{
+    position: absolute;
+    right: 86px;
+    top: -30px;
+    animation: firstLayer 0.5s ease-in infinite;
+}
+.secondLayer{
+    position: absolute;
+    right: -34px;
+    top: 190px;
+    animation: secondLayer 0.5s ease-in infinite;
+}
+.thirdLayer{
+      position: absolute;
+    right: -34px;
+    top: 246px;
+    animation: thirdLayer 0.5s ease-in infinite;
+}
+.fourLayer{
+    position: absolute;
+    left: 198px;
+    bottom: -19px;
+    animation: fourLayer 0.5s ease-in infinite;
+}
+.fiveLayer{
+     position: absolute;
+    left: 145px;
+    bottom: -19px;
+    animation: fiveLayer 0.5s ease-in infinite;
+}
+.sixLayer{
+    position: absolute;
+    left: -62px;
+    top: 230px;
+    animation: sixLayer 0.5s ease-in infinite;
+}
+

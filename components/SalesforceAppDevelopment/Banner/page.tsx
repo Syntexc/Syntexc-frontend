@@ -33,10 +33,37 @@ const SalesforceAppDevelopmentBanner = ()=>{
         </div>
        </div>
        <div className={Style.imagebox}>
-       <Image src={"/Group39660.png"} width={639} height={556} alt={"Frame427319200"} 
+       <Image src={"/SPA-firstBG.png"} width={500} height={500} alt={"Frame427319200"} 
+        priority={true}/>
+          <div className={Style.layer}>
+               <Image src={"/new-layers/first.png"} width={70} height={70} alt={"Frame427319200"} 
         priority={true}
-        />
+        className={Style.firstLayer} />
+        
+               <Image src={"/new-layers/second.png"} width={70} height={70} alt={"Frame427319200"} 
+        priority={true}
+        className={Style.secondLayer} />
+        
+               <Image src={"/new-layers/third.png"} width={70} height={70} alt={"Frame427319200"} 
+        priority={true}
+        className={Style.thirdLayer} />
+        
+               <Image src={"/new-layers/fourth.png"} width={70} height={70} alt={"Frame427319200"} 
+        priority={true}
+        className={Style.fourLayer} />
+        
+               <Image src={"/new-layers/five.png"} width={70} height={70} alt={"Frame427319200"} 
+        priority={true}
+        className={Style.fiveLayer} />
+        
+               <Image src={"/new-layers/six.png"} width={70} height={70} alt={"Frame427319200"} 
+        priority={true}
+        className={Style.sixLayer} />
+        
        </div>
+       </div>
+
+     
     </div>
 </div>
 </section>

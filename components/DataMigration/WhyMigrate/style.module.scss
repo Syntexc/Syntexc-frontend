@@ -372,3 +372,48 @@ color: #253E90;
         display: none;
     }
 }
+
+
+
+.imageWrapper {
+  position: relative;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.backgroundImage {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.flyingFile {
+  position: absolute;
+  top: 40px; // adjust to match your design
+  left: -60px;
+  animation: moveFile 4s linear infinite;
+  z-index: 2;
+}
+.delay1 {
+  animation-delay: 0s;
+}
+.delay2 {
+  animation-delay: 1.5s;
+}
+
+@keyframes moveFile {
+  0% {
+    left: -60px;
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    left: 100%;
+    opacity: 0;
+  }
+}
