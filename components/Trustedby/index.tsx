@@ -21,6 +21,15 @@ const Trustedby = () =>{
     }, []);
 
     const swiperRef = useRef<any | null>(null);
+
+    useEffect(() => {
+  if (swiperRef.current) {
+    swiperRef.current.params.navigation.prevEl = '.swiper-button-prev';
+    swiperRef.current.params.navigation.nextEl = '.swiper-button-next';
+    swiperRef.current.navigation.init();
+    swiperRef.current.navigation.update();
+  }
+}, []);
     return(
         <>
         <section className={Styles.trustedbybox}>
@@ -50,9 +59,9 @@ const Trustedby = () =>{
         loop={true}
         pagination={{ clickable: true }}
         navigation={{
-          prevEl: ".custom-prev",
-          nextEl: ".custom-next",
-        }}
+  prevEl: ".swiper-button-prev",
+  nextEl: ".swiper-button-next",
+}}
         spaceBetween={30}
         slidesPerView={3}
         centeredSlides={true}
