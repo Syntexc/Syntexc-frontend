@@ -18,6 +18,9 @@ export default function Home() {
      {/* <div className="bannerimage">
       <Image src={"/dfdsfdf.png"} width={1920}  height={788}    alt="dsdfsdf"  /> 
      </div> */}
+     <h1 className="text-3xl font-bold underline">
+      Hello world!
+    </h1>
      <Banner />
      <Synexc />
      <CRM />
