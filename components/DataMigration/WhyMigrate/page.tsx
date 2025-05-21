@@ -17,12 +17,10 @@ const WhyMigrate = () => {
                             <h4>At Synexc, we help you migrate with meaning, every field mapped, every record refined.</h4>
                         </div>
                     </div>
-                    <div className={Style.image}>
-                        <Image src={"/new-public-banner.svg"} alt={"5566766_2892184"} width={681} height={455} priority={true} />
-                    </div>
+                   
 
                      <div className={Style.imageWrapper}>
-        {/* Background image */}
+   
         <Image
           src="/new-public-banner.svg"
           alt="5566766_2892184"
@@ -31,9 +29,14 @@ const WhyMigrate = () => {
           priority
           className={Style.backgroundImage}
         />
- 
-        <Image src="/book.svg" className={`${Style.flyingFile} ${Style.delay1}`}  width={100} height={100} alt="test" />
+        <div className={Style.groupBook}>
+                               <Image src="/group-book.svg"  width={150} height={150} alt="test" />
+                        </div>
+ <div className={Style.flyingBooks}>
+       <Image src="/book.svg" className={`${Style.flyingFileOne} ${Style.delay1}`}  width={100} height={100} alt="test" />
 <Image src="/book.svg" className={`${Style.flyingFile} ${Style.delay2}`} width={100} height={100} alt="test" />
+ </div>
+ 
       </div>
                 </div>
 

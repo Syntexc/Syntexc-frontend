@@ -115,6 +115,7 @@ vertical-align: bottom;
         .image {
             display: block;
             margin-top: 20px;
+            position: relative;
             @media (max-width:768px) { 
                 gap: 12px;
                 img {
@@ -385,14 +386,22 @@ color: #253E90;
   display: block;
   width: 100%;
   height: auto;
+  position: relative; 
 }
 
 .flyingFile {
   position: absolute;
-  top: 40px; // adjust to match your design
-  left: -60px;
-  animation: moveFile 4s linear infinite;
-  z-index: 2;
+  top: -204px; // adjust to align with the folder
+  left: 6px;
+  animation: arcFly 3s ease-in-out infinite;
+  z-index: 3;
+}
+.flyingFileOne {
+  position: absolute;
+  top: -204px; 
+  left: 77px;
+  animation: arcFly 3s ease-in-out infinite;
+  z-index: 3;
 }
 .delay1 {
   animation-delay: 0s;
@@ -400,20 +409,48 @@ color: #253E90;
 .delay2 {
   animation-delay: 1.5s;
 }
+.flyingBooks{
+    width: 30%;
+    position: relative;
+}
 
-@keyframes moveFile {
+
+@keyframes arcFly {
   0% {
-    left: -60px;
+    transform: translate(0px, 0px) rotate(0deg);
     opacity: 0;
   }
+
   10% {
     opacity: 1;
   }
+
+  25% {
+    transform: translate(100px, -60px) rotate(10deg);
+  }
+
+  50% {
+    transform: translate(220px, -100px) rotate(15deg);
+  }
+
+  75% {
+    transform: translate(330px, -60px) rotate(5deg);
+  }
+
   90% {
     opacity: 1;
   }
+
   100% {
-    left: 100%;
+    transform: translate(440px, 0px) rotate(0deg);
     opacity: 0;
   }
+}
+
+.groupBook{
+  position: absolute;
+    bottom: 84px;
+    left: 145px;
+    z-index: 99;
+    
 }
