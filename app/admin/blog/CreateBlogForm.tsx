@@ -1,20 +1,16 @@
 "use client";
 import axios from "axios";
 import { useRouter } from "next/navigation";
-import React from "react";
-import dynamic from "next/dynamic";
-import Link from "next/link"; 
+import React from "react"; 
 import Select from 'react-select';
 import makeAnimated from 'react-select/animated';
 import LinkModelBox from "@/components/linkmodelbox/linkmodelbox";
-import styles from "../../styles/CreateBlog.module.scss"
-import JoditEditor from "jodit-react";
-
-const IRichTextEditor = dynamic(() => import("@mantine/rte"), {
+import styles from "../../styles/CreateBlog.module.scss" 
+import dynamic from "next/dynamic";
+ 
+const JoditEditor = dynamic(() => import("jodit-react"), {
   ssr: false,
-  loading: () => null,
 });
-
 const options = [
   { value: 'Salesforce Insights', label: 'Salesforce Insights' },
   { value: 'Culture', label: 'Culture' },
