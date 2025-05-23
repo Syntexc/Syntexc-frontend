@@ -1,4 +1,5 @@
 
+export const dynamic = "force-dynamic";
 import React from "react"; 
 import Image from "next/image";
 import Blog from "@/app/models/blogModels"; 
@@ -10,11 +11,12 @@ import DeleteBlogButton from "@/components/blogApiRoute/DeleteBlogButton";
 
 const getAllBlogs = async () => {
   try {
-    connect();
+    await connect();
     const blogs = await Blog.find();
     return blogs;
   } catch (error) {
-    return error;
+    console.error("Error fetching blogs:", error);
+    return []; // Return empty array on failure
   }
 };
 
@@ -49,7 +51,12 @@ const BlogList = async () => {
               </tr>
             </thead>
             <tbody>
-                {response?.map((blogs: any, index: number) => (
+              {response.length === 0  ? <>
+               <tr>
+    <td colSpan={5} className={styles.tableCell}>No blogs found</td>
+  </tr>
+              </> : <>
+               {response?.map((blogs: any, index: number) => (
                 <tr className={styles.tableRow} key={index}>
                   <td className={styles.tableCell}>
                   <Image src={blogs?.featureImage} width={50} height={50} alt="blog" />
@@ -75,6 +82,8 @@ const BlogList = async () => {
                   </td>
                 </tr>
                 ))}
+              </> }
+               
             </tbody>
           </table>
         </div>
