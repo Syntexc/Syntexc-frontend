@@ -2,14 +2,14 @@
 import { useRouter } from "next/navigation";
 import React, { useEffect, useState } from "react";
 import dynamic from "next/dynamic";
-
-import LinkModelBox from "@/app/components/linkmodelbox/linkmodelbox";
+ 
 import Select from "react-select";
 import makeAnimated from "react-select/animated";
 import axios from "axios";
 import { useParams } from "next/navigation";
 import { deleteImageFromFirebase, uploadFiletoFirebase } from "@/app/utils";
 import Image from "next/image";
+import LinkModelBox from "../linkmodelbox/linkmodelbox";
 
 const IRichTextEditor = dynamic(() => import("@mantine/rte"), {
   ssr: false,

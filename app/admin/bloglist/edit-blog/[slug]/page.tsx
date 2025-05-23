@@ -1,10 +1,10 @@
 
 import React from "react";
-
-import SideBarLayout from "../../../ui/sidebarlayout/page";
-
-import EditBlogForm from "@/app/components/blog/EditBlogForm";
+ 
+ 
 import Blog from "@/app/models/blogModels";
+import SideBarLayout from "@/components/SideBarLayout";
+import EditBlogForm from "@/components/blogApiRoute/EditBlogForm";
 
 const getSingleBlogBySlug = async (slug:string)=>{
   const data  = await Blog.findOne({slug})
