@@ -8,6 +8,7 @@ import Select from 'react-select';
 import makeAnimated from 'react-select/animated';
 import LinkModelBox from "@/components/linkmodelbox/linkmodelbox";
 import styles from "../../styles/CreateBlog.module.scss"
+import JoditEditor from "jodit-react";
 
 const IRichTextEditor = dynamic(() => import("@mantine/rte"), {
   ssr: false,
@@ -139,7 +140,7 @@ const handleRemoveImage = () => {
                 <label className={styles.label}>Blog Content</label>
                 {/* Add IRichTextEditor back here if needed */}
                 <br />
-                <textarea 
+                {/* <textarea 
                   name="content"
                   className={styles.textarea}
                   required
@@ -151,6 +152,13 @@ const handleRemoveImage = () => {
                     width: "100%",
                     border: "1px solid #ccc",
                   }}
+                /> */}
+                <JoditEditor
+                  value={state.content}
+                  onChange={(newContent) => onChangeState("content", newContent)}
+                   
+                  tabIndex={1}  
+                  // onBlur={(newContent) => onChangeState("content", newContent)} 
                 />
               </div>
             </div>

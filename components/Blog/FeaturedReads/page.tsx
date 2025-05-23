@@ -7,6 +7,7 @@ import Link from "next/link";
 import { link } from "fs";
 import { unique } from "next/dist/build/utils";
 import axios from "axios";
+import { decode } from "html-entities";
 
 const FeaturedReads = () => {
     const [activeTab, setActiveTab] = React.useState("Salesforce Insights");
@@ -217,6 +218,15 @@ interface SmallCardProp {
     readmore?: string;
 }
 const SmallCard = ({ image, title, description, readmore }: SmallCardProp) => {
+    console.log("description",{description})
+    const cleanedHTML = description?.replace(/&nbsp;/g, ' ');
+    const [cleanedText, setCleanedText] = React.useState('');
+    React.useEffect(() => { 
+    const noTags = description?.replace(/<[^>]+>/g, '');
+    const decoded = decode(noTags); 
+    setCleanedText(decoded);
+  }, [description]);
+  console.log("cleanedText", { cleanedText })
     return (
         <>
             <div className={Style.blogcard} >
@@ -225,7 +235,8 @@ const SmallCard = ({ image, title, description, readmore }: SmallCardProp) => {
                 </div>
                 <div className={Style.contentbox}>
                     <h3>{title}</h3>
-                    <p>{description}</p>
+                    
+                    <p>{cleanedText}</p>
                     <a href={readmore}>
                         Read More
                     </a>
