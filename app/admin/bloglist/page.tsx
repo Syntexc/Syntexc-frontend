@@ -3,7 +3,7 @@ import React from "react";
 import Image from "next/image";
 import Blog from "@/app/models/blogModels"; 
 import Link from "next/link"; 
-import styles from "@/app/styles/bloglist.module.scss";
+import styles from "@/app/styles/BlogList.module.scss";
 import SideBarLayout from "@/components/SideBarLayout";
 import { connect } from "@/app/dbConfig";
 import DeleteBlogButton from "@/components/blogApiRoute/DeleteBlogButton";
