@@ -15,9 +15,8 @@ import Image from "next/image";
 export default function Home() {
   return (
      <>
-     {/* <div className="bannerimage">
-      <Image src={"/dfdsfdf.png"} width={1920}  height={788}    alt="dsdfsdf"  /> 
-     </div> */}
+      
+   
      <Banner />
      <Synexc />
      <CRM />

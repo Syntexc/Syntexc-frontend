@@ -3,6 +3,7 @@ import Image from "next/image";
 import header from "../Header/header.module.scss"
 import React, { useState } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const Header = ()=>{
     const [hoveredIndex, setHoveredIndex] = React.useState<number | null>(null);
@@ -25,6 +26,8 @@ const Header = ()=>{
       };
     }
     , [ref]);
+    const pathname = usePathname();
+    if (pathname.startsWith("/admin")) return null;
 
     return (
         <>

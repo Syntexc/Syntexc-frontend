@@ -1,0 +1,124 @@
+.wrapperbox {
+  display: flex;
+    font-family: "Segoe UI Regular", "Segoe UI", sans-serif;
+}
+
+.sidebarlayout {
+  border-right: 1px solid #cbd5e1;
+  height: 100vh;
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  bottom: 0;
+  transition: all 0.3s ease;
+
+  &.collapsed {
+    width: 70px;
+    max-width: 70px;
+  }
+
+  &.expanded {
+    width: 280px;
+    max-width: 280px;
+  }
+}
+
+.innerbar {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.logoimage {
+  height: 55px;
+  padding: 10px;
+  border-bottom: 1px solid #cbd5e1;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+.sidebar-menu {
+  margin-top: 30px;
+}
+
+.sidebarlist {
+  padding: 0 10px;
+  list-style: none;
+}
+
+.nav {
+  padding: 10px 15px;
+  border-radius: 3px;
+  transition: background 0.2s ease;
+
+  &:hover {
+    background-color: #253e90;
+    color: #fff;
+  }
+
+  a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: inherit;
+  }
+}
+
+.rightbarlayout {
+  flex: 1;
+  transition: padding-left 0.3s ease;
+
+  &.collapsed {
+    padding-left: 70px;
+  }
+
+  &.expanded {
+    padding-left: 280px;
+  }
+}
+
+.header {
+  z-index: 10;
+  position: sticky;
+  top: 0;
+  height: 75px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  padding: 0 20px;
+  border-bottom: 1px solid #cbd5e1;
+}
+
+.barwithsearch {
+  display: flex;
+  align-items: center;
+}
+
+.searchbox {
+  margin-left: 20px;
+}
+
+.userimage {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid #727272;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+}
+
+.main-content {
+  padding: 20px;
+  background-color: #f1f5f9;
+  min-height: calc(100vh - 56px);
+}

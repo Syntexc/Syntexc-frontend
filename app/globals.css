@@ -10,6 +10,7 @@
   margin: 0px;
   font-size: 100%;
 }
+ 
 
 
 @font-face {
@@ -136,4 +137,47 @@
   border: none;
   font-size: 24px;
   cursor: pointer; 
+}
+
+.popup-container {
+  padding: 30px;
+  border-radius: 10px;
+  position: relative;
+  width: 50%; 
+  max-width: 30%;
+  background-color: #fff;
+}
+.icon {
+    display: flex;
+    justify-content: center; 
+}
+
+.content p {
+    text-align: center;
+    padding: 20px;
+    font-size: 20px; 
+}
+
+.button-new {
+    text-align: center;
+}
+
+.button-new button {
+    padding: 10px 30px;
+    background: #000;
+    border: 0px;
+    color: #fff;
+    font-size: 17px;
+    cursor: pointer;
+}
+.croos-btn {
+    text-align: right;
+}
+
+.croos-btn button {
+    background: red;
+    color: #fff;
+    border: 0;
+    padding: 1px 5px;
+    cursor: pointer;
 }
