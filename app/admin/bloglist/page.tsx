@@ -74,7 +74,7 @@ const BlogList = async () => {
                   <td className={styles.tableCell}>{blogs?.customCategory[0]?.label}</td>
                   <td className={styles.tableCell}>
                   <div className={styles.actions}>
-                    <Link href={`/admin/newdashboard/bloglist/edit-blog/${blogs?.slug}`} className={styles.actionIcon}>
+                    <Link href={`/admin/bloglist/edit-blog/${blogs?.slug}`} className={styles.actionIcon}>
                     <Image src="/edit-box-line.svg" width={15} height={15} alt="edit" />
                     </Link>
                     <DeleteBlogButton id={blogs?._id} model="blog" />

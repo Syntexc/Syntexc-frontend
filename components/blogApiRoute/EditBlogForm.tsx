@@ -10,10 +10,10 @@ import { useParams } from "next/navigation";
 import { deleteImageFromFirebase, uploadFiletoFirebase } from "@/app/utils";
 import Image from "next/image";
 import LinkModelBox from "../linkmodelbox/linkmodelbox";
+import styles from "../../app/styles/CreateBlog.module.scss"
 
-const IRichTextEditor = dynamic(() => import("@mantine/rte"), {
+const JoditEditor = dynamic(() => import("jodit-react"), {
   ssr: false,
-  loading: () => null,
 });
 const options = [
   { value: 'blogs', label: 'Blog' },
@@ -35,7 +35,7 @@ const EditBlogForm = ({data}:any) => {
 
   const [blogImage, setBlogImage] = useState<any>(null);
 
-
+const [showUpload, setShowUpload] = useState(false);
 
   const [blog, setBlog] = useState({
     title: "",
@@ -64,9 +64,9 @@ const EditBlogForm = ({data}:any) => {
               courseId: response?.data?._id,
             };
             const response2 = await axios.put("/api/blog", data);
-            if(response2?.status === 200){
-             await deleteImageFromFirebase(blogImage);
-            }
+         
+            // await deleteImageFromFirebase(blogImage);
+          
           }
         }
         setLoadig(false);
@@ -80,19 +80,24 @@ const EditBlogForm = ({data}:any) => {
     }
   };
 
-  useEffect(()=>{
-    if(data){
-      setBlog({
-        title: data?.title,
-        content: data?.content,
-        mtitle: data?.mtitle,
-        mdescription: data?.mdescription,
-      });
-      setCategory(data?.customCategory);
-      setBlogImage(data?.featureImage);
+ useEffect(() => {
+  if (data) {
+    setBlog({
+      title: data?.title,
+      content: data?.content,
+      mtitle: data?.mtitle,
+      mdescription: data?.mdescription,
+    });
+    setCategory(data?.customCategory);
 
+    if (data?.featureImage) {
+      setBlogImage(data.featureImage);
+      setShowUpload(false); // Hide upload since image exists
+    } else {
+      setShowUpload(true); // Show upload if no image
     }
-  }, [])
+  }
+}, [data]);
 
 
 
@@ -101,30 +106,30 @@ const EditBlogForm = ({data}:any) => {
       {blogPopup && (
         <LinkModelBox
           buttonclose={() => setBlogPopup(false)}
-          buttonsave={() => router.push("/admin/newdashboard/bloglist")}
+          buttonsave={() => router.push("/admin/bloglist")}
           modelheading="Blogs"
           itemicon="sussess"
           modelcontent="Blogs Edit Sussessfully"
         />
       )}
 
-      <div className="flex bg-[#fff] items-center justify-between   px-[15px] py-[15px] mb-[20px] rounded-[10px]">
+      <div className={styles.headingBar}>
         <h2>Edit Blog</h2>
       </div>
 
-      <div className="flex flex-col   bg-[#fff] p-8 w-full rounded-[10px]">
-        <form className="flex flex-col">
-          <div className="grid grid-cols-[2fr_1fr] gap-8 justify-center">
+      <div className={styles.container}>
+        <form className={styles.form}>
+          <div className={styles.gridLayout}>
             <div>
-              <div className="mb-4 w-[100%]">
-                <label className="font-medium text-sm text-slate-600 dark:text-slate-400">
+              <div className={styles.inputWrapper}>
+                <label className={styles.label}>
                   Meta Title
                 </label>
                 <input
                   type="text"
                   placeholder="Meta Title"
                   name="mtitle"
-                  className="form-input w-full rounded-md mt-1 border border-slate-400/60 dark:border-slate-400 dark:text-slate-300 bg-transparent px-3 py-2 focus:outline-none focus:ring-0 placeholder:text-slate-400/70 placeholder:font-normal placeholder:text-sm hover:border-slate-400 focus:border-primary-500 dark:focus:border-primary-500  dark:hover:border-slate-700"
+                 className={styles.input}
                   required
                   value={blog?.mtitle}
                   onChange={(e: any) =>
@@ -132,15 +137,15 @@ const EditBlogForm = ({data}:any) => {
                   }
                 />
               </div>
-              <div className="mb-4 w-[100%]">
-                <label className="font-medium text-sm text-slate-600 dark:text-slate-400">
+              <div className={styles.inputWrapper}>
+                <label className={styles.label}>
                   Meta description
                 </label>
                 <input
                   type="text"
                   placeholder="Meta description"
                   name="mdescription"
-                  className="form-input w-full rounded-md mt-1 border border-slate-400/60 dark:border-slate-400 dark:text-slate-300 bg-transparent px-3 py-2 focus:outline-none focus:ring-0 placeholder:text-slate-400/70 placeholder:font-normal placeholder:text-sm hover:border-slate-400 focus:border-primary-500 dark:focus:border-primary-500  dark:hover:border-slate-700"
+                  className={styles.input}
                   required
                   value={blog?.mdescription}
                   onChange={(e: any) =>
@@ -148,15 +153,15 @@ const EditBlogForm = ({data}:any) => {
                   }
                 />
               </div>
-              <div className="mb-4 w-[100%]">
-                <label className="font-medium text-sm text-slate-600 dark:text-slate-400">
+              <div className={styles.inputWrapper}>
+                <label className={styles.label}>
                   Blog Title
                 </label>
                 <input
                   type="text"
                   placeholder="Title"
                   name="title"
-                  className="form-input w-full rounded-md mt-1 border border-slate-400/60 dark:border-slate-400 dark:text-slate-300 bg-transparent px-3 py-2 focus:outline-none focus:ring-0 placeholder:text-slate-400/70 placeholder:font-normal placeholder:text-sm hover:border-slate-400 focus:border-primary-500 dark:focus:border-primary-500  dark:hover:border-slate-700"
+                  className={styles.input}
                   required
                   value={blog?.title}
                   onChange={(e: any) =>
@@ -165,8 +170,8 @@ const EditBlogForm = ({data}:any) => {
                 />
               </div>
 
-              <div className="mb-4 w-[100%]">
-                <label className="font-medium text-sm text-slate-600 dark:text-slate-400">
+              <div className={styles.inputWrapper}>
+                <label className={styles.label}>
                   Blog Category
                 </label>
                 <Select
@@ -178,60 +183,102 @@ const EditBlogForm = ({data}:any) => {
                 />
               </div>
 
-              <div className="mb-4 w-[100%]">
-                <label className="font-medium text-sm text-slate-600 dark:text-slate-400">
+              <div className={styles.inputWrapper}>
+                <label className={styles.label}>
                   Blog Content
                 </label>
 
-                <IRichTextEditor
-                  id="rte"
-                  sticky={false}
-                  controls={[
-                    ["bold", "italic", "underline"],
-                    ["link", "image", "video", "blockquote", "code"],
-                    ["unorderedList", "h1", "h2", "h3"],
-                    ["alignLeft", "alignCenter", "alignRight"],
-                  ]}
+               
+                <JoditEditor
                   value={blog.content}
-                  onChange={(value, delta, sources) =>
-                    setBlog({ ...blog, content: value })
-                  }
+                  onChange={(value) => setBlog({ ...blog, content: value })}
+                   
+                  tabIndex={1}  
+                  
                 />
               </div>
 
 
-              <div className="mb-4 ">
-              <h3 className="font-medium text-sm text-slate-600 dark:text-slate-400 mb-2">
-                Featured Image
-              </h3>
-                {blogImage && (
-                <Image
-                src={blogImage}
-                alt="blog image"
-                width={200}
-                height={200}
-                />
-                )}
+            <div className={styles.inputWrapper}>
+  <h3 className={styles.label}>Featured Image</h3>
 
-              {/* <ImageUploader /> */}
-              <div className="mb-4 w-[60%]">
-                <h3 className="font-semibold text-xl mb-2">Banner Image</h3>
-                <label className="w-64 flex flex-col items-center px-4 py-6 bg-white text-blue rounded-lg shadow-lg tracking-wide uppercase border border-blue cursor-pointer">
-                  <svg
-                    className="w-8 h-8"
-                    fill="currentColor"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 20 20"
-                  >
-                    <path d="M16.88 9.1A4 4 0 0 1 16 17H5a5 5 0 0 1-1-9.9V7a3 3 0 0 1 4.52-2.59A4.98 4.98 0 0 1 17 8c0 .38-.04.74-.12 1.1zM11 11h3l-4-4-4 4h3v3h2v-3z" />
-                  </svg>
-                  <span className="mt-2 text-base leading-normal">
-                    Upload a new Image
-                  </span>
-                  <input type="file" className="hidden" onChange={(e:any)=>setFeatureImage(e.target.files[0])} name="featureImage" />
-                </label>
-              </div>
-            </div>
+  {(!showUpload && blogImage) && (
+    <div style={{ position: 'relative', display: 'inline-block' }}>
+      <Image
+        src={blogImage}
+        alt="blog image"
+        width={200}
+        height={200}
+        style={{ borderRadius: '8px' }}
+      />
+      <button
+        type="button"
+        onClick={() => {
+          setBlogImage(null);
+          setShowUpload(true);
+          setFeatureImage(null);
+        }}
+        style={{
+          position: 'absolute',
+          top: 0,
+          right: 0,
+          background: 'rgba(0,0,0,0.5)',
+          color: 'white',
+          border: 'none',
+          borderRadius: '50%',
+          width: 24,
+          height: 24,
+          cursor: 'pointer',
+        }}
+        aria-label="Remove image"
+      >
+        &times;
+      </button>
+    </div>
+  )}
+
+  {(showUpload || featureImage) && (
+    <label className={styles.uploadLabel}>
+      <svg
+        className="w-8 h-8"
+        fill="currentColor"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 20 20"
+      >
+        <path d="M16.88 9.1A4 4 0 0 1 16 17H5a5 5 0 0 1-1-9.9V7a3 3 0 0 1 4.52-2.59A4.98 4.98 0 0 1 17 8c0 .38-.04.74-.12 1.1zM11 11h3l-4-4-4 4h3v3h2v-3z" />
+      </svg>
+      <span className="mt-2 text-base leading-normal">Upload a new Image</span>
+      <input
+        type="file"
+        accept="image/*"
+        className="hidden"
+        onChange={(e: React.ChangeEvent<HTMLInputElement>) => {
+          if (e.target.files && e.target.files.length > 0) {
+            setFeatureImage(e.target.files[0]);
+            setBlogImage(null);  // Clear old image preview
+            setShowUpload(true); // Show upload UI (optional)
+          }
+        }}
+        name="featureImage"
+        style={{ display: 'none' }}
+      />
+    </label>
+  )}
+
+  {/* Preview newly uploaded image */}
+  {featureImage && (
+    <div style={{ marginTop: 10 }}>
+      <Image
+        src={URL.createObjectURL(featureImage)}
+        alt="Preview"
+        width={200}
+        height={200}
+        style={{ borderRadius: '8px' }}
+      />
+    </div>
+  )}
+</div>
+
 
 
 
@@ -253,8 +300,8 @@ const EditBlogForm = ({data}:any) => {
 
           {!loading && (
             <button
-              onClick={handleSubmit}
-              className="bg-black text-white p-2 rounded-md max-w-[636px]"
+              onClick={handleSubmit} 
+className={styles.button}
             >
               Submit
             </button>

@@ -33,3 +33,32 @@ export async function PUT(request: NextRequest) {
     return NextResponse.json({ error: error.message }, { status: 500 });
   }
 }
+ 
+export async function DELETE(request: NextRequest) {
+  try {
+    const { id } = await request.json();
+
+    if (!id) {
+      return NextResponse.json(
+        { error: "Blog ID is required" },
+        { status: 400 }
+      );
+    }
+
+    const deletedBlog = await Blog.findByIdAndDelete(id);
+
+    if (!deletedBlog) {
+      return NextResponse.json(
+        { error: "Blog not found" },
+        { status: 404 }
+      );
+    }
+
+    return NextResponse.json({
+      message: "Blog deleted successfully",
+      success: true,
+    });
+  } catch (error: any) {
+    return NextResponse.json({ error: error.message }, { status: 500 });
+  }
+}
