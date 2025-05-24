@@ -16,10 +16,12 @@ const JoditEditor = dynamic(() => import("jodit-react"), {
   ssr: false,
 });
 const options = [
-  { value: 'blogs', label: 'Blog' },
-  { value: 'course-blog', label: 'Course Blog' },
-  { value: 'study-aboard-blog', label: 'Study Aboard blog' }
-]
+  { value: 'Salesforce Insights', label: 'Salesforce Insights' },
+  { value: 'Culture', label: 'Culture' },
+  { value: 'Tech & Tools', label: 'Tech & Tools' },
+  { value: 'Staff Augmentation & Talent', label: 'Staff Augmentation & Talent' },
+  { value: 'Salesforce Appexchange', label: 'Salesforce Appexchange' }, 
+];
 const animatedComponents = makeAnimated();
 
 const EditBlogForm = ({data}:any) => {
