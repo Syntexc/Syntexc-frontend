@@ -116,7 +116,7 @@ const navlist = [
   {
     SvgIcon: "/user-voice-line.svg",
     text: "Inquiry List",
-    query: "/admin/newdashboard/inquires",
+    query: "/admin/inquires",
     active: ["home"],
     subMenu: [],
   },
