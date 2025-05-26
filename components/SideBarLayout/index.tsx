@@ -101,7 +101,7 @@ const navlist = [
   {
     SvgIcon: "/dashboard-3-line.svg",
     text: "Dashboard",
-    query: "/admin/newdashboard",
+    query: "/admin/dashboard",
     active: ["home"],
     subMenu: [],
   },
