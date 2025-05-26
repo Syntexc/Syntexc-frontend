@@ -10,17 +10,14 @@ import SalesforcePartner from "@/components/SalesforcePartner";
 import Synexc from "@/components/Synexc";
 import ThinkYour from "@/components/ThinkYour";
 import Trustedby from "@/components/Trustedby"; 
-import Image from "next/image"; 
 
 export default function Home() {
   return (
      <>
-     {/* <div className="bannerimage">
-      <Image src={"/dfdsfdf.png"} width={1920}  height={788}    alt="dsdfsdf"  /> 
-     </div> */}
-     <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
+
+ 
+
+   
      <Banner />
      <Synexc />
      <CRM />
