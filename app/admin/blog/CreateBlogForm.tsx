@@ -27,6 +27,11 @@ const CreateBlogfname = () => {
   const [category, setCategory] = React.useState([]);
 const [previewImage, setPreviewImage] = React.useState<string | null>(null);
 const [selectedFile, setSelectedFile] = React.useState<File | null>(null);
+  const [state, setState] = React.useState({
+    content: "",
+  });
+  console.log({state},"state",)
+
   const handleCategory = (value: any) => {
     setCategory(value);
   };
@@ -51,8 +56,8 @@ const handleRemoveImage = () => {
     e.preventDefault();
     const form = e.currentTarget;
     const formData = new FormData(form);
-    formData.append("customCategory", JSON.stringify(category));
-    formData.append("content", JSON.stringify(state.content));
+    formData.append("customCategory", JSON.stringify(category)); 
+    formData.append("content", state.content);
     if (selectedFile) {
       formData.append("featureImage", selectedFile);
     }
@@ -64,9 +69,6 @@ const handleRemoveImage = () => {
     setBlogPopup(true);
   };
 
-  const [state, setState] = React.useState({
-    content: "",
-  });
 
   const onChangeState = (key: any, value: any) => {
     setState((prev) => ({ ...prev, [key]: value }));
@@ -133,22 +135,9 @@ const handleRemoveImage = () => {
                 />
               </div>
               <div className={styles.inputWrapper}>
-                <label className={styles.label}>Blog Content</label>
-                {/* Add IRichTextEditor back here if needed */}
+                <label className={styles.label}>Blog Content</label> 
                 <br />
-                {/* <textarea 
-                  name="content"
-                  className={styles.textarea}
-                  required
-                  value={state.content}
-                  onChange={(e) => onChangeState("content", e.target.value)}
-                  style={{
-                    height: "200px",
-                    resize: "none",
-                    width: "100%",
-                    border: "1px solid #ccc",
-                  }}
-                /> */}
+               
                 <JoditEditor
                   value={state.content}
                   onChange={(newContent) => onChangeState("content", newContent)}

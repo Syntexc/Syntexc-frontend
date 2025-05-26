@@ -63,7 +63,7 @@ const FeaturedReads = () => {
                                             image={items?.featureImage}
                                             title={items?.title}
                                             description={items?.content}
-                                            readmore={items?.link}
+                                            readmore={`/blog/${items.slug}`}
                                         />
                                     </>
                                 )
@@ -237,9 +237,9 @@ const SmallCard = ({ image, title, description, readmore }: SmallCardProp) => {
                     <h3>{title}</h3>
                     
                     <p>{cleanedText}</p>
-                    <a href={readmore}>
+                    <Link href={readmore || "#"} >
                         Read More
-                    </a>
+                    </Link>
                 </div>
             </div>
         </>
