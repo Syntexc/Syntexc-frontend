@@ -6,15 +6,35 @@ import Image from "next/image";
 import Link from "next/link";
 import { link } from "fs";
 import { unique } from "next/dist/build/utils";
+import axios from "axios";
+import { decode } from "html-entities";
 
 const FeaturedReads = () => {
     const [activeTab, setActiveTab] = React.useState("Salesforce Insights");
-
-    console.log("blogData", { blogData })
+ 
 
     const filteredData = blogData?.find((item) => item?.id === activeTab);
     const sortedBlogData = filteredData?.blogpost;
     console.log("sortedBlogData", { sortedBlogData })
+
+      const [blog, setBlog] = React.useState<any>([]);
+
+  const getAllBlogsData = async () => {
+    const data = await axios.get("/api/blog");
+    if (data.status === 200) {
+      setBlog(data?.data);
+    }
+  };
+
+  React.useEffect(() => {
+    getAllBlogsData();
+  }, []);
+ 
+  const filterBlogData = blog?.filter((item: any) => {
+    return item?.customCategory[0]?.value === activeTab;
+  }); 
+
+  console.log("filterBlogData",{filterBlogData})
     return (
         <>
             <section className={Style.section}>
@@ -34,15 +54,15 @@ const FeaturedReads = () => {
                         </ul>
 
                         <div className={Style.blogbox}>
-                            {sortedBlogData?.map((items, index) => {
+                            {filterBlogData?.map((items:any, index:any) => {
                                 console.log("items", { items })
                                 return (
                                     <>
                                         <SmallCard
                                             key={index}
-                                            image={items?.image}
+                                            image={items?.featureImage}
                                             title={items?.title}
-                                            description={items?.description}
+                                            description={items?.content}
                                             readmore={items?.link}
                                         />
                                     </>
@@ -198,6 +218,15 @@ interface SmallCardProp {
     readmore?: string;
 }
 const SmallCard = ({ image, title, description, readmore }: SmallCardProp) => {
+    console.log("description",{description})
+    const cleanedHTML = description?.replace(/&nbsp;/g, ' ');
+    const [cleanedText, setCleanedText] = React.useState('');
+    React.useEffect(() => { 
+    const noTags = description?.replace(/<[^>]+>/g, '');
+    const decoded = decode(noTags); 
+    setCleanedText(decoded);
+  }, [description]);
+  console.log("cleanedText", { cleanedText })
     return (
         <>
             <div className={Style.blogcard} >
@@ -206,7 +235,8 @@ const SmallCard = ({ image, title, description, readmore }: SmallCardProp) => {
                 </div>
                 <div className={Style.contentbox}>
                     <h3>{title}</h3>
-                    <p>{description}</p>
+                    
+                    <p>{cleanedText}</p>
                     <a href={readmore}>
                         Read More
                     </a>

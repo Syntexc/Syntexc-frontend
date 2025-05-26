@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
+import './globals.css'; 
 import Header from "@/components/layout/Header/pages";
 import Footer from "@/components/layout/Footer/pages";
 import Head from "next/head";
@@ -66,7 +66,7 @@ export default function RootLayout({
           `}
         </Script>
       </head>
-      <body>
+      <body >
         <noscript>
           <iframe
             src="https://www.googletagmanager.com/ns.html?id=GTM-KF2L89Q9"

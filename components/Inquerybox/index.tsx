@@ -32,12 +32,12 @@ const InqueryBox = ({  boxcontainer , ...rest}:InqueryBoxProp) =>{
       lastName: inputValue?.lastName,
       email: inputValue?.email,
       phone: inputValue?.mobile,
-      description: inputValue?.description,
+      description: inputValue?.description,  
     };
 
     try {
       setLoader(true);
-      // const response = await axios.post("/api/inquiry", nesteddata);
+      const response = await axios.post("/api/inquiry", nesteddata);
 
       const emailRes = await axios.post("/api/sendemail", {
         firstName: inputValue?.firstName,
