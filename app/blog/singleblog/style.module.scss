@@ -1,0 +1,86 @@
+.blogsingle {
+    background: #EAF9FF;
+    padding: 0px;
+    margin: 0px;
+
+    .innerblog {
+        padding-top: 120px;
+        max-width: 1248px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 96px;
+        .title {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            margin-bottom: 24px;
+            h1 { 
+font-family: "Segoe UI bold";
+font-weight: 700;
+font-size: 48px;
+line-height: 100%;
+letter-spacing: 0%;
+text-align: center;
+vertical-align: bottom;
+text-transform: uppercase;
+color: #253E90;
+max-width: 882px;
+width: 100%;
+margin-left: auto;
+margin-right: auto;
+
+            }
+            p {
+       font-family: 'Segoe UI regular';
+font-weight: 400;
+font-size: 24px;
+line-height: 30px;
+letter-spacing: 0%;
+text-align: center;
+vertical-align: bottom;
+color: #253E90;
+max-width: 882px;
+width: 100%;
+margin-left: auto;
+margin-right: auto;
+            }
+        }
+
+        .content {
+           max-width: 882px;
+margin-left: auto;
+margin-right: auto; 
+width: 100%;
+.img {
+width: 100%;
+max-width: 100%;
+margin-bottom: 24px;
+}
+.textblock {
+h4 {
+ font-family: 'Segoe UI regular'; 
+font-weight: 400;
+font-size: 24px;
+line-height: 30px;
+letter-spacing: 0%;
+text-align: center;
+vertical-align: bottom;
+color: #253E90;
+margin-bottom: 12px;
+
+}
+p {
+font-family: 'Segoe UI regular'; 
+font-weight: 400;
+font-size: 24px;
+line-height: 30px;
+letter-spacing: 0%;
+text-align: center;
+vertical-align: bottom;
+color: #253E90;
+margin-bottom: 32px;
+}
+}
+        }
+    }
+}

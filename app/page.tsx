@@ -14,13 +14,7 @@ import Trustedby from "@/components/Trustedby";
 export default function Home() {
   return (
      <>
-<<<<<<< HEAD
-
- 
-
-=======
       
->>>>>>> b2236bd75620de4dbe9a8a023534e03c809adf30
    
      <Banner />
      <Synexc />
