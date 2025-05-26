@@ -152,6 +152,8 @@ const menuItems = [
         {name:"Salesforce App Development" , href:"/salesforce-app-development"},
         {name:"Data Migration" , href:"/data-migration"}, 
         {name:"Saleforce App Development 2" , href:"/salesforce-app-development2"},
+        {name:"Saleforce Implementation Services" , href:"/salesforce-Implementation-services"},
+        {name:"Managed Services" , href:"/managedservices"},
 
       ]
     },

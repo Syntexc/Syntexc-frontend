@@ -1,0 +1,86 @@
+.banner {
+    background: url("/Frameww4273191862.png");
+    padding-top: 112px;
+    padding-bottom: 120px;
+    background-size: 100%;
+
+    .container {
+        max-width: 1248px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+
+        .row {
+            position: relative;
+display: flex;
+align-items: center;
+flex-direction: column;
+            .textblock {
+                position: relative;
+                max-width: 1248px;
+                width: 100%;
+
+                .innerterxt {
+                    h2 {
+                        font-family: "Segoe UI bold";
+                        font-weight: 700;
+                        font-size: 52px;
+                        line-height: 62px;
+                        letter-spacing: 0%;
+                        vertical-align: bottom;
+                        text-transform: uppercase;
+                        color: #fff;
+                        margin-bottom: 24px;
+                        text-align: center;
+
+                        span {
+                            color: #2BAAE2;
+                        }
+
+                    }
+
+                    p {
+                        font-family: "Segoe UI regular";
+ text-align: center;
+                        font-size: 24px;
+                        line-height: 30px;
+                        letter-spacing: 0%;
+                        vertical-align: bottom;
+                        color: #fff;
+
+                        b {
+                            position: relative;
+                            display: block;
+                            margin-bottom: 12px;
+                        }
+                    }
+                }
+
+
+                .btn {
+                    padding: 15px 18px;
+    background-color: #ffffff;
+    color: #000000;
+    border-radius: 10px;
+    margin-top: 40px;
+    cursor: pointer;
+    text-decoration: none;
+    width: fit-content;
+    display: block;
+font-family: "Segoe UI regular";
+margin-left: auto;
+margin-right: auto;
+    &:hover {
+    background: linear-gradient(to right, #e0f2ff, #d1dae5);
+    color: #181818;
+
+                }
+                }
+            }
+            img {
+                margin-top: 24px;
+            }
+        }
+
+    }
+}
