@@ -395,6 +395,14 @@ color: #253E90;
   left: 6px;
   animation: arcFly 3s ease-in-out infinite;
   z-index: 3;
+  @media (max-width:768px) {
+    animation: arcFlyMobile 3s ease-in-out infinite;
+    top: -120px; // adjust for mobile
+    left: 0px; // adjust for mobile
+    width: 40px; // adjust for mobile
+    height: 40px; // adjust for mobile
+    animation-delay: 1s;
+  }
 }
 .flyingFileOne {
   position: absolute;
@@ -402,6 +410,15 @@ color: #253E90;
   left: 77px;
   animation: arcFly 3s ease-in-out infinite;
   z-index: 3;
+  @media (max-width:768px) {
+    animation: arcFlyMobile 3s ease-in-out infinite;
+    top: -120px;  
+    left: 50px;  
+    width: 40px; 
+    height: 40px;  
+    animation-delay: 3s;
+
+  }
 }
 .delay1 {
   animation-delay: 0s;
@@ -409,9 +426,8 @@ color: #253E90;
 .delay2 {
   animation-delay: 1.5s;
 }
-.flyingBooks{
-    width: 30%;
-    position: relative;
+.flyingBooks{ 
+    position: relative; 
 }
 
 
@@ -419,6 +435,7 @@ color: #253E90;
   0% {
     transform: translate(0px, 0px) rotate(0deg);
     opacity: 0;
+    left: 20%;
   }
 
   10% {
@@ -434,16 +451,53 @@ color: #253E90;
   }
 
   75% {
-    transform: translate(330px, -60px) rotate(5deg);
+    transform: translate(330px, -60px) rotate(5deg); 
   }
 
   90% {
-    opacity: 1;
+    opacity: 1; 
   }
 
   100% {
     transform: translate(440px, 0px) rotate(0deg);
     opacity: 0;
+    left: 0;
+     
+  }
+}
+
+// keyframes for mobile version 
+@keyframes arcFlyMobile {
+  0% {
+    transform: translate(0px, 0px) rotate(0deg);
+    opacity: 0;
+    left: 20%;
+  }
+
+  10% {
+    opacity: 1;
+  }
+
+  25% {
+    transform: translate(50px, -30px) rotate(10deg);
+  }
+
+  50% {
+    transform: translate(110px, -50px) rotate(15deg);
+  }
+
+  75% {
+    transform: translate(165px, -30px) rotate(5deg); 
+  }
+
+  90% {
+    opacity: 1; 
+  }
+
+  100% {
+    transform: translate(220px, 0px) rotate(0deg);
+    opacity: 0;
+    left: -50px;
   }
 }
 
@@ -453,4 +507,17 @@ color: #253E90;
     left: 145px;
     z-index: 99;
     
+}
+@media (max-width:768px) {
+  .groupBook{
+    bottom: 44px;
+        left: 65px;
+
+     .fixedBooks{
+         width: 50px;
+        height: 50px;
+}
+  }
+  
+  
 }

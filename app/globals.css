@@ -124,6 +124,7 @@
   position: relative;
   width: 90%;
   max-width:fit-content; 
+  
 }
 
 .closeButton {
@@ -177,4 +178,18 @@
     border: 0;
     padding: 1px 5px;
     cursor: pointer;
+}
+
+@media (max-width: 600px){
+  .popup{
+    padding: 30px 15px;
+    border-radius: 10px;
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+  }
+  .closeButton {
+    top: -2px;
+    font-size: 31px;
+  }
 }

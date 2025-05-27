@@ -30,7 +30,7 @@ const WhyMigrate = () => {
           className={Style.backgroundImage}
         />
         <div className={Style.groupBook}>
-                               <Image src="/group-book.svg"  width={150} height={150} alt="test" />
+                               <Image src="/group-book.svg"  width={150} height={150} alt="test" className={Style.fixedBooks} />
                         </div>
  <div className={Style.flyingBooks}>
        <Image src="/book.svg" className={`${Style.flyingFileOne} ${Style.delay1}`}  width={100} height={100} alt="test" />

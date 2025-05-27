@@ -283,15 +283,28 @@ vertical-align: bottom;
                 position: relative;
                 margin-right: 0;
                 margin-left: auto;
+                @media (max-width:768px) {
+                    margin-right: auto;
+                    margin-left: auto;
+                    left: 13px;
+                }
                img {
                 @media (max-width:768px) {
                     max-width: 100%;
                     width: 100%;
                     height: auto;
                     margin-top: 40px;
+                    
                  }
                }
             }
+        }
+    }
+}
+@media (max-width:600px){
+    .layer{
+        img{
+            width: 50px !important;
         }
     }
 }
@@ -325,35 +338,61 @@ vertical-align: bottom;
     right: 86px;
     top: -30px;
     animation: firstLayer 0.5s ease-in infinite;
+    @media (max-width:768px) {
+        right: 40px;
+        top: -20px;
+
+    }
 }
 .secondLayer{
     position: absolute;
     right: -34px;
     top: 190px;
     animation: secondLayer 0.5s ease-in infinite;
+    @media (max-width:768px) {
+       right: -34px;
+        top: 88px;
+    }
 }
 .thirdLayer{
       position: absolute;
     right: -34px;
     top: 246px;
     animation: thirdLayer 0.5s ease-in infinite;
+    @media (max-width:768px) {
+                right: -35px;
+        top: 136px;
+    }
 }
 .fourLayer{
     position: absolute;
     left: 198px;
     bottom: -19px;
     animation: fourLayer 0.5s ease-in infinite;
+    @media (max-width:768px) {
+                left: 53px;
+        bottom: -19px;
+
+    }
 }
 .fiveLayer{
      position: absolute;
     left: 145px;
     bottom: -19px;
     animation: fiveLayer 0.5s ease-in infinite;
+    @media (max-width:768px) {
+       left: 100px;
+        bottom: -19px;
+    }
 }
 .sixLayer{
     position: absolute;
     left: -62px;
     top: 230px;
     animation: sixLayer 0.5s ease-in infinite;
+    @media (max-width:768px) {
+        left: -47px;
+        top: 110px;
+    }
 }
 

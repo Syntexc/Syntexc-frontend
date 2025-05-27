@@ -45,7 +45,11 @@
 
                 li {
                     position: relative;
-                    
+                     @media (max-width: 600px) { 
+                             padding:0px 0px;
+    
+         
+                        }
 
                     a {
                         position: relative;
@@ -63,9 +67,12 @@
                             font-weight: 600;
                         }
                         @media (max-width: 600px) { 
-                            padding: 10px 22px;
+                             padding:0px 0px;
         font-size: 14px;
-        border: 1px solid #eee;
+        // border: 1px solid #eee;
+         a {
+           padding: 10px 22px;
+         }
                         }
 
                     }
@@ -268,8 +275,11 @@ z-index: 999999;
 }
 
 .menuItemMobile {
-  padding: 10px;
+  padding: 0px 10px;
   border-bottom: 1px solid #eee;
+  a{
+    padding: 0;
+  }
 }
 
 .mobileParent {
@@ -290,15 +300,21 @@ font-family: 'Segoe UI Regular';
   margin-top: 5px;
 
   li {
-    padding: 8px 0;
+    
 
     a {
       text-decoration: none;
       color: #333;
       font-size: 14px;
+      padding: 12px !important;
       &:hover {
         color: #253E90;
       }
     }
   }
 }
+
+
+
+
+ 
