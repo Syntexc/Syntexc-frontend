@@ -1,15 +1,8 @@
 .banner {
     background: url("/Frameww4273191862.png");
-    padding-top: 112px;
-    padding-bottom: 120px;
+    padding-top: 50px;
+    padding-bottom: 50px;
     background-size: 100%;
-    @media (max-width:768px) {
-        padding-top: 60px;
-        padding-bottom: 60px;
-        padding-left: 20px;
-        padding-right: 20px;
-        
-    }
 
     .container {
         max-width: 1248px;
@@ -21,10 +14,9 @@
             position: relative;
 display: flex;
 align-items: center;
-flex-direction: column;
             .textblock {
                 position: relative;
-                max-width: 1248px;
+                max-width: 541px;
                 width: 100%;
 
                 .innerterxt {
@@ -38,25 +30,27 @@ flex-direction: column;
                         text-transform: uppercase;
                         color: #fff;
                         margin-bottom: 24px;
-                        text-align: center;
 
                         span {
                             color: #2BAAE2;
                         }
-                        @media (max-width:768px) {
 
-                            font-family: "Segoe UI bold";
+                    }
+                    h3 {
+                        font-family: "Segoe UI bold";
 font-weight: 700;
-font-size: 36px;
-line-height: 100%; 
-
-                         }
-
+font-size: 24px;
+line-height: 30px;
+letter-spacing: 0%;
+vertical-align: bottom;
+text-transform: uppercase;
+color: #2BAAE2;
+margin-bottom: 24px;
                     }
 
                     p {
                         font-family: "Segoe UI regular";
- text-align: center;
+
                         font-size: 24px;
                         line-height: 30px;
                         letter-spacing: 0%;
@@ -68,19 +62,6 @@ line-height: 100%;
                             display: block;
                             margin-bottom: 12px;
                         }
-
-                        @media (max-width:768px) {
-
-                         font-family: "Segoe UI regular";
-font-weight: 400;
-font-size: 18px;
-line-height: 1.4;
-letter-spacing: 0%;
-text-align: center;
-vertical-align: bottom;
-
-
-                         }
                     }
                 }
 
@@ -96,23 +77,11 @@ vertical-align: bottom;
     width: fit-content;
     display: block;
 font-family: "Segoe UI regular";
-margin-left: auto;
-margin-right: auto;
     &:hover {
     background: linear-gradient(to right, #e0f2ff, #d1dae5);
     color: #181818;
-
                 }
                 }
-            }
-            img {
-                margin-top: 24px;
-                 @media (max-width:768px) { 
-width: 100%;
-height: auto;
-margin-top: 40px;
-
-                   }
             }
         }
 

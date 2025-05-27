@@ -12,9 +12,9 @@ const SalesforceImplementationServices = ()=>{
     return (
         <>
         <SalesforceImplementationServicesBanner />
-        <WhatWeOffer />
-        <Bonus />
-        <SynexcYourCRM setOpen={setOpen} />
+     <WhatWeOffer />
+          <Bonus />
+         <SynexcYourCRM setOpen={setOpen} /> 
         {open && (
             <div className="overlay">
           <div className="popup">

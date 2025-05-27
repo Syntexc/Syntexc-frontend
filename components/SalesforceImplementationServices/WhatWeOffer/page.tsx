@@ -17,7 +17,7 @@ const WhatWeOffer = ()=>{
 </div>
 
 
-            <div className={Style.container}>
+             <div className={Style.container}>
                 <div className={Style.boxstyle}>
                     <h2>What We Offer</h2>
                     <div className={Style.heading}>
@@ -49,7 +49,7 @@ const WhatWeOffer = ()=>{
 
 
                 </div>
-            </div>
+            </div> 
         </section>
         </>
     )
