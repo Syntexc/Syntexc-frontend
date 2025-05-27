@@ -34,6 +34,11 @@ const toggleMobileSubmenu = (index: number) => {
     const pathname = usePathname();
     if (pathname.startsWith("/admin")) return null;
 
+    React.useEffect(() => {
+  setIsToggled(false);
+  setMobileExpandedIndex(null);  
+}, [pathname]);
+
     return (
         <>
         <header className={header.header}>
