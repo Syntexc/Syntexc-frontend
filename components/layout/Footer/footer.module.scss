@@ -50,6 +50,9 @@
                             position: relative;
                             display: flex;
                             gap: 8px;
+                            @media (max-width:768px) {
+                                gap: 3px;
+                            }
 
                             .icon {
                                 width: 20px;
