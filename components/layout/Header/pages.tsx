@@ -144,7 +144,7 @@ const toggleMobileSubmenu = (index: number) => {
                 </div>
                 <div className={header.getinquery}>
                     <Link href="/contact-us" className={header.sales}>Contact Us</Link>
-                    <a href="#contact" className={header.getinquery}>get quote</a>
+                    <Link href="/contact-us" className={header.getinquery}>get quote</Link>
                 </div>
                 </div>
             </div>

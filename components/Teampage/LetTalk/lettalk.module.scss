@@ -49,6 +49,10 @@ background-size: cover;
             display: flex        ;
             gap: 12px;
             align-items: center;
+            @media (max-width:768px) {
+                align-items: flex-start;
+  flex-direction: column;
+            }
             p {
                 font-family: "Segoe UI bold";
     font-weight: 700;

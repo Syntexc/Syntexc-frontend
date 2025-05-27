@@ -82,6 +82,9 @@ p {
         justify-content: center;
         gap: 24px;
         margin-top: 24px;
+         @media (max-width:768px) {
+            flex-wrap: wrap;
+          }
 }
     }
 }

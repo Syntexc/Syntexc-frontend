@@ -32,7 +32,7 @@ const LetTalk = () =>{
                         {/* <span><Image src={"/usericon.svg"} alt={""} width={24} height={24} /></span> */}
                         <ButtonHideAndShow
                iconurl={"/usericon.svg"}
-               text="Talk to us for partnerships"
+               text="Talk to us"
                backgroundColor={"#fff"}
                textColor={"#000"}
                 action="mailto:hello@synexc.com"
