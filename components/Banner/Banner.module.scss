@@ -255,6 +255,15 @@
         transform: rotate(360deg) translateX(100px) rotate(-360deg);
     }
 }
+
+@keyframes revolveMobile {
+  0% {
+    transform: rotate(0deg) translateX(60px) rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg) translateX(60px) rotate(-360deg);
+  }
+}
 .image1 {
     position: relative;
     top: 197px;
@@ -264,13 +273,15 @@
     animation: revolve1 7s linear infinite;
     animation-delay: 1s; 
     @media (max-width: 768px) {
-        top: 135px;
+        width: 50px;
+        height: 50px;
+        top: 142px;
         left: 0px;
-        width: 40px;
-        height: 40px;
-        animation: revolve 7s linear infinite;
-        // z-index: 1;
-    }
+        animation: revolveMobile 7s linear infinite;
+        animation-delay: 1s; 
+
+    } // heart svg icon
+ 
 }
 
 
@@ -305,7 +316,7 @@
     @media (max-width: 768px) {
         width: 69px;
         height: 100px;
-        left: -60px;
+        left: 40px;
         top: 120px;
     }
 }
@@ -318,12 +329,14 @@
     animation: revolve1 7s linear infinite;
     animation-delay: 3s; 
     @media (max-width: 768px) {
-        width: 50px;    
+        width: 50px;
         height: 50px;
-        left: 50px;
-        top: -40px;
-        animation: revolve 7s linear infinite;
-    }
+        top: -34px;
+        left: 40px;
+        animation: revolveMobile 7s linear infinite;
+        animation-delay: 3s;
+    } // cart svg icon
+   
 }
 
 .image6 {
@@ -336,10 +349,12 @@
     @media (max-width: 768px) {
         width: 50px;
         height: 50px;
+        top: 18px;
         left: 40px;
-        top: 10px;
-        animation: revolve 7s linear infinite;
-    }
+        animation: revolveMobile 7s linear infinite;
+        animation-delay: 5s;
+
+    } // blue svg icon
 }
 
 .image7 {
@@ -350,8 +365,8 @@
     @media (max-width: 768px) {
         width: 50px;
         height: 50px;
-        left: -30px;
-        top: 25px;
+        left: 38px;
+        top: 72px;
     }
 }
 
@@ -363,7 +378,7 @@
     @media (max-width: 768px) {
         width: 50px;
         height: 50px;
-        left: -40px;
+        left: 50px;
         top: -15px;
     }
 }
@@ -377,8 +392,8 @@
     @media (max-width: 768px) {
         width: 15px;
         height: 15px;
-        left: -60px;
-        top: -32px;
+       left: -52px;
+        top: -2px;
     }
 }
 
@@ -390,7 +405,7 @@
     @media (max-width: 768px) {
         width: 100px;
         height: 100px;
-        // left: -40px;
+        left: 40px;
         // top: -52px;
     }
 }

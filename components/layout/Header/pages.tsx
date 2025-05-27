@@ -6,6 +6,11 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 const Header = ()=>{
+  const [mobileExpandedIndex, setMobileExpandedIndex] = useState<number | null>(null);
+
+const toggleMobileSubmenu = (index: number) => {
+  setMobileExpandedIndex(prev => (prev === index ? null : index));
+};
     const [hoveredIndex, setHoveredIndex] = React.useState<number | null>(null);
     const [isToggled, setIsToggled] = useState(false);
 
@@ -47,36 +52,47 @@ const Header = ()=>{
 
 
 
-                <ul className={`${header.mobile}` } 
+                <ul className={header.mobile} 
                 style={{
                   height:isToggled ? "auto" : "0px",
                   overflow:isToggled ? "auto" : "hidden",
                   background:isToggled ? "#0000000f" : "null",
                 }}
-                ref={ref}
-                
-                >
-                    {newMenuItems.map((item, index) => (
-          <li
-            key={index}
-            onMouseEnter={() => setHoveredIndex(index)}
-            onMouseLeave={() => setHoveredIndex(null)}
-            className={header.menuItem}
-          >
-            <Link href={item?.herf}>
-              {item?.name}
-              <span className={header.arrow}>
+                ref={ref}>
+  {newMenuItems.map((item, index) => (
+    <li key={index} className={header.menuItemMobile}>
+      <div onClick={() => toggleMobileSubmenu(index)} className={header.mobileParent}>
+        {item.name}
+        {item.subItems && (
+          <span className={header.arrow}>
+            <Image
+              src={
+                mobileExpandedIndex === index
+                  ? "/svg-icons/arrow-down-s-line.svg"
+                  : "/svg-icons/arrow-right-s-line.svg"
+              }
+              width={20}
+              height={20}
+              alt="arrow"
+            />
+          </span>
+        )}
+      </div>
+      {item.subItems && mobileExpandedIndex === index && (
+        <ul className={header.mobileSubDropdown}>
+          {item.subItems.map((subItem, subIndex) => (
+            <li key={subIndex}>
+              <Link href={subItem.href}>{subItem.name}</Link>
+            </li>
+          ))}
+        </ul>
+      )}
+    </li>
+  ))}
+  <li><Link href="/contact-us">Contact Sales</Link></li>
+  <li><Link href="/contact-us">Get Quote</Link></li>
+</ul>
 
-                {hoveredIndex === index ?      <Image src="/svg-icons/arrow-down-s-line.svg" width={25}  height={25} alt="Logo" />                
- :       <Image src="/svg-icons/arrow-right-s-line.svg" width={25}  height={25} alt="Logo" />             
-}
-              </span>
-            </Link>
-          </li>
-        ))}
-        <li><a href="/contact-us">Contact sales</a></li>
-        <li> <a href="/contact-us">get quote</a></li>
-                    </ul>
 
 
                     <ul className={header.desktop}>

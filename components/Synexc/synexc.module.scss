@@ -395,12 +395,23 @@ color: #181818;
     width: 412px;
     height: 412px;
     margin: auto;
+    @media (max-width: 768px) {
+        left: -20px;
+        height: 312px;
+        top: -43px;
+    }
 .roundedlogo {
     position: absolute;
     top: 50%;
     left: 48%;
     transform: translate(-50%, -50%);
     z-index: 9;
+    @media (max-width: 768px) {
+           top: 65%;
+    left: 51%;
+
+    }
+  
 }
 
 

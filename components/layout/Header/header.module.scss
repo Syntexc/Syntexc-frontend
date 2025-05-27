@@ -38,9 +38,14 @@
                 margin: 0;
                 padding: 0;
                 display: flex;
+                @media (max-width: 600px) { 
+                      flex-direction: column;
+                    
+                }
 
                 li {
                     position: relative;
+                    
 
                     a {
                         position: relative;
@@ -56,6 +61,11 @@
                         // add hover effect
                         &:hover {
                             font-weight: 600;
+                        }
+                        @media (max-width: 600px) { 
+                            padding: 10px 22px;
+        font-size: 14px;
+        border: 1px solid #eee;
                         }
 
                     }
@@ -257,5 +267,38 @@ z-index: 999999;
   transition: transform 0.3s;
 }
 
+.menuItemMobile {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
 
-  
+.mobileParent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 12px;
+font-family: 'Segoe UI Regular';
+
+}
+
+.mobileSubDropdown {
+  list-style: none;
+  padding-left: 16px;
+  margin-top: 5px;
+
+  li {
+    padding: 8px 0;
+
+    a {
+      text-decoration: none;
+      color: #333;
+      font-size: 14px;
+      &:hover {
+        color: #253E90;
+      }
+    }
+  }
+}
