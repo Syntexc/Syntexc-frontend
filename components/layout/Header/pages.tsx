@@ -34,6 +34,11 @@ const toggleMobileSubmenu = (index: number) => {
     const pathname = usePathname();
     if (pathname.startsWith("/admin")) return null;
 
+    React.useEffect(() => {
+  setIsToggled(false);
+  setMobileExpandedIndex(null);  
+}, [pathname]);
+
     return (
         <>
         <header className={header.header}>
@@ -62,7 +67,10 @@ const toggleMobileSubmenu = (index: number) => {
   {newMenuItems.map((item, index) => (
     <li key={index} className={header.menuItemMobile}>
       <div onClick={() => toggleMobileSubmenu(index)} className={header.mobileParent}>
-        {item.name}
+        <Link href={item.herf}>
+          {item.name}
+        </Link>
+    
         {item.subItems && (
           <span className={header.arrow}>
             <Image
@@ -89,8 +97,12 @@ const toggleMobileSubmenu = (index: number) => {
       )}
     </li>
   ))}
-  <li><Link href="/contact-us">Contact Sales</Link></li>
-  <li><Link href="/contact-us">Get Quote</Link></li>
+  <li>
+    <div  className={header.mobileParent}>
+      <Link href="/contact-us">Contact Sales</Link></div></li>
+  <li>
+    <div className={header.mobileParent}>
+      <Link href="/contact-us">Get Quote</Link></div></li>
 </ul>
 
 

@@ -50,6 +50,9 @@
                             position: relative;
                             display: flex;
                             gap: 8px;
+                            @media (max-width:768px) {
+                                gap: 3px;
+                            }
 
                             .icon {
                                 width: 20px;
@@ -67,8 +70,11 @@
                                 margin: 0px;
                                 position: relative;
                                 color: #fff;
+                                width: 60%;
                                 @media (max-width:768px) {
                                     text-align: center;
+                                width: 100%;
+
                                 }
 
                                 a {
