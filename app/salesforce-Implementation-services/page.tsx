@@ -11,9 +11,9 @@ const SalesforceImplementationServices = ()=>{
      const [open , setOpen] = useState(false);
     return (
         <>
-        <SalesforceImplementationServicesBanner />
+        <SalesforceImplementationServicesBanner setOpen={setOpen} />
      <WhatWeOffer />
-          <Bonus />
+          <Bonus setOpen={setOpen}  />
          <SynexcYourCRM setOpen={setOpen} /> 
         {open && (
             <div className="overlay">

@@ -2,7 +2,10 @@
 import Image from "next/image";
 import Style from "./synexc.module.scss"
 import { useSpinnerRotation } from "@/hooks/useSpinnerRotation";
-const Synexc1 =()=>{
+interface NewProps {
+    setOpen: (open: boolean) => void;
+}
+const Synexc1 =({setOpen}:NewProps)=>{
 
     const spinnerRef = useSpinnerRotation();
     return(
@@ -16,7 +19,7 @@ const Synexc1 =()=>{
                   <h2>The Synexc Solution: Where Tech Meets Industry Insight</h2>
                     <h4>We don’t believe in   <span className={Style.sdsd}>“one size fits all.”</span></h4>
                     <p>We believe in tailored, scalable, business-aware solutions that work in your world. We take the time to understand your workflows, and then use powerful cloud tools to make them smarter.</p>
-                    <a href="#contact" className={Style.btnn}>Get a <b>Free</b> Consultation now!</a>
+                    <a onClick={()=>setOpen(true)} className={Style.btnn}>Get a <b>Free</b> Consultation now!</a>
                     <div className={Style.image}>
  <span className={Style.industryLogo}>
   <Image src={"/logo-industry.svg"} width={57} height={28} alt={"Group39549"}  priority className={Style.defaultlogo} />

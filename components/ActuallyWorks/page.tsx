@@ -1,5 +1,9 @@
 import Style from "./actuallyworks.module.scss"
-const ActuallyWorks = () =>{
+ interface NewProps {
+    setOpen: (open: boolean) => void;
+}
+const ActuallyWorks = ({setOpen}:NewProps) =>{
+   
     return(
         <>
         <section className={Style.section}>
@@ -10,7 +14,7 @@ const ActuallyWorks = () =>{
                     <p>Let’s turn your business challenges into smart, scalable solutions.</p>
                      </div>
 
-<a href="#">Get Started. <span> its for free!</span></a>
+<a onClick={()=> setOpen(true)}>Get Started. <span> its for free!</span></a>
 
                 </div>
             </div>

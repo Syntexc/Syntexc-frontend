@@ -15,9 +15,9 @@ const IndustryPage =()=>{
     return(
         <>
         <AboutbannerIndustry  setOpen={setOpen} />
-       <Synexc1 />
+       <Synexc1  setOpen={setOpen} />
          <SalesforcePartner />
-       <ActuallyWorks />
+       <ActuallyWorks setOpen={setOpen}/>
    <Trustedby /> 
 
 

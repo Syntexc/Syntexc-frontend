@@ -13,7 +13,7 @@ const ManufacturingBlog = () => {
                       and Synexc-grade strategy? You’re in the right place</h4>
                     </div>
                     <div className={Style.btn}>
-            <a href="#">Book a  <b>consultation now</b></a>
+            <a href="#contact">Book a  <b>consultation now</b></a>
         </div>
                 </div>
             </div>

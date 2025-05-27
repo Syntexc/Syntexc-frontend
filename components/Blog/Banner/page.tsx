@@ -14,7 +14,7 @@ const BannerSection = ()=>{
         <h2> Ideas. Innovation. Impact. <span>All in sync.</span></h2>
         <p>Welcome to our braintrust. The place where Salesforce know-how meets strategic foresight. We don’t just talk trends, we break them down, build on them, and turn them into business outcomes.</p>
         </div>
-        <a href="#">
+        <a href="#contact">
         <strong>Subscribe</strong> & Stay Ahead
         </a>
     </div>

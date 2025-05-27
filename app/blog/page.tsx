@@ -14,6 +14,7 @@ const BlogPage = ()=>{
        <Trustedby2 />
       <ManufacturingBlog  />
            <ContactUs />  
+           
         </>
     )
 }
