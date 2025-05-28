@@ -182,6 +182,7 @@ const menuItems = [
         {name:"Saleforce App Development 2" , href:"/salesforce-app-development2"},
         {name:"Saleforce Implementation Services" , href:"/salesforce-Implementation-services"},
         {name:"Managed Services" , href:"/managedservices"},
+        {name:"Data Integration" , href:"/data-integration"},
 
       ]
     },
