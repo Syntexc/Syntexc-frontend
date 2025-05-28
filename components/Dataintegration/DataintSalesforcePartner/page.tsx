@@ -15,7 +15,7 @@ const DataintSalesforcePartner = ()=>{
                         {dataarry?.map((items, index) => {
                             return (
                                 <>
-                                    <CardBox key={index} icon={items.icon} title={items.title} content={items.content} />
+                                    <CardBox key={index} icon={items.icon} title={items.title}  />
                                 </>
                             )
                         })}
