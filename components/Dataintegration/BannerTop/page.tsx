@@ -1,6 +1,9 @@
 import Image from "next/image";
 import Style from "./style.module.scss"
-const DataintegrationBanner = () => {
+interface NewProps {
+    setOpen: (open: boolean) => void;
+}
+const DataintegrationBanner = ({setOpen}:NewProps) => {
     return(
         <>
         <section className={Style.banner}>
@@ -13,7 +16,7 @@ const DataintegrationBanner = () => {
                         <p><b>Today, speed isn’t a luxury. It’s survival.</b>
 And disconnected systems? They’re the silent killers of customer experience, agility, and growth.</p>
                    </div>
-                   <a href="#" className={Style.btn}>Get Started. <b>its for free!</b></a>
+                   <a onClick={()=>setOpen(true)} className={Style.btn}>Get Started. <b>its for free!</b></a>
                     </div>
                     <div className={Style.imagebox}>
 <Image src={"/Group39678.svg"} alt={"Groupw39667"} width={701} height={607}  />

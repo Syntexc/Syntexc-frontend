@@ -16,10 +16,10 @@ const ManagedServices = ()=>{
      const [open , setOpen] = useState(false);
     return(
         <>
-       <DataintegrationBanner />
-     <DataintSalesforcePartner />
+       <DataintegrationBanner setOpen={setOpen} />
+     <DataintSalesforcePartner setOpen={setOpen}/>
         <MuchEverything />
-       <OurIntegrationMagic />
+       <OurIntegrationMagic setOpen={setOpen} />
          <DataCrm setOpen={setOpen} />
         
          {open && (

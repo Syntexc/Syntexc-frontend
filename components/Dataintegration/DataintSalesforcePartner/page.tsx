@@ -1,7 +1,11 @@
 import Image from "next/image";
 import Style from "./style.module.scss"
 
-const DataintSalesforcePartner = ()=>{
+interface NewProps {
+    setOpen: (open: boolean) => void;
+}
+
+const DataintSalesforcePartner = ({setOpen}:NewProps)=>{
     return(
         <>
           <section className={Style.section} id="product">
@@ -29,7 +33,7 @@ const DataintSalesforcePartner = ()=>{
 </div>
 
 <div className={Style.btnlink}>
-    <a href="#">Get a <b>Free</b> Integration Consultation</a>
+    <a onClick={()=>setOpen(true)}>Get a <b>Free</b> Integration Consultation</a>
 </div>
 
                 </div>

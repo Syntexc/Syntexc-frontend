@@ -29,8 +29,10 @@ const Counter = ({ end, isVisible }: { end: number; isVisible: boolean }) => {
 
   return <>{count}</>;
 };
-
-const OurIntegrationMagic = () =>{
+interface NewProps {
+    setOpen: (open: boolean) => void;
+}
+const OurIntegrationMagic = ({setOpen}:NewProps) =>{
     const [isVisible, setIsVisible] = useState(false);
       const sectionRef = useRef<HTMLDivElement | null>(null);
       
@@ -176,7 +178,7 @@ const OurIntegrationMagic = () =>{
         <Image src={contentData[activeIndex].image} width={199} height={159} alt="" />
         </div>
       </div>
-      <a href="#contact" className={Style.btn}>
+      <a onClick={()=>setOpen(true)} className={Style.btn}>
       Claim Your Exclusive <strong>Discovery Session</strong>
       </a>
     </div>
