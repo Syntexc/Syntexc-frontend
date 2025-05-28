@@ -1,14 +1,15 @@
 import Image from "next/image";
-import Style from "./alesforcepartner.module.scss"
-const SalesforcePartner = () => {
-    return (
+import Style from "./style.module.scss"
+
+const DataintSalesforcePartner = ()=>{
+    return(
         <>
-            <section className={Style.section} id="product">
+          <section className={Style.section} id="product">
                 <Image src={"/experience-overview-trees 1.png"} alt={""} width={217} height={169} className={Style.layer1} />
                 <Image src={"/image 415.png"} alt={""} width={156} height={73} className={Style.layer2} />
                 <div className={Style.container}>
                     <div className={Style.row}>
-                        <h2>Proud to Be the Salesforce Partner<span> That Delivers. Every Time.</span></h2>
+                        <h2>The Problem with Poor Integration? <span>Everything.</span></h2>
                     </div>
                     <div className={Style.row1}>
                         {dataarry?.map((items, index) => {
@@ -20,40 +21,45 @@ const SalesforcePartner = () => {
                         })}
                     </div>
 
+
+<div className={Style.extratext}>
+    <p className={Style.text1}>No more juggling spreadsheets.</p>
+    <p className={Style.text2}>No more broken customer experiences.</p>
+    <p className={Style.text3}>No more “we'll get back to you” delays.</p>
+</div>
+
+<div className={Style.btnlink}>
+    <a href="#">Get a <b>Free</b> Integration Consultation</a>
+</div>
+
                 </div>
             </section>
         </>
     )
 }
+export default DataintSalesforcePartner;
 
-export default SalesforcePartner;
+
+
 
 const dataarry = [
     {
-        icon: "/1.png",
-        title: "Salesforce Consulting",
-        content: "Align your CRM with your business goals",
+        icon: "/3.png",
+        title: "Data silos that slow you down.", 
     },
     {
         icon: "/2.png",
-        title: "Implementation & Integration",
-        content: "Fast, seamless, and future-proof",
+        title: "Manual work that costs you money.", 
     },
     {
-        icon: "/3.png",
-        title: "AppExchange Development",
-        content: "Custom applications for extended functionality",
+        icon: "/1.png",
+        title: "Customer journeys that feel broken and frustrating.", 
     },
     {
         icon: "/4.png",
-        title: "Managed Services",
-        content: "24/7 monitoring, upgrades, and optimization",
+        title: "Decision-making that’s based on guesswork, not real-time insights.", 
     },
-    {
-        icon: "/5.png",
-        title: "On-Demand Salesforce Experts",
-        content: "Scale your team with contract-based professionals",
-    },
+     
 ]
 
 

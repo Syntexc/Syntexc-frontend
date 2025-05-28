@@ -81,13 +81,14 @@ vertical-align: middle;
 
 }
                 }
-
+@media (max-width:768px) { 
                 &:nth-of-type(even) {
                    .iinerbox {
                     flex-direction: column-reverse;
                    }
                 }
             }
+        }
         }
     }
 }

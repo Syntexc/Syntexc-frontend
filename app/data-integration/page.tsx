@@ -5,16 +5,23 @@ import ManagedServicesinner from "@/components/ManagedServices/ManagedServices/p
 import ContactUs from "@/components/ContactUs";
 import { useState } from "react";
 import DataintegrationBanner from "@/components/Dataintegration/BannerTop/page";
+import DataintSalesforcePartner from "@/components/Dataintegration/DataintSalesforcePartner/page";
+import MuchEverything from "@/components/Dataintegration/MuchEverything/page";
+import OurIntegrationMagic from "@/components/Dataintegration/OurIntegrationMagic/page";
+import DataCrm from "@/components/Dataintegration/DataCrm/page";
 
 
 const ManagedServices = ()=>{
+  
      const [open , setOpen] = useState(false);
     return(
         <>
        <DataintegrationBanner />
-        <ManagedServicesinner />
-        <JustMaintain setOpen={setOpen}/>
-        <ContactUs />
+     <DataintSalesforcePartner />
+        <MuchEverything />
+       <OurIntegrationMagic />
+         <DataCrm setOpen={setOpen} />
+        
          {open && (
             <div className="overlay">
           <div className="popup">
@@ -25,9 +32,10 @@ const ManagedServices = ()=>{
             </button>
             <InqueryBox />
           </div>
-        </div>
+        </div> 
 
         )}
+          
         </>
     )
 }
