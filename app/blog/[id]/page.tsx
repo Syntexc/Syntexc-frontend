@@ -16,8 +16,7 @@ const getSingleBlog = async (slug: string) => {
     return null;
   }
 };
-
-// ✅ Correctly typed generateMetadata function
+ 
 export async function generateMetadata({
   params,
 }: any): Promise<Metadata> {
@@ -35,8 +34,7 @@ export async function generateMetadata({
     description: blog.mdesc || "Read this insightful blog post.",
   };
 }
-
-// ✅ Main component
+ 
 const SingleBlog = async ({ params }: any) => {
   const response = await getSingleBlog(params.id);
 
