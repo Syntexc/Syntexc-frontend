@@ -1,23 +1,15 @@
-import SalesforceAppDevelopmentBanner from "@/components/SalesforceAppDevelopment/Banner/page";
-import Style from "./style.module.scss"
-import SalesforceApps from "@/components/SalesforceAppDevelopment/SalesforceApps";
-import WhatWeBuild from "@/components/SalesforceAppDevelopment/WhatWeBuild";
-import SalesforcePartner from "@/components/SalesforcePartner";
-import ExpertPartner from "@/components/ExpertPartner";
-import ContactusSales from "@/components/SalesforceAppDevelopment/ContactusSales/page";
+import { Metadata } from "next"; 
+import SalesforceAppDevelopment from "./SaleforceAppClient";
 
-const SalesforceAppDevelopment = ()=>{
-    return(
-        <>
-<SalesforceAppDevelopmentBanner />
-<SalesforceApps />
- <WhatWeBuild />
-<SalesforcePartner />
-<ExpertPartner />
- <ContactusSales /> 
-       
-        </>
-    )
+
+
+export const metadata: Metadata = {
+    title: "Salesforce App Development Services | Synexc",
+    description: "Build custom, mobile & AppExchange Salesforce apps with Synexc your trusted Salesforce app development company in USA & India. Scalable, expert-led solutions.",
+    keywords:"salesforce app development, salesforce mobile app development, salesforce app development company, salesforce app development services, salesforce appexchange app development, salesforce app developer, salesforce custom app development, salesforce mobile app development services, app development salesforce, salesforce app developers, develop salesforce app, salesforce android app development, salesforce mobile app developer guide, salesforce mobile app development consulting services, custom app development salesforce, custom salesforce app development, mobile app development salesforce, salesforce, android app development company, salesforce app exchange app development, salesforce custom apps development, salesforce custom app development company, salesforce custom app, development company in india, salesforce custom app development service"
+    
 }
 
-export default SalesforceAppDevelopment;
+export default function SalesforceAppPage(){
+  return <SalesforceAppDevelopment/>
+}

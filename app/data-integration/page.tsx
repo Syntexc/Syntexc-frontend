@@ -1,42 +1,15 @@
-"use client"
-import InqueryBox from "@/components/Inquerybox"; 
-import JustMaintain from "@/components/ManagedServices/JustMaintain/page";
-import ManagedServicesinner from "@/components/ManagedServices/ManagedServices/page";
-import ContactUs from "@/components/ContactUs";
-import { useState } from "react";
-import DataintegrationBanner from "@/components/Dataintegration/BannerTop/page";
-import DataintSalesforcePartner from "@/components/Dataintegration/DataintSalesforcePartner/page";
-import MuchEverything from "@/components/Dataintegration/MuchEverything/page";
-import OurIntegrationMagic from "@/components/Dataintegration/OurIntegrationMagic/page";
-import DataCrm from "@/components/Dataintegration/DataCrm/page";
+import { Metadata } from "next"; 
+import ManagedServices from "./DataIntegrationClient";
 
 
-const ManagedServices = ()=>{
-  
-     const [open , setOpen] = useState(false);
-    return(
-        <>
-       <DataintegrationBanner setOpen={setOpen} />
-     <DataintSalesforcePartner setOpen={setOpen}/>
-        <MuchEverything />
-       <OurIntegrationMagic setOpen={setOpen} />
-         <DataCrm setOpen={setOpen} />
-        
-         {open && (
-            <div className="overlay">
-          <div className="popup">
-            <button onClick={() => setOpen(false)} className="closeButton" style={{
-              color:"red"
-            }}>
-              &times;
-            </button>
-            <InqueryBox />
-          </div>
-        </div> 
 
-        )}
-          
-        </>
-    )
+export const metadata: Metadata = {
+    title: "Salesforce Integration Services | Synexc",
+    description: " Expert Salesforce integration services in USA & India. Synexc connects your CRM, cloud, and data systems seamlessly for better business performance and growth.",
+    keywords:"salesforce integration services, salesforce integration service, hire salesforce integration services, salesforce integration services in usa, salesforce integration services india, best salesforce integration services, salesforce integration services in india, salesforce managed services integration, salesforce service cloud integration, salesforce crm integration services, salesforce integration services in united states, salesforce cloud integration service, salesforce data integration service, salesforce integration consulting service usa, salesforce integrations service, salesforce service cloud cti integration, salesforce service cloud integration, top salesforce integration service, integration cloud service salesforce, integration services for salesforce"
+    
 }
-export default ManagedServices;
+
+export default function DataIntrigationPage(){
+  return <ManagedServices/>
+}

@@ -139,7 +139,7 @@ const footerlink1arry = [
 
 const footerlink2arry = [
     // {link:"Blogs" , href:"#blogs"}, 
-    {link:"Our Team" , href:"/team"}, 
+    {link:"Our Team" , href:"#"}, 
     // {link:"FAQ" , href:"#"},
     {link:"Contact Us", href:"/contact-us"},
     // {link:"Privacy Policy" , href:"#"},

@@ -1,37 +1,15 @@
-"use client";
-import DataMigrationBanner from "@/components/DataMigration/Banner/page";
-import CRMWithout from "@/components/DataMigration/CRMwithout/page";
-import WhyMigrate from "@/components/DataMigration/WhyMigrate/page";
-import InqueryBox from "@/components/Inquerybox";
-import SalesforcePartner from "@/components/SalesforcePartner";
-import Trustedby from "@/components/Trustedby";
-import { useState } from "react";
+import { Metadata } from "next"; 
+import DataMigration from "./DataMigrationClient";
 
-const DataMigration = ()=>{
-     const [open , setOpen] = useState(false);
-    return(
-        <>
-        <DataMigrationBanner  setOpen={setOpen} />
-         <WhyMigrate />
-      <SalesforcePartner />
-        <CRMWithout setOpen={setOpen}/>
-        <Trustedby />  
 
-         {open && (
-            <div className="overlay">
-          <div className="popup">
-            <button onClick={() => setOpen(false)} className="closeButton" style={{
-              color:"red"
-            }}>
-              &times;
-            </button>
-            <InqueryBox />
-          </div>
-        </div>
 
-        )}
-        </>
-    )
+export const metadata: Metadata = {
+    title: "Salesforce Data Migration Services | Synexc Experts",
+    description: "Migrate data to Salesforce from CRMs Oracle & Dynamics. Synexc consultant offers secure, expert-led Salesforce data migration services in the USA & India.",
+    keywords:"salesforce data migration, data migration in salesforce, migrate data to salesforce, data migration salesforce, migrate data from salesforce to dynamics crm, oracle to salesforce data migration, salesforce data migration services, data migration to salesforce, migrate data from crm to salesforce, salesforce data migration consultant"
+    
 }
 
-export default DataMigration;
+export default function DataMigrationPage(){
+  return <DataMigration/>
+}

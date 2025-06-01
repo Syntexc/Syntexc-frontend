@@ -170,7 +170,7 @@ const menuItems = [
       subItems: [
         { name: "About Us", href: "/about-us" },
         { name: "Contact Us", href: "/contact-us" },
-        { name: "Team", href: "/team" }, 
+        { name: "Team", href: "#" }, 
       ],
     },
     {
