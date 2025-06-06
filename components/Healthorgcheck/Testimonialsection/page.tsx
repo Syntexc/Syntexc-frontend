@@ -1,0 +1,202 @@
+"use client"
+ 
+import Styles from "./style.module.scss"
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/pagination";
+import { Autoplay, Navigation, Pagination } from "swiper/modules";
+import { useEffect, useRef, useState } from "react";
+import Image from "next/image";
+import RatingCard from "@/components/RatingCard";
+const Testimonialsection = () =>{
+
+    const [slides, setSlides] = useState(3);
+
+    useEffect(() => {
+      const updateSlides = () => {
+        setSlides(window.innerWidth < 500 ? 1.1 : 4);
+      };
+      updateSlides();
+      window.addEventListener('resize', updateSlides);
+      return () => window.removeEventListener('resize', updateSlides);
+    }, []);
+
+    const swiperRef = useRef<any | null>(null);
+
+    useEffect(() => {
+  if (swiperRef.current) {
+    swiperRef.current.params.navigation.prevEl = '.swiper-button-prev';
+    swiperRef.current.params.navigation.nextEl = '.swiper-button-next';
+    swiperRef.current.navigation.init();
+    swiperRef.current.navigation.update();
+  }
+}, []);
+    return(
+        <>
+        <section className={Styles.trustedbybox}>
+            <div className={Styles.container}>
+                {/* <div className={Styles.row}>
+                <h2>Trusted by Industry Giants. <span>Chosen by Innovators.</span></h2>
+                <p>From Fortune 500 companies to high-growth disruptors, businesses turn to Synexc for next-level Salesforce solutions that drive impact, efficiency, and measurable success.</p>
+                </div> */}
+
+                <div className={Styles.row1}>
+{/* <div className={Styles.cScore}>
+
+    <h3><small>Over </small>97<span>%</span></h3>
+<div className={Styles.cont}>
+<h4>Client Satisfaction</h4>
+<p>Because great solutions create great experiences.</p>
+</div>
+</div> */}
+
+
+
+
+<div className={`${Styles.ratingcard2} mobile-none`}>
+<div className="testimonial-container">
+      <Swiper
+        modules={[Autoplay, Navigation]}
+        loop={true}
+        pagination={{ clickable: true }}
+        navigation={{
+  prevEl: ".swiper-button-prev",
+  nextEl: ".swiper-button-next",
+}}
+        spaceBetween={30}
+        slidesPerView={4}
+        // centeredSlides={true}
+        autoplay={{
+          delay: 2000,
+          disableOnInteraction: false,
+        }}
+        onSwiper={(swiper) => (swiperRef.current = swiper)}
+        className="testimonialslider"
+      >
+        {ratingCards?.length > 0 ? (
+          ratingCards.map((card, index) => (
+            <SwiperSlide key={index}>
+              <RatingCard
+                image={card.image}
+                username={card.username}
+                role={card.role}
+                desc={card.desc}
+              /> 
+            </SwiperSlide>
+          ))
+        ) : (
+          <p>Loading testimonials...</p>
+        )}
+      </Swiper>
+
+      
+     
+    </div>
+    
+</div>
+<div className={`${Styles.ratingcard2} desktop-none`}>
+<div className="testimonial-container">
+      <Swiper
+        modules={[Autoplay, Navigation]}
+        loop={true}
+        pagination={{ clickable: true }}
+        navigation={{
+          prevEl: ".custom-prev",
+          nextEl: ".custom-next",
+        }}
+        spaceBetween={30}
+        slidesPerView={1}
+        centeredSlides={true}
+        autoplay={{
+          delay: 2000,
+          disableOnInteraction: false,
+        }}
+        onSwiper={(swiper) => (swiperRef.current = swiper)}
+        className="testimonialslider"
+      >
+        {ratingCards?.length > 0 ? (
+          ratingCards.map((card, index) => (
+            <SwiperSlide key={index} className={Styles.slidercard}>
+              <RatingCard
+                image={card.image}
+                username={card.username}
+                role={card.role}
+                desc={card.desc}
+              /> 
+            </SwiperSlide>
+          ))
+        ) : (
+          <p>Loading testimonials...</p>
+        )}
+      </Swiper>
+
+      
+     
+    </div>
+    
+</div>
+
+
+
+
+
+                </div>
+
+                <div className={Styles.arrowButton}>
+
+<div className={`${Styles.arrowButtonLeft} swiper-button-prev`} onClick={() => swiperRef.current?.slidePrev()}><Image src="/svg-icons/arrow-left-s-line.svg" width={25}  height={25} alt="Logo" /></div>
+<div className={`${Styles.arrowButtonRight} swiper-button-next `}  onClick={() => swiperRef.current?.slideNext()}><Image src="/svg-icons/arrow-right-s-line.svg" width={25}  height={25} alt="Logo" /></div>
+</div>
+                <div className={Styles.row3}>
+{/* <Image src={"/homefly.png"} width={70} height={86} alt="" className={Styles.homefly} /> */}
+
+    <a href="https://www.linkedin.com/company/synexc/about/?viewAsMember=true" target="_blank">Join our community </a>
+    </div>
+            </div>
+        </section>
+        </>
+    )
+}
+
+export default Testimonialsection ;
+
+
+const ratingCards = [
+    {
+        image: "/richardwilson.jpg",
+        username: "Richard Wilson.",
+        role: "Director Of Sales ",
+        desc: "Synexc is a top Salesforce consulting firm that transformed our CRM experience. Their expert team provided seamless integration, process optimization, and tailored solutions to boost efficiency. Highly responsive and professional, they truly understand business needs. For Salesforce consulting in USA Synexc is the best choice!",
+    },
+    {
+        image: "/users/second-user (1).png",
+        username: "Mike M.",
+        role: "Head of Customer Success, FinEdge Capital",
+        desc: "With Service Cloud and automation from Synexc, our customer support team is thriving. Before, tickets were scattered across different channels..",
+    },
+    {
+        image: "/users/second-user (2).png",
+        username: "David S.",
+        role: "CEO, Global Software Partners",
+        desc: "We wanted to launch our app on the Salesforce AppExchange, but the security review process felt like a mountain to climb. Synexc handled ..",
+    },
+    {
+      image: "/users/second-user (1).png",
+      username: "Mike M.",
+      role: "Head of Customer Success, FinEdge Capital",
+        desc: "Sales Cloud completely changed our sales process, thanks to Synexc. We struggled with manual lead tracking and disorganiz",
+    },
+    {
+      image: "/users/second-user (2).png",
+      username: "David S.",
+      role: "CEO, Global Software Partners",
+
+        desc: "With Service Cloud and automation from Synexc, our customer support team is thriving. Before, tickets were scattered across different channels..",
+    },
+    {
+        image: "/user1.png",
+        username: "Alex R.",
+        role: "Director of Sales  Tech Solutions Inc.",
+        desc: "We wanted to launch our app on the Salesforce AppExchange, but the security review process felt like a mountain to climb. Synexc handled ..",
+    }
+]

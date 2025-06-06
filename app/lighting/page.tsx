@@ -33,7 +33,6 @@ const LightingPage = ()=>{
             <InqueryBox />
           </div>
         </div> 
-
         )}
         </>
     )

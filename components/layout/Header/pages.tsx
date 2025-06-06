@@ -186,6 +186,8 @@ const menuItems = [
         {name:"Mobile As First" , href:"/mobile-as-first"},
         {name:"lighting" , href:"/lighting"},
         {name:"Release Management" , href:"/release-management"},
+        {name:"Health Org Check" , href:"/health-org-check"},
+        {name:"Hire Salesforce" , href:"/hire-salesforce"},
       ]
     },
     {
