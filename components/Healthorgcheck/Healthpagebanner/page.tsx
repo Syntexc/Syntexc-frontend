@@ -21,7 +21,7 @@ const Healthpagebanner = ({setOpen}:NewProps) => {
                    <a onClick={()=>setOpen(true)} className={Style.btn}>Get Started. <b>its for free!</b></a>
                     </div>
                     <div className={Style.imagebox}>
-<Image src={"/2480451_150271.svg"} alt={"Groupw39667"} width={604} height={416}  priority />
+<Image src={"/scope.png"} alt={"Groupw39667"} width={604} height={416} priority  />
 
                     </div>
                 </div>
