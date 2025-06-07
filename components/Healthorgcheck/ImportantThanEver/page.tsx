@@ -20,7 +20,8 @@ const ImportantThanEver = () => {
                         </ul>
                     </div>
                     <div className={Style.imagebox}>
-                        <Image src={"/Group3239682.svg"} width={417} height={254} alt="Group239682" />
+                        <Image src={"/Group3239682.svg"} width={417} height={254} alt="Group239682" className="desktop" />
+                        <Image src={"/saleforce-grapgh.png"} width={417} height={254} alt="Group239682" className="mobile" />
                     </div>
                 </div>
             </section>

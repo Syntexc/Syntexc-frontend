@@ -22,7 +22,8 @@ Because your CRM shouldn’t just support growth, it should accelerate it</p>
                    <a onClick={()=>setOpen(true)} className={Style.btn}>Get Started. <b>its for free!</b></a>
                     </div>
                     <div className={Style.imagebox}>
-<Image src={"/Group39683.png"} alt={"Groupw39667"} width={667} height={491}  priority />
+<Image src={"/full-model.svg"} alt={"Groupw39667"} width={667} height={491}  priority className="desktop" />
+<Image src={"/Group39683.png"} alt={"Groupw39667"} width={667} height={491}  priority className="mobile" />
 
                     </div>
                 </div>

@@ -22,7 +22,8 @@ Release Management is the heart of your Salesforce evolution, and we make sure e
                    <a onClick={()=>setOpen(true)} className={Style.btn}>Get Started. <b>its for free!</b></a>
                     </div>
                     <div className={Style.imagebox}>
-<Image src={"/Groupds39688.svg"} alt={"Groupw39667"} width={784} height={567}  priority />
+<Image src={"/Groupds39688.svg"} alt={"Groupw39667"} width={784} height={567}  priority className="desktop" />
+<Image src={"/release-circel.png"} alt={"Groupw39667"} width={784} height={567}  priority className="mobile" />
 
                     </div>
                 </div>

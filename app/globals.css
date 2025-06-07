@@ -60,9 +60,20 @@
 .desktop-none{
   display: none;
 }
+.mobile{
+  display: none;
+}
+
   @media (max-width:768px){ 
   .mobile-none{
     display: none !important;
+  }
+  .mobile{
+  display: block !important;
+  
+}
+  .desktop{
+    display: none;
   }
 }
 

@@ -22,7 +22,8 @@ At Synexc, we transform Salesforce Mobile from just an app into your pocket-size
                    <a onClick={()=>setOpen(true)} className={Style.btn}>Get Started. <b>its for free!</b></a>
                     </div>
                     <div className={Style.imagebox}>
-<Image src={"/Group239690.svg"} alt={"Groupw39667"} width={695} height={521}  priority />
+<Image src={"/Group239690.svg"} alt={"Groupw39667"} width={695} height={521}  priority className="desktop" />
+<Image src={"/full-mobile-view.png"} alt={"Groupw39667"} width={695} height={521}  priority className="mobile"  />   
 
                     </div>
                 </div>
