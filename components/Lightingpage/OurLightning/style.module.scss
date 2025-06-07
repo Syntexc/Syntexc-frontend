@@ -48,6 +48,7 @@ padding-bottom: 60px;
             @media (max-width:768px) {
                 grid-template-columns: 1fr;
                 margin-bottom: 0px;
+                display: grid;
                                }
         }
         .row2 {
@@ -55,7 +56,9 @@ padding-bottom: 60px;
               justify-content: center;
             gap: 24px;
             @media (max-width:768px) {
+                margin-top: 26px;
                 grid-template-columns: 1fr;
+                display: grid;
                                }
         }
     }

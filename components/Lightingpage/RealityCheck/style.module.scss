@@ -21,6 +21,11 @@ margin-bottom: 40px;
         span {
 color: #253E90;
         }
+        @media (max-width: 768px) {
+            font-size: 24px;
+            line-height: 40px;
+            margin-bottom: 24px;
+        }
     }
 
     .tablebox {
@@ -31,8 +36,18 @@ color: #253E90;
         max-width: fit-content;
         margin-left: auto;
         margin-right: auto;
+        @media (max-width: 768px) {
+            width: 100%;
+            max-width: 300px;
+        }
         table {
             border-collapse: collapse;
+            @media (max-width: 768px) {
+                width: 100%;
+                display: block;
+                max-width: 100%;
+                overflow-x: auto;
+            }
      
             thead {
                 background: #BFEBFF;
@@ -49,6 +64,11 @@ padding-bottom: 12px;
 padding-left: 24px;
 padding-right: 24px;
 border-bottom: 1px solid #253E90;
+@media (max-width: 768px) {
+                        padding-left: 12px;
+                        padding-right: 12px;
+                        font-size: 14px;
+                    }
 
 
 
@@ -68,6 +88,11 @@ line-height: 24px;
 letter-spacing: 0%;
 vertical-align: bottom;
 border-bottom: 1px solid #253E90;
+@media (max-width: 768px) {
+                        padding-left: 12px;
+                        padding-right: 12px;
+                        font-size: 16px;
+                    }
                 }
                 tr  {
     &:nth-child(even) {

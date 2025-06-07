@@ -183,11 +183,7 @@ const menuItems = [
         {name:"Saleforce Implementation Services" , href:"/salesforce-Implementation-services"},
         {name:"Managed Services" , href:"/managedservices"},
         {name:"Data Integration" , href:"/data-integration"},
-        {name:"Mobile As First" , href:"/mobile-as-first"},
-        {name:"lighting" , href:"/lighting"},
-        {name:"Release Management" , href:"/release-management"},
-        {name:"Health Org Check" , href:"/health-org-check"},
-        {name:"Hire Salesforce" , href:"/hire-salesforce"},
+       
       ]
     },
     {
@@ -195,6 +191,11 @@ const menuItems = [
       herf: "#",
       subItems: [
         { name: "Industry", href: "/Industry" },
+         {name:"Mobile As First" , href:"/mobile-as-first"},
+        {name:"lighting" , href:"/lighting"},
+        {name:"Release Management" , href:"/release-management"},
+        {name:"Health Org Check" , href:"/health-org-check"},
+        {name:"Hire Salesforce" , href:"/hire-salesforce"},
       ],
     },
     {

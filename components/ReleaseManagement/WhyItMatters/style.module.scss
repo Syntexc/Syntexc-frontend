@@ -8,8 +8,8 @@
     @media (max-width:768px) {
         padding-top: 60px;
         padding-bottom: 60px;
-        padding-left: 30px;
-        padding-right: 30px;
+               padding-right: 0px;
+        padding-left: 0px;
     }
 
     // &::after {
@@ -97,7 +97,11 @@ width: 100%;
 margin-left: auto;
 margin-right: auto;
 margin-top: 40px;
-
+@media (max-width:768px) {
+font-size: 20px;
+line-height: 28px;
+max-width: 350px;
+}
                     }
                     
                 }
@@ -131,6 +135,14 @@ border-radius: 24px;
 padding-bottom: 20px;
 top: -64px;
 position: relative;
+@media (max-width:768px) { 
+    padding-top: 30px;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-bottom: 30px;
+    max-width: 300px;
+    width: 100%;
+}
 h2 {
     font-family: "Segoe UI bold";
 font-weight: 700;
@@ -139,6 +151,10 @@ line-height: 100%;
 letter-spacing: 0%;
 text-align: center;
 color: #181818;
+@media (max-width:768px) {
+    font-size: 32px;
+    line-height: 40px;
+}
 
 }
 .viewbox {
@@ -149,6 +165,11 @@ color: #181818;
     margin-top: 40px;
     margin-bottom: 40px;
     gap: 80px;
+    @media (max-width:768px) {
+        flex-direction: column;
+        gap: 30px;
+        max-width: 200px;
+    }
 }
  p {
     font-family: "Segoe UI regular";
@@ -197,6 +218,9 @@ color: #253E90;
   height: 100%;
   content: "";
   right: -40px;
+  @media (max-width:768px) { 
+    display: none;
+  }
 }
 
 &:last-child {
@@ -235,6 +259,9 @@ display: flex;
     .contentbox {
         max-width: 704px;
         width: 100%;
+        @media (max-width:768px) {
+            text-align: center;
+        }
 
         h3 {
             font-family: "Segoe UI bold";
