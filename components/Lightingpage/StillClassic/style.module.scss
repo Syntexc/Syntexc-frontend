@@ -2,6 +2,12 @@
     background: radial-gradient(102.88% 137.31% at 50% -6.95%, #253E90 0%, #0B122A 88.76%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
 padding-top: 96px;
 padding-bottom: 96px;
+ @media (max-width:768px) {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 h3 {
    font-family: "Segoe UI bold";
 font-weight: 700;
@@ -41,6 +47,7 @@ display: flex;
        display: block; 
        padding: 24px;
      max-width: 310px;
+     box-sizing: border-box;
 }
 
 
