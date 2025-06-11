@@ -1,6 +1,5 @@
 .section {
-   background: #EAF9FF;
-
+    background: #EAF9FF;
     padding-top: 0px;
     padding-bottom: 96px;
     position: relative;
@@ -8,8 +7,9 @@
     @media (max-width:768px) {
         padding-top: 60px;
         padding-bottom: 60px;
-               padding-right: 0px;
-        padding-left: 0px;
+        padding-left: 30px;
+        padding-right: 30px;
+      
     }
 
     // &::after {
@@ -38,14 +38,21 @@
         margin-left: auto;
         margin-right: auto;
 
+        @media (max-width:768px) {
+            box-sizing: border-box;
+
+        }
+
         .row {
             display: flex;
             flex-direction: column;
             gap: 40px;
-   @media (max-width:768px) { 
 
-gap: 30px;
-}
+            @media (max-width:768px) {
+
+                gap: 30px;
+            }
+
             .boxstyle {
 
                 display: flex;
@@ -55,186 +62,200 @@ gap: 30px;
                 .heading {
                     h2 {
                         font-family: "Segoe UI bold";
-                    max-width: 826px;
-                    width: 100%;
-                    margin-left: auto;
-                    margin-right: auto;
-                    font-weight: 700;
-                    font-size: 56px;
-                    line-height: 100%;
-                    letter-spacing: 0%;
-                    text-align: center;
-                    vertical-align: bottom;
-                    color: #253E90;
+                        max-width: 826px;
+                        width: 100%;
+                        margin-left: auto;
+                        margin-right: auto;
+                        font-weight: 700;
+                        font-size: 56px;
+                        line-height: 100%;
+                        letter-spacing: 0%;
+                        text-align: center;
+                        vertical-align: bottom;
+                        color: #253E90;
 
-                    span {
-                        color: #181818;
-                    }
-                    @media (max-width:768px) { 
-font-family: Segoe UI;
-font-weight: 700;
-font-size: 24px;
-line-height: 100%;
-letter-spacing: 0%;
-text-align: center;
-vertical-align: middle;
+                        span {
+                            color: #181818;
+                        }
 
-}
+                        @media (max-width:768px) {
+                            font-family: Segoe UI;
+                            font-weight: 700;
+                            font-size: 24px;
+                            line-height: 100%;
+                            letter-spacing: 0%;
+                            text-align: center;
+                            vertical-align: middle;
+
+                        }
                     }
 
 
                     h3 {
                         font-family: "Segoe UI bold";
-font-weight: 700;
-font-size: 24px;
-line-height: 28px;
-letter-spacing: 0%;
-text-align: center;
-vertical-align: bottom;
-color: #181818;
-max-width: 920px;
-width: 100%;
-margin-left: auto;
-margin-right: auto;
-margin-top: 40px;
-@media (max-width:768px) {
-font-size: 20px;
-line-height: 28px;
-max-width: 350px;
-}
+                        font-weight: 700;
+                        font-size: 24px;
+                        line-height: 28px;
+                        letter-spacing: 0%;
+                        text-align: center;
+                        vertical-align: bottom;
+                        color: #181818;
+                        max-width: 920px;
+                        width: 100%;
+                        margin-left: auto;
+                        margin-right: auto;
+                        margin-top: 40px;
+
+                        @media (max-width:768px) {
+                            font-size: 20px;
+                            line-height: 28px;
+                            max-width: 350px;
+                        }
                     }
-                    
+
                 }
-@media (max-width:768px) { 
-                &:nth-of-type(even) {
-                   .iinerbox {
-                    flex-direction: column-reverse;
-                   }
+
+                @media (max-width:768px) {
+                    &:nth-of-type(even) {
+                        .iinerbox {
+                            flex-direction: column-reverse;
+                        }
+                    }
                 }
             }
         }
+    }
+
+
+
+
+    .contbox {
+        box-shadow: 0px 0px 23.9px 0px #2F373A4D;
+        max-width: 1087px;
+        background: #fff;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        height: 429;
+        gap: 40px;
+        padding-top: 40px;
+        padding-right: 60px;
+        padding-left: 60px;
+        border-radius: 24px;
+        padding-bottom: 20px;
+        top: -64px;
+        position: relative;
+
+        @media (max-width:768px) {
+            padding-top: 30px;
+            padding-right: 30px;
+            padding-left: 30px;
+            padding-bottom: 30px;
+            max-width: 300px;
+            width: 100%;
+              box-sizing: border-box;
         }
-    }
+
+        h2 {
+            font-family: "Segoe UI bold";
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 100%;
+            letter-spacing: 0%;
+            text-align: center;
+            color: #181818;
+
+            @media (max-width:768px) {
+                font-size: 32px;
+                line-height: 40px;
+            }
+
+        }
+
+        .viewbox {
+            display: flex;
+            max-width: 885px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 40px;
+            margin-bottom: 40px;
+            gap: 80px;
+
+            @media (max-width:768px) {
+                flex-direction: column;
+                gap: 30px;
+                max-width: 200px;
+            }
+        }
+
+        p {
+            font-family: "Segoe UI regular";
+            font-weight: 100;
+            font-size: 18px;
+            line-height: 100%;
+            letter-spacing: 0%;
+            text-align: center;
+            vertical-align: bottom;
+            color: #181818;
+
+        }
 
 
-
-
-.contbox {
-    box-shadow: 0px 0px 23.9px 0px #2F373A4D;
-max-width: 1087px;
-background: #fff;
-width: 100%;
-margin-left: auto;
-margin-right: auto;
-height: 429;
-gap: 40px;
-padding-top: 40px;
-padding-right: 60px;
-padding-left: 60px;
-border-radius: 24px;
-padding-bottom: 20px;
-top: -64px;
-position: relative;
-@media (max-width:768px) { 
-    padding-top: 30px;
-    padding-right: 30px;
-    padding-left: 30px;
-    padding-bottom: 30px;
-    max-width: 300px;
-    width: 100%;
-}
-h2 {
-    font-family: "Segoe UI bold";
-font-weight: 700;
-font-size: 48px;
-line-height: 100%;
-letter-spacing: 0%;
-text-align: center;
-color: #181818;
-@media (max-width:768px) {
-    font-size: 32px;
-    line-height: 40px;
-}
-
-}
-.viewbox {
-    display: flex;
-    max-width: 885px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    gap: 80px;
-    @media (max-width:768px) {
-        flex-direction: column;
-        gap: 30px;
-        max-width: 200px;
-    }
-}
- p {
-    font-family: "Segoe UI regular";
-font-weight: 100;
-font-size: 18px;
-line-height: 100%;
-letter-spacing: 0%;
-text-align: center;
-vertical-align: bottom;
-color: #181818;
-
- }
-
-
-// box Style
-.boxinner {
-    max-width: 241px;
-    width: 100%;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    .image {
-        img {
+        // box Style
+        .boxinner {
+            max-width: 241px;
+            width: 100%;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
             position: relative;
+
+            .image {
+                img {
+                    position: relative;
+                }
+            }
+
+            .contentnox {
+                h5 {
+                    font-family: Segoe UI;
+                    font-weight: 700;
+                    font-size: 18px;
+                    line-height: 26px;
+                    letter-spacing: 0%;
+                    text-align: center;
+                    vertical-align: bottom;
+                    text-transform: uppercase;
+                    color: #253E90;
+                }
+            }
+
+            &::after {
+                border-right: 2px dashed;
+                position: absolute;
+                width: 2px;
+                height: 100%;
+                content: "";
+                right: -40px;
+
+                @media (max-width:768px) {
+                    display: none;
+                }
+            }
+
+            &:last-child {
+                &::after {
+                    display: none;
+                }
+            }
+
         }
+
+        // box Style END 
+
+
+
     }
-    .contentnox {
-        h5 {
-font-family: Segoe UI;
-font-weight: 700;
-font-size: 18px;
-line-height: 26px;
-letter-spacing: 0%;
-text-align: center;
-vertical-align: bottom;
-text-transform: uppercase;
-color: #253E90;
-        }
-    }
-
-&::after {
-      border-right: 2px dashed;
-  position: absolute;
-  width: 2px;
-  height: 100%;
-  content: "";
-  right: -40px;
-  @media (max-width:768px) { 
-    display: none;
-  }
-}
-
-&:last-child {
-     &::after {
-    display: none;
-}
-}
-
-}
-// box Style END 
-
-
-
-}
 
 }
 
@@ -243,22 +264,24 @@ color: #253E90;
 
 
 .iinerbox {
-     display: grid;
-  align-items: center;
-  justify-content: space-between;
-  gap: 73px;
-  grid-template-columns: 1fr 1fr;
-    @media (max-width:768px) { 
-flex-direction: column; 
-gap: 30px;
-display: flex;
-}
+    display: grid;
+    align-items: center;
+    justify-content: space-between;
+    gap: 73px;
+    grid-template-columns: 1fr 1fr;
+
+    @media (max-width:768px) {
+        flex-direction: column;
+        gap: 30px;
+        display: flex;
+    }
 
 
 
     .contentbox {
         max-width: 704px;
         width: 100%;
+
         @media (max-width:768px) {
             text-align: center;
         }
@@ -272,34 +295,36 @@ display: flex;
             vertical-align: bottom;
             color: #253E90;
             margin-bottom: 24px;
-            @media (max-width:768px) { 
-font-family: Segoe UI;
-font-weight: 700;
-font-size: 25px;
-line-height: 100%; 
-}
+
+            @media (max-width:768px) {
+                font-family: Segoe UI;
+                font-weight: 700;
+                font-size: 25px;
+                line-height: 100%;
+            }
         }
+
         h4 {
             font-family: "Segoe UI bold";
-font-weight: 700;
-font-size: 24px;
-line-height: 100%;
-letter-spacing: 0%;
-vertical-align: bottom;
-color: #181818;
-margin-bottom: 24px;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 100%;
+            letter-spacing: 0%;
+            vertical-align: bottom;
+            color: #181818;
+            margin-bottom: 24px;
 
         }
 
 
         p {
             font-family: "Segoe UI regular";
-font-weight: 400;
-font-size: 24px;
-line-height: 32px;
-letter-spacing: 0%;
-vertical-align: bottom;
-color: #181818;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 32px;
+            letter-spacing: 0%;
+            vertical-align: bottom;
+            color: #181818;
 
         }
 
@@ -337,15 +362,15 @@ color: #181818;
                     z-index: 99;
                 }
 
-                @media (max-width:768px) { 
-                font-family: Segoe UI;
-                font-weight: 400;
-                font-size: 18px;
-                line-height: 32px;
-                letter-spacing: 0%;
-                vertical-align: bottom;
+                @media (max-width:768px) {
+                    font-family: Segoe UI;
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 32px;
+                    letter-spacing: 0%;
+                    vertical-align: bottom;
 
-}
+                }
 
             }
         }
@@ -356,10 +381,11 @@ color: #181818;
 
         img {
             line-height: 0px;
-               @media (max-width:768px) { 
-width: 100%;
-height: auto;
-}
+
+            @media (max-width:768px) {
+                width: 100%;
+                height: auto;
+            }
         }
     }
 }
