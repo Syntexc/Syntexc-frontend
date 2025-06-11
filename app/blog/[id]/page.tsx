@@ -52,8 +52,9 @@ const SingleBlog = async ({ params }: any) => {
             <Image
               src={response?.featureImage}
               alt={response?.title || ""}
-              width={882}
-              height={564}
+              width={775}
+              height={460}
+              priority
             />
           </div>
 
