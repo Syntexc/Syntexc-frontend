@@ -1,40 +1,14 @@
-"use client"
-import InqueryBox from "@/components/Inquerybox";
-import GoLightning from "@/components/Lightingpage/GoLightning/page";
-import LightingPagebanner from "@/components/Lightingpage/LightingPagebanner/page";
-import MakesLightning from "@/components/Lightingpage/MakesLightning/page";
-import OurLightning from "@/components/Lightingpage/OurLightning/page";
-import RealityCheck from "@/components/Lightingpage/RealityCheck/page";
-import StillClassic from "@/components/Lightingpage/StillClassic/page";
-import { useState } from "react";
-
-const LightingPage = ()=>{
-    const [open , setOpen] = useState(false);
-    return(
-        <>
-       <LightingPagebanner  setOpen={setOpen} />
-<MakesLightning />
-<RealityCheck />
-<StillClassic />
-<OurLightning />
-<GoLightning setOpen={setOpen} />
+import { Metadata } from "next";   
+import LightingPage from "./LightingClient";
 
 
 
-
-        {open && (
-            <div className="overlay">
-          <div className="popup">
-            <button onClick={() => setOpen(false)} className="closeButton" style={{
-              color:"red"
-            }}>
-              &times;
-            </button>
-            <InqueryBox />
-          </div>
-        </div> 
-        )}
-        </>
-    )
+export const metadata: Metadata = {
+    title: "Salesforce Release Management Services | Synexc",
+    description: "Migrate to Salesforce Lightning with Synexc for better UX, speed, and automation. Certified consultants ensure seamless transition and performance boost."
+    
 }
-export default LightingPage;
+
+export default function LigtingPage(){
+  return <LightingPage/>
+}
