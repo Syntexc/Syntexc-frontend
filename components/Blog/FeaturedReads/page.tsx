@@ -11,13 +11,14 @@ import { decode } from "html-entities";
 
 const FeaturedReads = () => {
     const [activeTab, setActiveTab] = React.useState("Salesforce Insights");
- 
+    console.log("activeTab", { activeTab })
 
     const filteredData = blogData?.find((item) => item?.id === activeTab);
     const sortedBlogData = filteredData?.blogpost;
     console.log("sortedBlogData", { sortedBlogData })
 
       const [blog, setBlog] = React.useState<any>([]);
+    console.log("blog", { blog })
 
   const getAllBlogsData = async () => {
     const data = await axios.get("/api/blog");
@@ -29,12 +30,15 @@ const FeaturedReads = () => {
   React.useEffect(() => {
     getAllBlogsData();
   }, []);
- 
-  const filterBlogData = blog?.filter((item: any) => {
-    return item?.customCategory[0]?.value === activeTab;
-  }); 
 
-  console.log("filterBlogData",{filterBlogData})
+
+  // filter blog based on active tab customCategory is have items so filter based on that 
+    const filterBlogData = blog?.filter((item: any) => {
+        // Check if the item has a customCategory and if it matches the activeTab
+        return item?.customCategory?.some((category: any) => category?.value === activeTab);
+    }
+    );
+    console.log("filterBlogData", { filterBlogData })
     return (
         <>
             <section className={Style.section}>
