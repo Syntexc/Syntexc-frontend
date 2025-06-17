@@ -1,35 +1,14 @@
-"use client"
-import InqueryBox from "@/components/Inquerybox";
-import Certainty from "@/components/MobileasFirst/Certainty/page";
-import OurApproach from "@/components/ReleaseManagement/OurApproach/page";
-import RMbanner from "@/components/ReleaseManagement/RMbanner/page";
-import WhyItMatters from "@/components/ReleaseManagement/WhyItMatters/page";
-import { useState } from "react";
-
-const ReleaseManagement = () => {
-  const [open, setOpen] = useState(false);
-  return (
-    <>
-      <RMbanner setOpen={setOpen} />
-      <WhyItMatters />
-      <OurApproach />
-      <Certainty setOpen={setOpen} />
+import { Metadata } from "next";  
+import ReleaseManagement from "./ReleaseManagmentClient";
 
 
-      {open && (
-        <div className="overlay">
-          <div className="popup">
-            <button onClick={() => setOpen(false)} className="closeButton" style={{
-              color: "red"
-            }}>
-              &times;
-            </button>
-            <InqueryBox />
-          </div>
-        </div>
 
-      )}
-    </>
-  )
+export const metadata: Metadata = {
+    title: "Salesforce Release Management Services | Synexc",
+    description: "Streamline Salesforce updates with expert release management. Synexc ensures smooth deployments, testing, and version control for enterprise agility."
+    
 }
-export default ReleaseManagement;
+
+export default function ReleaseManagmentPage(){
+  return <ReleaseManagement/>
+}
