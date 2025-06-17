@@ -52,7 +52,7 @@ const toggleMobileSubmenu = (index: number) => {
                 <div className={header.nav}>
 
 <div className={header.mobilebar}>
-  <Image src={"./hamburger.svg"} alt={"bar"} width={40}  height={40}  onClick={handleToggle} />
+  <Image src={"/hamburger.svg"} alt={"bar"} width={40}  height={40}  onClick={handleToggle} />
 </div>
 
 

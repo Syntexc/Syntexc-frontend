@@ -80,6 +80,11 @@ text-align: center;
 }
 }
 .textblock { 
+    img {
+        width: 100%;
+        box-sizing: border-box;
+        height: auto;
+    }
     ul{
         li {
             p{
