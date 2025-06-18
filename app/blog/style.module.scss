@@ -80,8 +80,11 @@ text-align: center;
 }
 }
 .textblock { 
+    span {
+        width: 324px !important;
+    }
     img {
-        width: 100%;
+        width: 324px !important;
         box-sizing: border-box;
         height: auto;
     }
