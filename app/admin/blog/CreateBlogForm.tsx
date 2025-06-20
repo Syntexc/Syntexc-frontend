@@ -22,27 +22,27 @@ const animatedComponents = makeAnimated();
 
 const CreateBlogfname = () => {
   const router = useRouter();
-   const editor = useRef(null);
+  //  const editor = useRef(null);
 
-  const config = {
-    readonly: false,
-    uploader: {
-      insertImageAsBase64URI: false, // disable base64 images
-      url: 'https://your-server.com/upload', // your custom upload endpoint
-      filesVariableName: 'file', // key for file data
-    },
-    buttons: [
-      'bold', 'italic', 'underline', '|',
-      'ul', 'ol', '|',
-      'image', 'link', '|',
-      'undo', 'redo'
-    ],
-    events: {
-      afterFileUpload: function (response) {
-        console.log("Upload Response", response);
-      }
-    }
-  };
+  // const config = {
+  //   readonly: false,
+  //   uploader: {
+  //     insertImageAsBase64URI: false, // disable base64 images
+  //     url: 'https://your-server.com/upload', // your custom upload endpoint
+  //     filesVariableName: 'file', // key for file data
+  //   },
+  //   buttons: [
+  //     'bold', 'italic', 'underline', '|',
+  //     'ul', 'ol', '|',
+  //     'image', 'link', '|',
+  //     'undo', 'redo'
+  //   ],
+  //   events: {
+  //     afterFileUpload: function (response) {
+  //       console.log("Upload Response", response);
+  //     }
+  //   }
+  // };
 
   const [blogPopup, setBlogPopup] = React.useState(false);
   const [loading, setLoadig] = React.useState(false);
