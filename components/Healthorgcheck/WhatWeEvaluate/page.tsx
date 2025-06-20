@@ -9,7 +9,7 @@ const WhatWeEvaluate = () => {
                 <div className={Style.container}>
                     <div className={Style.row}>
                         <h2>What We Evaluate</h2>
-                        <h3>We deep-dive into the core health indicators of your org:</h3>
+                        <h3>We deep-dive into the core health indicators of your org</h3>
                     </div>
                     <div className={Style.row1}>
                         {dataarry?.map((items, index) => {

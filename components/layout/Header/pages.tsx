@@ -170,7 +170,7 @@ const menuItems = [
       subItems: [
         { name: "About Us", href: "/about-us" },
         { name: "Contact Us", href: "/contact-us" },
-        { name: "Team", href: "#" }, 
+        { name: "Our Team", href: "#" }, 
       ],
     },
     {
@@ -178,10 +178,10 @@ const menuItems = [
       herf: "#",
       subItems: [
         {name:"Salesforce App Development" , href:"/salesforce-app-development"},
-        {name:"Data Migration" , href:"/data-migration"}, 
-        {name:"Saleforce App Development 2" , href:"/salesforce-app-development2"},
-        {name:"Saleforce Implementation Services" , href:"/salesforce-Implementation-services"},
-        {name:"Managed Services" , href:"/managedservices"},
+        {name:"Salesforce Data Migration" , href:"/salesforce-data-migration"}, 
+        {name:"Salesforce Admin & Developer Support " , href:"/saleforce-admin-developer-support"},
+        {name:"Salesforce Implementation Services" , href:"/salesforce-Implementation-services"},
+        {name:"Salesforce Managed Services" , href:"/salesforce-managed-services"},
         {name:"Data Integration" , href:"/data-integration"},
        
       ]
@@ -191,11 +191,11 @@ const menuItems = [
       herf: "#",
       subItems: [
         { name: "Industry", href: "/Industry" },
-         {name:"Mobile As First" , href:"/mobile-as-first"},
-        {name:"lighting" , href:"/lighting"},
-        {name:"Release Management" , href:"/release-management"},
-        {name:"Health Org Check" , href:"/health-org-check"},
-        {name:"Hire Salesforce" , href:"/hire-salesforce"},
+         {name:"Salesforce Mobile" , href:"/salesforce-mobile"},
+        {name:"Salesforce Lightning " , href:"/saleforce-lightning"},
+        {name:"Salesforce Release Management" , href:"/salesforce-release-management"},
+        {name:"Org Health Check" , href:"/org-health-check"},
+        {name:"Resources on contract" , href:"/resources-on-contract"},
       ],
     },
     {

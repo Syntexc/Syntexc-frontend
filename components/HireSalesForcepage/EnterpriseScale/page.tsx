@@ -13,7 +13,7 @@ const EnterpriseScale = ({setOpen}:NewProps) => {
                     <div className={Style.content}>
                     <h2>From Startup Sprints to Enterprise Scale </h2>
                     <h4>No matter your size or Salesforce stage, we plug in where you need us most.</h4>
-                    <h3>“Think of us as your extended team, only faster, sharper, and on-demand.” </h3>
+                    <h3>Think of us as your extended team, only faster, sharper, and on-demand.</h3>
                     </div>
                     <div className={Style.btn}>
             <a onClick={() => setOpen(true)}>Let’s connect and discuss <b> your project needs.</b></a>

@@ -27,7 +27,7 @@ const AboutbannerIndustry = ({setOpen}:NewProps)=>{
              
         </div>
         <div className={Style.perstyle}>
-            <p>Every industry has its own language. Its own pace. Its own pain points. But the real challenge? Finding a tech partner who understands all that and knows how to solve it</p>
+            <p>Every industry has its own language. Its own pace. Its own pain points. But the real challenge? Finding a tech partner who understands all that and knows how to solve it.</p>
             <p><b>That’s exactly the gap Synexc was created to fill</b></p>
         </div>
        
