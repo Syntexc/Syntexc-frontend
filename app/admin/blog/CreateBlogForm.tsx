@@ -160,7 +160,7 @@ const handleRemoveImage = () => {
                 <label className={styles.label}>Blog Content</label> 
                 <br />
                
-                <JoditEditor
+                {/* <JoditEditor
                  ref={editor}
                   value={state.content}
                   config={{
@@ -187,17 +187,17 @@ const handleRemoveImage = () => {
                    
                   tabIndex={1}  
                   // onBlur={(newContent) => onChangeState("content", newContent)} 
-                />
+                /> */}
 
 
 
-                 {/* <JoditEditor
+                 <JoditEditor
                   value={state.content}
                   onChange={(newContent) => onChangeState("content", newContent)}
                    
                   tabIndex={1}  
                   // onBlur={(newContent) => onChangeState("content", newContent)} 
-                /> */}
+                />
               </div>
             </div>
 
