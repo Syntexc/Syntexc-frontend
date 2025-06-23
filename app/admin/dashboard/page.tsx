@@ -1,9 +1,12 @@
 "use client";
-import SideBarLayout from "@/components/SideBarLayout";
-import Image from "next/image";
-import React, { useState } from "react"; 
+import SideBarLayout from "@/components/SideBarLayout"; 
+import React from "react"; 
 
 const NewDashboard = () => {
+
+ 
+
+
   return (
     <>
       <SideBarLayout>
