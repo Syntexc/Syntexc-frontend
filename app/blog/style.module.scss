@@ -81,7 +81,8 @@ text-align: center;
 }
 .textblock { 
     span {
-        width: 324px !important;
+        width: 100% !important;
+        height: auto !important;
     }
     img {
         width: 100% !important;
