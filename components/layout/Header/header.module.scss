@@ -183,6 +183,11 @@ z-index: 999999;
 .mobilebar {
     display: none;
 }
+
+
+.subItems{
+  display: flex;
+}
   @media (max-width:1100px) {
    
     .row {

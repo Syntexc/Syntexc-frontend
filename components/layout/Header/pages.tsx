@@ -70,7 +70,9 @@ const toggleMobileSubmenu = (index: number) => {
         <Link href={item.herf}>
           {item.name}
         </Link>
-    
+   
+
+        
         {item.subItems && (
           <span className={header.arrow}>
             <Image
@@ -85,7 +87,9 @@ const toggleMobileSubmenu = (index: number) => {
             />
           </span>
         )}
+   
       </div>
+           <div className={header.subItems}>
       {item.subItems && mobileExpandedIndex === index && (
         <ul className={header.mobileSubDropdown}>
           {item.subItems.map((subItem, subIndex) => (
@@ -95,6 +99,7 @@ const toggleMobileSubmenu = (index: number) => {
           ))}
         </ul>
       )}
+      </div>
     </li>
   ))}
   <li>
@@ -129,7 +134,9 @@ const toggleMobileSubmenu = (index: number) => {
 
     {/* Dropdown menu */}
     {hoveredIndex === index && item.subItems && (
-      <ul className={header.subDropdown}>
+      <ul className={header.subDropdown} 
+      
+      >
         {item.subItems.map((subItem, subIndex) => (
           <li key={subIndex}>
             <Link href={subItem.href}>{subItem.name}</Link>
@@ -183,19 +190,26 @@ const menuItems = [
         {name:"Salesforce Implementation Services" , href:"/salesforce-Implementation-services"},
         {name:"Salesforce Managed Services" , href:"/salesforce-managed-services"},
         {name:"Data Integration" , href:"/data-integration"},
+        
        
       ]
+    },
+    {
+      name: "More services",
+      herf: "#",
+      subItems: [
+         {name:"Salesforce Mobile" , href:"/salesforce-mobile"},
+        {name:"Salesforce Lightning " , href:"/saleforce-lightning"},
+        {name:"Salesforce Release Management" , href:"/salesforce-release-management"},
+        {name:"Org Health Check" , href:"/org-health-check"},
+        {name:"Resources on contract" , href:"/resources-on-contract"},
+      ],
     },
     {
       name: "Insights",
       herf: "#",
       subItems: [
         { name: "Industry", href: "/Industry" },
-         {name:"Salesforce Mobile" , href:"/salesforce-mobile"},
-        {name:"Salesforce Lightning " , href:"/saleforce-lightning"},
-        {name:"Salesforce Release Management" , href:"/salesforce-release-management"},
-        {name:"Org Health Check" , href:"/org-health-check"},
-        {name:"Resources on contract" , href:"/resources-on-contract"},
       ],
     },
     {

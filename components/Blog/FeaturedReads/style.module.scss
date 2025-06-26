@@ -154,6 +154,8 @@ border-top-left-radius: 30px;
 border-top-right-radius: 24px;
 border-bottom-right-radius: 24px;
 border-bottom-left-radius: 60px;
+max-width: 360px;
+box-sizing: border-box;
 background: #fff;
 @media (max-width:768px) {    
 width: 282px; 
