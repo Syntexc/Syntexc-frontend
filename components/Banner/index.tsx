@@ -64,7 +64,7 @@ const Banner = () => {
 
                 {/* </div> */}
                 </div>
-                <Image src={"/Frame 427319075 (1).png"} width={450} height={450} alt="banner"  className={Style.image5} />
+                <Image src={"/new-saleforce-image.webp"} width={450} height={450} alt="banner"  className={Style.image5} />
                
                 {/* </div> */}
                 {/* <div style={{display: "flex", flexDirection: "column",}}> */}
