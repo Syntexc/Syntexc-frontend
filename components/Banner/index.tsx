@@ -66,8 +66,15 @@ const Banner = () => {
 
                 {/* </div> */}
                 </div>
-                <Image src={"/new-saleforce-image.webp"} width={450} height={450} alt="banner"  className={Style.image5} priority  placeholder="blur"
-  blurDataURL="/blur-placeholder.png" />
+                <Image
+  src="/new-saleforce-image.webp"
+  width={450}
+  height={450}
+  alt="banner"
+  className={Style.image5} 
+  placeholder="blur"
+  blurDataURL="data:image/webp;base64,UklGRk4AAABXRUJQVlA4WAoAAAAQAAAADwAADwAAQUxQSCwAAAABZ2IAAP79gAAA/v39f39/fwD//f0AAAD+//8A/wD+/f3///79/wAA"
+/>
                
                 {/* </div> */}
                 {/* <div style={{display: "flex", flexDirection: "column",}}> */}
