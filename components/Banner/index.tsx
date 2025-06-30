@@ -71,6 +71,7 @@ const Banner = () => {
   width={450}
   height={450}
   alt="banner"
+  priority
   className={Style.image5} 
   placeholder="blur"
   blurDataURL="data:image/webp;base64,UklGRk4AAABXRUJQVlA4WAoAAAAQAAAADwAADwAAQUxQSCwAAAABZ2IAAP79gAAA/v39f39/fwD//f0AAAD+//8A/wD+/f3///79/wAA"
