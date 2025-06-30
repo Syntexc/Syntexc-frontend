@@ -61,7 +61,7 @@ export default function RootLayout({
     rel="preload"
     as="image"
     href="/new-saleforce-image.webp"
-    fetchpriority="high"
+    fetchPriority="high"
     type="image/webp"
   />
         {/* Google Analytics */}
