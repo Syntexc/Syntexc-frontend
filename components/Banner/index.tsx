@@ -47,7 +47,7 @@ const Banner = () => {
                 <div className={Style.bottomstyle}>
                 <Image src={"/Frame 427319105.png"} width={120} height={120} alt="banner"  className={Style.image1} priority  placeholder="blur"
   blurDataURL="/blur-placeholder.png"/>
-                <Image src={"/Group (2).png"} width={271} height={163} alt="banner"  className={Style.image2} priority  placeholder="blur"
+                <Image src={"/new-group-circel.webp"} width={271} height={163} alt="banner"  className={Style.image2} priority  placeholder="blur"
   blurDataURL="/blur-placeholder.png"/>
                 </div>
                 <div className={Style.bottomstyle1}>

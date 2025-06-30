@@ -171,6 +171,7 @@
         left: 0px;
         z-index: 9999;
         top: 0px;
+        margin-bottom: 90px;
 
     }
 }
@@ -300,11 +301,11 @@
 .image2 {
     position: relative;
     top: 87px;
-    left: 70px;
-    object-fit: contain;
+    left: 70px; 
     @media (max-width: 768px) {
         width: 200px;
-        height: 200px;
+        height: 120px;
+            top: 56px; 
     }
 }
 
