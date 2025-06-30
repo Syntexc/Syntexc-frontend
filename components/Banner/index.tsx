@@ -5,6 +5,13 @@ import React from "react";
 const Banner = () => {
     return (
         <div className={Style.banner}>
+            <Image
+    src="/new-frame.png"
+    fill
+    alt="background"
+    className={Style.backgroundImage}
+    priority 
+  />
             <div className={Style.bannerLayers}>
 
             
@@ -31,14 +38,17 @@ const Banner = () => {
                      
                     </a>
                 </div>
-                 <Image src={"/new-arrow.png"} width={171} height={203} alt="banner"  className={Style.image_content}/> 
+                 <Image src={"/new-arrow.png"} width={171} height={203} alt="banner"  className={Style.image_content}   priority  placeholder="blur"
+  blurDataURL="/blur-placeholder.png"/> 
             </div>
             </div>
             <div className={Style.banner_image}>
                 {/* Add your image here */}
                 <div className={Style.bottomstyle}>
-                <Image src={"/Frame 427319105.png"} width={120} height={120} alt="banner"  className={Style.image1}/>
-                <Image src={"/Group (2).png"} width={271} height={163} alt="banner"  className={Style.image2}/>
+                <Image src={"/Frame 427319105.png"} width={120} height={120} alt="banner"  className={Style.image1} priority  placeholder="blur"
+  blurDataURL="/blur-placeholder.png"/>
+                <Image src={"/Group (2).png"} width={271} height={163} alt="banner"  className={Style.image2} priority  placeholder="blur"
+  blurDataURL="/blur-placeholder.png"/>
                 </div>
                 <div className={Style.bottomstyle1}>
                 <div className={Style.bottomstyle2}>

@@ -44,6 +44,19 @@ export default function RootLayout({
         <meta name="robots" content="noydir,noodp" />
         <meta name="rating" content="General" />
         <meta name="revisit-after" content="2 days" />
+          <link
+    rel="preconnect"
+    href="https://fonts.googleapis.com"
+  />
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossOrigin="anonymous"
+  />
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet"
+  />
         {/* Google Analytics */}
         <Script async src="https://www.googletagmanager.com/gtag/js?id=G-3W84D54KXJ" />
         <Script id="google-analytics" strategy="afterInteractive">
