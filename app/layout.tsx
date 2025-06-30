@@ -57,6 +57,13 @@ export default function RootLayout({
     href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet"
   />
+    <link
+    rel="preload"
+    as="image"
+    href="/new-saleforce-image.webp"
+    fetchpriority="high"
+    type="image/webp"
+  />
         {/* Google Analytics */}
         <Script async src="https://www.googletagmanager.com/gtag/js?id=G-3W84D54KXJ" />
         <Script id="google-analytics" strategy="afterInteractive">
