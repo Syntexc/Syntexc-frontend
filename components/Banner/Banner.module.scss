@@ -287,8 +287,8 @@
     @media (max-width: 768px) {
         width: 50px;
         height: 50px;
-        top: 98px;
-        left: 0px;
+        top: 110px;
+        left: 30px;
         animation: revolveMobile 7s linear infinite;
         animation-delay: 1s; 
 
@@ -309,14 +309,14 @@
 }
 
 .image5 {
-    position: relative;
-    top: -47px;
-    left: -50px;
-    object-fit: contain;
-    @media (max-width: 768px) {
-        width: 200px;
-        height: 200px;
-    }
+  object-fit: contain; 
+  margin-top: -47px;
+  margin-left: -50px;
+    z-index: 1;
+  @media (max-width: 768px) {
+    width: 200px;
+    height: 200px;
+  }
 }
 
 .image3 {

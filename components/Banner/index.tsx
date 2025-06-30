@@ -58,26 +58,33 @@ const Banner = () => {
                 {/* <div> */}
                 
 
-                <Image src ={"/Frame 427319127 (1).png"} width={120} height={120} alt="banner" className={Style.image4}  />
-                <Image src={"/Group (4).png"} width={120} height={120} alt="banner"  className={Style.image7} />
+                <Image src ={"/Frame 427319127 (1).png"} width={120} height={120} alt="banner" className={Style.image4} priority  placeholder="blur"
+  blurDataURL="/blur-placeholder.png" />
+                <Image src={"/Group (4).png"} width={120} height={120} alt="banner"  className={Style.image7} priority  placeholder="blur"
+  blurDataURL="/blur-placeholder.png" />
           
 
                 {/* </div> */}
                 </div>
-                <Image src={"/new-saleforce-image.webp"} width={450} height={450} alt="banner"  className={Style.image5} />
+                <Image src={"/new-saleforce-image.webp"} width={450} height={450} alt="banner"  className={Style.image5} priority  placeholder="blur"
+  blurDataURL="/blur-placeholder.png" />
                
                 {/* </div> */}
                 {/* <div style={{display: "flex", flexDirection: "column",}}> */}
            
-                <Image src={"/Group (3).png"} width={69} height={220} alt="banner"  className={Style.image3} />
+                <Image src={"/Group (3).png"} width={69} height={220} alt="banner"  className={Style.image3} priority  placeholder="blur"
+  blurDataURL="/blur-placeholder.png"/>
                
                 {/* </div> */}
             
                 </div>
                 <div className={Style.bottomstyle}>
-                <Image src={"/Group (7).png"} width={14} height={64} alt="banner"  className={Style.image9}/>
-                <Image src={"/Group (8).png"} width={189} height={121} alt="banner"  className={Style.image10}/>
-                    <Image src={"/Group (5).png"} width={69} height={69} alt="banner"  className={Style.image8} />
+                <Image src={"/Group (7).png"} width={14} height={64} alt="banner"  className={Style.image9} priority  placeholder="blur"
+  blurDataURL="/blur-placeholder.png"/>
+                <Image src={"/Group (8).png"} width={189} height={121} alt="banner"  className={Style.image10} priority  placeholder="blur"
+  blurDataURL="/blur-placeholder.png"/>
+                    <Image src={"/Group (5).png"} width={69} height={69} alt="banner"  className={Style.image8} priority  placeholder="blur"
+  blurDataURL="/blur-placeholder.png"/>
                     </div>
                 {/* <Image src={"/Asset 1 1.png"} width={171} height={203} alt="banner"  className={Style.image_content}/> */}
 
