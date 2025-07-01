@@ -72,7 +72,8 @@ const Banner = () => {
   height={450}
   alt="banner"
   priority
-  className={Style.image5} 
+  fetchPriority="high"
+  className={Style.image5}
   placeholder="blur"
   blurDataURL="data:image/webp;base64,UklGRk4AAABXRUJQVlA4WAoAAAAQAAAADwAADwAAQUxQSCwAAAABZ2IAAP79gAAA/v39f39/fwD//f0AAAD+//8A/wD+/f3///79/wAA"
 />
@@ -80,8 +81,16 @@ const Banner = () => {
                 {/* </div> */}
                 {/* <div style={{display: "flex", flexDirection: "column",}}> */}
            
-                <Image src={"/Group (3).png"} width={69} height={220} alt="banner"  className={Style.image3} priority  placeholder="blur"
-  blurDataURL="/blur-placeholder.png"/>
+               <Image
+  src="/Group (3).png"
+  width={69}
+  height={220}
+  alt="decoration"
+  className={Style.image3}
+  loading="lazy" // instead of priority
+  placeholder="blur"
+  blurDataURL="/blur-placeholder.png"
+/>
                
                 {/* </div> */}
             
