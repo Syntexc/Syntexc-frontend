@@ -7,16 +7,12 @@ import { connect } from "@/app/dbConfig";
 import Blog from "@/app/models/blogModels";
 import { Metadata } from "next";
 
-const getSingleBlog = async (id: string) => {
+const getSingleBlog = async (slug: string) => {
   try {
-    const res = await fetch(
-      `https://blogs.synexc.com/wp-json/wp/v2/posts/${id}?_embed`,
-      { next: { revalidate: 60 } }
-    );
-    if (!res.ok) return null;
-    const data = await res.json();
-    return data;
-  } catch {
+    await connect();
+    const blog = await Blog.findOne({ slug });
+    return blog;
+  } catch (error) {
     return null;
   }
 };
@@ -24,7 +20,7 @@ const getSingleBlog = async (id: string) => {
 export async function generateMetadata({
   params,
 }: any): Promise<Metadata> {
-  const blog = await getSingleBlog(params?.id);
+  const blog = await getSingleBlog(params.id);
 
   if (!blog) {
     return {
@@ -39,28 +35,23 @@ export async function generateMetadata({
   };
 }
  
-const SingleBlog = async ({ params }: any) => { 
+const SingleBlog = async ({ params }: any) => {
+  const response = await getSingleBlog(params.id);
 
+  if (!response) return <div>Blog not found</div>;
 
-   const response = await getSingleBlog(params.id);
-
-  if (!response) return <div>Blog not found</div>; 
   return (
     <div className={Style.blogsingle}>
       <div className={Style.innerblog}>
         <div className={Style.title}>
-          <h1 dangerouslySetInnerHTML={{ __html: response?.title?.rendered || "" }} />
+          <h1>{response?.title}</h1>
         </div>
 
         <div className={Style.content}>
           <div className={Style.img}>
             <Image
-              src={
-                // If you are using featured media from _embedded:
-                response?._embedded?.["wp:featuredmedia"]?.[0]?.source_url ||
-                "/default-image.jpg"
-              }
-              alt={response?.title?.rendered || ""}
+              src={response?.featureImage}
+              alt={response?.title || ""}
               width={775}
               height={460}
               priority
@@ -69,7 +60,7 @@ const SingleBlog = async ({ params }: any) => {
 
           <div
             className={Style.textblock}
-            dangerouslySetInnerHTML={{ __html: response?.content?.rendered || "" }}
+            dangerouslySetInnerHTML={{ __html: response?.content }}
           />
         </div>
       </div>

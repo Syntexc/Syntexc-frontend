@@ -1,6 +1,6 @@
 "use client"
 
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Style from "./style.module.scss"
 import Image from "next/image";
 import Link from "next/link";
@@ -9,70 +9,82 @@ import { unique } from "next/dist/build/utils";
 import axios from "axios";
 import { decode } from "html-entities";
 
-interface Post {
-  id: number;
-  title: { rendered: string };
-  excerpt: { rendered: string };
-  content: { rendered: string };
-  _embedded?: {
-    'wp:featuredmedia'?: {
-      source_url: string;
-    }[];
-  };
-}
-
 const FeaturedReads = () => {
-  const [activeTab, setActiveTab] = React.useState("Salesforce Insights");
-  const [posts, setPosts] = useState<Post[]>([]);
+    const [activeTab, setActiveTab] = React.useState("Salesforce Insights");
+    console.log("activeTab", { activeTab })
 
-  useEffect(() => {
-    fetch('https://blogs.synexc.com/wp-json/wp/v2/posts?_embed')
-      .then(res => res.json())
-      .then(data => setPosts(data));
+    const filteredData = blogData?.find((item) => item?.id === activeTab);
+    const sortedBlogData = filteredData?.blogpost;
+    console.log("sortedBlogData", { sortedBlogData })
+
+      const [blog, setBlog] = React.useState<any>([]);
+    console.log("blog", { blog })
+
+  const getAllBlogsData = async () => {
+    const data = await axios.get("/api/blog");
+    if (data.status === 200) {
+      setBlog(data?.data);
+    }
+  };
+
+  React.useEffect(() => {
+    getAllBlogsData();
   }, []);
 
-  const filteredPosts = posts?.filter((post: any) => {
-    const categories = post._embedded?.['wp:term']?.[0];
-    if (!categories) return false;
 
-    return categories.some((cat: any) => cat.name === activeTab);
-  });
+  // filter blog based on active tab customCategory is have items so filter based on that 
+    const filterBlogData = blog?.filter((item: any) => {
+        // Check if the item has a customCategory and if it matches the activeTab
+        return item?.customCategory?.some((category: any) => category?.value === activeTab);
+    }
+    );
+    console.log("filterBlogData", { filterBlogData })
+    return (
+        <>
+            <section className={Style.section}>
+                <div className={Style.container}>
 
-  return (
-    <section className={Style.section}>
-      <div className={Style.container}>
-        <div className={Style.row}>
-          <h2>Featured Reads</h2>
-          <div className={Style.bloglist}>
-            <ul className={Style.tabws}>
-              {tabsarry?.map((items, index) => (
-                <button
-                  key={index}
-                  className={activeTab === items.tabname ? Style.active : Style.inactive}
-                  onClick={() => setActiveTab(items.tabname)}
-                >
-                  {items.tabname}
-                </button>
-              ))}
-            </ul>
+                    <div className={Style.row}>
+                        <h2>Featured Reads</h2>
+                       <div className={Style.bloglist}>
+                       <ul className={Style.tabws}>
+                            {tabsarry?.map((items, index) => {
+                                return (
+                                    <>
+                                        <button className={activeTab === items.tabname ? Style.active : Style.inactive} key={index} onClick={() => setActiveTab(items.tabname)}>{items.tabname}</button>
+                                    </>
+                                )
+                            })}
+                        </ul>
 
-            <div className={Style.blogbox}>
-              {filteredPosts?.map((post: any, index: any) => (
-                <SmallCard
-                  key={index}
-                  image={post}
-                  title={post.title.rendered}
-                  description={post.content.rendered}
-                  readmore={`/blog/${post.id}`}
-                />
-              ))}
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  );
-};
+                        <div className={Style.blogbox}>
+                            {filterBlogData?.map((items:any, index:any) => {
+                                console.log("items", { items })
+                                return (
+                                    <>
+                                        <SmallCard
+                                            key={index}
+                                            image={items?.featureImage}
+                                            title={items?.title}
+                                            description={items?.content}
+                                            readmore={`/old-blog/${items.slug}`}
+                                        />
+                                    </>
+                                )
+                            })}
+
+                        </div>
+                       </div>
+
+
+
+                    </div>
+
+                </div>
+            </section>
+        </>
+    )
+}
 
 export default FeaturedReads;
 
@@ -223,12 +235,7 @@ const SmallCard = ({ image, title, description, readmore }: SmallCardProp) => {
         <>
             <div className={Style.blogcard} >
                 <div className={Style.image}>
-                     {image._embedded?.['wp:featuredmedia']?.[0]?.source_url && (
-            <Image
-              src={image._embedded['wp:featuredmedia'][0].source_url}
-              alt={image.title.rendered}  width={400} height={220}
-            />
-          )} 
+                    <Image src={image} width={312} height={200} alt={title || "Default Alt Text"} />
                 </div>
                 <div className={Style.contentbox}>
                     <h3>{title}</h3>
@@ -242,6 +249,5 @@ const SmallCard = ({ image, title, description, readmore }: SmallCardProp) => {
         </>
     )
 }
-
 
 

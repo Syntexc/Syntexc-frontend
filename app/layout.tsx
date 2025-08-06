@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import './globals.css'; 
+import './styles/style-wp-blocks.css'
 import Header from "@/components/layout/Header/pages";
-import Footer from "@/components/layout/Footer/pages";
-import Head from "next/head";
+import Footer from "@/components/layout/Footer/pages"; 
 import Script from "next/script";
 import CookieBanner from "@/components/CookieBanner";
 

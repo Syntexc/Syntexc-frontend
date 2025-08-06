@@ -1,8 +1,11 @@
+"use client"
 import Image from "next/image";
 import Style from "./ourleadershipteam.module.scss"
 import Link from "next/link";
+import { useState } from "react";
 
 const OurLeadershipTeam = ()=>{
+     const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
     return(
         <>
 <section className={Style.section}>
@@ -13,16 +16,43 @@ const OurLeadershipTeam = ()=>{
 
     <div className={Style.container2}>
         <div className={Style.row}>
-    <BigCard
+
+           
+      {teamarray?.map((team, index) => (
+        <div
+          key={index}
+          onMouseEnter={() => setHoveredIndex(index)}
+          onMouseLeave={() => setHoveredIndex(null)}
+          className="transition-all duration-300"
+        >
+          {hoveredIndex === index ? (
+            <BigCard
+              userimage={team.teamimage}
+              username={team.teamname}
+              role={team.teamrole}
+              content={team.teamdesc}
+            />
+          ) : (
+            <SmallCard
+              teamimage={team.teamimage}
+              teamname={team.teamname}
+              teamrole={team.teamrole}
+              teamdesc={team.teamdesc}
+            />
+          )}
+        </div>
+      ))}
+    
+    {/* <BigCard
     userimage={"/Ellipse3.png"}
     username="Sambhav Arora"
     role="Founder & CEO"
     content="A visionary leader who saw a gap in how businesses leverage Salesforce and built Synexc to bridge it."
-    />
+    /> */}
 
 
 
-<div className={Style.row1}>
+{/* <div className={Style.row1}>
     {teamarray?.map((team,index)=>{
         return(
             <>
@@ -37,7 +67,7 @@ const OurLeadershipTeam = ()=>{
         )
     })}
   
-</div>
+</div> */}
 
 
         </div>
@@ -130,23 +160,30 @@ id,
 const teamarray = [
     {
         id:1,
+        teamimage:"/Ellipse3.png",
+        teamname:"Sambhav Arora",
+        teamrole:"Founder & CEO",
+        teamdesc:"A visionary leader who saw a gap in how businesses leverage Salesforce and built Synexc to bridge it.",
+    },
+    {
+        id:2,
         teamimage:"/team1.png",
         teamname:"Nishu Mahaseth",
         teamrole:"Chief- People success & strategist",
         teamdesc:"Championing culture, performance, and alignment from the inside out.",
     },
-    {
-        id:2,
-        teamimage:"/team2.png",
-        teamname:"Kashish Kumar",
-        teamrole:"Global Head of Growth Strategy",
-        teamdesc:"Connecting Synexc s global potential with client outcomes at scale.",
-    },
-    {
-        id:3,
-        teamimage:"/team3.png",
-        teamname:"Asheesh Pandey",
-        teamrole:"Head of Revenue & Growth Strategy",
-        teamdesc:"Helping clients design systems that don’t just operate they accelerate.",
-    },
+    // {
+    //     id:2,
+    //     teamimage:"/team2.png",
+    //     teamname:"Kashish Kumar",
+    //     teamrole:"Global Head of Growth Strategy",
+    //     teamdesc:"Connecting Synexc s global potential with client outcomes at scale.",
+    // },
+    // {
+    //     id:3,
+    //     teamimage:"/team3.png",
+    //     teamname:"Asheesh Pandey",
+    //     teamrole:"Head of Revenue & Growth Strategy",
+    //     teamdesc:"Helping clients design systems that don’t just operate they accelerate.",
+    // },
 ]
