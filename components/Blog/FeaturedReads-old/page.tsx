@@ -67,7 +67,7 @@ const FeaturedReads = () => {
                                             image={items?.featureImage}
                                             title={items?.title}
                                             description={items?.content}
-                                            readmore={`/old-blog/${items.slug}`}
+                                            readmore={`/blog/${items.slug}`}
                                         />
                                     </>
                                 )

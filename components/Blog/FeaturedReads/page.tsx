@@ -1,41 +1,71 @@
-"use client"
+"use client";
 
-import React, { useEffect, useState } from "react";
-import Style from "./style.module.scss"
+import React, { ReactNode, useEffect, useState } from "react";
+import Style from "./style.module.scss";
 import Image from "next/image";
 import Link from "next/link";
-import { link } from "fs";
-import { unique } from "next/dist/build/utils";
 import axios from "axios";
 import { decode } from "html-entities";
+
+interface Category {
+  originalName: string;
+  displayName: ReactNode;
+  id: number;
+  name: string;
+}
 
 interface Post {
   id: number;
   title: { rendered: string };
   excerpt: { rendered: string };
   content: { rendered: string };
+  link: string;
   _embedded?: {
-    'wp:featuredmedia'?: {
-      source_url: string;
-    }[];
+    "wp:featuredmedia"?: { source_url: string }[];
+    "wp:term"?: any[];
   };
 }
 
 const FeaturedReads = () => {
-  const [activeTab, setActiveTab] = React.useState("Salesforce Insights");
+  const [activeTab, setActiveTab] = useState<string>("");
+  const [categories, setCategories] = useState<Category[]>([]);
   const [posts, setPosts] = useState<Post[]>([]);
 
+  // Fetch categories
+useEffect(() => {
+  axios
+    .get("https://blogs.synexc.com/wp-json/wp/v2/categories?per_page=100&hide_empty=true")
+    .then((res) => {
+      const cleanCats = res.data
+        .filter((cat: Category) => cat.name.toLowerCase() !== "uncategorized")
+        .map((cat: Category) => ({
+          id: cat.id,
+          originalName: cat.name,      // keep original
+          displayName: decode(cat.name), // show decoded
+        }));
+
+      setCategories(cleanCats);
+
+      if (cleanCats.length > 0) {
+        setActiveTab(cleanCats[0].originalName); // set by original name
+      }
+    })
+    .catch((err) => console.error(err));
+}, []);
+
+  // Fetch posts
   useEffect(() => {
-    fetch('https://blogs.synexc.com/wp-json/wp/v2/posts?_embed')
-      .then(res => res.json())
-      .then(data => setPosts(data));
+    axios
+      .get("https://blogs.synexc.com/wp-json/wp/v2/posts?_embed&per_page=100")
+      .then((res) => setPosts(res.data))
+      .catch((err) => console.error(err));
   }, []);
 
-  const filteredPosts = posts?.filter((post: any) => {
-    const categories = post._embedded?.['wp:term']?.[0];
-    if (!categories) return false;
-
-    return categories.some((cat: any) => cat.name === activeTab);
+  // Filter posts by active category
+  const filteredPosts = posts.filter((post) => {
+    const categoriesList = post._embedded?.["wp:term"]?.[0];
+    if (!categoriesList) return false;
+    return categoriesList.some((cat: any) => cat.name === activeTab);
   });
 
   return (
@@ -44,26 +74,28 @@ const FeaturedReads = () => {
         <div className={Style.row}>
           <h2>Featured Reads</h2>
           <div className={Style.bloglist}>
+            {/* Dynamic Tabs */}
             <ul className={Style.tabws}>
-              {tabsarry?.map((items, index) => (
-                <button
-                  key={index}
-                  className={activeTab === items.tabname ? Style.active : Style.inactive}
-                  onClick={() => setActiveTab(items.tabname)}
-                >
-                  {items.tabname}
-                </button>
-              ))}
-            </ul>
+  {categories.map((cat) => (
+    <button
+      key={cat.id}
+      className={activeTab === cat.originalName ? Style.active : Style.inactive}
+      onClick={() => setActiveTab(cat.originalName)} // use original for filter
+    >
+      {cat.displayName} {/* show decoded */}
+    </button>
+  ))}
+</ul>
 
+            {/* Posts */}
             <div className={Style.blogbox}>
-              {filteredPosts?.map((post: any, index: any) => (
+              {filteredPosts.map((post) => (
                 <SmallCard
-                  key={index}
+                  key={post.id}
                   image={post}
                   title={post.title.rendered}
                   description={post.content.rendered}
-                  readmore={`/blog/${post.id}`}
+                  readmore={post.link}
                 />
               ))}
             </div>
@@ -76,172 +108,41 @@ const FeaturedReads = () => {
 
 export default FeaturedReads;
 
-
-const tabsarry = [
-    { tabname: "Salesforce Insights" },
-    { tabname: "Culture" },
-    { tabname: "Tech & Tools" },
-    { tabname: "Staff Augmentation & Talent" },
-    { tabname: "Salesforce Appexchange" },
-]
-
-
-
-const blogData = [
-
-
-    {
-        id: "Salesforce Insights",
-        blogpost:
-            [
-                {
-                    uniqueid: "0",
-                    title: "ZERO TO CRM HERO: HOW WE HELPED A REAL ESTATE CLIENT TRIPLE CONVERSIONS",
-                    description: "A legacy system was slowing them down...",
-                    image: "/blog/blog1.png",
-                    link: "#",
-                },
-                {
-                    uniqueid: "1",
-                    title: "test",
-                    description: "A legacy system was slowing them down...",
-                    image: "/blog/blog1.png",
-                    link: "#",
-                },
-                {
-                    uniqueid: "3",
-                    title: "ZERO TO CRM HERO: HOW WE HELPED A REAL ESTATE CLIENT TRIPLE CONVERSIONS",
-                    description: "A legacy system was slowing them down...",
-                    image: "/blog/blog1.png",
-                    link: "#",
-                },
-                {
-                    uniqueid: "4",
-                    title: "test",
-                    description: "A legacy system was slowing them down...",
-                    image: "/blog/blog1.png",
-                    link: "#",
-                },
-                {
-                    uniqueid: "5",
-                    title: "ZERO TO CRM HERO: HOW WE HELPED A REAL ESTATE CLIENT TRIPLE CONVERSIONS",
-                    description: "A legacy system was slowing them down...",
-                    image: "/blog/blog1.png",
-                    link: "#",
-                },
-                {
-                    uniqueid: "6",
-                    title: "test",
-                    description: "A legacy system was slowing them down...",
-                    image: "/blog/blog1.png",
-                    link: "#",
-                },
-            ]
-    },
-
-
-    {
-        id: "Culture",
-        blogpost:
-            [
-                {
-                    uniqueid: "2",
-                    title: "ZERO TO CRM HERO: HOW WE HELPED A REAL ESTATE CLIENT TRIPLE CONVERSIONS",
-                    description: "A legacy system was slowing them down...",
-                    image: "/blog/blog1.png",
-                    link: "#",
-                },
-            ]
-    },
-
-
-    {
-        id: "Tech & Tools",
-        blogpost:
-            [
-                {
-                    uniqueid: "3",
-                    title: "VISIBILITY = VIABILITY: 5 WAYS TO MAKE YOUR APP STAND OUT",
-                    description: "Before you launch, read this...",
-                    image: "/blog/blog2.png",
-                    link: "#",
-                },
-            ]
-    },
-    {
-        id: "Staff Augmentation & Talent",
-        blogpost:
-            [
-                {
-                    uniqueid: "3",
-                    title: "VISIBILITY = VIABILITY: 5 WAYS TO MAKE YOUR APP STAND OUT",
-                    description: "Before you launch, read this...",
-                    image: "/blog/blog2.png",
-                    link: "#",
-                },
-            ]
-    },
-    {
-        id: "Salesforce Appexchange",
-        blogpost:
-            [
-                {
-                    uniqueid: "3",
-                    title: "VISIBILITY = VIABILITY: 5 WAYS TO MAKE YOUR APP STAND OUT",
-                    description: "Before you launch, read this...",
-                    image: "/blog/blog2.png",
-                    link: "#",
-                },
-            ]
-    },
-
-
-
-
-
-    ,
-];
-
-
 interface SmallCardProp {
-    image?: any;
-    title?: string;
-    description?: string;
-    readmore?: string;
+  image?: any;
+  title?: string;
+  description?: string;
+  readmore?: string;
 }
+
 const SmallCard = ({ image, title, description, readmore }: SmallCardProp) => {
-    console.log("description",{description})
-    const cleanedHTML = description?.replace(/&nbsp;/g, ' ');
-    const [cleanedText, setCleanedText] = React.useState('');
-    React.useEffect(() => { 
-    const noTags = description?.replace(/<[^>]+>/g, '');
-    const decoded = decode(noTags); 
+  const [cleanedText, setCleanedText] = useState("");
+
+  useEffect(() => {
+    const noTags = description?.replace(/<[^>]+>/g, "");
+    const decoded = decode(noTags || "");
     setCleanedText(decoded);
   }, [description]);
-  console.log("cleanedText", { cleanedText })
-    return (
-        <>
-            <div className={Style.blogcard} >
-                <div className={Style.image}>
-                     {image._embedded?.['wp:featuredmedia']?.[0]?.source_url && (
-            <Image
-              src={image._embedded['wp:featuredmedia'][0].source_url}
-              alt={image.title.rendered}  width={400} height={220}
-            />
-          )} 
-                </div>
-                <div className={Style.contentbox}>
-                    <h3>{title}</h3>
-                    
-                    <p>{cleanedText}</p>
-                    <Link href={readmore || "#"} >
-                        Read More
-                    </Link>
-                </div>
-            </div>
-        </>
-    )
-}
 
-
-
+  return (
+    <div className={Style.blogcard}>
+      <div className={Style.image}>
+        {image._embedded?.["wp:featuredmedia"]?.[0]?.source_url && (
+          <Image
+            src={image._embedded["wp:featuredmedia"][0].source_url}
+            alt={title || ""}
+            width={400}
+            height={220}
+          />
+        )}
+      </div>
+      <div className={Style.contentbox}>
+        <h3>{title}</h3>
+        <p>{cleanedText}</p>
+        <Link href={readmore || "#"} target="_blank" rel="noopener noreferrer">
+          Read More
+        </Link>
+      </div>
+    </div>
+  );
+};

@@ -6,6 +6,8 @@ import Header from "@/components/layout/Header/pages";
 import Footer from "@/components/layout/Footer/pages"; 
 import Script from "next/script";
 import CookieBanner from "@/components/CookieBanner";
+import "react-quill-new/dist/quill.snow.css";
+
 
 const geistSans = Geist({
   variable: "--font-geist-sans",

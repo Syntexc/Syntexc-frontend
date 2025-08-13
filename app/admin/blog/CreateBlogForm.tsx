@@ -7,6 +7,7 @@ import makeAnimated from 'react-select/animated';
 import LinkModelBox from "@/components/linkmodelbox/linkmodelbox";
 import styles from "../../styles/CreateBlog.module.scss" 
 import dynamic from "next/dynamic";
+import RichTextEditor from "@/components/rich-texteditor";
  
 const JoditEditor = dynamic(() => import("jodit-react"), {
   ssr: false,
@@ -191,13 +192,19 @@ const handleRemoveImage = () => {
 
 
 
-                 <JoditEditor
+                 {/* <JoditEditor
                   value={state.content}
                   onChange={(newContent) => onChangeState("content", newContent)}
                    
                   tabIndex={1}  
                   // onBlur={(newContent) => onChangeState("content", newContent)} 
-                />
+                /> */}
+
+
+                <RichTextEditor
+                value={state.content}
+                onChange={(newContent) => onChangeState("content", newContent)}
+              />
               </div>
             </div>
 

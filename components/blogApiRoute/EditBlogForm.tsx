@@ -11,6 +11,7 @@ import { deleteImageFromFirebase, uploadFiletoFirebase } from "@/app/utils";
 import Image from "next/image";
 import LinkModelBox from "../linkmodelbox/linkmodelbox";
 import styles from "../../app/styles/CreateBlog.module.scss"
+import RichTextEditor from "../rich-texteditor";
 
 const JoditEditor = dynamic(() => import("jodit-react"), {
   ssr: false,
@@ -191,13 +192,19 @@ const [showUpload, setShowUpload] = useState(false);
                 </label>
 
                
-                <JoditEditor
+                {/* <JoditEditor
                   value={blog.content}
                   onChange={(value) => setBlog({ ...blog, content: value })}
                    
                   tabIndex={1}  
                   
-                />
+                /> */}
+
+                <RichTextEditor
+                                value={blog.content}
+                                                  onChange={(value) => setBlog({ ...blog, content: value })}
+
+                              />
               </div>
 
 
