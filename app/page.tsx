@@ -6,6 +6,7 @@ import CRM from "@/components/CRM";
 import ExpertPartner from "@/components/ExpertPartner";
 import Instantly from "@/components/Instantly";
 import MissionVision from "@/components/MissionVision";
+import MrSyncPopup from "@/components/MrSyncPopup/page";
 import SalesforcePartner from "@/components/SalesforcePartner";
 import Synexc from "@/components/Synexc";
 import ThinkYour from "@/components/ThinkYour";
@@ -27,6 +28,7 @@ export default function Home() {
      {/* <BlogSection /> */}
      <Instantly />
      <ContactUs />
+     <MrSyncPopup />
      </>
   );
 }
