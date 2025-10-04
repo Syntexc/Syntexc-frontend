@@ -7,8 +7,8 @@ const Instantly = () => {
             <section className={Style.section}>
                 <div className={Style.container}>
                     <div className={Style.row}>
-                        <h3>Need Salesforce Experts? Scale Your Team Instantly.</h3>
-                        <p>Get pre-vetted, certified Salesforce professionals ready to integrate into your team and accelerate your projects without the hassle of long hiring cycles.</p>
+                        <h3>Hire Salesforce Consultants – Fast & Flexible</h3>
+                        <p>Need Salesforce experts without long hiring cycles? Synexc provides contract-based Salesforce consultants for immediate impact.</p>
                     </div>
 
 
@@ -45,14 +45,14 @@ export default Instantly;
 const boxconstentarray = [
     {
         image: "/Component1.svg",
-        content: "Flexible contract-based staffing"
+        content: "Flexible engagement models"
     },
     {
         image: "/Component2.svg",
-        content: "Certified experts in every Salesforce cloud"
+        content: "Certified Salesforce consultants in every cloud "
     },
     {
         image: "/Component3.svg",
-        content: "Faster deployment and immediate impact"
+        content: "Faster deployment and proven expertise"
     },
 ]

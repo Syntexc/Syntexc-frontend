@@ -7,6 +7,7 @@ import Footer from "@/components/layout/Footer/pages";
 import Script from "next/script";
 import CookieBanner from "@/components/CookieBanner";
 import "react-quill-new/dist/quill.snow.css";
+import WhatsAppButton from "@/components/WhatsAppButton";
 
 
 const geistSans = Geist({
@@ -99,6 +100,7 @@ export default function RootLayout({
         </noscript>
         <Header />
         {children}
+         <WhatsAppButton />
         <CookieBanner />
         <Footer />
       </body>

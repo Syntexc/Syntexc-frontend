@@ -31,28 +31,28 @@ export default SalesforcePartner;
 const dataarry = [
     {
         icon: "/1.png",
-        title: "Salesforce Consulting",
-        content: "Align your CRM with your business goals",
+        title: "Salesforce Consulting Services",
+        content: "Align Salesforce with your business goals and strategy.",
     },
     {
         icon: "/2.png",
-        title: "Implementation & Integration",
-        content: "Fast, seamless, and future-proof",
+        title: "Salesforce Implementation & Integration",
+        content: "Fast, seamless, and tailored to your future growth.",
     },
     {
         icon: "/3.png",
-        title: "AppExchange Development",
-        content: "Custom applications for extended functionality",
+        title: "Salesforce App Development",
+        content: "Custom Salesforce apps to extend platform functionality.",
     },
     {
         icon: "/4.png",
-        title: "Managed Services",
-        content: "24/7 monitoring, upgrades, and optimization",
+        title: "Salesforce Managed Services ",
+        content: "24/7 monitoring, upgrades, and proactive optimization.",
     },
     {
         icon: "/5.png",
-        title: "On-Demand Salesforce Experts",
-        content: "Scale your team with contract-based professionals",
+        title: "On-Demand Salesforce Consultants ",
+        content: "Scale your team with pre-vetted, certified experts.",
     },
 ]
 

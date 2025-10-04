@@ -41,16 +41,16 @@ const missionvisionarry = [
     {
         image:"/milestones1.png",
         title:"Mission ",
-        contant:"To empower businesses with scalable, intelligent, and future-ready Salesforce solutions that drive efficiency, enhance customer experiences, and maximize growth.",
+        contant:"To empower businesses with scalable, intelligent, and future-ready Salesforce solutions that improve efficiency, enhance customer experiences, and drive growth.",
     },
     {
         image:"/vision1.png",
         title:"Vision ",
-        contant:" To create a dynamic, innovative, and inclusive Salesforce ecosystem where businesses harness technology to scale smarter, engage better, and achieve lasting success.",
+        contant:"To create an innovative Salesforce ecosystem where businesses scale smarter, engage better, and achieve lasting success.",
     },
     {
         image:"/objectives1.png",
         title:"Goals ",
-        contant:" To deliver tailored, high-impact Salesforce solutions, leverage AI and automation for business transformation, and build long-term partnerships rooted in trust, transparency, and measurable success.",
+        contant:"To deliver tailored Salesforce consulting services, leverage automation for transformation, and build long-term partnerships rooted in trust and measurable results.",
     },
 ]

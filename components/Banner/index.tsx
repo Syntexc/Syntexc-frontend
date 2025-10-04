@@ -25,14 +25,15 @@ const Banner = () => {
                 </h1>
 
                 
-                <p>Synergy That Drives Success</p>
-                <h2>WHAT IF YOUR CRM DID <br /><span>MORE THAN JUST</span><br /> MANAGE CUSTOMERS?</h2>
+                <p>Your Global Salesforce Consulting Partner for Smarter, Faster Growth</p> 
+                <h2>We provide <span>Salesforce <br /> Consulting services</span> and solutions<br />   that get your CRM working for you.  
+</h2>
                     
                     <a href="#contact">
               
 
 
-                    Get Started. <span>ITS FOR FREE!</span>
+                    Get Expert Salesforce Consulting Services Now
                      
                     
                      

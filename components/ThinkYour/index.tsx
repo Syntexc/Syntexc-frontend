@@ -14,7 +14,8 @@ const ThinkYour = ()=>{
         <section className={Style.section}>
             <div className={Style.container}>
                 <div className={Style.row}>
-                    <h1>Think Your Industry Can't Leverage Salesforce? <span>Think Again With Synexc</span></h1>
+                    <h1>Salesforce Consulting Services for Every Industry</h1>
+                    <p>Our Salesforce consulting services empower businesses worldwide:</p>
                 </div>
                 <div className={Style.row1}>
                     <ul className={Style.tabws}>
@@ -33,7 +34,7 @@ const ThinkYour = ()=>{
     <Tabbox
     title="Real Estate" 
     imageurl="/12079892_4906433 1.png" 
-    content="Enhance property management with data-driven insights to track leads, manage tenants, and automate sales cycles for better conversion rates." 
+    content="Track leads, manage tenants, and automate sales cycles" 
      />
 </div>
 </>}  
@@ -42,7 +43,7 @@ const ThinkYour = ()=>{
     <Tabbox
     title="Finance" 
     imageurl="/65674511_9609529 1.png" 
-    content="Leverage AI-driven analytics for smarter investment decisions and automated compliance tracking to improve portfolio management and client engagement." 
+    content="Compliance and streamline customer data management" 
      />
 </div>
 </>}  
@@ -51,7 +52,7 @@ const ThinkYour = ()=>{
     <Tabbox
     title="Healthcare" 
     imageurl="/healthcar-image.png" 
-    content="Streamline patient interactions, improve operational efficiency, and optimize medical workflows with secure and scalable CRM solutions tailored for healthcare providers." 
+    content="Patient engagement, security, and connected care" 
      />
 </div>
 </>}  
@@ -60,7 +61,7 @@ const ThinkYour = ()=>{
     <Tabbox
     title="E-commerce" 
     imageurl="/22635354_6666910 1.png" 
-    content="Deliver personalized shopping experiences, automate customer engagement, and optimize inventory management with an omnichannel Salesforce solution." 
+    content="Sales journeys, automation, and insights " 
      />
 </div>
 </>}  
@@ -69,7 +70,7 @@ const ThinkYour = ()=>{
     <Tabbox
     title="Manufacturing" 
     imageurl="/7206481_3527159 1.png" 
-    content="Improve supply chain visibility, automate production workflows, and enhance B2B sales operations with integrated CRM and ERP functionalities." 
+    content="Supply chain visibility and sales efficiency" 
      />
 </div>
 </>}  

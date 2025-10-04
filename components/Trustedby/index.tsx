@@ -36,7 +36,7 @@ const Trustedby = () =>{
             <div className={Styles.container}>
                 <div className={Styles.row}>
                 <h2>Trusted by Industry Giants. <span>Chosen by Innovators.</span></h2>
-                <p>From Fortune 500 companies to high-growth disruptors, businesses turn to Synexc for next-level Salesforce solutions that drive impact, efficiency, and measurable success.</p>
+                <p>From Fortune 500 companies to high-growth disruptors, businesses turn to Synexc for Salesforce consulting services that deliver impact and efficiency. </p>
                 </div>
 
                 <div className={Styles.row1}>
@@ -149,7 +149,7 @@ const Trustedby = () =>{
                 <div className={Styles.row3}>
 <Image src={"/homefly.png"} width={70} height={86} alt="" className={Styles.homefly} />
 
-    <a href="https://www.linkedin.com/company/synexc/about/?viewAsMember=true" target="_blank">Join our community </a>
+    <a href="https://www.linkedin.com/company/synexc/about/?viewAsMember=true" target="_blank">Join our community of happy customers </a>
     </div>
             </div>
         </section>
